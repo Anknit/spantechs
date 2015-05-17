@@ -94,7 +94,7 @@
 }
 
 #home_page_tile li.tileItem:hover {
-  box-shadow: 3px 3px 2px 1px red !important;
+  box-shadow: 3px 3px 2px 1px #005193 !important;
 }
 
 #home_page_tile .tileLinks {
