@@ -1,0 +1,155 @@
+@charset "utf-8";
+/*
+* Author: Aditya
+* date: 08-Aug-2014
+* CSS Document 
+*
+*/
+
+.homeButtons{
+	text-align:center;
+	width:80%;
+	position:absolute;
+	bottom:0;
+}
+
+.homeButtons li{
+	list-style:none;
+	display:inline;
+	background:#ccc;
+	border:#cca;
+	box-shadow:1px 1px 5px 2px #666;
+	padding:5px;
+	margin-left:20px;
+}
+
+.testDiv{
+	display:none;
+	position:absolute;
+	background:#fff;
+	padding:2px;
+	box-shadow: 1px 1px 5px 1px #ccc;
+	width:200px;
+	height:200px;
+	-webkit-transition-property: all; /* Safari */
+    -webkit-transition-duration: 0.3s; /* Safari */
+	-webkit-transition-timing-function: ease;
+	transition-property: all;
+    transition-duration: 0.3s;
+	transition-timing-function: ease;
+	border: 1px solid #ddd;
+	border-radius: 0px 5px 5px 5px;
+	overflow:auto;
+	max-height:350px;
+}
+
+.animateImages{
+    width:100%;
+    height:100%;
+    display:none;
+}
+.animateImagesContainer{
+    position: relative;
+    float: left;
+    width: 55%;
+    /*border: 1px solid black;*/
+    height: 55%;
+    display: none;
+}
+.animateImages img{
+    width: 100%;
+    height: 100%;
+}
+
+.animation2Container{
+    width: 50%;
+    height: 40%;
+    margin: 10px;
+    float: left;
+}
+
+.animation2Container div{
+    background: #003ADF;
+    color: #ffffff;
+    padding: 5px;
+    float: left;
+    width: 200px;
+    margin: 5px;
+    visibility: hidden;
+}
+#home_page_tile .tileItem {
+	width: 0%;
+	transform: rotateY(90deg);
+	margin-left: -200px;
+	transition:all 1s;
+	height:150px;
+	margin:0px;
+	padding:0px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-color:#fff;
+	box-shadow:2px 2px 6px 1px #aaa;
+}
+#home_page_tile .tileLinks {
+  font-size: 1.5em !important;
+  padding: 0px !important;
+}
+#home_page_tile .tileLinks img{
+	height:150px;
+	width:100%;
+}
+.homePageImageDiv{
+	float:left;
+	width:98%;
+	height:auto;
+}
+.homePageImageDiv div{
+	margin-left: 10px;
+}
+.homePageAnimationDiv{
+ 	float:left;
+	width:98%;
+	height:600px;
+}
+.homePageImage{
+	max-height:100%;
+	max-width:100%;
+	transition:all 5s;
+}
+
+.contentRightToLogo{
+    width: 33%;
+    height: 300px; 
+    background-color: #9D4550;
+    color: #ffffff;
+    padding: 5px;
+}
+
+@media (min-width: 640px) {
+    .contentRightToLogo{
+        float: left;
+    }
+}
+@media (max-width: 360px) {
+    .contentRightToLogo{
+        float: none !important;
+    }
+}
+
+
+.eventNewsItems{
+	width: 98%;
+	color:#ffffff;
+    font-size: 14px;
+    margin: 60px 5px;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0px;
+}
+
+#eventInfoDiv img{
+	width: 240px;
+}
+
+.ImageDiv{
+    height: 85%;
+}

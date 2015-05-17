@@ -1,0 +1,38 @@
+@charset "utf-8";
+/*
+* Author: Aditya
+* date: 08-Aug-2014
+* CSS Document 
+*
+*/
+
+body{
+	color: #003ADF;
+}
+.logo{
+	float:left;
+	margin-left:2%;
+}
+
+.logoImg{
+	width: 10em;
+}
+
+.animatedNuovo{
+	float:left;
+	margin-left:0%;
+	opacity:0;
+	transition:all 2s;
+}
+
+.content{
+    margin-bottom: 20px !important;
+}
+
+
+.copyrights{
+	float:left;
+	bottom:0;
+	width:100%;
+	text-align:center;
+}

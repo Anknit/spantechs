@@ -1,0 +1,45 @@
+.sliderContainer{
+    position: relative;
+    margin: 0 auto;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 600px;
+    background: #ccc;
+}
+
+.slides{
+    cursor: move;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.slideItems{
+    text-align: center;
+}
+
+.leftTextualSections{
+    position: absolute;
+    width: 480px;
+    height: 300px;
+    top: 10px;
+    left: 10px;
+    text-align: left;
+    line-height: 1.8em;
+    font-size: 12px;
+}
+
+.backImage{
+    background-size: contain !important;
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+}
+
+.backImageSection{
+    width: 40%;
+    height: 75%;
+}

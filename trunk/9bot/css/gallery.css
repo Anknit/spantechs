@@ -1,0 +1,106 @@
+@CHARSET "UTF-8";
+.galleryOverflowContainer{
+	width:100%;
+	margin:0px;
+	padding:0px;
+	float:left;
+	overflow-x:hidden;
+}
+
+@keyframes leftMove {
+    from {margin-left: 100px;}
+    to   {margin-left: -100px;}
+}
+
+@-webkit-keyframes leftMove {
+    from {left: 100px;}
+    to   {left: -100px;}
+}
+
+
+.galleryMovingContainer{
+	float: left;
+	height: 400px;
+	position:relative;
+	display: inline-flex;
+	left:0px;
+}
+img.galleryItem.imgItem {
+	cursor:pointer;
+	position:relative;
+	height:100%;
+
+	-webkit-animation-name: leftMove;
+    -webkit-animation-duration: 48s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    
+	animation-name: leftMove;
+    animation-duration: 48s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+.galleryContentContainer {
+  width: 100%;
+  overflow: hidden;
+}
+.typeContainer{
+  width: 100%;
+  overflow: hidden;
+  margin-top: 50px;
+}
+.typeContainer table, .typeContainer tbody, .typeContainer tr{
+	width:100%;
+}
+.typeContainer td{
+/*	width:50%;	
+*/	width:100%;	
+}
+.galleryImagesCardContainer {
+  width: 100%;
+/*  height: 400px;
+*/  height: 475px;
+/*  margin-left: -35%;
+*/  margin-left: -25%;
+}
+.galleryImagesCardContainer img {
+/*  width: 400px;
+  height: 275px;
+*/  width: 600px;
+  height: 350px;
+  border: 10px solid #eed;
+  box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.2);
+  position: absolute;
+/*  transform-origin: center 600px;
+*/  transform-origin: center 900px;
+  transition: all 3s linear, z-index 0.1s linear, transform 1s linear;
+  -webkit-transition: all 3s linear, z-index 0.1s linear, transform 1s linear;
+  -moz-transition: all 3s linear, z-index 0.1s linear, transform 1s linear;
+  cursor: pointer;
+}
+.galleryImagesCardContainer:hover img:first-child {
+  transform: rotate(15deg);
+  -webkit-backface-visibility: hidden;
+}
+.galleryImagesCardContainer:hover img:last-child {
+  transform: rotate(-15deg);
+  -webkit-backface-visibility: hidden;
+}
+.galleryImagesCardContainer:hover img:nth-child(2) {
+  transform: rotate(7deg);
+  -webkit-backface-visibility: hidden;
+}
+.galleryImagesCardContainer:hover img:nth-child(4) {
+  transform: rotate(-7deg);
+  -webkit-backface-visibility: hidden;
+}
+.galleryTourType{
+  text-align: center;
+  color: #aab;
+}
+.galleryImagesCardContainer img:hover{
+	z-index:10;
+	box-shadow: 6px 6px 10px #aaa;
+	zoom:1.1;
+} 

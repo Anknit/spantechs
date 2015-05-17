@@ -1,0 +1,12 @@
+@charset "utf-8";
+/*
+* Author: Aditya
+* date: 08-Aug-2014
+* CSS Document 
+*
+*/
+.selectViaShadow{
+	box-shadow: 1px 1px 2px 1px #ccc;
+}
+
+

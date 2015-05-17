@@ -1,0 +1,166 @@
+	html, body{
+		height:100%;
+		width:100%;
+		position:relative;
+		margin:0% 0px;
+		font-size:16px;
+	}
+	
+    .wrapper{
+        position: relative;
+        min-height: 100%;
+    }
+
+	.header, .footer{
+		height:auto;
+ 	}
+
+	.header, .globalFooter{
+		background:#eee;
+	}
+    .header, .content, .footer{
+    	width : 100%;
+    	position:relative;
+    	float:left;
+    }
+    
+    .footer{
+        position: absolute;
+        bottom: 0;
+    }
+
+    .content{
+    	height:auto;
+    	position:relative;
+        margin-bottom: 200px;
+    }
+
+	a{
+		text-decoration:none;
+		color: inherit;
+	} 
+	.menu{
+    	width:85%;
+    	float:right;
+    }
+    .topMenu{
+    	padding:0; 
+    	margin:0; 
+    	margin-right:5%; 
+    	float:right;
+    }
+    .submenu{
+	    margin: 0px;
+		padding: 0px;
+		position: absolute;
+		z-index: 10;
+		list-style: none;
+		background: #666;
+		color: #fff;
+		margin-top: 20px;
+		margin-left: -18px;
+		width: 200px;
+		display: none;
+		opacity:0.9;
+    }
+    .headerMenuItems{
+    	display:inline-block;
+    	margin:0px 0px;
+    	color:#05B9BD;
+    	font-size:1.1em;
+    	border-bottom:3px solid transparent;
+    	padding: 18px 18px;
+    	transition:all 1s;
+    }
+    .selectedHeaderMenuItems, .headerMenuItems:hover{
+    	border-bottom:3px solid #05B9BD;
+    	background:#666;
+    	color:#fff;
+    }
+    .headerMenuItems:hover .submenu, .submenu:hover .submenu{
+    	display:block;
+    }
+    li.subMenuItems{
+    	margin:0px 0px;
+    	color:#05B9BD;
+    	font-size:1em;
+    	border-bottom:3px solid transparent;
+    	padding: 9px 9px;
+    	transition:all 1s;
+    	opacity:1;
+    }
+    li.subMenuItems:hover{
+    	border-bottom:3px solid #05B9BD;
+    	background:#666;
+    	color:#fff;
+    }
+    
+    .logo{
+    	width:15%;
+    	float:left;
+    }
+    .logoImg{
+    	width:10em;
+    }
+	    .globalFooter{
+		float: left;
+		width: 100%;
+		color:#05B9BD;
+    }
+    .footerLeftCol,.footerMidCol,.footerRightCol{
+    	float:left;
+    	width:33%;
+    	margin:auto;
+    }
+    li.PageLinkFooter{
+      display: table;
+	  padding: 10px 15px;
+	  width:90%;
+	  text-align:center;
+	  border-bottom: 2px solid #05B9BD;
+	  	 
+    }
+    li.PageLinkFooter a{
+    	text-decoration:none;
+    	cursor:pointer;
+    	color: #05B9BD;
+    }
+   	.contact img{
+		width: 1em;
+		vertical-align: sub;
+		margin-right: 0.2em;
+	}
+	.socialLink{
+		margin:15px;
+		float:left;
+	}
+	.socialLink a{
+		height:20px;
+		width:20px;
+	}
+
+	.socialLink img{
+		width:20px;
+		float:left;
+		margin:0 10px;
+	}
+	.nuovotoplogo{
+		float: left;
+		width: 100%;
+		height: 350px;
+		background: url('../images/icons/losmTours.jpg') no-repeat -100% 10px;
+		transition:all 3s;
+	}
+	.color_9{
+		color:#05B9BD;
+	}
+	.color_nine{
+		color:#096487;
+	}
+	.color_bot{
+		color:#95C125;
+	}
+   	.workProgressContainer img{
+   		width:100%;
+   	}
+	
