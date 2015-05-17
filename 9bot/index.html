@@ -17,22 +17,6 @@
     <script src="../Common/js/commonFunctions.js" type="text/javascript"></script>
     <script src="js/homePageAnimation.js" type="text/javascript"></script>
     <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js" type="text/javascript"></script>
-    <script>
-        createContentSlider =   function(){
-            $(".rslides").responsiveSlides();
-        };
-        generateSlideItemContent =   function(tileItemLiNode){
-            dir         =   $(tileItemLiNode).find('a').attr('linkto');
-            if(!IsValueNull(dir)){
-                NodeCreated			=	$('[clonePick="'+dir+'"]').clone(true);
-                $('<div id="sliderResponsive" style="text-align:center; width:100%"></div>').append(NodeCreated).insertAfter($('.homePageImageDiv'));
-                createContentSlider();
-            }
-        };
-        destroySlideItemContent =   function(tileItemLiNode){
-            $('#sliderResponsive').remove();
-        };
-    </script>
 </head>
 <body>
     <div class="wrapper">

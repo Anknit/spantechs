@@ -96,13 +96,19 @@
     }
     
     .logo{
-    	width:15%;
-    	float:left;
+        float:left;
+        margin-left:2%;
+        transition: transform 1s;
+    }
+    .logo:hover {
+        transform: scale(1.1);
     }
     .logoImg{
-    	width:10em;
+        width: 10em;
     }
-	    .globalFooter{
+
+
+    .globalFooter{
 		float: left;
 		width: 100%;
 		color:#05B9BD;
