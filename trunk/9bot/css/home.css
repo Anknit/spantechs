@@ -94,7 +94,7 @@
 }
 
 #home_page_tile li.tileItem:hover {
-  box-shadow: 3px 3px 2px 1px #005193 !important;
+  box-shadow: 2px 8px 0px 0px #005193 !important;
 }
 
 #home_page_tile .tileLinks {
@@ -104,11 +104,13 @@
 #home_page_tile .tileLinks img{
 	height:150px;
 	width:100%;
+    border-radius: 10%;
 }
 @media (max-width: 400px) {
     #home_page_tile .tileLinks img{
         height:100px;
         width:100%;
+        border-radius: 10%;
     }
 }
 

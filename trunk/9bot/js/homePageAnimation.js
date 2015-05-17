@@ -32,3 +32,18 @@ var tilesAnimation	=	function(){
 		$(homePageTiles).css('transform','rotateY(0deg)');
 	},1000);
 };
+
+createContentSlider =   function(){
+    $(".rslides").responsiveSlides();
+};
+generateSlideItemContent =   function(tileItemLiNode){
+    dir         =   $(tileItemLiNode).find('a').attr('linkto');
+    if(!IsValueNull(dir)){
+        NodeCreated			=	$('[clonePick="'+dir+'"]').clone(true);
+        $('<div id="sliderResponsive" style="text-align:center; width:100%"></div>').append(NodeCreated).insertAfter($('.homePageImageDiv'));
+        createContentSlider();
+    }
+};
+destroySlideItemContent =   function(tileItemLiNode){
+    $('#sliderResponsive').remove();
+};
