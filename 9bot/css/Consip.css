@@ -1,0 +1,74 @@
+@charset "utf-8";
+/*
+* Author: Aditya
+* date: 08-Aug-2014
+* CSS Document 
+*
+*/
+
+.pageHeading{
+    text-align: center;
+    width: 75%;
+    margin: 2% auto;
+    font-size: 16px;
+    color: #180404;
+}
+
+.GalleyForLinkToProduct{
+	margin-top:2%;
+	text-align: center;
+}
+
+.catalogPanel{
+	width:24%;
+	float:left;
+	height:100%;
+	font-size: 16px;
+	font-family: cursive;
+	color: #3c3c3c;
+	border-right:1px solid black;
+}
+
+.catalogRightPanel{
+	width:75%;
+	float:left;
+	height:100%;
+	background-size: contain !important;
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+}
+
+.productDisplay{
+	text-align:center;
+	width:60%;
+	min-height:350px;
+    height: 350px;
+	border: 5px solid #eee;
+	margin:2% auto;
+	box-shadow: 1px 1px 6px 6px #aaa;
+}
+
+.productName, .productDescription{
+	border-bottom:1px solid black;
+	overflow:auto;
+}
+
+.productName{
+	height:25%;
+}
+.productPrice{
+	height:10%;
+}
+.productDescription{
+	text-align:left;
+	padding:2px;
+	height:50%;
+}
+img.itemDisplayInGallery{
+	height:50px;
+	width:50px;
+	margin:5px;
+	cursor:pointer;
+}
+
+

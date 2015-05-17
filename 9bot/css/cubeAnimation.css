@@ -1,0 +1,135 @@
+@CHARSET "ISO-8859-1";
+
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.cubeWrap{
+	perspective: 800px;
+	perspective-origin: 50% -20px;
+	cursor:pointer;
+	height:100%;
+	margin:30px 20px 0px 0px;
+	display:none;
+	float:right;
+	font-style:italic;
+}
+
+.contentCube{
+	transform-style: preserve-3d;
+	transform-origin: 175px 175px 0px;
+	transition: transform 5s;
+	margin:auto;
+	width:450px;
+	animation: cubeAnimateSpin 15s ease-in-out infinite 2s;
+	-webkit-animation: cubeAnimateSpin 15s ease-in-out infinite 2s;
+	-moz-animation: cubeAnimateSpin 15s ease-in-out infinite 2s;
+}
+
+.face{
+	width:350px;
+	height:250px;
+	position:absolute;
+	backface-visibility:hidden;
+	background:rgba(255,255,255,1);
+}
+
+.top{
+  transform: rotateX(90deg) translateZ(175px);
+}
+
+.back{
+	transform: rotateY(180deg) translateZ(175px);
+}
+
+.left{
+  transform: rotateY(-90deg) translateZ(175px);
+}
+
+.front{
+	transform: translateZ(175px);
+}
+
+.right{
+  transform: rotateY(90deg) translateZ(175px);
+}
+
+.down{
+  transform: rotateX(-90deg) translateZ(175px);
+}
+
+#container{
+ 	height: 450px;
+ 	overflow:hidden;
+ 	background:url(../images/icons/nuovo.JPG);
+ 	background-repeat:no-repeat;
+	background-size:contain;
+}
+
+.textContent, .imageContent{
+	width:100%;
+	height:100%;
+}
+.textContent{
+	padding:10px 10px;
+	font-size:16px;
+	text-align:center;
+}
+.imageContent{
+	background-repeat: no-repeat !important;
+	background-size: contain !important;
+	background-position: center !important;
+}
+.cubeH{
+	color:#05B9BD;
+	text-align:left;
+}
+.cubeH:hover{
+	box-shadow:4px 4px 6px #aaa;
+}
+
+.cubeT{
+	text-align:left;
+}
+@-webkit-keyframes cubeAnimateSpin {
+	0%   { transform: rotateY(0deg); }
+	33%  { transform: rotateY(90deg); }
+	66%  { transform: rotateY(180deg); }
+	100% { transform: rotateY(270deg); }
+}
+@-moz-keyframes cubeAnimateSpin {
+	0%   { transform: rotateY(0deg); }
+	33%  { transform: rotateY(90deg); }
+	66%  { transform: rotateY(180deg); }
+	100% { transform: rotateY(270deg); }
+}
+@keyframes cubeAnimateSpin {
+	0%   { transform: rotateY(0deg); }
+	33%  { transform: rotateY(90deg); }
+	66%  { transform: rotateY(180deg); }
+	100% { transform: rotateY(270deg); }
+}
+.cubeN{
+	text-align:left;
+	color:#666;
+}
+.text_bot{
+	margin:200px auto 0px auto;
+}
+.text_right{
+	margin:20px 200px;
+}
+.text_left{
+	margin:50px;
+}
+.text_top{
+	margin:50px auto;
+}
+.text_light{
+	color:#fff;
+}
+.text_dark{
+	color:#666;
+}

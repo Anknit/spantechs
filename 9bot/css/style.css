@@ -1,0 +1,129 @@
+.DeactivateLink{pointer-events:none;cursor:default!important;background-color:#708090}.selectedLink{background-color:#32cd32!important}.overflowcontent{vertical-align:text-top;max-height:100%;min-height:90%;float:left;width:100%;}.topnavigation{width:75%;height:20px;margin:auto}.topnavigation1{width:100%;text-align:center;left:0;right:0;margin:auto;float:left;}.menuItem{background-color:#039;float:left;width:15%%;margin-left:10px;color:#fff8dc;font-size:18px;font-family:cursive;text-align:center;border-radius:5px;padding:5px}.menuItem1{width:23%;color:#fff8dc;font-size:1em;font-family:cursive;text-align:center;border-radius:5px;padding:5px;display:inline;float:left}.borderMenu{margin-left:20%;padding-left:2%;padding-right:2%}.menuItem1:hover .ContentBelowMenu{margin:40px auto auto;text-align:center;width:100%}.ObjectLeft{float:left;width:45%;padding:0 5px;height:70%}.RightToObject{float:left;width:45%;padding:0 5px;height:400px}.GeneralContent{float:left;width:100%}.effectback{display:block;padding:0 10%}.effectfront{border:none;margin:0 auto}.layout{position:absolute;opacity:.3;width:100%;height:100%;z-index:99;color:#fff;background-color:gray;display:none}div.img{margin:5px;border:1px solid #00f;height:auto;width:auto;float:left;text-align:center}div.img img{display:inline;margin:5px;border:1px solid #fff;width:300;height:300}div.img:hover img{border:1px solid #00f}div.desc{text-align:center;font-weight:400;width:250px;margin:5px}div.rotating{-webkit-animation:rotating 3s;animation:rotating 3s}@-webkit-keyframes rotating{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}.tabbedLinks{padding:10px 0px;color:#666;font-weight:600;width:100%;float:left;transition:all 1s}.activeMenu,.tabbedLinks:hover{box-shadow:1px 1px 6px #013;background:#666;color: #fff;}.ContainerTripInfo{display:none;margin:10px 0px;float:left;width:100%;}.ContainerTripInfo > div{min-height:450px;}.individualContainerTripInfo{padding:5px;border:1px solid #ccc;max-width:400px;width:350px;float:left;margin-left:60px;margin-top:10px;box-shadow:4px 4px 6px #AAA;transform:rotate(3deg);cursor:pointer;transition:.8s;opacity:.8;color:#003ADF}.individualContainerTripInfo::after{content:"";background:url(../img/background.png) no-repeat;background-size:200%;opacity:.25;top:0;left:0;bottom:0;right:0;position:absolute;z-index:-1}.individualContainerTripInfo:hover{transform:rotate(0deg);opacity:1}.headingTripInfo{max-width:400px;height:30px;font-weight:600;font-size:14px;text-align:center}.ImageTripInfo{padding:0;margin:10px 0 0;width:100%;height:300px}.ImageTripInfo>img{width:300px;height:300px}.DesciptionTripInfo,.DurationTripInfo,.FacilitiesTripInfo,.PriceTripInfo{width:100%;margin:10px 0;text-align:left}
+.tourBookContainer{
+	width:100%;
+	float:left;
+	margin-top:5px;
+	text-align:center;
+	padding:5px;
+}
+.tourBookContainer input[type="button"], #packageInfoDiv input[type="button"]{
+	border:none;
+	outline:none;
+	padding:5px;
+	width:40%;
+	background: #111;
+	color:#05B9BD;
+	font-size:1em;
+	margin:5px auto;
+	border-radius:5px;
+	font-size:1.2em;
+	transition:all 1s;
+	cursor:pointer;
+}
+.tourBookContainer input[type="button"]:hover, #packageInfoDiv input[type="button"]:hover{
+	box-shadow: 2px 2px 6px #aaa;
+	color:#fff;
+}
+
+.tourBookContainer > div{
+	display:none;
+}
+select.bookingSelectBox{
+	padding: 0.2em 1em;
+	color: #FFF;
+	width: 100%;
+	font-size: 1em;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	background: none;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	font-family: 'ambleregular';
+}
+select.bookingSelectBox option{
+	background:#666;
+}
+input.bookingSelectBox{
+	padding: 0.5em 1em;
+	color: #FFF;
+	font-size: 1em;
+	background: none;
+	outline: none;
+	border: none;
+	margin: 0px auto;
+	width: 85%;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	font-family: 'ambleregular';
+}
+.modalWindow{
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display:none;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity: 1;
+	pointer-events: auto;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+}
+.modalWindow > div{
+	width: 400px;
+	position: relative;
+	margin: 15% auto;
+	padding: 5px;
+	border-radius: 5px;
+	background: #eee;
+}
+.modalCloseButton:hover {
+	background: #00d9ff;
+}
+.modalCloseButton {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+#packageInfoDiv{
+	display:none;
+	box-shadow:4px 4px 6px #aaa;
+	color: #05B9BD;
+	
+}
+#packageInfoDiv table,#packageInfoDiv tr,#packageInfoDiv td{
+	width:100%;
+}
+
+#packageInfoDiv td{
+	background:#666;
+	height:35px;
+}

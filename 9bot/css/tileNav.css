@@ -1,0 +1,33 @@
+@CHARSET "UTF-8";
+.tileNavigation{
+  float: left;
+  width: 75%;
+  margin: 10px 15%;
+  transition: opacity 0.5s;
+  
+}
+.tileLinks{
+	width: 100%;
+	font-size:2em;
+	float: left;
+	padding:20% 0px; 
+}
+.tileItem{
+  display: inline;
+  width: 45%;
+  float: left;
+  text-align: center;
+  padding: 5px;
+  color: #fff;
+  background: #05b9bd;
+  margin:10px 10px;
+/*
+  height:200px;
+*/
+  transition: all 1s
+}
+.tileItem:hover{
+	color:#fff;
+	background:#666;
+	box-shadow:3px 3px 6px #aaa;
+}

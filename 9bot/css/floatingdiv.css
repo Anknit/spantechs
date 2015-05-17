@@ -1,0 +1,44 @@
+@CHARSET "UTF-8";
+	.floatContainerDiv{
+		border: 1px solid #ccc;
+		width: 25%;
+		float: left;
+		margin-left: 5%;
+		margin-top: 2%;
+		box-shadow: 4px 4px 6px #AAA;
+		transform: rotate(3deg);
+		cursor: pointer;
+		transition: .8s;
+		opacity: .8;
+		color: #003ADF;	
+	}
+	.floatContainerDiv:hover{
+		transform: rotate(0deg);
+		opacity: 1;	
+	}
+	.headingFloatDiv{
+		font-weight: 600;
+		font-size: 1.2em;
+		text-align: center;
+		padding:5px;
+	}
+	.imageFloatDiv{
+		padding: 0;
+		width: 100%;
+		height: 220px;
+		text-align:center;	
+	}
+	.imageFloatDiv > img{
+		width: 80%;
+		height: 100%;
+	}
+	.footerFloatDiv{
+		width: 80%;
+		margin: auto;
+		padding:5px;
+		text-align:justify;
+	}
+	.footerFloatDiv:last-child{
+		text-align:center;
+	}
+	
