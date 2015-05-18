@@ -26,7 +26,7 @@
                         <div class="footerRightCol">
                                 <div class="InternationalLink" style="margin-top: 15px;font-size: 1.2em;">
                                     <ul>
-                                        <li class="PageLinkFooter"><a href="../../index.html" style="text-decoration:none"><span style="text-transform:uppercase; color:#05B9BD">9 bot italia</a></li>
+                                        <li class="PageLinkFooter"><a href="http://9botitalia.com/9bot/index.html" style="text-decoration:none"><span style="text-transform:uppercase; color:#05B9BD">9 bot italia</a></li>
                                         <li class="PageLinkFooter"><a href="http://www.ninebot.com" style="text-decoration:none"><span style="text-transform:uppercase; color:#05B9BD">NINEBOT INTERNATIONAL</span><a>					
                                     </ul>
                                 </div>
