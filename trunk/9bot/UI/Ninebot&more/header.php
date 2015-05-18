@@ -35,14 +35,14 @@
                                     </ul>
                                 </li>
                                 <li class="headerMenuItems" identifier="Tour" onclick="pageIdentifier = 'Tour'; setSelectionOnHeaderMenu();">
-                                    <a href="../tour/index.php#tourCatalogue">Tour</a>
+                                    <a href="http://www.ninebottours.it/9bot/UI/tour/index.php#tourCatalogue">Tour</a>
                                     <ul class="submenu">
-                                            <li class="subMenuItems"><a href="../tour/NinebotTour.php">Ninebot Tours</a></li>
-                                            <li class="subMenuItems"><a href="../tour/GolfcarTour.php">Golfcar Tours</a></li>
-                                            <li class="subMenuItems"><a href="../tour/BikeTour.php">Bike Tours</a></li>
-                                            <li class="subMenuItems"><a href="../tour/VespaTour.php">Vespa Tours</a></li>
-                                            <li class="subMenuItems"><a href="../tour/JoggingTour.php">Jogging Tours</a></li>
-                                            <li class="subMenuItems"><a href="../tour/CataniaTour.php">Catania Tours</a></li>
+                                            <li class="subMenuItems"><a href="http://www.ninebottours.it/9bot/UI/tour/NinebotTour.php">Ninebot Tours</a></li>
+                                            <li class="subMenuItems"><a href="http://www.ninebottours.it/9bot/UI/tour/GolfcarTour.php">Golfcar Tours</a></li>
+                                            <li class="subMenuItems"><a href="http://www.ninebottours.it/9bot/UI/tour/BikeTour.php">Bike Tours</a></li>
+                                            <li class="subMenuItems"><a href="http://www.ninebottours.it/9bot/UI/tour/VespaTour.php">Vespa Tours</a></li>
+                                            <li class="subMenuItems"><a href="http://www.ninebottours.it/9bot/UI/tour/JoggingTour.php">Jogging Tours</a></li>
+                                            <li class="subMenuItems"><a href="http://www.ninebottours.it/9bot/UI/tour/CataniaTour.php">Catania Tours</a></li>
                                     </ul>
                                 </li>
                                 <li class="headerMenuItems" identifier="Event"><a href="publicity.php">Pubblicità con Noi</a></li>
