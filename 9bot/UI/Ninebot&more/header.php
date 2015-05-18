@@ -8,6 +8,7 @@
     <script src="../../../Common/js/setSelectionEffects.js" type="text/javascript"></script>
     <link type="text/css" rel="stylesheet" href='../../css/layout.css' />
     <link type="text/css" rel="stylesheet" href='../../../Common/css/selectionEffects.css' />
+    <link type="text/css" rel="stylesheet" href="../../../Common/css/hover.css" />
     <link type="text/css" rel="stylesheet" href='../../css/slider.css' />
     <link type="text/css" rel="stylesheet" href='../../css/floatingdiv.css' />
     <link type="text/css" rel="stylesheet" href='../../css/tileNav.css' />
