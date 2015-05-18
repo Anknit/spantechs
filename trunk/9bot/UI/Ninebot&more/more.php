@@ -111,27 +111,27 @@
                 	<p><b>Ninebot</b> è un nuovo mezzo di trasporto e la perfetta combinazione di design. Per saperne di più!</p>
                 </div>
 	            <div style="margin:auto;">
-	                <input type="button" value="CLICCA QUI" style="cursor:pointer;width:187px; height:58px; color:#638E1A; background-color:#BDE075; font-size:16px; font-weight:600; margin-top:15px;" onclick="location.href = 'NinebotE.php';" />
+	                <input type="button" class="hvr-pulse-grow" value="CLICCA QUI" style="cursor:pointer;width:187px; height:58px; color:#638E1A; background-color:#BDE075; font-size:16px; font-weight:600; margin-top:15px;" onclick="location.href = 'NinebotE.php';" />
 	            </div>
             </div>
         </div>
     </div>
 	<div class="centeredContent" style="padding:30px;">
         <ul style="list-style-type:none; overflow:hidden; display:inline-flex; padding-bottom:15px; padding-right:40px;">
-            <li class="blueContentBox">
+            <li class="blueContentBox hvr-wobble-skew">
                 <h3 class="darkColourHeading">Ambiente</h3>
                 <span class="boxContent">
                     Nessuna emissione di CO2. Puoi parcheggiare il Ninebot in casa, evitando costosi garage e parcheggi
                 </span>
             </li>
-            <li class="blueContentBox">
+            <li class="blueContentBox hvr-wobble-skew">
                 <h3 class="darkColourHeading">Design</h3>
                 <span class="boxContent">
                     Linea elegante e pulita<br />
                     Disponibile in diversi colori .
                 </span>
             </li>
-            <li class="blueContentBox">
+            <li class="blueContentBox hvr-wobble-skew">
                 <h3 class="darkColourHeading">Sicurezza</h3>
                 <span class="boxContent">
                     Sistemi ridondanti. Allarmi e segnalazione puntuale di eventuali problemi.
