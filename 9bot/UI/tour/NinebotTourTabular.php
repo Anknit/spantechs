@@ -30,16 +30,18 @@
     }
     
     .xxThumbImage{
-        width:200px;
+        width:300px;
         height:auto;
     }
     
     .boldHeading{
-        font-weight:600;	
+        font-weight:700;
+		font-size: 22px;
     }
     
     .blueFont{
-        color:#2C5BE3;
+		margin-top:20px;
+        /*color:#2C5BE3;*/
     }
     
     .normalButton{
@@ -47,6 +49,14 @@
         background-color:#111;
         color:#05B9BD;
 		cursor:pointer;
+    }
+    
+    .greyTabButton{
+        padding:10px 12px;
+        background-color:#ccc;
+        color:#111;
+		cursor:auto;
+		border-radius:1px;
     }
 	
 	table, tr, td{
@@ -61,14 +71,15 @@
     var pageIdentifier  =   'Tour';
 </script>
 <div class="content">
-    <table id="containerTable" class="textAlignCenter" align="center" width="100%" border="1" cellspacing="5" cellpadding="5">
+    <table id="containerTable" class="textAlignCenter" align="center" width="100%" border="1" bordercolor="#ccc" cellspacing="5" cellpadding="5">
         <tr>
-            <th width="30%">Departure Points</th>
+            <th width="400px">Departure Points</th>
             <th>&nbsp;</th>
         </tr>
         <tr>
-            <td width="30%">
-                TORRE ARGENTINA
+            <td width="400px">
+            	<span class="greyTabButton hvr-float-shadow">TORRE ARGENTINA</span>
+                <br />
                 <br />
                 Vicolo Nicola De Cesarini, 4 – 00186 Rome
             </td>
@@ -111,8 +122,9 @@
         </tr>
     
         <tr>
-            <td width="30%">
-                PINCIO – VILLA BORGHESE
+            <td width="400px">
+            	<span class="greyTabButton hvr-float-shadow">PINCIO – VILLA BORGHESE</span>
+                <br />
                 <br />
                 Pincio terrace
             </td>
@@ -139,8 +151,9 @@
         </tr>
     
         <tr>
-            <td width="30%">
-                TRASTEVERE
+            <td width="400px">
+            	<span class="greyTabButton hvr-float-shadow">TRASTEVERE</span>
+                <br />
                 <br />
                 Via di San Calisto, 9 – 00153 Rome
             </td>
@@ -167,8 +180,9 @@
         </tr>
     
         <tr>
-            <td width="30%">
-                CIRCUS MAXIMUS
+            <td width="400px">
+            	<span class="greyTabButton hvr-float-shadow">CIRCUS MAXIMUS</span>
+                <br />
                 <br />
                 Via dei Cerchi, 75 - 00186 Rome
             </td>
@@ -187,8 +201,9 @@
         </tr>
     
         <tr>
-            <td width="30%">
-                SAINT PETER
+            <td width="400px">
+            	<span class="greyTabButton hvr-float-shadow">SAINT PETER</span>
+                <br />
                 <br />
                 Via Vespasiano, 11 - 00192 Rome
             </td>
@@ -197,8 +212,8 @@
                     <tr>
                         <td width="250px" align="left"><img class="xxThumbImage" src="../../images/tours/img/10.jpg" /></td>
                         <td>
-                            <div class="boldHeading"></div>
-                            <div class="blueFont textAlignLeft padded">Vatican and the most beautiful squares.</div>
+                            <div class="boldHeading">Vatican and the most beautiful squares.</div>
+                            <div class="blueFont textAlignLeft padded"></div>
                             <div class="normalButton RightFloat hvr-shutter-out-horizontal" tour_id="10">Book Now</div>
                         </td>
                     </tr>
@@ -207,8 +222,9 @@
         </tr>
     
         <tr>
-            <td width="30%">
-                TERMINI
+            <td width="400px">
+            	<span class="greyTabButton hvr-float-shadow">TERMINI</span>
+                <br />
                 <br />
                 At BOX "Tickets Termini", Rome
             </td>
@@ -217,8 +233,8 @@
                     <tr>
                         <td width="250px" align="left"><img class="xxThumbImage" src="../../images/tours/img/11.jpg" /></td>
                         <td>
-                            <div class="boldHeading"></div>
-                            <div class="blueFont textAlignLeft padded">Dolce vita tour.</div>
+                            <div class="boldHeading">Dolce vita tour.</div>
+                            <div class="blueFont textAlignLeft padded"></div>
                             <div class="normalButton RightFloat hvr-shutter-out-horizontal" tour_id="11">Book Now</div>
                         </td>
                     </tr>
@@ -229,7 +245,7 @@
     </table>
     <div class="modalWindow">
        <div id="packageInfoDiv">
-        <a href="#" onclick="cancelBooking()" title="Close" class="modalCloseButton">X</a>
+        <a onclick="cancelBooking()" title="Close" class="modalCloseButton">X</a>
             <table id='planTourDetails'>
                 <tr>
                     <td>
@@ -306,8 +322,8 @@
 		$('.xxThumbImage').wrap('<a></a>');
 		$('#containerTable').find('table').addClass('innerTable');
 		$('.xxThumbImage').closest('a').addClass('hvr-bubble-float-right');
-		$('.normalButton').bind('click', function(){showPackage(this);});
-		$('.blueFont').removeClass('blueFont').closest('td').not('.qouteSpan').addClass('qouteSpan');
+		$('div.normalButton').bind('click', function(){showPackage(this);});
+		$('.blueFont').closest('td').not('.qouteSpan').addClass('qouteSpan');
 		
 	});
 </script>
