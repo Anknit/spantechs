@@ -2,8 +2,13 @@
 	require_once './header.php';
 ?>
 <link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<link href="../../css/moreHome.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="../../../Common/css/hover.css" />
 <style>
+	table.innerTable tr:nth-child(odd){
+/*		background-color:#ddd;		*/
+	}
+	
     td:nth-child(even).borderBottom{
         border-bottom: 1px solid #000;
     }
@@ -47,12 +52,16 @@
 	table, tr, td{
 		padding:5px;
 	}
+	
+	.qouteSpan{
+/*		border-left:none !important;
+*/	}
 </style>
 <script>
     var pageIdentifier  =   'Tour';
 </script>
 <div class="content">
-    <table class="textAlignCenter" align="center" width="100%" border="1" cellspacing="5" cellpadding="5">
+    <table id="containerTable" class="textAlignCenter" align="center" width="100%" border="1" cellspacing="5" cellpadding="5">
         <tr>
             <th width="30%">Departure Points</th>
             <th>&nbsp;</th>
@@ -66,8 +75,8 @@
             <td>
                 <table width="95%" align="center">
                     <tr>
-                        <td class="borderBottom" align="left"><img class="xxThumbImage" src="../../images/tours/img/1.png" /></td>
-                        <td class="borderBottom">
+                        <td width="250px" class="borderBottom" align="left"><img class="xxThumbImage" src="../../images/tours/img/1.png" /></td>
+                        <td class="borderBottom qouteSpan">
                             <div class="boldHeading">Ancient Rome - Colosseum - Capitoline Hill</div>
                             <div class="blueFont textAlignLeft padded">From the Colosseum to the Capitol in this amazing promenade along the roads of the Roman Empire, among circuses and temples as well as gardens and sunlit terraces.</div>
                             <div class="normalButton RightFloat hvr-shutter-out-horizontal" tour_id="1">Book Now</div>
@@ -110,7 +119,7 @@
             <td>
                 <table width="95%" align="center">
                     <tr>
-                        <td class="borderBottom" align="left"><img class="xxThumbImage" src="../../images/tours/img/5.jpg" /></td>
+                        <td width="250px" class="borderBottom" align="left"><img class="xxThumbImage" src="../../images/tours/img/5.jpg" /></td>
                         <td class="borderBottom">
                             <div class="boldHeading">Villa Borghese</div>
                             <div class="blueFont textAlignLeft padded">The most important villa of Rome with its lake (30 min. boat tour) and amazing views from the Pincio terrace across the city.</div>
@@ -138,7 +147,7 @@
             <td>
                 <table width="95%" align="center">
                     <tr>
-                        <td class="borderBottom" align="left"><img class="xxThumbImage" src="../../images/tours/img/7.jpg" /></td>
+                        <td width="250px" class="borderBottom" align="left"><img class="xxThumbImage" src="../../images/tours/img/7.jpg" /></td>
                         <td class="borderBottom">
                             <div class="boldHeading">Trastevere and Janiculum</div>
                             <div class="blueFont textAlignLeft padded">Trastevere is a delightful historic neighbourhood full of charm and history reflected  in its narrow cobbled streets lined by medieval houses.<br />The Janiculum provides one of the best locations for a scenic view of Rome' s innumerable domes and bell towers.</div>
@@ -166,7 +175,7 @@
             <td>
                 <table width="95%" align="center">
                     <tr>
-                        <td align="left"><img class="xxThumbImage" src="../../images/tours/img/9.jpg" /></td>
+                        <td width="250px" align="left"><img class="xxThumbImage" src="../../images/tours/img/9.jpg" /></td>
                         <td>
                             <div class="boldHeading">Appian Way, catacombs and the tomb of Cecilia Metella</div>
                             <div class="blueFont textAlignLeft padded">An unforgettable tour in the beautiful countryside surrounding Rome. The Appian Way was one of the earliest and strategically most important Roman roads of the ancient republic.<br />It is lined with tombs and catacombs, including the famous Crypt of the Popes.</div>
@@ -186,7 +195,7 @@
             <td>
                 <table width="95%" align="center">
                     <tr>
-                        <td align="left"><img class="xxThumbImage" src="../../images/tours/img/10.jpg" /></td>
+                        <td width="250px" align="left"><img class="xxThumbImage" src="../../images/tours/img/10.jpg" /></td>
                         <td>
                             <div class="boldHeading"></div>
                             <div class="blueFont textAlignLeft padded">Vatican and the most beautiful squares.</div>
@@ -206,7 +215,7 @@
             <td>
                 <table width="95%" align="center">
                     <tr>
-                        <td align="left"><img class="xxThumbImage" src="../../images/tours/img/11.jpg" /></td>
+                        <td width="250px" align="left"><img class="xxThumbImage" src="../../images/tours/img/11.jpg" /></td>
                         <td>
                             <div class="boldHeading"></div>
                             <div class="blueFont textAlignLeft padded">Dolce vita tour.</div>
@@ -295,8 +304,11 @@
 <script>
 	$(function(){
 		$('.xxThumbImage').wrap('<a></a>');
+		$('#containerTable').find('table').addClass('innerTable');
 		$('.xxThumbImage').closest('a').addClass('hvr-bubble-float-right');
 		$('.normalButton').bind('click', function(){showPackage(this);});
+		$('.blueFont').removeClass('blueFont').closest('td').not('.qouteSpan').addClass('qouteSpan');
+		
 	});
 </script>
 <?php 
