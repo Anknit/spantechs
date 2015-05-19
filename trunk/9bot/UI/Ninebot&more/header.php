@@ -19,7 +19,7 @@
     <div class="wrapper">
         <div class="header">
                 <div class="logo">
-                        <a href='../../index.html'><img class="logoImg" src="../../images/icons/ninebot.png" alt="NINEBOT"/></a>
+                        <a href='http://www.9botitalia.com'><img class="logoImg" src="../../images/icons/ninebot.png" alt="NINEBOT"/></a>
                 </div>
                 <div class="menu">
                         <ul class="topMenu">

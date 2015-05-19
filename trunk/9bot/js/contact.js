@@ -56,7 +56,7 @@ function initialize() {
 function codeAddress(locNum) {
 	marker[locNum] = new google.maps.Marker({
 		position: new google.maps.LatLng(latArr[locNum],longArr[locNum]),
-		icon:'../../images/icons/9_white_small.png'
+		icon:'../../images/icons/9botInternationalIcon.png'
 	});
 	marker[locNum].setMap(map);
 	 var infowindow = new google.maps.InfoWindow({
