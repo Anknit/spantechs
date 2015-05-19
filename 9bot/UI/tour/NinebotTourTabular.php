@@ -294,8 +294,8 @@
 <script src="../../js/tourpage.js" type="text/javascript"></script>    
 <script>
 	$(function(){
-		$('img').wrap('<a></a>');
-		$('img').closest('a').addClass('hvr-bubble-float-right');
+		$('.xxThumbImage').wrap('<a></a>');
+		$('.xxThumbImage').closest('a').addClass('hvr-bubble-float-right');
 		$('.normalButton').bind('click', function(){showPackage(this);});
 	});
 </script>

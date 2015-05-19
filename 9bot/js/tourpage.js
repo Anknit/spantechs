@@ -57,6 +57,14 @@ tourPackageData	=	{'1':
 						 '905':
 						 	{'info':'Tour with visit to Catacombs - 4 hrs - \u20AC 100.00 ','baseP':0,'perUnit':100}
 						},
+					'10':
+						{'1001':
+							{'info':'Tour with Wine tasting - 2 hrs - \u20AC 50.00 ','baseP':0,'perUnit':50}
+						},
+					'11':
+						{'1101':
+							{'info':'Tour with Wine tasting - 2 hrs - \u20AC 50.00 ','baseP':0,'perUnit':50}
+						},
 					};	
 $(function(){
 	calendar();
