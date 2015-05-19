@@ -4,7 +4,7 @@
 <link href="../../css/style.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="../../../Common/css/hover.css" />
 <style>
-    .borderBottom{
+    td:nth-child(even).borderBottom{
         border-bottom: 1px solid #000;
     }
     
@@ -41,13 +41,18 @@
         padding:7px;
         background-color:#111;
         color:#05B9BD;
+		cursor:pointer;
     }
+	
+	table, tr, td{
+		padding:5px;
+	}
 </style>
 <script>
     var pageIdentifier  =   'Tour';
 </script>
 <div class="content">
-    <table class="textAlignCenter" align="center" width="100%" border="1" cellspacing="0" cellpadding="0">
+    <table class="textAlignCenter" align="center" width="100%" border="1" cellspacing="5" cellpadding="5">
         <tr>
             <th width="30%">Departure Points</th>
             <th>&nbsp;</th>
@@ -289,6 +294,8 @@
 <script src="../../js/tourpage.js" type="text/javascript"></script>    
 <script>
 	$(function(){
+		$('img').wrap('<a></a>');
+		$('img').closest('a').addClass('hvr-bubble-float-right');
 		$('.normalButton').bind('click', function(){showPackage(this);});
 	});
 </script>
