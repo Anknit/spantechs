@@ -46,10 +46,34 @@
 					height:700px;
 				}
 			}
-			@media (min-width: 1900px) {
+			@media (min-width: 1720px) {
+				.jssorSlidesDimensions{
+					width:1720px;
+					height:800px;
+				}
+			}
+			@media (min-width: 1820px) {
+				.jssorSlidesDimensions{
+					width:1800px;
+					height:800px;
+				}
+			}
+			@media (min-width: 1920px) {
 				.jssorSlidesDimensions{
 					width:1898px;
 					height:800px;
+				}
+			}
+			@media (min-width: 3220px) {
+				.jssorSlidesDimensions{
+					width:3198px;
+					height:2000px;
+				}
+			}
+			@media (min-width: 4220px) {
+				.jssorSlidesDimensions{
+					width:4198px;
+					height:3000px;
 				}
 			}
         </style>
