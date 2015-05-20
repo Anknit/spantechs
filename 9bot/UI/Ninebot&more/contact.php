@@ -24,7 +24,7 @@
 						<br />
 						<span> Via di San Calisto 9 Roma, 00153 RM</span>
 						<br />
-						<img src="../../images/icons/phone.png" alt="contactNumber" /><span> +39 3929034927</span>
+						<img src="../../images/icons/phone.png" alt="contactNumber" /><span> +39 39290349274</span>
 						<br />
 						<img src="../../images/icons/mail.png" alt="contactNumber" /><span>Ninebot.servizioclienti@gmail.com</span>
 					</div>
