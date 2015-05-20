@@ -208,37 +208,37 @@
                     </div>
                     <div u="caption" t="*" t2="*" du="800" style="position: absolute;top: 180px; left: 60px;">
                          <h3 class="greenButtonTextInfo">
-                         	20 km/h, 40 km Reichweite und fast 4 PS elektrische Power
+                         	20 KMPH, 30 AUTONOMIA
                          </h3>
                     </div>
                     <div u="caption" t="*" t2="*" du="900" style="position: absolute;top: 220px; left: 60px;">
                          <h3 class="greenButton">
-                         	MODERNES DESIGN
+                         	ELEGANTE
                          </h3>
                     </div>
                     <div u="caption" t="*" t2="*" du="800" style="position: absolute;top: 260px; left: 60px;">
                          <h3 class="greenButtonTextInfo">
-                         	Endlich ein zeitgemäßer Begleiter für den Alltag
+                         	Il Robot per la tua vita quotidiana
                          </h3>
                     </div>
                     <div u="caption" t="*" t2="*" du="900" style="position: absolute;top: 300px; left: 60px;">
                          <h3 class="greenButton">
-                         	EINZIGARTIGES FAHRGEFÜHL
+                         	VIVI SENZA BARRIERE
                          </h3>
                     </div>
                     <div u="caption" t="*" t2="*" du="800" style="position: absolute;top: 340px; left: 60px;">
                          <h3 class="greenButtonTextInfo">
-                         	Erlebe die Freiheit &amp; Grenzenlosigkeit auf 2 Rädern
+                         	La vera libertà su 2 ruote
                          </h3>
                     </div>
                     <div u="caption" t="*" t2="*" du="900" style="position: absolute;top: 380px; left: 60px;">
                          <h3 class="greenButton">
-                         	TOP SERVICE
+                         	OTTIMO SERVIZIO
                          </h3>
                     </div>
                     <div u="caption" t="*" t2="*" du="800" style="position: absolute;top: 420px; left: 60px;">
                          <h3 class="greenButtonTextInfo">
-                         	Pick-Up &amp; Return Service für jeden
+                         	22 Punti Servizio in Italia
                          </h3>
                     </div>
 
