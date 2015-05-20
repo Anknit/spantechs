@@ -41,5 +41,6 @@
 <script type="text/javascript" src='../../js/commonanimate.js'></script>
 <script type="text/javascript" src='../../../Common/Cupertino/jquery-ui.min.js'></script>
 <script type="text/javascript" src='../../js/slider.js'></script>
+<script type="text/javascript" src="http://arrow.scrolltotop.com/arrow86.js"></script>
 </body>
 </html>
