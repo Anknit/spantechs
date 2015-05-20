@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <script src="../../../Common/js/jssor.slider.mini.js" type="text/javascript"></script>
+        <script src="../../../Common/js/jquery.min.js" type="text/javascript"></script>
+        <script>
+            $(function ($) {
+                
+                //Define an array of transition for captions
+                var _CaptionTransitions = [
+                    {$Duration:900,$Rotate:1,$Easing:{$Opacity:$JssorEasing$.$EaseLinear,$Rotate:$JssorEasing$.$EaseInQuad},$Opacity:2},
+                    {$Duration:900,$Zoom:4,$Rotate:1,$Easing:{$Zoom:$JssorEasing$.$EaseInQuad,$Opacity:$JssorEasing$.$EaseLinear,$Rotate:$JssorEasing$.$EaseInQuad},$Opacity:2,$Round:{$Rotate:0.5}},
+                    {$Duration:1200,y:0.5,$Zoom:11,$Rotate:0.2,$Easing:{$Top:$JssorEasing$.$EaseOutCubic,$Zoom:$JssorEasing$.$EaseInCubic},$Opacity:2,$During:{$Top:[0,0.5]}},
+                    {$Duration:1200,y:0.6,$Clip:3,$Easing:$JssorEasing$.$EaseInCubic,$Opacity:2},
+                    
+                ];
+                
+                //Define an array of slideshow transition code
+                var _SlideshowTransitions = [
+                {$Duration:1000,$Delay:80,$Cols:8,$Rows:4,$Opacity:2},
+                {$Duration:1000,y:1,$Easing:$JssorEasing$.$EaseInBounce},
+                {$Duration:1000,$Delay:80,$Cols:8,$Rows:4,$Opacity:2}
+                ];
+                var options = {
+                    $AutoPlay: true,
+                    $ArrowKeyNavigation: true,
+                    $SlideshowOptions: {
+                        $Class: $JssorSlideshowRunner$,
+                        $Transitions: _SlideshowTransitions,
+                        $TransitionsOrder: 1,
+                        $ShowLink: true
+                    },
+
+                    $CaptionSliderOptions: {     //[Optional] Options which specifies how to animate caption
+                        $Class: $JssorCaptionSlider$,   //[Required] Class to create instance to animate caption
+                        $CaptionTransitions: _CaptionTransitions,       //[Required] An array of caption transitions to play caption, see caption transition section at jssor slideshow transition builder
+                        $PlayInMode: 1,    //[Optional] 0 None (no play), 1 Chain (goes after main slide), 3 Chain Flatten (goes after main slide and flatten all caption animations), default value is 1
+                        $PlayOutMode: 3   //[Optional] 0 None (no play), 1 Chain (goes before main slide), 3 Chain Flatten (goes before main slide and flatten all caption animations), default value is 1
+                    },
+                };
+                var jssor_slider1 = new $JssorSlider$('testSlider', options);
+            });
+        </script>        
+    </head>
+    <body>
+        <div id="testSlider" style="position: relative; top: 0px; left: 0px; width: 1200px; height: 600px;">
+            <!-- Slides Container -->
+            <div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 1200px; height: 600px;">
+                <div>
+                    <img u="image" src="../../images/slideAnimation/androidBackGround.jpg" />
+                    <div u="caption" t="*" t2="*" style="position: absolute;top: 65px; right: 225px;">
+                        <span style="color:#fff">
+                            <h2>ALLES UNTER KONTROLLE</h2>
+                            <h3>mit der Smartphone App</h3>
+                        </span>
+                    </div>
+                    <div u="caption" t="*" t2="*" du="3000" style="position: absolute;top: 80px; left: 75px;">
+                        <img src="../../images/slideAnimation/iPhone6Hand.png" />
+                    </div>
+                    <div u="caption" t="*" t2="*" du="3000" style="position: absolute;top: 50px; left: 25px;">
+                        <img src="../../images/slideAnimation/feature-android.png" />
+                    </div>
+                     <div u="caption" t="*" t2="*" du="3000" style="position: absolute;top: 50px; left: 125px;">
+                        <img src="../../images/slideAnimation/feature-ios.png" />
+                    </div>
+                     <div u="caption" t="*" t2="*" du="1000" style="position: absolute;top: 140px; left: 60px; width: 350px;height: 50px;">
+                         <span style="color:#fff">
+                           für IOS
+                            <br />
+                            &nbsp;&nbsp;und für Android
+                         </span>
+                    </div>
+                     <div u="caption" t="*" t2="*" du="3000" style="position: absolute;top: 230px; right: 220px;">
+                         <div>
+                            <span style="color:#fff">ninedroid&nbsp;&nbsp;</span>
+                            <img src="../../images/slideAnimation/9_white.png" width="150" height="auto" />
+                         </div>    
+                    </div>
+                     <div u="caption" t="*" t2="*" du="1000" style="position: absolute;bottom: 100px; right: 55px;">
+                         <span style="color:#fff">per BLUETOOTH verbinden<br />&nbsp;&nbsp;und LOS GEHT'S</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
