@@ -17,6 +17,41 @@
 				font-size:20px;
 				color:#fff;
 			}
+			@media (max-width: 400px) {
+				.jssorSlidesDimensions{
+					display:none;
+				}
+			}
+			@media (min-width: 900px) {
+				.jssorSlidesDimensions{
+					width:880px;
+					height:700px;
+				}
+			}
+			@media (min-width: 1250px) {
+				.jssorSlidesDimensions{
+					width:1250px;
+					height:700px;
+				}
+			}
+			@media (min-width: 1350px) {
+				.jssorSlidesDimensions{
+					width:1340px;
+					height:650px;
+				}
+			}
+			@media (min-width: 1600px) {
+				.jssorSlidesDimensions{
+					width:1595px;
+					height:700px;
+				}
+			}
+			@media (min-width: 1900px) {
+				.jssorSlidesDimensions{
+					width:1898px;
+					height:800px;
+				}
+			}
         </style>
         <script src="../../../Common/js/jssor.slider.mini.js" type="text/javascript"></script>
         <script src="../../../Common/js/jquery.min.js" type="text/javascript"></script>
@@ -79,7 +114,7 @@
         </script>        
     </head>
     <body>
-        <div id="testSlider" style="position: relative; top: 0px; left: 0px; width: 1898px; height: 600px; margin:auto; overflow: hidden;">
+        <div id="testSlider" class="jssorSlidesDimensions" style="position: relative; top: 0px; left: 0px; margin:auto; overflow: hidden;">
  
             <!-- Loading Screen --> 
             <div u="loading" style="position: absolute; top: 0px; left: 0px;">
@@ -94,7 +129,7 @@
             </div> 
 
             <!-- Slides Container -->
-            <div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 1898px; height: 600px;">
+            <div u="slides" class="jssorSlidesDimensions" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px;">
                 <!-- Slide 1 Android connectivity -->
                 <div>
                     <img u="image" src="../../images/slideAnimation/androidBackGround.jpg" />
@@ -245,7 +280,7 @@
                 	<p><b>Ninebot</b> è un nuovo mezzo di trasporto e la perfetta combinazione di design. Per saperne di più!</p>
                 </div>
 	            <div style="margin:auto;">
-	                <input type="button" class="hvr-pulse-grow" value="CLICCA QUI" style="cursor:pointer;width:187px; height:58px; color:#638E1A; background-color:#BDE075; font-size:16px; font-weight:600; margin-top:15px;" onclick="location.href = 'NinebotE.php';" />
+	                <input type="button" class="hvr-pulse-grow" value="CLICCA QUI" style="cursor:pointer;width:187px; height:58px; color:#638E1A; background-color:#BDE075; font-size:16px; font-weight:600; margin-top:15px;" onClick="location.href = 'NinebotE.php';" />
 	            </div>
             </div>
         </div>
