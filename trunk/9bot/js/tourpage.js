@@ -59,11 +59,11 @@ tourPackageData	=	{'1':
 						},
 					'10':
 						{'1001':
-							{'info':'Tour with Wine tasting - 2 hrs - \u20AC 50.00 ','baseP':0,'perUnit':50}
+							{'info':'Vatican and the most beautiful squares - 3 hrs - \u20AC 85.00 ','baseP':0,'perUnit':85}
 						},
 					'11':
 						{'1101':
-							{'info':'Tour with Wine tasting - 2 hrs - \u20AC 50.00 ','baseP':0,'perUnit':50}
+							{'info':'Dolce vita tour - 2 hrs - \u20AC 50.00 ','baseP':0,'perUnit':50}
 						},
 					};	
 $(function(){
