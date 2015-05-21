@@ -159,8 +159,8 @@
                     <img u="image" src="../../images/slideAnimation/androidBackGround.jpg" />
                     <div u="caption" t="*" t2="*" style="position: absolute;top: 65px; right: 225px;">
                         <span style="color:#fff">
-                            <h2>ALLES UNTER KONTROLLE</h2>
-                            <h3>mit der Smartphone App</h3>
+                            <h2>Controllo e Diagnostica</h2>
+                            <h3>con applicazione smartphone</h3>
                         </span>
                     </div>
                     <img u="caption" t="T|IB" t2=B d=400 src="../../images/slideAnimation/iPhone6Hand.png" style="position:absolute;left:75px;top:80px;" />
@@ -169,16 +169,15 @@
                     <img u="caption" t="*" t2="*" d=1050 src="../../images/slideAnimation/9_white.png" width="150" height="auto" style="position:absolute;right:210px;top:230px;" />
                     <div u="caption" t="*" t2="*" du="900" style="position: absolute;top: 140px; left: 60px; width: 350px;height: 50px;">
                          <span style="color:#fff">
-                           für IOS
-                            <br />
-                            &nbsp;&nbsp;und für Android
+                           per IOS
+                            &nbsp;&nbsp;&nbsp;&nbsp;per Android
                          </span>
                     </div>
                     <div u="caption" t="*" t2="*" du="1000" style="position: absolute;top: 410px; right: 380px;">
-                        <span style="color:#fff">ninedroid&nbsp;&nbsp;</span>
+                        <span style="color:#fff;font-size:30px;">NINEDROID&nbsp;&nbsp;</span>
                     </div>
                      <div u="caption" t="*" t2="*" du="1000" style="position: absolute;bottom: 100px; right: 55px;">
-                         <span style="color:#fff">per BLUETOOTH verbinden<br />&nbsp;&nbsp;und LOS GEHT'S</span>
+                         <span style="color:#fff;font-size:30px;">Collegamento tramite Bluetooth</span>
                     </div>
                 </div>
 
@@ -187,12 +186,8 @@
                     <img u="image" src="../../images/slideAnimation/ninebotEBackGround.jpg" />
                     <div u="caption" t="*" t2="*" style="position: absolute;top: 50px; right: 155px;">
                         <span style="color:#fff">
-							<span style="font-weight: 300; font-family: 'titillium web'; font-size: 60.015625px; color: rgb(160, 206, 78);">
-                            	Der Ninebot E
-							</span>
-                            <br />
-							<span style="font-weight: 500; font-family: 'titillium web'; font-size: 34.5078125px; color: rgb(255, 255, 255);">
-                            	auch mit Finanzierung
+							<span style="font-weight: 400; font-family: 'titillium web'; font-size: 60.015625px; color: rgb(160, 206, 78);">
+                            	Ninebot E
 							</span>
 						</span>
                     </div>
