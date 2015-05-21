@@ -1,0 +1,25 @@
+#menu .submenu {
+	display: none;
+	position: absolute;
+	width:330px;
+	list-style-type: none;
+	margin: 0;
+	border:solid 1px #eeeeee;
+	z-index:5;
+	padding:0;
+	background-color: #F58635;
+}
+
+#menu li:hover .submenu 
+{
+    display: block;
+}
+
+#menu .submenu li a:hover {
+    
+}
+#menu .submenu li {
+    display: block;
+    border-bottom: solid 1px #eeeeee;
+    margin:0;
+}
