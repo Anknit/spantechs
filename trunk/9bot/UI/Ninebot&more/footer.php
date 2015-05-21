@@ -41,6 +41,9 @@
 <script type="text/javascript" src='../../js/commonanimate.js'></script>
 <script type="text/javascript" src='../../../Common/Cupertino/jquery-ui.min.js'></script>
 <script type="text/javascript" src='../../js/slider.js'></script>
-<script type="text/javascript" src="http://arrow.scrolltotop.com/arrow86.js"></script>
+<script>
+	scrollToTopButtonImage	=	'<img src="../../../Common/images/arrowUpScrollToTop.png" width="35px" style="margin-right:50px; margin-bottom:50px" />';
+</script>
+<script type="text/javascript" src="../../../Common/js/scrollToTop.js"></script>
 </body>
 </html>
