@@ -28,6 +28,12 @@
 					height:650px;
 				}
 			}
+			@media (min-width: 1260px) {
+				.jssorSlidesDimensions{
+					width:1260px;
+					height:650px;
+				}
+			}
 			@media (min-width: 1300px) {
 				.jssorSlidesDimensions{
 					width:1290px;
