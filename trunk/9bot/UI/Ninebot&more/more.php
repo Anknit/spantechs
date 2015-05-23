@@ -1,6 +1,7 @@
 <?php require_once 'header.php'; ?>
 <link href="../../css/moreHome.css" rel="stylesheet" />
 <link href="../../css/cubeAnimation.css" rel="stylesheet" />
+<link href="../../../Common/css/cssForJssorSliders.css" rel="stylesheet" />
 <title>Home</title>
 <div class="content">
 	<div id="container1">
@@ -16,71 +17,6 @@
 			h3.greenButtonTextInfo{
 				font-size:20px;
 				color:#fff;
-			}
-			@media (max-width: 400px) {
-				.jssorSlidesDimensions{
-					display:none;
-				}
-			}
-			@media (min-width: 900px) {
-				.jssorSlidesDimensions{
-					width:880px;
-					height:650px;
-				}
-			}
-			@media (min-width: 1260px) {
-				.jssorSlidesDimensions{
-					width:1260px;
-					height:650px;
-				}
-			}
-			@media (min-width: 1300px) {
-				.jssorSlidesDimensions{
-					width:1290px;
-					height:650px;
-				}
-			}
-			@media (min-width: 1350px) {
-				.jssorSlidesDimensions{
-					width:1340px;
-					height:650px;
-				}
-			}
-			@media (min-width: 1600px) {
-				.jssorSlidesDimensions{
-					width:1595px;
-					height:700px;
-				}
-			}
-			@media (min-width: 1720px) {
-				.jssorSlidesDimensions{
-					width:1720px;
-					height:800px;
-				}
-			}
-			@media (min-width: 1820px) {
-				.jssorSlidesDimensions{
-					width:1800px;
-					height:800px;
-				}
-			}
-			@media (min-width: 1920px) {
-				.jssorSlidesDimensions{
-					width:1898px;
-					height:800px;
-				}
-			}
-			@media (min-width: 3220px) {
-				.jssorSlidesDimensions{
-					width:3198px;
-					height:2000px;
-				}
-			}
-			@media (min-width: 4220px) {
-				.jssorSlidesDimensions{
-					width:4198px;
-					height:3000px;
-				}
 			}
         </style>
         <script src="../../../Common/js/jssor.slider.mini.js" type="text/javascript"></script>
