@@ -30,6 +30,8 @@
                     {$Duration:900,$Zoom:4,$Rotate:1,$Easing:{$Zoom:$JssorEasing$.$EaseInQuad,$Opacity:$JssorEasing$.$EaseLinear,$Rotate:$JssorEasing$.$EaseInQuad},$Opacity:2,$Round:{$Rotate:0.5}},
                     {$Duration:1200,y:0.5,$Zoom:11,$Rotate:0.2,$Easing:{$Top:$JssorEasing$.$EaseOutCubic,$Zoom:$JssorEasing$.$EaseInCubic},$Opacity:2,$During:{$Top:[0,0.5]}},
                     {$Duration:1200,y:0.6,$Clip:3,$Easing:$JssorEasing$.$EaseInCubic,$Opacity:2},
+                    {$Duration:1200,x:0.6,$Zoom:3,$Rotate:-0.3,$Easing:{$Left:$JssorEasing$.$EaseInCubic,$Rotate:$JssorEasing$.$EaseInBack},$Opacity:2},
+                    {$Duration:1200,x:-0.5,$Zoom:11,$Easing:{$Left:$JssorEasing$.$EaseOutJump,$Zoom:$JssorEasing$.$EaseInCubic,$Opacity:$JssorEasing$.$EaseLinear},$Opacity:2,$Round:{$Zoom:0.5}},
                     
                 ];
 				_CaptionTransitions["B"] = { $Duration: 900, y: -0.6, $Easing: { $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
@@ -38,9 +40,12 @@
                 
                 //Define an array of slideshow transition code
                 var _SlideshowTransitions = [
-                {$Duration:1000,$Delay:80,$Cols:8,$Rows:4,$Opacity:2},
-                {$Duration:1000,y:1,$Easing:$JssorEasing$.$EaseInBounce},
-                {$Duration:1000,$Delay:80,$Cols:8,$Rows:4,$Opacity:2}
+                    {$Duration:1000,$Delay:80,$Cols:8,$Rows:4,$Opacity:2},
+                    {$Duration:1200,x:1,$Delay:40,$Cols:6,$Formation:$JssorSlideshowFormations$.$FormationStraight,$Easing:{$Left:$JssorEasing$.$EaseInOutQuart,$Opacity:$JssorEasing$.$EaseLinear},$Opacity:2,$ZIndex:-10,$Brother:{$Duration:1200,x:1,$Delay:40,$Cols:6,$Formation:$JssorSlideshowFormations$.$FormationStraight,$Easing:{$Top:$JssorEasing$.$EaseInOutQuart,$Opacity:$JssorEasing$.$EaseLinear},$Opacity:2,$ZIndex:-10,$Shift:-100}},
+                    {$Duration:1200,y:-1,$Easing:{$Top:$JssorEasing$.$EaseInOutQuart,$Opacity:$JssorEasing$.$EaseLinear},$Opacity:2,$ZIndex:-10,$Brother:{$Duration:1200,y:-1,$Easing:{$Top:$JssorEasing$.$EaseInOutQuart,$Opacity:$JssorEasing$.$EaseLinear},$Opacity:2,$ZIndex:-10,$Shift:-100}},
+                    {$Duration:1000,$Delay:80,$Cols:8,$Rows:4,$Opacity:2},
+                    {$Duration:1000,y:1,$Easing:$JssorEasing$.$EaseInBounce},
+                    {$Duration:1000,$Delay:80,$Cols:8,$Rows:4,$Opacity:2}
                 ];
                 var options = {
 					$AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
@@ -61,6 +66,13 @@
 					$PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
 					$DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
 
+                    $SlideshowOptions: {                                //[Optional] Options to specify and enable slideshow or not
+                        $Class: $JssorSlideshowRunner$,                 //[Required] Class to create instance of slideshow
+                        $Transitions: _SlideshowTransitions,            //[Required] An array of slideshow transitions to play slideshow
+                        $TransitionsOrder: 1,                           //[Optional] The way to choose transition to play slide, 1 Sequence, 0 Random
+                        $ShowLink: true                                    //[Optional] Whether to bring slide link on top of the slider when slideshow is running, default value is false
+                    },
+                    
                     $CaptionSliderOptions: {     //[Optional] Options which specifies how to animate caption
                         $Class: $JssorCaptionSlider$,   //[Required] Class to create instance to animate caption
                         $CaptionTransitions: _CaptionTransitions,       //[Required] An array of caption transitions to play caption, see caption transition section at jssor slideshow transition builder
@@ -106,7 +118,7 @@
                         </span>
                     </div>
                     <img u="caption" t="T|IB" t2=B d=400 src="../../images/slideAnimation/iPhone6Hand.png" style="position:absolute;left:75px;top:80px;" />
-                    <img u="caption" t="RTTL|BR" d=550 src="../../images/slideAnimation/feature-android.png" style="position:absolute;left:25px;top:50px;" />
+                    <img u="caption" t="*" d=550 src="../../images/slideAnimation/feature-android.png" style="position:absolute;left:25px;top:50px;" />
                     <img u="caption" t="*" t2="*" d=700 src="../../images/slideAnimation/feature-ios.png" style="position:absolute;left:125px;top:50px;" />
                     <img u="caption" t="*" t2="*" d=1050 src="../../images/slideAnimation/9_white.png" width="150" height="auto" style="position:absolute;right:210px;top:230px;" />
                     <div u="caption" t="*" t2="*" du="900" style="position: absolute;top: 140px; left: 60px; width: 350px;height: 50px;">
@@ -133,7 +145,7 @@
 							</span>
 						</span>
                     </div>
-                    <img u="caption" t="T|IB" t2=B d=400 src="../../images/slideAnimation/nineBotE.png" style="position:absolute;right:275px;bottom: 100px;" width="300px" height="auto" />
+                    <img u="caption" t="*" t2=B d=400 src="../../images/slideAnimation/nineBotE.png" style="position:absolute;right:275px;bottom: 100px;" width="300px" height="auto" />
 <!--                    <img u="caption" t="RTTL|BR" d=550 src="../../images/slideAnimation/feature-android.png" style="position:absolute;left:25px;top:50px;" />
                     <img u="caption" t="*" t2="*" d=700 src="../../images/slideAnimation/feature-ios.png" style="position:absolute;left:125px;top:50px;" />
                     <img u="caption" t="*" t2="*" d=1050 src="../../images/slideAnimation/9_white.png" width="150" height="auto" style="position:absolute;right:210px;top:230px;" />
