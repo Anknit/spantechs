@@ -116,6 +116,7 @@ var showPackage	=	function(buttonElement){
 
 var confirmBooking	=	function(){
 	dateSelected	=	$('#selectedDateForTour').val().trim();
+    if($('#PersonCount').val())
 	if(totalPrice == 0 || totalPrice == ''){
 		alert('Please select your package and number of people');
 		return false;

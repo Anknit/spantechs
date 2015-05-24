@@ -261,7 +261,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <input type="number" name="PersonCount" id="PersonCount" class="bookingSelectBox" min="1" max="7" disabled="disabled" placeholder="Tour Members" form="payPalPurchaseForm" onKeyUp="if(this.value > 7){this.value = 7;}"/>
+                        <input type="number" name="PersonCount" id="PersonCount" class="bookingSelectBox" min="1" max="7" disabled="disabled" placeholder="Tour Members" form="payPalPurchaseForm" onKeyUp="checkNum(this); if(this.value > 7){this.value = 7;}"/>
                     </td>
                 </tr>
                 <tr>

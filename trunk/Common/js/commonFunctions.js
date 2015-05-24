@@ -1417,5 +1417,11 @@ $(function(){
             setInterval(FuncSwitchImages, 5000);
         });
 	$('form').keypress(stopRKey);
+
+    if(window.Alert == undefined || window.alert == null){
+        Alert = function(msg){
+            alert(msg);
+        };
+    }
 });
 
