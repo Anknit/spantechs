@@ -37,6 +37,7 @@
 		margin: auto;
 		padding:5px;
 		text-align:justify;
+        visibility: hidden;
 	}
 	.footerFloatDiv:last-child{
 		text-align:center;
