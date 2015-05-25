@@ -60,7 +60,7 @@
 		//$nvpstr = $nvpstr . "&LOGOIMG=" . $companyLogoURL;		
 		$nvpstr = $nvpstr . "&HDRIMG=" . 'http://9botitalia.com/9bot/images/icons/ninebot.png';
 		//$nvpstr = $nvpstr . "&LOGOIMG=" . 'http://www.ufomoviez.com/Images/logo.jpg';
-		$nvpstr = $nvpstr . "&LOGOIMG=" .  'http://9botitalia.com/9bot/images/icons/ninebot.png'; 
+		$nvpstr = $nvpstr . "&LOGOIMG=" .  'http://9botitalia.com/9bot/images/icons/ninebot_paypal.png'; 
 		
 		
 		$nvpstr = $nvpstr . "&LANDINGPAGE=" . 'Billing';		
