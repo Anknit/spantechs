@@ -8,7 +8,7 @@ if($ack == 'SUCCESS' || $ack == 'SUCCESSWITHWARNING')
 	$dataArray['selectedDate_Tour']				=	$_SESSION['selectedDateForTour'];
 	$dataArray['bookingUserEmail']				=	$_SESSION['bookingUserEmail'];
 	$dataArray['bookingUserPhone']				=	$_SESSION['bookingUserPhone'];
-	$dataArray['selectedPackageDescription']   	=	$_POST['selectedPackageDescription'];
+	$dataArray['selectedPackageDescription']   	=	$_SESSION['selectedPackageDescription'];
 	$dataArray['personCount']					=	$_SESSION['PersonCount'];
 	$dataArray['transactionId']					=	$resArray['PAYMENTINFO_0_TRANSACTIONID'];
 	$dataArray['orderTime']						=	str_replace("Z","",str_replace("T"," ",$resArray['PAYMENTINFO_0_ORDERTIME'])). ' UTC';
