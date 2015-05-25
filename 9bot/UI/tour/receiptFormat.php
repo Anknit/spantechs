@@ -25,9 +25,12 @@
     </span>
     <div style="width:100%;">
     	<div class="fontFormat" style="width:100%;margin:auto;left:0;right:0;text-align:center">Date:  <span class="dataFontFormat"><?php echo date("Y-m-d").' UTC';?></span></div>
-    	<div class="fontFormat" style="text-align:left;float:left">To:  <u><span class="dataFontFormat"><?php echo $dataArray['bookingUserName'];?></span></u></div>
-    	<div class="fontFormat" style="text-align:left;float:left">Email:  <u><span class="dataFontFormat"><?php echo $dataArray['bookingUserEmail'];?></span></u></div>
-    	<div class="fontFormat" style="text-align:left;float:left">Phone:  <u><span class="dataFontFormat"><?php echo $dataArray['bookingUserPhone'];?></span></u></div>
+        <br />
+        <br />
+        <br />
+    	<div class="fontFormat" style="text-align:left;">To:  <u><span class="dataFontFormat"><?php echo $dataArray['bookingUserName'];?></span></u></div>
+    	<div class="fontFormat" style="text-align:left;">Email:  <u><span class="dataFontFormat"><?php echo $dataArray['bookingUserEmail'];?></span></u></div>
+    	<div class="fontFormat" style="text-align:left;">Phone:  <u><span class="dataFontFormat"><?php echo $dataArray['bookingUserPhone'];?></span></u></div>
         <br />
         <br />
         <br />
@@ -41,10 +44,10 @@
                 	<th>Total</th>
                 </tr>
             	<tr height="100px;">
-                	<td><?php echo $dataArray['packageSelect'];?></th>
-                	<td><?php echo $dataArray['personCount'];?></th>
-                	<td><?php echo $dataArray['amountPaid'];?></th>
-                	<td><?php echo $dataArray['amountPaid'];?></th>
+                	<td align="center"><?php echo $dataArray['packageSelect'];?></th>
+                	<td align="center"><?php echo $dataArray['personCount'];?></th>
+                	<td align="center"><?php echo $dataArray['amountPaid'];?></th>
+                	<td align="center"><?php echo $dataArray['amountPaid'];?></th>
                 </tr>
             	<tr>
                 	<td colspan="3" align="right">Grand Total:&nbsp;&nbsp; </th>
