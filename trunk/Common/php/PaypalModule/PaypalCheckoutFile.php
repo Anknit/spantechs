@@ -10,6 +10,7 @@ if(isset($_POST['paypal_payment_amount']))
 	$_SESSION['bookingUserEmail']   = $_POST['bookingUserEmail'];
 	$_SESSION['bookingUserPhone']   = $_POST['bookingUserPhone'];
 	$_SESSION['packageSelect']   = $_POST['packageSelect'];
+	$_SESSION['selectedPackageDescription']   = $_POST['selectedPackageDescription'];
 	$_SESSION['PersonCount']   = $_POST['PersonCount'];
 
 	$paymentAmount	=	$_SESSION['paypal_payment_amount'];

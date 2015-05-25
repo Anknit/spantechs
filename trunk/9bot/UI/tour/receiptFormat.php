@@ -44,7 +44,7 @@
                 	<th>Total</th>
                 </tr>
             	<tr height="100px;">
-                	<td align="center"><?php echo $dataArray['packageSelect'];?></th>
+                	<td align="center"><?php echo $dataArray['selectedPackageDescription'];?></th>
                 	<td align="center"><?php echo $dataArray['personCount'];?></th>
                 	<td align="center"><?php echo $dataArray['amountPaid'];?></th>
                 	<td align="center"><?php echo $dataArray['amountPaid'];?></th>
