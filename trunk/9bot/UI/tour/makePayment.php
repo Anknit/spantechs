@@ -18,7 +18,7 @@ if(isset($_POST['payment_Confirm']) && $_POST['payment_Confirm'] != '' && $_POST
 <br />
 <div align ="center">
     <button id='getPayPalDetails' onclick='window.print();'>Print</button>
-    <button id='' onclick='location.href = "../../index.html";'>Go back to 9botitalia.com</button>
+    <button id='' onclick='location.href = "./index.php";'>Go back to ninebottours.com</button>
 </div>
 <?php 
 }
