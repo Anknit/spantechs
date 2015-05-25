@@ -83,7 +83,7 @@
   width: 100%;
   text-align: center;
   position:absolute;
-  z-index:150;
+  z-index:8;
   opacity:0.75;
 }
 .textButtonBig:hover{
