@@ -159,9 +159,11 @@ var setPackageInfo	=	function(tourId){
 var bindBookingFunctions	=	function(){
 	$('#packageSelect').on('change',function(){
 		var selectedoptionValue = $(this).val();
-		var selectedTour	=	selectedoptionValue.split('|')[0];
+		var selectedTour		=	selectedoptionValue.split('|')[0];
+		var selectedPackageText	=	$('#packageSelect option:selected').text();
 		var selectedPackage	=	selectedoptionValue.split('|')[1];
 		if(selectedoptionValue!= '0'){
+			$('#selectedPackageDescription').val(selectedPackageText);
 			$("#PersonCount")[0].disabled = false;
 			basePrice		=	tourPackageData[selectedTour][selectedPackage]['baseP'];
 			perUnitPrice	=	tourPackageData[selectedTour][selectedPackage]['perUnit'];

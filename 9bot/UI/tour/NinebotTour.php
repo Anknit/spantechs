@@ -252,6 +252,7 @@
                         <select name="packageSelect" id="packageSelect" class="bookingSelectBox" form="payPalPurchaseForm">
                             <option value="0">Select Package</option>
                         </select>
+                        <input type="hidden" name="selectedPackageDescription" id="selectedPackageDescription" />
                     </td>
                 </tr>
                 <tr>
