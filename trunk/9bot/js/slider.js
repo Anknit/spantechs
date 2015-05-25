@@ -27,10 +27,10 @@ var slideImg = function(dir){
 		},1000);
 		sliderTimeoutFunction = setTimeout(startSlider,10000);
 	}
-}
+};
 var startSlider	=	function(){
 	slideImg(1);
-}
+};
 $(function(){
 	startSlider();
 });
