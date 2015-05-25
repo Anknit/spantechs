@@ -1,9 +1,17 @@
 <?php
+
+function getReceiptFormat($dataArray){
+	ob_start();
+	require_once("receiptFormat.php");
+	$html = ob_get_contents();
+	ob_clean();
+	return $html;
+}
+
 if(isset($_POST['payment_Confirm']) && $_POST['payment_Confirm'] != '' && $_POST['payment_Confirm'] == 'Confirm'){
 	require_once '../../../Common/php/PaypalModule/PaypalConfirm.php';
-	if(isset($str)) {
-		echo $str;
-	}
+	$str	=	getReceiptFormat($dataArray);
+	echo $str;
 	unset($_SESSION);
 	//session_start();
 ?>
