@@ -169,4 +169,6 @@
    	.workProgressContainer img{
    		width:100%;
    	}
-	
+	div#topcontrol	{
+		z-index:18001;
+	}
