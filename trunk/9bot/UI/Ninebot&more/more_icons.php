@@ -1,6 +1,6 @@
 ﻿<?php require_once 'header.php'; ?>
 <link href="home.css.css" rel="stylesheet" />
-<title>Home</title>
+<title>9bot italia | Ninebot italia | Ninebot.com - Distributore Ufficiale per l'Italia dei Prodotti Ninebot</title>
 		<div class="content">
 			<div id="main" class="clearfix width-100" style="padding-left:20px;padding-right:20px; font-size:13px">
 		<div class="avada-row" style="max-width:100%;">	<div id="content" class="full-width">

@@ -2,7 +2,7 @@
 <link href="../../css/moreHome.css" rel="stylesheet" />
 <link href="../../css/cubeAnimation.css" rel="stylesheet" />
 <link href="../../../Common/css/cssForJssorSliders.css" rel="stylesheet" />
-<title>Home</title>
+<title>9bot italia | Ninebot italia | Ninebot.com - Distributore Ufficiale per l'Italia dei Prodotti Ninebot</title>
 <div class="content">
 	<div id="container1">
         <style>
