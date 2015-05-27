@@ -1,0 +1,32 @@
+<html lang="en" class="no-js">
+   <head>
+        <style>
+            body {
+                font-family: 'Lato', Calibri, Arial, sans-serif;
+                background: #fff;
+            }        
+        </style>
+		<link rel="stylesheet" type="text/css" href="css/sequenceLetters.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	</head>
+	<body>
+        <div class="os-phrases" id="os-phrases">
+            <h2>9botitalia.com</h2>
+            <h2>official partner of ninebot.com</h2>
+            <h2>Distributore Ufficiale per</h2>
+            <h2>l'Italia dei Prodotti Ninebot</h2>
+        </div>
+		<script>
+			$(document).ready(function() {
+				$("#os-phrases > h2").lettering('words').children("span").lettering().children("span").lettering(); 
+                setTimeout(postAnimationAction, 20000);
+			})
+            postAnimationAction =   function(){
+                $('#os-phrases').remove();
+                $('link').remove();
+            };
+		</script>
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/jquery.lettering.js"></script>
+	</body>
+</html>
