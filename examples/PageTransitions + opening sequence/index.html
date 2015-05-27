@@ -7,11 +7,68 @@
             color: #333;
             background: #fff;
             overflow: hidden;
+            margin: 0;
+        }
+        .bodyBackground{
             background-image: url(images/nuovo.jpg);
             background-repeat: no-repeat;
             background-size: cover;
-            margin: 0;
-        }        
+        }
+            .menuPhotoIcon{
+                width: 220px;
+                height: auto;
+                transition: all 1s;
+                border: 1px solid #ccc;
+            }
+            
+        .menuContainer{
+            width: 300px;
+            float: left;
+        }
+        
+            .menuPhotoIcon:hover{
+                width: 280px;
+                box-shadow: 0px 0px 1px 1px #000;
+                border-right: 3px solid black;
+            }
+            
+            .limitWidth{
+                max-height: 100%;
+                width: 100%;
+            }
+            
+            .darkBlueCol{
+                background-color: #166ba2
+            }
+            .lightBlueCol{
+                background-color: #1691be
+            }
+            .darkYellowCol{
+                background-color: #d06503
+            }
+            .lightYellowCol{
+                background-color: #e9931a
+            }
+            .darkGreyCol{
+                background-color: #152836
+            }
+            .lightGreyCol{
+                background-color: #1b3647
+            }
+        .newsSect{
+            height: 100%;
+            float: left;
+            min-width: 400px;
+            width: 75%;
+            background: #fff;
+            
+        }
+        .newsSect:hover{
+            opacity: 0.8;
+        }
+        .pt-page{
+            overflow: auto !important;
+        }
     </style>
 		<link rel="stylesheet" type="text/css" href="css/pageTransition.css" />
 		<link rel="stylesheet" type="text/css" href="css/animations.css" />
@@ -34,12 +91,30 @@
                         setTimeout(postAnimationAction, 20200);
                     })
                     postAnimationAction =   function(){
-                        TurnOnNextPageWithTransition(68);
+                        $('body').addClass('bodyBackground');
+                        TurnOnNextPageWithTransition(64);
                     };
                 </script>
             </div>
 			<div class="pt-page">
-			    <h1><span>A collection of</span><strong>Page</strong> Transitions</h1>
+               <div class="menuContainer">
+                    <div class="menuPhotoIcon lightGreyCol">
+                        <img src="images1/ninebot_more.png" class="limitWidth" />
+                    </div>
+                    <div class="menuPhotoIcon lightGreyCol">
+                        <img src="images1/tour_rent.png" class="limitWidth" />
+                    </div>
+                    <div class="menuPhotoIcon lightGreyCol">
+                        <img src="images1/ninebot_one.png" class="limitWidth" />
+                    </div>
+                    <div class="menuPhotoIcon lightGreyCol">
+                        <img src="images1/ninebot_stores.png" class="limitWidth" />
+                    </div>
+                    <div class="menuPhotoIcon lightGreyCol">
+                        <img src="images1/about_us.png" class="limitWidth" />
+                    </div>
+                </div>
+                <div class="newsSect"></div>
             </div>
 		</div>
 		<script src="js/modernizr.custom.js"></script>
