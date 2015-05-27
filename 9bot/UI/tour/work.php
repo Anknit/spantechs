@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Coming Soon</title>
+    <title>9bot italia | Ninebot italia | Ninebot.com - Distributore Ufficiale per l'Italia dei Prodotti Ninebot</title>
 	<script src="../../../Common/js/jquery.min.js" type="text/javascript"></script>
     <script src="js/jsIncluders.js" type="text/javascript"></script>
     <style>
