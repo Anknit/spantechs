@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+    <style>
+        body {
+            font-family: 'Lato', Calibri, Arial, sans-serif;
+            color: #333;
+            background: #fff;
+            overflow: hidden;
+            background-image: url(images/nuovo.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+        }        
+    </style>
+		<link rel="stylesheet" type="text/css" href="css/pageTransition.css" />
+		<link rel="stylesheet" type="text/css" href="css/animations.css" />
+		<link rel="stylesheet" type="text/css" href="css/sequenceLetters.css" />
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	</head>
+	<body>	
+		<div id="pt-main" class="pt-perspective">
+			<div class="pt-page">
+                <div class="os-phrases" id="os-phrases">
+                    <h2>9botitalia.com</h2>
+                    <h2>official partner of ninebot.com</h2>
+                    <h2>Distributore Ufficiale per</h2>
+                    <h2>l'Italia dei Prodotti Ninebot</h2>
+                </div>
+                <script>
+                    $(document).ready(function() {
+                        $("#os-phrases > h2").lettering('words').children("span").lettering().children("span").lettering(); 
+                        setTimeout(postAnimationAction, 20200);
+                    })
+                    postAnimationAction =   function(){
+                        TurnOnNextPageWithTransition(68);
+                    };
+                </script>
+            </div>
+			<div class="pt-page">
+			    <h1><span>A collection of</span><strong>Page</strong> Transitions</h1>
+            </div>
+		</div>
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/jquery.lettering.js"></script>
+		<script src="js/pagetransitions.js"></script>
+	</body>
+</html>
