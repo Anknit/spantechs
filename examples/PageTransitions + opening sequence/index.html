@@ -26,53 +26,67 @@
             float: left;
         }
         
-            .menuPhotoIcon:hover{
-                width: 280px;
-                box-shadow: 0px 0px 1px 1px #000;
-                border-right: 3px solid black;
-            }
-            
-            .limitWidth{
-                max-height: 100%;
-                width: 100%;
-            }
-            
-            .darkBlueCol{
-                background-color: #166ba2
-            }
-            .lightBlueCol{
-                background-color: #1691be
-            }
-            .darkYellowCol{
-                background-color: #d06503
-            }
-            .lightYellowCol{
-                background-color: #e9931a
-            }
-            .darkGreyCol{
-                background-color: #152836
-            }
-            .lightGreyCol{
-                background-color: #1b3647
-            }
-        .newsSect{
-            height: 100%;
-            float: left;
-            min-width: 400px;
-            width: 75%;
-            background: #fff;
-            
-        }
-        .newsSect:hover{
-            opacity: 0.8;
-        }
-        .pt-page{
-            overflow: auto !important;
-        }
+		.menuPhotoIcon:hover{
+			width: 280px;
+			box-shadow: 0px 0px 1px 1px #000;
+			border-right: 3px solid black;
+		}
+		
+		.limitWidth{
+			max-height: 100%;
+			width: 100%;
+		}
+		
+		.darkBlueCol{
+			background-color: #166ba2
+		}
+		.lightBlueCol{
+			background-color: #1691be
+		}
+		.darkYellowCol{
+			background-color: #d06503
+		}
+		.lightYellowCol{
+			background-color: #e9931a
+		}
+		.darkGreyCol{
+			background-color: #152836
+		}
+		.lightGreyCol{
+			background-color: #1b3647
+		}
+		.newsSect{
+			height: 100%;
+			float: left;
+			min-width: 400px;
+			width: 75%;
+			background: #fff;
+			
+		}
+		.newsSect:hover{
+			opacity: 0.8;
+		}
+		.pt-page{
+			overflow: auto !important;
+		}
+		.greyTabButton {
+		  padding: 10px 12px;
+		  background-color: #ccc;
+		  color: #111;
+		  cursor: auto;
+		  bottom: -90%;
+		  text-align: center;
+		  text-decoration: none !important;
+		  margin: auto;
+		  width: 160px;
+		  display: block !important;
+		  box-shadow: 6px 3px 10px #ccc !important;
+		}
     </style>
 		<link rel="stylesheet" type="text/css" href="css/pageTransition.css" />
 		<link rel="stylesheet" type="text/css" href="css/animations.css" />
 		<link rel="stylesheet" type="text/css" href="css/sequenceLetters.css" />
+		<link rel="stylesheet" type="text/css" href="css/hover.css" />
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	</head>
@@ -88,15 +102,21 @@
                 <script>
                     $(document).ready(function() {
                         $("#os-phrases > h2").lettering('words').children("span").lettering().children("span").lettering(); 
-                        setTimeout(postAnimationAction, 20200);
-                    })
+                        showHomePageTimer	=	setTimeout(postAnimationAction, 20200);
+						$('#skipToMainContent').on('click', function(){
+							clearTimeout(showHomePageTimer);
+							postAnimationAction();
+						});
+                    });
                     postAnimationAction =   function(){
                         $('body').addClass('bodyBackground');
+						$('#homePage').css('display', 'block');
                         TurnOnNextPageWithTransition(64);
                     };
                 </script>
+                <a href="#" class="greyTabButton hvr-float-shadow" id="skipToMainContent">SKIP TO MAIN CONTENT</a>
             </div>
-			<div class="pt-page">
+			<div id="homePage" class="pt-page" style="display:none;">
                <div class="menuContainer">
                     <div class="menuPhotoIcon lightGreyCol">
                         <img src="images/ninebot_more.png" class="limitWidth" />
