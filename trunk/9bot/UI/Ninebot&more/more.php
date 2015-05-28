@@ -92,7 +92,6 @@
     </head>
     <body>
         <div id="testSlider" class="jssorSlidesDimensions" style="position: relative; top: 0px; left: 0px; margin:auto; overflow: hidden;">
- 
             <!-- Loading Screen --> 
             <div u="loading" style="position: absolute; top: 0px; left: 0px;">
                 <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
@@ -104,7 +103,6 @@
                     top: 0px; left: 0px;width: 100%;height:100%;">
                 </div> 
             </div> 
-
             <!-- Slides Container -->
             <div u="slides" class="jssorSlidesDimensions" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px;">
                 <!-- Slide 1 Android connectivity -->
@@ -131,7 +129,7 @@
                     </div>
                      <div u="caption" t="*" t2="*" du="1000" style="position: absolute;bottom: 100px; right: 55px;">
                          <span style="color:#fff;font-size:30px;">Collegamento tramite Bluetooth</span>
-                    </div>
+                     </div>
                 </div>
 
                 <!-- Slide 2 nineBotE features -->
@@ -189,42 +187,40 @@
                          	22 Punti Servizio in Italia
                          </h3>
                     </div>
-
                 </div>
-
-        <style>
-            /* jssor slider arrow navigator skin 20 css */
-            /*
-            .jssora20l                  (normal)
-            .jssora20r                  (normal)
-            .jssora20l:hover            (normal mouseover)
-            .jssora20r:hover            (normal mouseover)
-            .jssora20l.jssora20ldn      (mousedown)
-            .jssora20r.jssora20rdn      (mousedown)
-            */
-            .jssora20l, .jssora20r {
-                display: block;
-                position: absolute;
-                /* size of arrow element */
-                width: 55px;
-                height: 55px;
-                cursor: pointer;
-                background: url(../../../Common/images/a20.png) no-repeat;
-                overflow: hidden;
-            }
-            .jssora20l { background-position: -3px -33px; }
-            .jssora20r { background-position: -63px -33px; }
-            .jssora20l:hover { background-position: -123px -33px; }
-            .jssora20r:hover { background-position: -183px -33px; }
-            .jssora20l.jssora20ldn { background-position: -243px -33px; }
-            .jssora20r.jssora20rdn { background-position: -303px -33px; }
-        </style>
-        <!-- Arrow Left -->
-        <span u="arrowleft" class="jssora20l" style="top: 243px; left: 8px;">
-        </span>
-        <!-- Arrow Right -->
-        <span u="arrowright" class="jssora20r" style="top: 243px; right: 8px;">
-        </span>
+				<style>
+                    /* jssor slider arrow navigator skin 20 css */
+                    /*
+                    .jssora20l                  (normal)
+                    .jssora20r                  (normal)
+                    .jssora20l:hover            (normal mouseover)
+                    .jssora20r:hover            (normal mouseover)
+                    .jssora20l.jssora20ldn      (mousedown)
+                    .jssora20r.jssora20rdn      (mousedown)
+                    */
+                    .jssora20l, .jssora20r {
+                        display: block;
+                        position: absolute;
+                        /* size of arrow element */
+                        width: 55px;
+                        height: 55px;
+                        cursor: pointer;
+                        background: url(../../../Common/images/a20.png) no-repeat;
+                        overflow: hidden;
+                    }
+                    .jssora20l { background-position: -3px -33px; }
+                    .jssora20r { background-position: -63px -33px; }
+                    .jssora20l:hover { background-position: -123px -33px; }
+                    .jssora20r:hover { background-position: -183px -33px; }
+                    .jssora20l.jssora20ldn { background-position: -243px -33px; }
+                    .jssora20r.jssora20rdn { background-position: -303px -33px; }
+                </style>
+                <!-- Arrow Left -->
+                <span u="arrowleft" class="jssora20l" style="top: 243px; left: 8px;">
+                </span>
+                <!-- Arrow Right -->
+                <span u="arrowright" class="jssora20r" style="top: 243px; right: 8px;">
+                </span>
             </div>
         </div>
 	</div>
