@@ -20,7 +20,6 @@
 			}
         </style>
         <script src="../../../Common/js/jssor.slider.mini.js" type="text/javascript"></script>
-        <script src="../../../Common/js/jquery.min.js" type="text/javascript"></script>
         <script>
             $(function ($) {
                 
