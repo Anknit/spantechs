@@ -36,6 +36,8 @@
   cursor:pointer;
   min-height:80px;
   transition:all 0.5s;
+  -webkit-transition:all 0.5s;
+  -moz-transition:all 0.5s;
   color:#fff;
   font-size:20px;
   
@@ -151,11 +153,14 @@ Page specific css only applies to golfcar tour page do not include in common css
 	width:100%;
 	animation:scaleBack 5s infinite ease-in, changeOpacity 5s infinite linear;
 	-webkit-animation:scaleBack 5s infinite ease-in, changeOpacity 5s infinite linear;
-	-moz-animation:scaleBack 5s infinite ease-in-out;
+	-moz-animation:scaleBack 5s infinite ease-in, changeOpacity 5s infinite linear;
 }
-@keyframes scaleBack{
-	0%{transform:scale3D(1,1,1);}
-	100%{transform:scale3D(1.1,1.1,1.1);opacity:0.3;}
+@keyframes changeOpacity{
+	0%{opacity:0.2;}
+	15%{opacity:1;}
+	50%{opacity:1;}
+	85%{opacity:1;}
+	100%{opacity:0.2;}
 }
 @-webkit-keyframes changeOpacity{
 	0%{opacity:0.2;}
@@ -163,6 +168,17 @@ Page specific css only applies to golfcar tour page do not include in common css
 	50%{opacity:1;}
 	85%{opacity:1;}
 	100%{opacity:0.2;}
+}
+@-moz-keyframes changeOpacity{
+	0%{opacity:0.2;}
+	15%{opacity:1;}
+	50%{opacity:1;}
+	85%{opacity:1;}
+	100%{opacity:0.2;}
+}
+@keyframes scaleBack{
+	0%{transform:scale3D(1,1,1);}
+	100%{transform:scale3D(1.1,1.1,1.1);opacity:0.3;}
 }
 @-webkit-keyframes scaleBack{
 	0%{transform:scale3D(1,1,1);}
