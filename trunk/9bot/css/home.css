@@ -4,24 +4,20 @@
 * CSS Document 
 *
 */
-.contentSlideShow{
-	width:100%;
-	height:700px;
-}
 .contentMenuIcons{
 	margin-top:50px;
 	width:100%;
 	text-align:center;
 }
 .contentMenuIcons > div{
-	margin-left:30px;
+	margin-left:1%;
 	display:inline-block;
 }
 .contentMenuIcons > img{
 	width:380px;
 }
 .contentNewsItems{
-	margin-top:100px;
+	margin-top:1%;
 	width:100%;
 	text-align:center;
 	height:auto;
@@ -29,26 +25,31 @@
 }
 .captionCentered{
 	position:absolute;
-	margin:auto;
+	margin:20% auto;
 	left:0;
 	right:0;
-	bottom:20%;
+	height:50%;
+}
+.captionCentered > h2{
+	font-size:1em !important;
+	margin: 0px auto;
 }
 .captionOnHoverContainer{
 	width:21% !important;
 }
 
 .newsItem{
-	width:500px;
+	width:80%;
 	max-width:100%;
 	text-align:left;
 	background-color:#FAFAFA;
 	display:inline-block;
 	color:#000;
 	font-size:1em;
-	padding:0 40px;
+	padding:0 1%;
 	max-height:450px;
-	margin-left:40px;
+	margin-left:1%;
+	margin-top:1%;
 }
 .newsItem > .newsHeadline{
 	font-weight:700;

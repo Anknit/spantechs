@@ -1,3 +1,6 @@
+<?php
+	session_start();
+?>
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 	<head>
@@ -9,7 +12,7 @@
 	</head>
 	<body>	
 		<div id="pt-main" class="pt-perspective">
-			<div class="pt-page">
+			<div id="textSlideShow" class="pt-page" style="display:none;">
                 <div class="os-phrases" id="os-phrases">
                     <h2>9botitalia.com</h2>
                     <h2>official partner of ninebot.com</h2>
@@ -18,15 +21,37 @@
                 </div>
                 <script>
                     $(document).ready(function() {
-                        $("#os-phrases > h2").lettering('words').children("span").lettering().children("span").lettering();
+						setSessionForIntro	=	1;
+						showHomePageTimer	=	'';
 						$( "#homePage" ).load( "Home.php" );
-                        showHomePageTimer	=	setTimeout(postAnimationAction, 20200);
-						$('#skipToMainContent').on('click', function(){
-							clearTimeout(showHomePageTimer);
+						<?php
+							if(isset($_SESSION['IntroDone']) && $_SESSION['IntroDone'] == 1){
+						?>
+							sessionAlreadySet	=	0;
+							skipToMainContent();
+						<?php 
+							}else{
+						?>		
+							$('#textSlideShow').css('display', 'block');
+							$("#os-phrases > h2").lettering('words').children("span").lettering().children("span").lettering();
+							showHomePageTimer	=	setTimeout(postAnimationAction, 20200);
+							$('#skipToMainContent').on('click', skipToMainContent);
+						<?php }
+						?>
+						
+						function skipToMainContent(){
+							if(!IsValueNull(showHomePageTimer))
+								clearTimeout(showHomePageTimer);
 							postAnimationAction();
-						});
-                    });
+						}
+					});
                     postAnimationAction =   function(){
+						if(setSessionForIntro == 1){
+							requestObject	=	new Object();
+							requestObject.actionScriptURL	=	'setSessionParameters.php?IntroDone=1';
+							requestObject.sendMethod	=	'POST';
+							send_remoteCall(requestObject);
+						}
 						$('#homePage').css('display', 'block');
                         TurnOnNextPageWithTransition(64);
                     };
