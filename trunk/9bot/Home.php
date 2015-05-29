@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/layout.css" />
     <link rel="stylesheet" type="text/css" href="css/9botlayout.css" />
     <link rel="stylesheet" type="text/css" href="css/home.css" />
+    <link rel="stylesheet" type="text/css" href="css/moreHome.css" />
     <?php require_once 'require.php';?>
 	<script>
         $(HomePageSlideShow);
@@ -101,23 +102,24 @@
             
             <!--News Items-->
             <div class="contentNewsItems">
+            	<h3>News</h3>
             	<div class="newsItem">
-                    <div class="newsFig">
+                    <div class="newsFig hvr-float-shadow">
                        	<img src="images/newsAndEvents/1025.jpg" alt="Ninebot E" style="max-width:100%;max-height:300px;">
                     </div>
                 	<div class="newsHeadline"><h3>Nuova proposta 9botitalia per noleggio stagionale, 1 Ninebot E a soli € 200,00 al mese</h3></div>
-                    <div class="newsDescription">
+                    <div class="newsDescription qouteSpan">
                         Visto il notevole successo del noleggio stagionale per 6 mesi, New Moving Coop propone ai suoi partner la possibilità di noleggiare i Ninebot Elite anche con formule di 5, 4 e 3 mesi (da giugno ad ottobre), senza la possibilità di riscatto a fine locazione.
                         <br />
                         Chiedi maggiori informazioni nel Ninebot Official Store a te più vicino o contatta il nostro servizio clienti: <u>ninebot.servizioclienti@gmail.com</u> o <u>3929034924</u>
                     </div>
                 </div>
             	<div class="newsItem">
-                    <div class="newsFig">
+                    <div class="newsFig hvr-float-shadow">
                        	<img src="images/newsAndEvents/1038.jpg" alt="Bizzeffe e" style="max-width:100%;max-height:300px;">
                     </div>
                 	<div class="newsHeadline"><h3>Accordo tra Bizzeffe e 9botitalia: Per le agenzie bizzeffe sconto su Ninebot E</h3></div>
-                    <div class="newsDescription">
+                    <div class="newsDescription qouteSpan">
                         E' stato siglato un importante accordo tra:
                         <br />
                         <b>New Moving coop</b> distributore esclusivo dei prodotti Ninebot (con il marchio 9botitalia) e 
