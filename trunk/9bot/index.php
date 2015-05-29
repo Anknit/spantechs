@@ -21,6 +21,10 @@
                 </div>
                 <script>
                     $(document).ready(function() {
+						if(IsbrowserIE()){
+							window.location.href	=	'Home.php';	
+						}
+						
 						setSessionForIntro	=	1;
 						showHomePageTimer	=	'';
 						$( "#homePage" ).load( "Home.php" );
