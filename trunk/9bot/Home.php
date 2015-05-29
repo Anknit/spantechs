@@ -22,7 +22,7 @@
                 <img class="logoImg" src="images/icons/ninebot.png" alt="NINEBOT"/>
             </div>
         </div>
-        <div class="content" style="margin-bottom:0;">
+        <div class="content">
             <!--Slide show in below container-->
             <div class="contentSlideShow">
                 <div id="homePageImageSlider" class="jssorSlidesDimensions" style="position: relative; top: 0px; left: 0px; margin:auto; overflow: hidden;">
@@ -110,7 +110,7 @@
                 	<div class="newsHeadline"><h3>Nuova proposta 9botitalia per noleggio stagionale, 1 Ninebot E a soli € 200,00 al mese</h3></div>
                     <div class="newsDescription qouteSpan">
                       <p>Visto il notevole successo del noleggio stagionale per 6 mesi, New Moving Coop propone ai suoi partner la possibilità di noleggiare i Ninebot Elite anche con formule di 5, 4 e 3 mesi (da giugno ad ottobre), senza la possibilità di riscatto a fine locazione.</p>
-                      <p>  Chiedi maggiori informazioni nel Ninebot Official Store a te più vicino o contatta il nostro servizio clienti: <a href="mailto:ninebot.servizioclienti@gmail.com" target="_blank">ninebot.servizioclienti@gmail.com</a> o <a href="tel:3929034924" target="_blank">3929034924</a></p>
+                      <p>Chiedi maggiori informazioni nel Ninebot Official Store a te più vicino o contatta il nostro servizio clienti: <a href="mailto:ninebot.servizioclienti@gmail.com" target="_blank">ninebot.servizioclienti@gmail.com</a> o <a href="tel:3929034924" target="_blank">3929034924</a></p>
                     </div>
                 </div>
             	<div class="newsItem">
@@ -145,7 +145,6 @@
                 ©SPANTECHS | © 2014 Ninebot Italia | Tutti i diritti riservati
             </div>
         </div>
-        <div style="clear: both;"></div>
     </div>
 </body>
 </html>

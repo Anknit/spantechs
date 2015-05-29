@@ -63,3 +63,16 @@
     width: 100%;
     height: 100%;
  }
+@media (max-width: 650px) {
+	.captionOnHoverContainer > div{
+		visibility: visible;
+		opacity: 0.4;
+		width: 100%;
+		height: 100%;
+	}
+	.captionOnHoverContainer::after{
+		visibility: visible;
+		width: 100%;
+		height: 100%;
+	}
+}
