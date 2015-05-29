@@ -9,6 +9,8 @@
 		<link rel="stylesheet" type="text/css" href="../Common/css/sequenceLetters.css" />
 		<?php require_once 'require.php';?>
 		<link rel="stylesheet" type="text/css" href="css/Home_textShow.css" />
+        <meta charset="utf-8">
+        <title>ninebot</title>
 	</head>
 	<body>	
 		<div id="pt-main" class="pt-perspective">
