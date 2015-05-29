@@ -105,7 +105,11 @@
     .logoImg{
         width: 10em;
     }
-
+    .selectRegion{
+        float:right;
+        margin-left:2%;
+        margin-right:2%;
+    }
 
     .globalFooter{
 		float: left;
