@@ -6,7 +6,6 @@
 */
 // 
 function HomePageSlideShow() {
-	debugger;
 	//Define an array of slideshow transition code
 	var _SlideshowTransitions = [
 		{$Duration:1000,$Delay:80,$Cols:8,$Rows:4,$Opacity:2},

@@ -9,10 +9,16 @@
         display:none;
     }
 }
-@media (min-width: 900px) {
+@media (min-width: 600px) {
     .jssorSlidesDimensions{
-        width:880px;
-        height:650px;
+        width:680px;
+        height:450px;
+    }
+}
+@media (min-width: 750px) {
+    .jssorSlidesDimensions{
+        width:740px;
+        height:500px;
     }
 }
 @media (min-width: 1260px) {
