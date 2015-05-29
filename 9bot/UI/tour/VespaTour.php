@@ -29,13 +29,46 @@
 		width:100%;
 		overflow:hidden;
 	}
-	.golfCarSlider > img{
-		display:none;
-		width:100%;
-		animation:scaleBack 5s infinite ease-in, changeOpacity 5s infinite linear;
-		-webkit-animation:scaleBack 5s infinite ease-in, changeOpacity 5s infinite linear;
-		-moz-animation:scaleBack 5s infinite ease-in-out;
-	}
+.golfCarSlider > img{
+	display:none;
+	width:100%;
+	animation:scaleBack 5s infinite ease-in, changeOpacity 5s infinite linear;
+	-webkit-animation:scaleBack 5s infinite ease-in, changeOpacity 5s infinite linear;
+	-moz-animation:scaleBack 5s infinite ease-in, changeOpacity 5s infinite linear;
+}
+@keyframes changeOpacity{
+	0%{opacity:0.2;}
+	15%{opacity:1;}
+	50%{opacity:1;}
+	85%{opacity:1;}
+	100%{opacity:0.2;}
+}
+@-webkit-keyframes changeOpacity{
+	0%{opacity:0.2;}
+	15%{opacity:1;}
+	50%{opacity:1;}
+	85%{opacity:1;}
+	100%{opacity:0.2;}
+}
+@-moz-keyframes changeOpacity{
+	0%{opacity:0.2;}
+	15%{opacity:1;}
+	50%{opacity:1;}
+	85%{opacity:1;}
+	100%{opacity:0.2;}
+}
+@keyframes scaleBack{
+	0%{transform:scale3D(1,1,1);}
+	100%{transform:scale3D(1.1,1.1,1.1);opacity:0.3;}
+}
+@-webkit-keyframes scaleBack{
+	0%{transform:scale3D(1,1,1);}
+	100%{transform:scale3D(1.2,1.2,1.2);}
+}
+@-moz-keyframes scaleBack{
+	0%{transform:scale3D(1,1,1);opacity:0.5;}
+	100%{transform:scale3D(1.1,1.1,1.1);opacity:0.3;}
+}
 	.VespaTourItem {
   padding: 20px;
   border: 1px solid #ccc;
@@ -124,37 +157,18 @@
   font-style: italic;
   font-size: 18px;
 }
-	@keyframes scaleBack{
-		0%{transform:scale3D(1,1,1);}
-		100%{transform:scale3D(1.1,1.1,1.1);opacity:0.3;}
-	}
-	@-webkit-keyframes changeOpacity{
-		0%{opacity:0.2;}
-		15%{opacity:1;}
-		50%{opacity:1;}
-		85%{opacity:1;}
-		100%{opacity:0.2;}
-	}
-	@-webkit-keyframes scaleBack{
-		0%{transform:scale3D(1,1,1);}
-		100%{transform:scale3D(1.2,1.2,1.2);}
-	}
-	@-moz-keyframes scaleBack{
-		0%{transform:scale3D(1,1,1);opacity:0.5;}
-		100%{transform:scale3D(1.1,1.1,1.1);opacity:0.3;}
-	}
     </style>
 	<div class="content">
 		<div class='golfCarSlider'>
 			<img src='../../images/tours/vespa/1.jpg' class='visibleImg'/>
 			<img src='../../images/tours/vespa/2.jpg'/>
 			<img src='../../images/tours/vespa/3.jpg'/>
-			<img src='../../images/tours/vespa/4.jpg'/>
+			<img src='../../images/tours/vespa/4.jpg'/><!--
 			<img src='../../images/tours/vespa/5.jpg'/>
-			<img src='../../images/tours/vespa/6.jpg'/>
-			<img src='../../images/tours/vespa/7.jpg'/>
+			--><img src='../../images/tours/vespa/6.jpg'/>
+			<img src='../../images/tours/vespa/7.jpg'/><!--
 			<img src='../../images/tours/vespa/8.jpg'/>
-		</div>
+		--></div>
 		<div class='tourContent'>
 			<div class='VespaTourItem'>
 				<div class='vespaTourName'>
