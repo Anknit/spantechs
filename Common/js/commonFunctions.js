@@ -13,6 +13,25 @@ function IsValueNull(Value)
 		return false;	
 }
 
+function SubmitFormFileViaAjax(File, postToUrl, callBack)
+{
+	var formData = new FormData();
+	loadImage();
+	formData.append('file', File);
+	
+	var xmlHttp	=	createBrowserObject(); 	
+	xmlHttp.open("POST", postToUrl);
+	xmlHttp.send(formData);
+	
+	xmlHttp.onreadystatechange=function()
+	{	    
+		deloadImage();
+		if(xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+			callBack(xmlHttp.responseText);
+		}
+	}
+}	
+
 //============================================================================================//
 //==================================ON MOUSE OVER SHOW HIGHLIGHT EVEN ROW ====================//
 //============================================================================================//
@@ -224,6 +243,28 @@ function AnchorPosition_getPageOffsetTop (el)
 function AnchorPosition_getWindowOffsetTop (el)
 {
 	return AnchorPosition_getPageOffsetTop(el)-document.body.scrollTop;
+}
+
+//=========================================================================================//
+//========== FUNCTION TO CONVERT SINGLE DIGIT TO TWO DIGIT ===============================//
+//=========================================================================================//
+
+function convertToTwoDigit(num)
+{
+	switch(num)
+	{
+		case 0:	
+		case 1:	
+		case 2:	
+		case 3:	
+		case 4:	
+		case 5:	
+		case 6:	
+		case 7:	
+		case 8:	
+		case 9:	num = "0"+num.toString();
+	}		
+	return num ;
 }
 
 //================================================================================================//
@@ -643,16 +684,24 @@ function SetBitValues(Association, ValueHolder)
 //======================================================================================================================//
 function refreshdata(tabToBeDisplay){
 	var date = new Date();
-	date.setTime(date.getTime()+(15*1000));
+	date.setTime(date.getTime()+(6*1000));
 	var expires = "; expires="+date.toGMTString();
 	document.cookie = "tab="+tabToBeDisplay+expires;
 	location.reload();
 }
 
-function ToggleBetween(arg1, arg2){
-    $(arg1).toggle();
-    $(arg2).toggle();
+function extractCookie(name){
+	var cookieName	=	false;
+	var cookieArray	=	document.cookie.split(';');
+	for(i=0;i<cookieArray.length;i++){
+		if(cookieArray[i].indexOf(name+'=') != -1){
+			cookieName	=	decodeURIComponent(cookieArray[i].split('=')[1]);
+			break;
+		}
+	}
+	return cookieName;
 }
+
 
 //======================================================================================================================//
 //================= FUNCTIONS TO SHOW/HIDE DIV/ROWS OR OTHER ENTITIES DEPENDING ON THE CONDITION=========================//
@@ -908,33 +957,8 @@ function SetHeaderProperties(ObjectsArray)
 		}
 	}
 }
-	
-function showHtmlAtCenter(htmlContent, draggable, contentWidth, contentHeight, fade)
-{
-	$(document.body).append('<div id="centerDivForCustomContent" style="border:2px solid grey; background-color:#ffffff; position:fixed; z-index:10002; min-width:300px; min-height:200px; max-height:70%; overflow: auto;display:none"></div>');
-	$(document.body).append('<div id="layoutDivForCustomContent" onclick="hideHtmlAtCenter();" style="background-color: rgb(255, 255, 255); position: absolute; top: 0px; z-index: 10001; opacity: 0.7; display: block;width:100%;height:100%" ></div>');
-        
-        centerDivForCustomContent   =   $('div#centerDivForCustomContent');
-        centerDivForCustomContent.html(htmlContent);
-        if(draggable)
-            centerDivForCustomContent.addClass('browseFrame');
-        if(!IsValueNull(contentWidth))
-            centerDivForCustomContent.css('width', contentWidth);
-        if(!IsValueNull(contentHeight))
-            centerDivForCustomContent.css('height', contentHeight);
-        
-        if(fade)
-            centerDivForCustomContent.fadeIn('2000');
-        else
-            centerDivForCustomContent.css('display', 'block');
-	showCenter('centerDivForCustomContent');
-}
-	
-function hideHtmlAtCenter()
-{
-	$('#centerDivForCustomContent').remove();
-	$('#layoutDivForCustomContent').remove();
-}
+
+
 
 /*=======================================================*/
 //===========FUNCTION TO SHOW THE LOADING EFFECT==========
@@ -946,12 +970,31 @@ function loadImage()
 	//showCenter('<div id="fade"><img src="../../Common/images/aloader.gif"></div>');
 	//document.getElementById('LayOutDiv').innerHTML = '<img src="../../Common/images/aloader.gif">'; 
 	var LoadingImage	=	document.getElementById('LoadingImage');
-	LoadingImage.style.display = "block";
-	showCenter('LoadingImage');
-	document.getElementById('LayOutDiv').style.display = "block";
+	if(!IsValueNull(LoadingImage)){
+		LoadingImage.style.display = "block";
+		showCenter('LoadingImage');
+	}
+	LayOutDiv	=	document.getElementById('LayOutDiv');
+	if(!IsValueNull(LayOutDiv))
+		LayOutDiv.style.display = "block";
 	setTimeout(deloadImage, 15000);
 }
 
+/*=======================================================*/
+//======FUNCTION TO VALIDATE MINUTES AND SECONDS==========
+/*======================================================*/
+function isMinuteOrSecond(obj)
+{
+   if(obj.value ==	""	|| obj.value<60)
+   {
+     return true;	   
+   }
+   else
+	{  
+	   obj.value	=	"59";
+	   return false;
+	}   
+}  
 /*=======================================================*/
 //===========FUNCTION TO HIDE THE LOADING EFFECT==========
 /*======================================================*/
@@ -959,8 +1002,12 @@ function loadImage()
 function deloadImage()
 {
 	//document.getElementById('LayOutDiv').innerHTML = ''; 
-	document.getElementById('LoadingImage').style.display = "none";
-	document.getElementById('LayOutDiv').style.display = "none";
+	LoadingImage= document.getElementById('LoadingImage');
+	if(!IsValueNull(LoadingImage))
+		LoadingImage.style.display = "none";
+	LayOutDiv	=	document.getElementById('LayOutDiv');
+	if(!IsValueNull(LayOutDiv))
+		LayOutDiv.style.display = "none";
 }
 	
 	
@@ -1006,6 +1053,9 @@ function showBar(num)
 //==============================================================================================//
 function createBrowserObject()
 {
+	if(xmlHttp)
+		delete xmlHttp;
+		
 	var xmlHttp;
 	try
 	{
@@ -1394,30 +1444,61 @@ function convertClickToDoubleClick(src){
 }
 
 $(function(){
-        $('input[type="text"]').on('click', function(){
-            $(this).val($(this).val().trim());
-        });
-        
-        IncrementCounterAndDisplayNext = function(){
-            if(FuncSwitchImages.counter < (ElemList.length - 1))
-                 FuncSwitchImages.counter += 1;
-            else
-                 FuncSwitchImages.counter = 0;
-
-            $(ElemList[FuncSwitchImages.counter]).fadeIn( 3000 );
-        };
-        FuncSwitchImages    =   function(){
-          ElemList = ElementWhoseChildsAreToBeRotated.find(childElementsToBeRotated);
-          $(ElemList[FuncSwitchImages.counter]).fadeOut( 1000 , IncrementCounterAndDisplayNext);
-        };
-        $('[showChildrensInCyclic]').each(function(){
-            ElementWhoseChildsAreToBeRotated    =   $(this);
-            childElementsToBeRotated    =   ElementWhoseChildsAreToBeRotated.attr('showChildrensInCyclic');
-           FuncSwitchImages.counter = 0;
-            setInterval(FuncSwitchImages, 5000);
-        });
 	$('form').keypress(stopRKey);
+});
 
+/* CUSTOM JQUERY API TO UPDATE HTML ELEMENTS ON UPDATE OF DATA OBJECT
+ * Requires a json object as argument
+ * Binded html elements must have the custom attributes set
+ * For more details read the spec of this API 
+ * */
+var venera_update_data	=	function(DataObjectToBind){
+	if(DataObjectToBind != '' && DataObjectToBind != null && DataObjectToBind != undefined){
+		$.fn.dataChange = function(){
+		    var prev;
+		    if ( arguments.length > 0 ){
+		        prev = window["$"]["fn"][this[0].getAttribute('customValueAs')].apply(this, arguments);
+		    }
+		    var result = window["$"]["fn"][this[0].getAttribute('customValueAs')].apply(this, arguments);
+		    if ( arguments.length > 0 && prev != window["$"]["fn"][this[0].getAttribute('customValueAs')].apply(this, arguments) ){
+		        $(this).trigger("change");
+		    }
+		    return result;
+		};
+		for(key in DataObjectToBind){
+			jqObject	=	$('[customValueOf="'+key+'"]');
+			jqObject.dataChange(DataObjectToBind[key]);
+		}
+		$.fn.dataChange = null;
+	}
+};
+
+function showCenter(obj)
+{	
+	if(typeof obj != "object")	
+		var divObject = document.getElementById(obj); 
+	else
+		var divObject = obj; 
+
+	myobject = divObject;
+
+	divObject.style.top = window.screen.height/2 - 50 + 'px';
+	divObject.style.left = window.screen.width/2 - 100 + 'px';	
+	divObject.style.display = "block";	
+}
+
+function IsbrowserIE(){
+	output	=	false;
+	var ua = window.navigator.userAgent;
+	var msie = ua.indexOf("MSIE ");
+	var Trident = ua.indexOf("Trident");
+	if (msie > 0 || Trident > 0){
+		output = true;
+	}
+	return output;
+}
+
+$(function(){
     if(window.Alert == undefined || window.alert == null){
         Alert = function(msg){
             alert(msg);
