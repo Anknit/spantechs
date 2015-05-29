@@ -56,7 +56,7 @@
     height: 100%;
  }
 .captionOnHoverContainer:hover > img{
-    transform:scale3D(1.1,1.1,1.1);
+    transform:scale3D(1.2,1.2,1.2);
  }
 .captionOnHoverContainer:hover::after{
     visibility: visible;
