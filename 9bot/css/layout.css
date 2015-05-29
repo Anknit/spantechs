@@ -25,12 +25,11 @@
     }
     
     .footer{
-        position: absolute;
+        position: relative;
         bottom: 0;
     }
 
     .content{
-    	height:auto;
     	position:relative;
         margin-bottom: 200px;
     }

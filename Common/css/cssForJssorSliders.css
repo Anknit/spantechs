@@ -9,9 +9,9 @@
         display:none;
     }
 }
-@media (min-width: 600px) {
+@media (min-width: 640px) {
     .jssorSlidesDimensions{
-        width:680px;
+        width:640px;
         height:450px;
     }
 }
