@@ -22,4 +22,7 @@ body {
   width: 160px;
   display: block !important;
   box-shadow: 6px 3px 10px #ccc !important;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
 }

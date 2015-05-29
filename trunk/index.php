@@ -1,3 +1,3 @@
 <?php
-	header('Location: 9bot/index.html');
+	header('Location: 9bot/');
 ?>

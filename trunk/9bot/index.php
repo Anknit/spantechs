@@ -15,7 +15,8 @@
 			<div id="textSlideShow" class="pt-page" style="display:none;">
                 <div class="os-phrases" id="os-phrases">
                     <h2>9botitalia.com</h2>
-                    <h2>official partner of ninebot.com</h2>
+                    <h2>official partner</h2>
+                    <h2>of ninebot.com</h2>
                     <h2>Distributore Ufficiale per</h2>
                     <h2>l'Italia dei Prodotti Ninebot</h2>
                 </div>
