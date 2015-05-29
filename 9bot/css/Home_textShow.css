@@ -1,0 +1,25 @@
+body {
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	color: #333;
+	background: #fff;
+	overflow: hidden;
+	margin: 0;
+}
+
+.pt-page{
+	overflow: auto !important;
+}
+
+.greyTabButton {
+  padding: 10px 12px;
+  background-color: #ccc;
+  color: #111;
+  cursor: auto;
+  bottom: -90%;
+  text-align: center;
+  text-decoration: none !important;
+  margin: auto;
+  width: 160px;
+  display: block !important;
+  box-shadow: 6px 3px 10px #ccc !important;
+}

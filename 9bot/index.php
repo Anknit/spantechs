@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 	<head>
-    <style>
-    </style>
 		<link rel="stylesheet" type="text/css" href="../Common/css/pageTransition.css" />
 		<link rel="stylesheet" type="text/css" href="../Common/css/animations.css" />
 		<link rel="stylesheet" type="text/css" href="../Common/css/sequenceLetters.css" />
-		<link rel="stylesheet" type="text/css" href="../Common/css/hover.css" />
+		<?php require_once 'require.php';?>
 		<link rel="stylesheet" type="text/css" href="css/Home_textShow.css" />
-		<script src="../Common/js/jquery.min.js"></script>
 	</head>
 	<body>	
 		<div id="pt-main" class="pt-perspective">
@@ -22,7 +19,7 @@
                 <script>
                     $(document).ready(function() {
                         $("#os-phrases > h2").lettering('words').children("span").lettering().children("span").lettering();
-						$( "#homePage" ).load( "index.html" ); 
+						$( "#homePage" ).load( "Home.php" );
                         showHomePageTimer	=	setTimeout(postAnimationAction, 20200);
 						$('#skipToMainContent').on('click', function(){
 							clearTimeout(showHomePageTimer);
@@ -30,7 +27,6 @@
 						});
                     });
                     postAnimationAction =   function(){
-                        $('body').addClass('bodyBackground');
 						$('#homePage').css('display', 'block');
                         TurnOnNextPageWithTransition(64);
                     };
@@ -40,8 +36,8 @@
 			<div id="homePage" class="pt-page" style="display:none;">
             </div>
 		</div>
-		<script src="js/modernizr.custom.js"></script>
-		<script src="js/jquery.lettering.js"></script>
-		<script src="js/pagetransitions.js"></script>
+		<script src="../Common/js/modernizr.custom.js"></script>
+		<script src="../Common/js/jquery.lettering.js"></script>
+		<script src="../Common/js/pagetransitions.js"></script>
 	</body>
 </html>
