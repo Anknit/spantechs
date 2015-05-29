@@ -102,29 +102,32 @@
             <!--News Items-->
             <div class="contentNewsItems">
             	<div class="newsItem">
-                	<div class="newsHeadline"><h3>Nuova proposta 9botitalia per noleggio stagionale, 1 Ninebot E a soli € 200,00 al mese</h3></div>
                     <div class="newsFig">
                        	<img src="images/newsAndEvents/1025.jpg" alt="Ninebot E" style="max-width:100%;max-height:300px;">
                     </div>
-                    Visto il notevole successo del noleggio stagionale per 6 mesi, New Moving Coop propone ai suoi partner la possibilità di noleggiare i Ninebot Elite anche con formule di 5, 4 e 3 mesi (da giugno ad ottobre), senza la possibilità di riscatto a fine locazione.
-                    <br />
-                    Chiedi maggiori informazioni nel Ninebot Official Store a te più vicino o contatta il nostro servizio clienti: <u>ninebot.servizioclienti@gmail.com</u> o <u>3929034924</u>
+                	<div class="newsHeadline"><h3>Nuova proposta 9botitalia per noleggio stagionale, 1 Ninebot E a soli € 200,00 al mese</h3></div>
+                    <div class="newsDescription">
+                        Visto il notevole successo del noleggio stagionale per 6 mesi, New Moving Coop propone ai suoi partner la possibilità di noleggiare i Ninebot Elite anche con formule di 5, 4 e 3 mesi (da giugno ad ottobre), senza la possibilità di riscatto a fine locazione.
+                        <br />
+                        Chiedi maggiori informazioni nel Ninebot Official Store a te più vicino o contatta il nostro servizio clienti: <u>ninebot.servizioclienti@gmail.com</u> o <u>3929034924</u>
+                    </div>
                 </div>
             	<div class="newsItem">
-                	<div class="newsHeadline"><h3>Accordo tra Bizzeffe e 9botitalia: Per le agenzie bizzeffe sconto su Ninebot E</h3></div>
                     <div class="newsFig">
                        	<img src="images/newsAndEvents/1038.jpg" alt="Bizzeffe e" style="max-width:100%;max-height:300px;">
                     </div>
-                    E' stato siglato un importante accordo tra:
-                    <br />
-                    <b>New Moving coop</b> distributore esclusivo dei prodotti Ninebot (con il marchio 9botitalia) e 
-"Bizzeffe" il nuovo Net-work che raccoglie più di 100 agenzie di viaggio e alcuni tra i più importanti Buyers internazionali
-                    Tutte le agenzie di viaggio che aderiscono a Bizzeffe potranno comprare o noleggiare con lo sconto del 5% i prodotti 9botitalia e per il turismo accessibile 
-                    Nino Robotics. 
-                     <span title='Vedi anche: 
-                        <a href="http://www.bizzeffe.it/9bot/">http://www.bizzeffe.it/9bot/</a>
-                        <a href="http://ow.ly/NhXpK">http://ow.ly/NhXpK</a>'>...</span>
-                    
+                	<div class="newsHeadline"><h3>Accordo tra Bizzeffe e 9botitalia: Per le agenzie bizzeffe sconto su Ninebot E</h3></div>
+                    <div class="newsDescription">
+                        E' stato siglato un importante accordo tra:
+                        <br />
+                        <b>New Moving coop</b> distributore esclusivo dei prodotti Ninebot (con il marchio 9botitalia) e 
+    "Bizzeffe" il nuovo Net-work che raccoglie più di 100 agenzie di viaggio e alcuni tra i più importanti Buyers internazionali
+                        Tutte le agenzie di viaggio che aderiscono a Bizzeffe potranno comprare o noleggiare con lo sconto del 5% i prodotti 9botitalia e per il turismo accessibile 
+                        Nino Robotics. 
+                         Vedi anche: <br />
+                            <a href="http://www.bizzeffe.it/9bot/">http://www.bizzeffe.it/9bot/</a><br />
+                            <a href="http://ow.ly/NhXpK">http://ow.ly/NhXpK</a>
+                    </div>
                 </div>
             </div>
         </div>
