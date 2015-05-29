@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/9botlayout.css" />
     <link rel="stylesheet" type="text/css" href="css/home.css" />
     <link rel="stylesheet" type="text/css" href="css/moreHome.css" />
+    <link rel="stylesheet" type="text/css" href="../Common/css/regionWithFlags.css" />
     <?php require_once 'require.php';?>
 	<script>
         $(HomePageSlideShow);
@@ -20,6 +21,39 @@
         <div class="header" style="background: none;">
             <div class="logo">
                 <img class="logoImg" src="images/icons/ninebot.png" alt="NINEBOT"/>
+            </div>
+            <div class="selectRegion">
+                <div class="lang">
+                    <span class="choose">Choose Region</span>
+                    <div class="region">
+                        <a href="http://www.ninebot.cn" target="_blank" class="region1">CHN</a>
+                        <a href="http://www.segway.com/" target="_blank" class="america">Segway</a>
+                        <a href="http://www.ninebotme.com" target="_blank" class="region-alianqiu">UAE</a>
+                        <a href="http://www.ninebot.ro" target="_blank" class="region-luomaniya">ROU</a>
+                        <a href="http://www.ecopro.asia" target="_blank" class="region-malaixiya">MAL</a>
+                        <a href="http://ninebotus.com/" target="_blank" class="america">USA</a>
+                        <a href="http://www.9botitalia.com" target="_blank" class="region24">ITA</a>
+                        <a href="http://starfleet.co.kr/html/" target="_blank" class="region3">KOR</a>
+                        <a href="http://www.ninebot.no" target="_blank" class="region4">NOR</a>
+                        <a href="http://www.ninebot-belgium.com" target="_blank" class="region16">BEL</a>
+                        <a href="http://www.ninebot-spain.com/" target="_blank" class="region9">ESP</a>
+                        <a href="http://www.ninebot.ca" target="_blank" class="region10">CAN</a>
+                        <a href="http://www.ninebot-france.com" target="_blank" class="region6">FRA</a>
+                        <a href="http://www.stay-mobile.ch/" target="_blank" class="region11">CHE</a>
+                        <a href="http://www.ninebot.at" target="_blank" class="region7">AUT</a>
+                        <a href="http://www.ninebot.hu" target="_blank" class="region8">HUN</a>
+                        <a href="http://www.ninebot.com.au/" target="_blank" class="region12">AUS</a>
+                        <a href="http://www.ninebot.co.za/" target="_blank" class="region13">ZAF</a>
+                        <a href="http://www.ninebot.asia/" target="_blank" class="region14">SGP</a>
+                        <a href="http://www.cartsnwheels.com/" target="_blank" class="region15">KSA</a>
+                        <a href="http://www.ninebot.lu/" target="_blank" class="region17">LUX</a>
+                        <a href="http://www.ninebot.cz/" target="_blank" class="region18">CZE</a>
+                        <a href="http://www.ninebot.jp/" target="_blank" class="region19">JPN</a>
+                        <a href="http://www.ninebotthailand.com/" target="_blank" class="region20">TH</a>
+                        <a href="http://www.ninebotnederland.nl/" target="_blank" class="region21">NLD</a>
+                        <a href="http://www.9bot.pl/" target="_blank" class="region22">POL</a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="content">

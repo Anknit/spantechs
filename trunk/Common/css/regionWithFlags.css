@@ -1,0 +1,143 @@
+@charset "utf-8";
+/*
+* Author: Aditya
+* date: 08-Aug-2014
+* CSS Document 
+*
+*/
+
+.lang{
+	width:133px;
+	overflow:hidden;
+	position:absolute;
+	right:0;
+	top:22px;
+	border:1px solid #d0d0d0;
+	font-size:14px;
+	z-index:50;
+	margin-right:2%;
+	background-color:#666;
+	color:#ffffff;
+}
+.choose{
+	width:126px;
+	height:24px;
+	display:block;
+	padding-left:9px;
+	line-height:24px;
+	background:url(../images/arrow.gif) no-repeat 118px center;
+	cursor:pointer;
+}
+.lang:hover .region{
+	display:block;
+}
+.region{
+	overflow:hidden;
+	width:133px;
+	padding:3px 0;
+	display:none;
+}
+.region a{
+	display:block;
+	width:100%;
+	height:24px;
+	line-height:24px;
+	padding-left:42px;
+	border-top:1px solid #000;
+	transition:all 0.3s
+}
+.region a:hover{
+	margin-left:10px;
+	color: #0FF;
+}
+@media (max-width: 700px){
+	.region{
+		overflow:auto;
+		max-height:300px;
+	}
+}
+
+.region a.region1{
+	background:url(../images/RegionFlags/region1.png) 11px center no-repeat;
+}
+.region a.region2{
+	background:url(../images/RegionFlags/region2.png) 11px center no-repeat;
+}
+.region a.region3{
+	background:url(../images/RegionFlags/region5.png) 11px center no-repeat;
+}
+.region a.region4{
+	background:url(../images/RegionFlags/region7.png) 11px center no-repeat;
+}
+.region a.region5{
+	background:url(../images/RegionFlags/region6.png) 11px center no-repeat;
+}
+.region a.region6{
+	background:url(../images/RegionFlags/region4.png) 11px center no-repeat;
+}
+.region a.region7{
+	background:url(../images/RegionFlags/region3.png) 11px center no-repeat;
+}
+.region a.region8{
+	background:url(../images/RegionFlags/region8.png) 11px center no-repeat;
+}
+.region a.region9{
+	background:url(../images/RegionFlags/region9.png) 11px center no-repeat;
+}
+.region a.region10{
+	background:url(../images/RegionFlags/region10.png) 11px center no-repeat;
+}
+.region a.region11{
+	background:url(../images/RegionFlags/region11.png) 11px center no-repeat;
+}
+.region a.region12{
+	background:url(../images/RegionFlags/region12.png) 11px center no-repeat;
+}
+.region a.region13{
+	background:url(../images/RegionFlags/region13.png) 11px center no-repeat;
+}
+.region a.region14{
+	background:url(../images/RegionFlags/region14.png) 11px center no-repeat;
+}
+.region a.region15{
+	background:url(../images/RegionFlags/region15.png) 11px center no-repeat;
+}
+.region a.region16{
+	background:url(../images/RegionFlags/region16.png) 11px center no-repeat;
+}
+.region a.region17{
+	background:url(../images/RegionFlags/region17.png) 11px center no-repeat;
+}
+.region a.region18{
+	background:url(../images/RegionFlags/region18.png) 11px center no-repeat;
+}
+.region a.region19{
+	background:url(../images/RegionFlags/region19.png) 11px center no-repeat;
+}
+.region a.region20{
+	background:url(../images/RegionFlags/region20.png) 11px center no-repeat;
+}
+.region a.region21{
+	background:url(../images/RegionFlags/region21.png) 11px center no-repeat;
+}
+.region a.region22{
+	background:url(../images/RegionFlags/region22.png) 11px center no-repeat;
+}
+.region a.region23{
+	background:url(../images/RegionFlags/region23.png) 11px center no-repeat;
+}
+.region a.region24{
+  background:url(../images/RegionFlags/region24.jpg) 11px center no-repeat;
+}
+.region a.america{
+  background:url(../images/RegionFlags/america.png) 11px center no-repeat;
+}
+.region a.region-luomaniya{
+  background:url(../images/RegionFlags/luomaniya.png) 11px center no-repeat;
+}
+.region a.region-malaixiya{
+  background:url(../images/RegionFlags/malaixiya.png) 11px center no-repeat;
+}
+.region a.region-alianqiu{
+  background:url(../images/RegionFlags/alianqiu.jpg) 11px center no-repeat;
+}
