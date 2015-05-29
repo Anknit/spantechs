@@ -109,9 +109,8 @@
                     </div>
                 	<div class="newsHeadline"><h3>Nuova proposta 9botitalia per noleggio stagionale, 1 Ninebot E a soli € 200,00 al mese</h3></div>
                     <div class="newsDescription qouteSpan">
-                        Visto il notevole successo del noleggio stagionale per 6 mesi, New Moving Coop propone ai suoi partner la possibilità di noleggiare i Ninebot Elite anche con formule di 5, 4 e 3 mesi (da giugno ad ottobre), senza la possibilità di riscatto a fine locazione.
-                        <br />
-                        Chiedi maggiori informazioni nel Ninebot Official Store a te più vicino o contatta il nostro servizio clienti: <u>ninebot.servizioclienti@gmail.com</u> o <u>3929034924</u>
+                      <p>Visto il notevole successo del noleggio stagionale per 6 mesi, New Moving Coop propone ai suoi partner la possibilità di noleggiare i Ninebot Elite anche con formule di 5, 4 e 3 mesi (da giugno ad ottobre), senza la possibilità di riscatto a fine locazione.</p>
+                      <p>  Chiedi maggiori informazioni nel Ninebot Official Store a te più vicino o contatta il nostro servizio clienti: <a href="mailto:ninebot.servizioclienti@gmail.com" target="_blank">ninebot.servizioclienti@gmail.com</a> o <a href="tel:3929034924" target="_blank">3929034924</a></p>
                     </div>
                 </div>
             	<div class="newsItem">
@@ -120,15 +119,23 @@
                     </div>
                 	<div class="newsHeadline"><h3>Accordo tra Bizzeffe e 9botitalia: Per le agenzie bizzeffe sconto su Ninebot E</h3></div>
                     <div class="newsDescription qouteSpan">
-                        E' stato siglato un importante accordo tra:
-                        <br />
-                        <b>New Moving coop</b> distributore esclusivo dei prodotti Ninebot (con il marchio 9botitalia) e 
-    "Bizzeffe" il nuovo Net-work che raccoglie più di 100 agenzie di viaggio e alcuni tra i più importanti Buyers internazionali
-                        Tutte le agenzie di viaggio che aderiscono a Bizzeffe potranno comprare o noleggiare con lo sconto del 5% i prodotti 9botitalia e per il turismo accessibile 
-                        Nino Robotics. 
-                         Vedi anche: <br />
-                            <a href="http://www.bizzeffe.it/9bot/">http://www.bizzeffe.it/9bot/</a><br />
-                            <a href="http://ow.ly/NhXpK">http://ow.ly/NhXpK</a>
+                      <div>E' stato siglato un importante accordo tra:</div>
+                      <div><strong>New </strong><strong><span lang="EN-US">Moving</span></strong><strong> coop</strong> distributore esclusivo dei prodotti <strong>Ninebot</strong> (con il marchio<strong> 9botitalia)</strong></div>
+                      <div> e </div>
+                      <div><strong>"Bizzeffe</strong>" il nuovo Net-work che raccoglie più di 100 agenzie di viaggio e alcuni tra i più importanti Buyers internazionali</div>
+                      <div><br>
+                      </div>
+                      <div>Tutte le agenzie di viaggio che aderiscono a<strong> Bizzeffe</strong> potranno comprare o noleggiare con lo sconto del 5% i prodotti <strong>9botitalia</strong> e per il turismo accessibile </div>
+                      <div><strong>Nino R</strong><strong><span lang="EN-US">obotics</span></strong>.</div>
+                      <div><br>
+                      </div>
+                      <div>Vedi anche:</div>
+                      <div><a href="http://www.bizzeffe.it/9bot/" target="_blank">http://www.bizzeffe.it/9bot/</a></div>
+                      <div></div>
+                      <div><a href="http://ow.ly/NhXpK" target="_blank">http://ow.ly/NhXpK</a></div>
+                      <div><br>
+                      </div>
+                      <div><strong>9botitalia</strong> e<strong> Bizzeffe</strong> parteciperanno insieme ad una serie di eventi tra i più importanti nell'ambito del turismo e del turismo accessibile ad iniziare dal 4 giugno con la giornata romana di <img alt="Inline image 1" height="24" src="https://mail.google.com/mail/u/0/?ui=2&ik=b0d6b76d2c&view=fimg&th=14d9f02f6c8de7b4&attid=0.1&disp=emb&realattid=ii_14d8a639fec1cbff&attbid=ANGjdJ9BgF6LOgKA8adQ9hIyNwJ4tWh0glmM9jqeWZUyjwPSpGJJ2CILAC3qVwCkxyLcggXrLJAq-n_WTi-MtJgVpIP-EkHFRLus5XXQXFT-xUuWxNp7eEpg3V9rE8w&sz=w190-h48&ats=1432895414769&rm=14d9f02f6c8de7b4&zw&atsh=1" width="95"> 2015 all'ARA PACIS.</div>
                     </div>
                 </div>
             </div>
