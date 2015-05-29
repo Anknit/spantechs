@@ -50,4 +50,18 @@ function HomePageSlideShow() {
 		},
 	};
 	var jssor_slider1 = new $JssorSlider$('homePageImageSlider', options);
+	//responsive code begin
+	//you can remove responsive code if you don't want the slider scales while window resizes
+	function ScaleSlider() {
+		var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
+		if (parentWidth)
+			jssor_slider1.$ScaleWidth(Math.max(Math.min(parentWidth, 1920), 300));
+		else
+			window.setTimeout(ScaleSlider, 30);
+	}
+	ScaleSlider();
+
+	$(window).bind("load", ScaleSlider);
+	$(window).bind("resize", ScaleSlider);
+	$(window).bind("orientationchange", ScaleSlider);
 }
