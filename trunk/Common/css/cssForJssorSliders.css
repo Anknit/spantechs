@@ -30,13 +30,13 @@
 @media (min-width: 1300px) {
     .jssorSlidesDimensions{
         width:1290px;
-        height:650px;
+        height:500px;
     }
 }
 @media (min-width: 1350px) {
     .jssorSlidesDimensions{
         width:1340px;
-        height:650px;
+        height:500px;
     }
 }
 @media (min-width: 1600px) {
