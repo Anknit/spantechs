@@ -177,7 +177,7 @@
 					Monuments and belvederes
 					</h3>
 					<div class='briefVespa'>
-						Please wear comfortable clothing and sneakers. It sometimes rains in autumn, winter and spring, but Rome’s temperate climate lets you ride your Vespa without problems. We suggest you bring a raincoat with you. Backpacks for your personal belongings are also available.
+						Please wear comfortable clothing and sneakers. It sometimes rains in autumn, winter and spring, but Romeâ€™s temperate climate lets you ride your Vespa without problems. We suggest you bring a raincoat with you. Backpacks for your personal belongings are also available.
 					</div>
 					<div class='tourPoints'>
 						<ul>
@@ -188,15 +188,15 @@
 							<li>Colosseum</li>
 							<li>imperial forums</li>
 							<li>Capitoline Hill</li>
-							<li>Trajan�s Forum</li>
+							<li>Trajan’s Forum</li>
 							<li>Trevi Fountain</li>
-							<li>top of the Spanish Steps (Trinit� dei Monti)</li>
+							<li>top of the Spanish Steps (Trinità dei Monti)</li>
 							<li>Pincio</li>
 							<li>Piazza del Popolo</li>
 							<li>Via Ripetta and French Church of San Luigi</li>
 							<li>Piazza Navona</li>
 							<li>Castel Sant'Angelo</li>
-							<li>Saint Peter�s</li>
+							<li>Saint Peter's</li>
 							<li>Gianicolo</li>
 							<li>End Point: Trastevere</li>
 						</ul>
@@ -206,7 +206,7 @@
 					<div>Deals for families and groups of at least 5 people. </div>
 					<ul>
 						<li>
-							� 45.00 per person including taxes 
+							€ 45.00 per person including taxes 
 						</li>
 						<li>
 							Helmet and single-use hygiene cap provided
@@ -232,7 +232,7 @@
 					The heart of the City 
 					</h3>
 					<div class='briefVespa'>
-						Please wear comfortable clothing and sneakers. It sometimes rains in autumn, winter and spring, but Rome’s temperate climate lets you ride your Vespa without problems. We suggest you bring a raincoat with you. Backpacks for your personal belongings are also available.
+						Please wear comfortable clothing and sneakers. It sometimes rains in autumn, winter and spring, but Romeâ€™s temperate climate lets you ride your Vespa without problems. We suggest you bring a raincoat with you. Backpacks for your personal belongings are also available.
 					</div>
 					<div class='tourPoints'>
 						<ul>
@@ -261,7 +261,7 @@
 					<div>Deals for families and groups of at least 5 people. </div>
 					<ul>
 						<li>
-							� 45.00 per person including taxes 
+							€ 45.00 per person including taxes 
 						</li>
 						<li>
 							Helmet and single-use hygiene cap provided
@@ -287,7 +287,7 @@
 					The Appian Way
 					</h3>
 					<div class='briefVespa'>
-						Please wear comfortable clothing and sneakers. It sometimes rains in autumn, winter and spring, but Rome’s temperate climate lets you ride your Vespa without problems. We suggest you bring a raincoat with you. Backpacks for your personal belongings are also available.
+						Please wear comfortable clothing and sneakers. It sometimes rains in autumn, winter and spring, but Romeâ€™s temperate climate lets you ride your Vespa without problems. We suggest you bring a raincoat with you. Backpacks for your personal belongings are also available.
 					</div>
 					<div class='tourPoints'>
 						<ul>
@@ -297,7 +297,7 @@
 							<li>archaeological walk through the Caracalla Baths</li>
 							<li>Porta San Sebastiano</li>
 							<li>catacombs of San Callisto</li>
-							<li>Cecilia Metella�s mausoleum</li>
+							<li>Cecilia Metella’s mausoleum</li>
 							<li>Temple of Jove (Tempio di Giove)</li>
 							<li>Villa of the Quintili</li>
 							<li>park of the aqueducts (Parco degli acquedotti)</li>
@@ -312,7 +312,7 @@
 					<div>Deals for families and groups of at least 5 people. </div>
 					<ul>
 						<li>
-							� 45.00 per person including taxes 
+							€ 45.00 per person including taxes 
 						</li>
 						<li>
 							Helmet and single-use hygiene cap provided
@@ -353,7 +353,7 @@
 					<div>Deals for families and groups of 2 to 6 people. </div>
 					<ul>
 						<li>
-							� 90.00 per person including taxes 
+							€ 90.00 per person including taxes 
 						</li>
 						<li>
 							Helmet and single-use hygiene cap provided
@@ -388,19 +388,19 @@
 						<ul>
 							<li>Start Point: Trastevere</li>
 							<li>Ghetto</li>
-							<li>the Mouth of Truth (Bocca della verit�)</li>
+							<li>the Mouth of Truth (Bocca della verità)</li>
 							<li>Via di San Teodoro and the orange garden (Giardino degli aranci)</li>
 							<li>Colosseum</li>
 							<li>imperial forums</li>
 							<li>Capitoline Hill</li>
-							<li>Trajan�s Forum</li>
+							<li>Trajan’s Forum</li>
 							<li>Piazza Venezia</li>
 							<li>Piazza di Spagna</li>
 							<li>Pincio</li>
 							<li>Piazza del Popolo</li>
 							<li>Via Ripetta and the French Church of San Luigi</li>
 							<li>Via dei Coronari and Castel Sant' Angelo</li>
-							<li>Saint Peter�s</li>
+							<li>Saint Peter’s</li>
 							<li>Tiber Island</li>
 							<li>End Point: Trastevere</li>
 						</ul>
@@ -409,10 +409,10 @@
 				<div class='VespaTourDetail'>
 					<div>Lunch Menu</div>
 					<br/>
-					<div>Italian appetizer with bruschetta, pasta Amatriciana (mezzamaniche �half sleeves� pasta with tomato and bacon sauce), saltimbocca Trasteverina, mixed salad, dessert, 1/2 litre of water, 1/4 litre of wine, coffee.</div>
+					<div>Italian appetizer with bruschetta, pasta Amatriciana (mezzamaniche “half sleeves” pasta with tomato and bacon sauce), saltimbocca Trasteverina, mixed salad, dessert, 1/2 litre of water, 1/4 litre of wine, coffee.</div>
 					<ul>
 						<li>
-							� 60.00 per person all included
+							€ 60.00 per person all included
 						</li>
 					</ul>
 				</div>
@@ -423,7 +423,7 @@
 					The Big Beautiful bike tour
 					</h3>
 					<div class='briefVespa'>
-						Please wear comfortable clothing and sneakers. It sometimes rains in autumn, winter and spring, but Rome’s temperate climate lets you ride your Vespa without problems. We suggest you bring a raincoat with you. Backpacks for your personal belongings are also available.
+						Please wear comfortable clothing and sneakers. It sometimes rains in autumn, winter and spring, but Romeâ€™s temperate climate lets you ride your Vespa without problems. We suggest you bring a raincoat with you. Backpacks for your personal belongings are also available.
 					</div>
 					<div class='tourPoints'>
 						<ul>
@@ -457,7 +457,7 @@
 					<div>Deals for families and groups of at least 5 people. </div>
 					<ul>
 						<li>
-							� 80.00 per person including taxes 
+							€ 80.00 per person including taxes 
 						</li>
 						<li>
 							Helmet and single-use hygiene cap provided
