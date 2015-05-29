@@ -135,7 +135,7 @@
                       <div><a href="http://ow.ly/NhXpK" target="_blank">http://ow.ly/NhXpK</a></div>
                       <div><br>
                       </div>
-                      <div><strong>9botitalia</strong> e<strong> Bizzeffe</strong> parteciperanno insieme ad una serie di eventi tra i più importanti nell'ambito del turismo e del turismo accessibile ad iniziare dal 4 giugno con la giornata romana di <img alt="Inline image 1" height="24" src="https://mail.google.com/mail/u/0/?ui=2&ik=b0d6b76d2c&view=fimg&th=14d9f02f6c8de7b4&attid=0.1&disp=emb&realattid=ii_14d8a639fec1cbff&attbid=ANGjdJ9BgF6LOgKA8adQ9hIyNwJ4tWh0glmM9jqeWZUyjwPSpGJJ2CILAC3qVwCkxyLcggXrLJAq-n_WTi-MtJgVpIP-EkHFRLus5XXQXFT-xUuWxNp7eEpg3V9rE8w&sz=w190-h48&ats=1432895414769&rm=14d9f02f6c8de7b4&zw&atsh=1" width="95"> 2015 all'ARA PACIS.</div>
+                      <div><strong>9botitalia</strong> e<strong> Bizzeffe</strong> parteciperanno insieme ad una serie di eventi tra i più importanti nell'ambito del turismo e del turismo accessibile ad iniziare dal 4 giugno con la giornata romana di <img alt="Inline image 1" height="24" src="images/icons/expo.png" width="95"> 2015 all'ARA PACIS.</div>
                     </div>
                 </div>
             </div>
