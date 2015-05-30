@@ -39,10 +39,10 @@
 						<?php 
 							}else{
 						?>		
-							$('#textSlideShow').css('display', 'block');
 							$("#os-phrases > h2").lettering('words').children("span").lettering().children("span").lettering();
-							showHomePageTimer	=	setTimeout(postAnimationAction, 20200);
-							$('#skipToMainContent').on('click', skipToMainContent);
+							$('#textSlideShow').css('display', 'block');
+							//showHomePageTimer	=	setTimeout(postAnimationAction, 20200);
+							//$('#skipToMainContent').on('click', skipToMainContent);
 						<?php }
 						?>
 						
@@ -63,7 +63,7 @@
                         TurnOnNextPageWithTransition(64);
                     };
                 </script>
-                <a href="#" class="greyTabButton hvr-float-shadow" id="skipToMainContent">SKIP TO MAIN CONTENT</a>
+                <a href="#" class="hvr-float-shadow greyTabButton" id="skipToMainContent">SKIP TO MAIN CONTENT</a>
             </div>
 			<div id="homePage" class="pt-page" style="display:none;">
             </div>
