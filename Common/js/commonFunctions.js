@@ -958,28 +958,6 @@ function SetHeaderProperties(ObjectsArray)
 	}
 }
 
-
-
-/*=======================================================*/
-//===========FUNCTION TO SHOW THE LOADING EFFECT==========
-/*======================================================*/
-	
-function loadImage()
-{
-	//document.getElementById('LayOutDiv').style.display = "block";
-	//showCenter('<div id="fade"><img src="../../Common/images/aloader.gif"></div>');
-	//document.getElementById('LayOutDiv').innerHTML = '<img src="../../Common/images/aloader.gif">'; 
-	var LoadingImage	=	document.getElementById('LoadingImage');
-	if(!IsValueNull(LoadingImage)){
-		LoadingImage.style.display = "block";
-		showCenter('LoadingImage');
-	}
-	LayOutDiv	=	document.getElementById('LayOutDiv');
-	if(!IsValueNull(LayOutDiv))
-		LayOutDiv.style.display = "block";
-	setTimeout(deloadImage, 15000);
-}
-
 /*=======================================================*/
 //======FUNCTION TO VALIDATE MINUTES AND SECONDS==========
 /*======================================================*/
@@ -995,19 +973,31 @@ function isMinuteOrSecond(obj)
 	   return false;
 	}   
 }  
+
+
+/*=======================================================*/
+//===========FUNCTION TO SHOW THE LOADING EFFECT==========
+/*======================================================*/
+	
+function loadImage()
+{
+    $(document.body).append('<div id="centerDivForCustomContent" style="position:fixed; z-index:10002; overflow: auto;display:block"></div>');
+	$(document.body).append('<div id="layoutDivForCustomContent" style="background-color: rgb(255, 255, 255); position: absolute; top: 0px; z-index: 20001; opacity: 0.7; display: block;width:100%;height:100%" ></div>');
+    centerDivForCustomContent   =   $('div#centerDivForCustomContent');
+    centerDivForCustomContent.append($('#LoadingImage').clone().css('display', 'block'));
+    centerDivForCustomContent.addClass('browseFrame');
+ 	showCenter('centerDivForCustomContent');
+	setTimeout(deloadImage, 15000);
+}
+
 /*=======================================================*/
 //===========FUNCTION TO HIDE THE LOADING EFFECT==========
 /*======================================================*/
 	
 function deloadImage()
 {
-	//document.getElementById('LayOutDiv').innerHTML = ''; 
-	LoadingImage= document.getElementById('LoadingImage');
-	if(!IsValueNull(LoadingImage))
-		LoadingImage.style.display = "none";
-	LayOutDiv	=	document.getElementById('LayOutDiv');
-	if(!IsValueNull(LayOutDiv))
-		LayOutDiv.style.display = "none";
+	$('#centerDivForCustomContent').remove();
+    $('#layoutDivForCustomContent').remove();
 }
 	
 	
