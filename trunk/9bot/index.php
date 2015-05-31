@@ -4,14 +4,20 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="../Common/css/pageTransition.css" />
+        <meta name="google-site-verification" content="OOZNMzRxT7UxXFgwQucOjamDXOYnm-zoqu0NSl0pd-4" />
+       	<link rel="stylesheet" type="text/css" href="../Common/css/pageTransition.css" />
 	   	<link rel="stylesheet" type="text/css" href="../Common/css/animations.css" />
 		<link rel="stylesheet" type="text/css" href="../Common/css/sequenceLetters.css" />
 		<?php require_once 'require.php';?>
 		<link rel="stylesheet" type="text/css" href="css/Home_textShow.css" />
 		<script type="text/javascript" src="../Common/js/JsFunctionsToLocatePopUpdiv.js"></script>
 	</head>
-	<body>	
+	<body>
+	    <span style="display:none;">ninebot è la soluzione intelligente per la mobilità del futuro. Elettrico e non inquinante, leggero e smontabile, trasportabile in macchina e nel gavone di una barca.
+ 
+Ninebot One Dal giovane manager al rapper, per girare in allegria e godere dell'ambiente che ci circonda, saltando con rapide evoluzioni il traffico e le barriere di città ormai troppo congestionate.
+ 
+Nini Robotics è la soluzione accessibile per tutti, anche per chi si trovava sino a ieri bloccato ed impedito da barriere architettoniche: scale o ascensori troppo stretti</span>	
 		<div id="pt-main" class="pt-perspective">
 			<div id="textSlideShow" class="pt-page" style="display:none;">
                 <div class="os-phrases" id="os-phrases">
