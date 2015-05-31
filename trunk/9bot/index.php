@@ -2,15 +2,14 @@
 	session_start();
 ?>
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="../Common/css/pageTransition.css" />
-		<link rel="stylesheet" type="text/css" href="../Common/css/animations.css" />
+	   	<link rel="stylesheet" type="text/css" href="../Common/css/animations.css" />
 		<link rel="stylesheet" type="text/css" href="../Common/css/sequenceLetters.css" />
 		<?php require_once 'require.php';?>
 		<link rel="stylesheet" type="text/css" href="css/Home_textShow.css" />
-        <meta charset="utf-8">
-        <title>ninebot</title>
+		<script type="text/javascript" src="../Common/js/JsFunctionsToLocatePopUpdiv.js"></script>
 	</head>
 	<body>	
 		<div id="pt-main" class="pt-perspective">
@@ -30,7 +29,7 @@
 						
 						setSessionForIntro	=	1;
 						showHomePageTimer	=	'';
-						$( "#homePage" ).load( "Home.php" );
+                        homePageStuffLoaded =   0;
 						<?php
 							if(isset($_SESSION['IntroDone']) && $_SESSION['IntroDone'] == 1){
 						?>
@@ -38,18 +37,28 @@
 							skipToMainContent();
 						<?php 
 							}else{
-						?>		
+						?>	
+                            calculatedTimeoutForTextSlideShow   =   5040 * $('#os-phrases').find('h2').length;
 							$("#os-phrases > h2").lettering('words').children("span").lettering().children("span").lettering();
 							$('#textSlideShow').css('display', 'block');
-							//showHomePageTimer	=	setTimeout(postAnimationAction, 20200);
-							//$('#skipToMainContent').on('click', skipToMainContent);
+                            
+							showHomePageTimer	=	setTimeout(skipToMainContent, calculatedTimeoutForTextSlideShow);
+                            setTimeout(loadHomePage, 2500);
+							$('#skipToMainContent').on('click', skipToMainContent);
 						<?php }
 						?>
-						
+						function loadHomePage(){
+                            $( "#homePage" ).load( "Home.php" );
+                            homePageStuffLoaded =   1;
+                        };
 						function skipToMainContent(){
-							if(!IsValueNull(showHomePageTimer))
+ 							loadImage();
+                            if(homePageStuffLoaded == 0)
+                                loadHomePage();
+                            if(!IsValueNull(showHomePageTimer))
 								clearTimeout(showHomePageTimer);
 							postAnimationAction();
+                            deloadImage();
 						}
 					});
                     postAnimationAction =   function(){
@@ -71,5 +80,6 @@
 		<script src="../Common/js/modernizr.custom.js"></script>
 		<script src="../Common/js/jquery.lettering.js"></script>
 		<script src="../Common/js/pagetransitions.js"></script>
+		<img src="../Common/images/aloader.gif" id="LoadingImage" style="display:none;" />
 	</body>
 </html>

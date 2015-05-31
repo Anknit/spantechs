@@ -14,7 +14,6 @@ body {
   padding: 10px 12px;
   background-color: #ccc;
   color: #111;
-  cursor: auto;
   bottom: -90%;
   text-align: center;
   text-decoration: none !important;
@@ -25,4 +24,5 @@ body {
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
+  cursor: pointer;
 }
