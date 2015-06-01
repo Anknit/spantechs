@@ -25,7 +25,7 @@
 	display:block;
 	padding-left:9px;
 	line-height:24px;
-	background:url(../images/arrow.gif) no-repeat 118px center;
+	background:url(../images/br_down.png) no-repeat 105px center;
 	cursor:pointer;
 }
 .lang:hover .region{
