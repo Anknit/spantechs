@@ -16,7 +16,7 @@
 	font-size:14px;
 	z-index:50;
 	margin-right:2%;
-	background-color:#666;
+	background: linear-gradient(#ddd, #888, #777, #666 );
 	color:#ffffff;
 }
 .choose{
