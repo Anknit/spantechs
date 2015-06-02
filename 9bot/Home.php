@@ -1,13 +1,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/layout.css" />
-    <link rel="stylesheet" type="text/css" href="css/9botlayout.css" />
+    <link rel="stylesheet" type="text/css" href="../Common/css/figCaptionOnHover.css" />
+    <link rel="stylesheet" type="text/css" href="../Common/css/cssForJssorSliders.css" />
     <link rel="stylesheet" type="text/css" href="css/home.css" />
     <link rel="stylesheet" type="text/css" href="css/moreHome.css" />
     <link rel="stylesheet" type="text/css" href="../Common/css/regionWithFlags.css" />
     <?php require_once 'require.php';?>
+	<script src="../Common/js/jssor.slider.mini.js" type="text/javascript"></script>
+    <script src="js/homePageAnimation.js" type="text/javascript"></script>
 	<script>
         $(HomePageSlideShow);
     </script>        
