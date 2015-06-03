@@ -8,9 +8,9 @@
         <style>
 			h3.greenButton{
 				background-color:#A0CE4E;
-				padding:10px 10px;
+				padding:1% 1%;
 				color:#fff;
-				width:400px;
+				width:260px;
 				height:2%;;
 				border-radius:2px;
 			}
@@ -79,7 +79,7 @@
 							</span>
 						</span>
                     </div>
-                    <img u="caption" t="*" t2=B d=400 src="../../images/slideAnimation/nineBotE.png" style="position:absolute;right:30%;bottom: 5%;" width="300px" height="auto" />
+                    <img u="caption" t="*" t2=B d=400 src="../../images/slideAnimation/nineBotE.png" style="position:absolute;right:20%;bottom: 5%;" width="300px" height="auto" />
                     <div u="caption" t="*" t2="*" du="900" style="position: absolute;top: 140px; left: 60px;">
                          <h3 class="greenButton">
                          	HIGH PERFORMANCE
