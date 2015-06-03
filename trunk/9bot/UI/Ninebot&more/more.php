@@ -84,7 +84,7 @@
 						$ChanceToShow: 1,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
 						$AutoCenter: 2,                                 //[Optional] Auto center arrows in parent container, 0 No, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
 						$Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
-					},
+					}
                 };
                 var jssor_slider1 = new $JssorSlider$('testSlider', options);
             });
@@ -174,7 +174,7 @@
                     </div>
                     <div u="caption" t="*" t2="*" du="800" style="position: absolute;top: 340px; left: 60px;">
                          <h3 class="greenButtonTextInfo">
-                         	La vera libertà su 2 ruote
+                         	La vera libertÃ  su 2 ruote
                          </h3>
                     </div>
                     <div u="caption" t="*" t2="*" du="900" style="position: absolute;top: 380px; left: 60px;">
@@ -246,10 +246,10 @@
                 </div>
 	            <div style="width:50%; float:left; margin:auto; margin-left:2%;">
                     <h1 style="width:80%; margin:auto">
-                        <span class="blueColouredContent">Il futuro</span> è adesso
+                        <span class="blueColouredContent">Il futuro</span> Ã¨ adesso
                     </h1>
                     <div class="qouteSpan descriptionContainer">
-                        <p><b>Ninebot</b> è un nuovo mezzo di trasporto e la perfetta combinazione di design. Per saperne di più!</p>
+                        <p><b>Ninebot</b> Ã¨ un nuovo mezzo di trasporto e la perfetta combinazione di design. Per saperne di piÃ¹!</p>
                     </div>
 	                <a href="NinebotE.php"><input type="button" value="CLICCA QUI" class="hvr-pulse-grow actionButton" /></a>
 	            </div>
@@ -267,7 +267,7 @@
                         <span class="blueColouredContent">Come funziona il Ninebot?</span>
                     </h1>
                     <div class="qouteSpan descriptionContainer">
-                        <p>Il funzionamento dei Ninebot è intuitivo e semplice allo stesso tempo. Inoltre, il Ninebot può essere personalizzato utilizzando l'applicazione smartphone, così l'esperienza di guida è benessere ottimizzato.</p>
+                        <p>Il funzionamento dei Ninebot Ã¨ intuitivo e semplice allo stesso tempo. Inoltre, il Ninebot puÃ² essere personalizzato utilizzando l'applicazione smartphone, cosÃ¬ l'esperienza di guida Ã¨ benessere ottimizzato.</p>
                     </div>
 	            </div>
             </div>
@@ -303,18 +303,18 @@
         <ul style="list-style-type:none; overflow:hidden; display:inline-flex">
             <li class="whiteContentBox">
                 <span>
-                    Ninebot è un robot autobilanciamente, un mezzo di trasporto nuovo e facile da usare
+                    Ninebot Ã¨ un robot autobilanciamente, un mezzo di trasporto nuovo e facile da usare
                 </span>
             </li>
             <li class="whiteContentBox">
                 <span>
-                    Ninebot segue con grande precisione i movimenti del tuo corpo. La tecnologica del pendolo  invertito consente un’istintiva conduzione del mezzo
+                    Ninebot segue con grande precisione i movimenti del tuo corpo. La tecnologica del pendolo  invertito consente unâ€™istintiva conduzione del mezzo
                 </span>
             </li>
             <li class="whiteContentBox">
                 <span>
                     <a>Facile trasporto</a>
-                    Pesa solo 23 kg, 20 senza manubrio e con le sue ridotte dimensioni entra nel gavone di una barca e, addirittura, nella porta di un treno ad alta velocità può entrare naturalmente anche in un ascensore o una scala mobile.
+                    Pesa solo 23 kg, 20 senza manubrio e con le sue ridotte dimensioni entra nel gavone di una barca e, addirittura, nella porta di un treno ad alta velocitÃ  puÃ² entrare naturalmente anche in un ascensore o una scala mobile.
                 </span>
             </li>
         </ul>
@@ -323,7 +323,7 @@
 	<div class="centeredContent bottomBorderedContent paddedContent" style="float:left; width:100%;">
     	<div class="centeredInternalContent" style="width:100%; float:left">
         	<div class="actionHeadingImgBlock">
-	            <div style="width:90%; float:left; margin:auto; margin-left:2%;">
+	            <div style="width:90%; margin:auto; ">
                     <h1 style="width:80%; margin:auto">
                         <span class="blueColouredContent">Anche interessa Ninebot ? Contattarci in qualsiasi momento !</span>
                     </h1>
@@ -336,11 +336,11 @@
         </div>
     </div>
     
-	<div class="centeredContent bottomBorderedContent paddedContent" style="float:left; width:100%; padding:0; margin-top:2%;background-color:#096487; color:#D2CBCB ">
+	<div class="centeredContent bottomBorderedContent paddedContent" style="float:left; width:100%; padding:0; margin-top:2%;background-color:#fff; color:#999 ">
     	<div class="centeredInternalContent" style="width:100%; float:left">
         	<div class="actionHeadingImgBlock">
                 <h1 style="width:100%; margin:auto; height:62px; padding-top:12px">
-                    <span><i>“Non sempre essere i primi significa essere i migliori...!”</i></span>
+                    <span><i>â€œNon sempre essere i primi significa essere i migliori...!â€�</i></span>
                 </h1>
             </div>
         </div>
