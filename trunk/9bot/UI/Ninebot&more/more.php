@@ -238,58 +238,68 @@
 			},17000);
 		};
 */	</script>
-	<div class="centeredContent bottomBorderedContent paddedContent">
-    	<div class="centeredInternalContent" style="width:80%;">
-        	<div style="width:80%; margin:auto">
-                <h1 style="width:80%; margin:auto">
-                    <span class="blueColouredContent">Il futuro</span> è adesso
-                </h1>
-                <div class="qouteSpan" style="width:100%; margin:auto; border:none">
-                	<p><b>Ninebot</b> è un nuovo mezzo di trasporto e la perfetta combinazione di design. Per saperne di più!</p>
+	<div class="centeredContent bottomBorderedContent paddedContent" style="float:left; width:100%;">
+    	<div class="centeredInternalContent" style="width:100%; float:left">
+        	<div class="actionHeadingImgBlock">
+                <div class="imgContainer" >
+                	<img src="../../images/ninebot_more/6.png" width="60%" />
                 </div>
-	            <div style="margin:auto;">
-	                <input type="button" class="hvr-pulse-grow" value="CLICCA QUI" style="cursor:pointer;width:187px; height:58px; color:#638E1A; background-color:#BDE075; font-size:16px; font-weight:600; margin-top:15px;" onClick="location.href = 'NinebotE.php';" />
+	            <div style="width:50%; float:left; margin:auto; margin-left:2%;">
+                    <h1 style="width:80%; margin:auto">
+                        <span class="blueColouredContent">Il futuro</span> è adesso
+                    </h1>
+                    <div class="qouteSpan descriptionContainer">
+                        <p><b>Ninebot</b> è un nuovo mezzo di trasporto e la perfetta combinazione di design. Per saperne di più!</p>
+                    </div>
+	                <a href="NinebotE.php"><input type="button" value="CLICCA QUI" class="hvr-pulse-grow actionButton" /></a>
 	            </div>
             </div>
         </div>
     </div>
-	<div class="centeredContent" style="padding:30px;">
+	<div class="centeredContent bottomBorderedContent paddedContent" style="float:left; width:100%;">
+    	<div class="centeredInternalContent" style="width:100%; float:left">
+        	<div class="actionHeadingImgBlock">
+                <div class="imgContainer">
+                	<img src="../../images/slideAnimation/iPhone6Hand.png" width="40%" />
+                </div>
+	            <div style="width:50%; float:left; margin:auto; margin-left:2%;">
+                    <h1 style="width:80%; margin:auto">
+                        <span class="blueColouredContent">Come funziona il Ninebot?</span>
+                    </h1>
+                    <div class="qouteSpan descriptionContainer">
+                        <p>Il funzionamento dei Ninebot è intuitivo e semplice allo stesso tempo. Inoltre, il Ninebot può essere personalizzato utilizzando l'applicazione smartphone, così l'esperienza di guida è benessere ottimizzato.</p>
+                    </div>
+	            </div>
+            </div>
+        </div>
+    </div>
+	<div class="centeredContent bottomBorderedContent paddedContent" style="float:left; width:100%;">
         <ul style="list-style-type:none; overflow:hidden; display:inline-flex; padding-bottom:15px; padding-right:40px;">
-            <li class="blueContentBox hvr-wobble-skew">
-                <h3 class="darkColourHeading">Ambiente</h3>
-                <span class="boxContent">
+            <li class="blueContentBox">
+                <div class="darkColourHeading">Ambiente</div>
+                <div class="iconContainer"><img src="../../images/icons/environment.png" width="30" /></div>
+                <div class="boxContent">
                     Nessuna emissione di CO2. Puoi parcheggiare il Ninebot in casa, evitando costosi garage e parcheggi
-                </span>
+                </div>
             </li>
-            <li class="blueContentBox hvr-wobble-skew">
-                <h3 class="darkColourHeading">Design</h3>
-                <span class="boxContent">
+            <li class="blueContentBox">
+                <div class="darkColourHeading">Design</div>
+                <div class="iconContainer"><img src="../../images/icons/design.png" width="30" /></div>
+                <div class="boxContent">
                     Linea elegante e pulita<br />
                     Disponibile in diversi colori .
-                </span>
+                </div>
             </li>
-            <li class="blueContentBox hvr-wobble-skew">
-                <h3 class="darkColourHeading">Sicurezza</h3>
-                <span class="boxContent">
+            <li class="blueContentBox">
+                <div class="darkColourHeading">Sicurezza</div>
+                <div class="iconContainer"><img src="../../images/icons/security.png" width="30" /></div>
+                <div class="boxContent">
                     Sistemi ridondanti. Allarmi e segnalazione puntuale di eventuali problemi.
-                </span>
+                </div>
             </li>
         </ul>
     </div>
-    <div class="centeredContent">
-        <div style="margin: 20px auto; width: 80%;">
-            <img src="../../images/icons/ninebot.png" alt="NINEBOT" />
-            <h2 style="font-style: italic; font-family: cursive; color:#05B9BD">
-                Come funziona il Ninebot?
-            </h2>
-            <div class="qouteSpan">
-                <p>Il funzionamento dei Ninebot è intuitivo e semplice allo stesso tempo. Inoltre, il Ninebot può essere personalizzato utilizzando l'applicazione smartphone, così l'esperienza di guida è benessere ottimizzato.</p>
-            </div>
-        </div>
-        <br />
-        <hr align="center" style="width:75%;  border: 1px dotted #666;">
-        <hr align="center" style="width:75%;  border: 1px dotted #666;">
-        <br />
+    <div class="centeredContent bottomBorderedContent">
         <ul style="list-style-type:none; overflow:hidden; display:inline-flex">
             <li class="whiteContentBox">
                 <span>
@@ -310,26 +320,30 @@
         </ul>
     </div>
     
-	<div style="padding:30px;height: 200px;">
-    	<div style="width:80%;margin:auto">
-        	<h2 style="font-style: italic; font-family: cursive; color:#05B9BD;; width:80%; text-align:center">
-               Anche interessa Ninebot ? Contattarci in qualsiasi momento !
-            </h2>
-            <div class="qouteSpan" style="width:70%; float:left">
-	            <p>
-	            	Siamo aperti a tutti i tipi di richieste e siamo felici di entrare in contatto personale con voi .
-	            </p>
+	<div class="centeredContent bottomBorderedContent paddedContent" style="float:left; width:100%;">
+    	<div class="centeredInternalContent" style="width:100%; float:left">
+        	<div class="actionHeadingImgBlock">
+	            <div style="width:90%; float:left; margin:auto; margin-left:2%;">
+                    <h1 style="width:80%; margin:auto">
+                        <span class="blueColouredContent">Anche interessa Ninebot ? Contattarci in qualsiasi momento !</span>
+                    </h1>
+                    <div class="qouteSpan descriptionContainer" style="text-align:center">
+                        <p>Siamo aperti a tutti i tipi di richieste e siamo felici di entrare in contatto personale con voi .</p>
+                    </div>
+	                <a href="contact.php"><input type="button" class="hvr-pulse-grow actionButton" value="CONTATTO" /></a>
+	            </div>
             </div>
-	    	<div style="float:right;">
-	            <a href="contact.php"><input type="button" value="CONTATTO" style="width:187px; height:58px; color:#638E1A; background-color:#BDE075; font-size:16px; font-weight:600; cursor:pointer" /></a>
-	        </div>
         </div>
     </div>
     
-	<div style="width:100%;background-color:#05B9BD; padding:10px; color:#fff; text-align:center; font-style: italic; font-family: monospace;">
-        <h2>
-            “Non sempre essere i primi significa essere i migliori...!”
-        </h2>
+	<div class="centeredContent bottomBorderedContent paddedContent" style="float:left; width:100%; padding:0; margin-top:2%;background-color:#096487; color:#D2CBCB ">
+    	<div class="centeredInternalContent" style="width:100%; float:left">
+        	<div class="actionHeadingImgBlock">
+                <h1 style="width:100%; margin:auto; height:62px; padding-top:12px">
+                    <span><i>“Non sempre essere i primi significa essere i migliori...!”</i></span>
+                </h1>
+            </div>
+        </div>
     </div>
 </div>
 <?php require_once 'footer.php';?>
