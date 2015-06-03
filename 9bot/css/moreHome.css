@@ -29,6 +29,7 @@
 }
 .bottomBorderedContent{
 	border-bottom:1px solid #ccc;
+	border-bottom-style: dashed;
 }
 .blueColouredContent{
 	color:#096487;
@@ -36,17 +37,24 @@
 
 .blueContentBox{
 	width:300px;
-	background-color: #05B9BD;
+	background-color: #aaa;
 	border-radius: 10px;
 	color: #ccc;
 	margin-left:20px;
 	padding: 10px 10px 40px 10px;
 	display:inline-block;
-	transition:all 0.5s linear;
+	transition:all 1.5s linear;
 	cursor:pointer;
 }
 .blueContentBox:hover{
 	box-shadow: 1px 6px 6px 3px #aaa;
+}
+.blueContentBox:hover .darkColourHeading{
+	text-decoration:underline;
+}
+.blueContentBox > .iconContainer{
+	float:left;
+	margin-top: 4%;
 }
 
 .whiteContentBox{
@@ -67,16 +75,22 @@
 }
 
 .darkColourHeading{
-  color: #5f5f5f;
+  color: #fff;
   font-style: italic;
   font-size: 24px;
-  text-decoration: underline;
+  float:left;
+  margin: 15px 25px;
+  cursor:default;
+  width:70%;
 }
 
 .boxContent{
 	width:75%;
-	color: #fff;
+	color: #333;
 	font: 16px arial;
+	float:left;
+	text-align: left;
+	margin-left:5%;
 }
 .qouteSpan{
   padding: 1px 5px;
@@ -90,3 +104,36 @@
 	background-color:#666;
 	color:#fff;
 }
+
+.actionHeadingImgBlock{
+	width:95%;
+	margin:auto;
+	float:left;
+}
+
+.actionHeadingImgBlock > .imgContainer{
+	border:none;
+	float:left;
+	width:40%;	
+}
+.imgContainer > img{
+	float:right;
+}
+.actionHeadingImgBlock .descriptionContainer{
+	border:none;
+	float:left;
+	width:100%;	
+	text-align:left;
+}
+.actionButton{
+	cursor:pointer;
+	width:187px;
+	height:50px;
+	color:#638E1A;
+	background-color:#BDE075;
+	font-size:16px;
+	font-weight:600;
+	margin-top:1%;
+	float:right;
+}
+
