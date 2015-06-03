@@ -10,7 +10,9 @@
 	<script src="../Common/js/jssor.slider.mini.js" type="text/javascript"></script>
     <script src="js/homePageAnimation.js" type="text/javascript"></script>
 	<script>
-        $(HomePageSlideShow);
+        $(function(){
+			HomePageSlideShow(false, 'homePageImageSlider');
+		});
     </script>        
 </head>
 <body>
