@@ -5,12 +5,24 @@ class DBMgr{
 	//Constructor function to connect and select database.
 	public function DBMgr()
 	{
-		require_once __DIR__.'/DbConfig.php';
-		$this->mysql_Host	=	$host;
-		$this->Port			=	$port;
-		$this->userName		=	$username;
-		$this->passWord		=	$password;
-		$this->DatabaseName	=	$database;
+		if(function_exists('get_DbConfig')){
+			$config = get_DbConfig();
+		}
+		else{
+			$config = array(
+				'host'	=>	'',
+				'port'	=>	'',
+				'username'	=>	'',
+				'password'	=>	'',
+				'database'	=>	''
+			);
+		}
+
+		$this->mysql_Host	=	$config['host'];
+		$this->Port			=	$config['port'];
+		$this->userName		=	$config['username'];
+		$this->passWord		=	$config['password'];
+		$this->DatabaseName	=	$config['database'];
 		
 		$this->connect_DB();		
 	}
@@ -52,11 +64,8 @@ class DBMgr{
 /*			if(strpos($value, '+') > 0 || strpos($value, '-') > 0)	
 				$FieldsAsString	.=	 $FieldName." = ".$value;
 */
-			if(strpos($value,'\'') !== false) {
-				$value=	addslashes($value);
-			}
-			if(strpos($value,'\"') !== false) {
-				$value=	addslashes($value);
+			if(strpos($value,'\'') !== false || strpos($value,'\"') !== false) {
+				$value	=	addslashes($value);
 			}
 
 			if($value	!= 'now()')	
