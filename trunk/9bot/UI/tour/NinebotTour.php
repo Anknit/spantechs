@@ -262,7 +262,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <input type="number" name="PersonCount" id="PersonCount" class="bookingSelectBox" min="1" max="7" disabled="disabled" placeholder="Tour Members" form="payPalPurchaseForm" onKeyUp="checkNum(this); if(this.value > 7){this.value = 7;}"/>
+                        <input type="number" name="PersonCount" id="PersonCount" class="bookingSelectBox" min="1" max="7" placeholder="Tour Members" form="payPalPurchaseForm" onKeyUp="checkNum(this); if(this.value > 7){this.value = 7;}"/>
                     </td>
                 </tr>
                 <tr>
@@ -318,16 +318,6 @@
 </div>
 <script src="../../../Common/Cupertino/jquery-ui.min.js" type="text/javascript"></script>
 <script src="../../js/tourpage.js" type="text/javascript"></script>    
-<script>
-	$(function(){
-		$('.xxThumbImage').wrap('<a></a>');
-		$('#containerTable').find('table').addClass('innerTable');
-		$('.xxThumbImage').closest('a').addClass('hvr-bubble-float-right');
-		$('div.normalButton').bind('click', function(){showPackage(this);});
-		$('.blueFont').closest('td').not('.qouteSpan').addClass('qouteSpan');
-		
-	});
-</script>
 <?php 
 	require_once 'footer.php';
 ?>
