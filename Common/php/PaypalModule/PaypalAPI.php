@@ -1,13 +1,6 @@
 <?php
-	require_once __DIR__.'./../OperateDB/DbMgrInterface.php';
+	require_once __DIR__.'./../../../9bot/Db.php';
 	require "PaypalConfig.php"; 
-	//require_once __DIR__ ."./../OperateDB/DbMgrInterface.php";
-	//require_once __DIR__ ."./../../../PulsarPPU/CommonMethods.php";
-	/*if (session_id() == "") 
-		session_start();
-		*/
-	
-
 	/* An express checkout transaction starts with a token, that
 	   identifies to PayPal your transaction
 	   In this example, when the script sees a token, the script
@@ -351,7 +344,7 @@
 		$_SESSION['payer_id'] = $resArray['PAYERID'];		
 		$ack = ConfirmPayment($_SESSION["Payment_Amount"], $resArray);
 		if($ack == 'SUCCESS')
-			UpdatePaymentInfoForPaypal($resArray); 
+			UpdatePaymentInfoForPaypal($resArray);
 		return $ack; 
 	}
 	function GetUniqueInvoiceNumber()
@@ -362,12 +355,18 @@
 	function UpdatePaymentInfoForPaypal($resArray)
 	{
 		$WriteTestArray	=	array(
-				'Table'=> 'bookinginfo',
-				'Fields'=> array('tourId'=> $_SESSION['packageSelect'],
-						'bookingOn'=> 'now()',
-						'bookingDate'=> $_SESSION['selectedDateForTour'],
-						'personCount'=> $_SESSION['PersonCount']
-						),
+				'Table'=> 'booking_info',                   
+				'Fields'=> array (
+					'TourID'		=> $_SESSION['packageSelect'],
+					'BookedOn'		=> 'now()',
+					'DateSelected'	=> $_SESSION['selectedDateForTour'],
+					'NumberOfPeople'=> $_SESSION['PersonCount'],
+					'AmountPaid'	=> $_SESSION['paypal_payment_amount'],
+					'BookedBy_Name'	=> $_SESSION['bookingUserName'],
+					'BookedBy_Email'=> $_SESSION['bookingUserEmail'],
+					'BookedBy_Phone'=> $_SESSION['bookingUserPhone'],
+					'PaymentStatus'	=> 1
+				),
 		);
 	
 		$Result	=	DB_Insert($WriteTestArray);
