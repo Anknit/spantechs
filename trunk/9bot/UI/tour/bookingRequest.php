@@ -1,5 +1,5 @@
 <?php
-	require_once '../../../Common/php/OperateDB/DbMgrInterface.php';
+	require_once __DIR__.'./../../Db.php';
 	$bookedDate	=	array();
 	$tour	=	$_GET['tid'];
 	$tourBookingInfo	=	DB_Read(array(

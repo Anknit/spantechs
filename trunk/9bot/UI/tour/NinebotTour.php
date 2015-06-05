@@ -301,13 +301,9 @@
                 <tr>
                     <td>
                         <div style="padding: 0.2em 1em;">
-                                <form id="payPalPurchaseForm" action='../../../Common/php/PaypalModule/PaypalCheckoutFile.php?XDEBUG_SESSION_START=ECLIPSE_DBGP&KEY=14272751593961#' METHOD='POST'>
+                                <form id="payPalPurchaseForm" action='../../../Common/php/PaypalModule/PaypalCheckoutFile.php' METHOD='POST'>
                                     <input type="hidden" name="paypal_payment_amount" id="paypal_payment_amount" />
-                                <!--
-                                    <input type="hidden" name="cmd" value="_s-xclick">
-                                    <input type="hidden" name="hosted_button_id" value="8UL7JB9FVY3Q2">
-                                -->
-                                    <img src="https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif" align="left" style="margin-left:100px;; cursor:pointer" onclick="paypalCheckOutConfirm()" />
+                                    <img id="paypalImage" src="https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif" align="left" style="margin-left:100px;opacity:0.1; cursor:pointer" onclick="paypalCheckOutConfirm()" />
                             </form>
                         </div>
                     </td>
