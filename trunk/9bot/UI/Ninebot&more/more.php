@@ -13,6 +13,7 @@
 				width:260px;
 				height:2%;;
 				border-radius:2px;
+                cursor:default;
 			}
 			h3.greenButtonTextInfo{
 				font-size:20px;

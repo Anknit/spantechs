@@ -84,6 +84,9 @@
                             <img u="image" src="images/homePageAnimationImages/5.png" />
 						</div>
                         <div>
+                            <img u="image" src="images/homePageAnimationImages/6.png" />
+						</div>
+                        <div>
                             <img u="image" src="images/homePageAnimationImages/7.png" />
 						</div>
                         <!-- Arrow Left -->
@@ -137,7 +140,7 @@
                     <img src="images/homePageIcons/ninoRobotics.png" />
                     <div>
                         <div class="captionCentered">
-                            <h2>NINO ROBOTS</h2>
+                            <h2>NINO ROBOTICS</h2>
                         </div>
                     </div>
                     <a href="UI/Ninebot&more/ninoRobotics.php">&nbsp;</a>
