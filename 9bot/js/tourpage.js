@@ -165,13 +165,14 @@ var getTourPackagesData	=	function(){
 	requestForpackageData	=	new Object();
 	requestForpackageData.actionScriptURL	=	'../../actions/bookingInfo.php';
 	requestForpackageData.sendMethod		=	'POST';
-	requestForpackageData.callType		=	'ASYNC';
+	requestForpackageData.callType		=	'SYNC';
 	requestForpackageData.callBack		=	function(response){
 		if(response != 0)
 			tourPackageData	=	JSON.parse(response);
 	};
 	
 	send_remoteCall(requestForpackageData);	
+	return tourPackageData;
 };
 
 $(function(){
