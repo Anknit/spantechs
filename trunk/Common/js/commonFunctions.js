@@ -1,4 +1,4 @@
-/*
+﻿/*
 Project Name       	: 	COMMON JS API
 File Or Class Name 	: 	commonFunction.js
 Description			: 	Common function used in every files
@@ -1084,7 +1084,7 @@ function base64_encode(data) {
   // improved by: Thunder.m
   // improved by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
   // improved by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
-  // improved by: Rafał Kukawski (http://kukawski.pl)
+  // improved by: Rafaإ‚ Kukawski (http://kukawski.pl)
   // bugfixed by: Pellentesque Malesuada
   //   example 1: base64_encode('Kevin van Zonneveld');
   //   returns 1: 'S2V2aW4gdmFuIFpvbm5ldmVsZA=='
@@ -1196,7 +1196,7 @@ optional	object.callBack			=	Any function to be called back wid response from se
 */
 function send_remoteCall(object)
 {
-	var callType = false, sendMethod	=	'POST', additionalData	=	null, callBack	=	'';
+	var callType = true, sendMethod	=	'POST', additionalData	=	null, callBack	=	'';
 	if(IsValueNull(object.actionScriptURL))
 		return false;
 		
@@ -1204,7 +1204,7 @@ function send_remoteCall(object)
 		sendMethod	=	'POST';
 
 	if(!IsValueNull(object.callType) && object.callType	==	'SYNC')	
-		callType	=	true;
+		callType	=	false;
 		
 	additionalData	=	object.additionalData;
 	
