@@ -22,19 +22,22 @@ DROP TABLE IF EXISTS `booking_info`;
 CREATE TABLE `booking_info` (
   `BookingID` int(11) NOT NULL AUTO_INCREMENT,
   `TourType` varchar(100) DEFAULT NULL,
-  `TourPackage` varchar(100) DEFAULT NULL,
+  `TourID` varchar(100) DEFAULT NULL COMMENT 'Foreign key from tours info table',
   `DateSelected` varchar(100) DEFAULT NULL,
   `NumberOfPeople` varchar(10) DEFAULT NULL,
   `AmountPaid` varchar(100) DEFAULT NULL,
   `BookedBy_Name` text,
   `BookedBy_Email` text,
   `BookedBy_Phone` varchar(100) DEFAULT NULL,
-  `PaymentStatus` varchar(50) DEFAULT NULL,
+  `PaymentStatus` varchar(50) DEFAULT NULL COMMENT '1: success',
   `Description` text,
+  `BookedOn` datetime DEFAULT NULL,
   PRIMARY KEY (`BookingID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
 /*Data for the table `booking_info` */
+
+insert  into `booking_info`(`BookingID`,`TourType`,`TourID`,`DateSelected`,`NumberOfPeople`,`AmountPaid`,`BookedBy_Name`,`BookedBy_Email`,`BookedBy_Phone`,`PaymentStatus`,`Description`,`BookedOn`) values (1,NULL,'1','06/08/2015','5','425','Aditya','guptaaditya24@gmail.com','7503790442','1',NULL,'2015-06-05 13:18:27'),(2,NULL,'9','06/09/2015','5','500','Ankit','ankit.akki@gmail.com','7894561235','1',NULL,'2015-06-05 13:23:29'),(3,NULL,'6','06/09/2015','5','250','Ankit','ankit.akki@gmail.com','45534534564','1',NULL,'2015-06-05 13:27:28'),(4,NULL,'16','06/05/2015','2','242','Nitin','nitn.camina@veneratech.com','5','1',NULL,'2015-06-05 13:33:02'),(5,NULL,'12','06/09/2015','4','200','Ankit','ankit.akki@gmail.com','7503790442','1',NULL,'2015-06-05 14:07:59');
 
 /*Table structure for table `tourspackageinfo` */
 

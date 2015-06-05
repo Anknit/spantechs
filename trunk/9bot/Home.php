@@ -23,7 +23,7 @@
             </div>
             <div class="selectRegion">
                 <div class="lang">
-                    <span class="choose">Choose Region</span>
+                    <span class="choose">Il Mondo</span>
                     <div class="region">
                         <a href="http://www.ninebot.cn" target="_blank" class="region1">CHN</a>
                         <a href="http://www.segway.com/" target="_blank" class="america">Segway</a>
@@ -69,20 +69,22 @@
                     <!-- Slides Container -->
                     <div u="slides" class="jssorSlidesDimensions" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px;">
                         <div>
-                            <img u="image" src="images/slideAnimation/main_bg.png" />
-                            <img u="caption" t="*" t2="*" d="-10" src="images/homePageAnimationImages/ninebotE4.png" width="30%" style="position:absolute;left:30%;top:10px;" />
+                            <img u="image" src="images/homePageAnimationImages/1.png" />
 						</div>
                         <div>
-                            <img u="image" src="images/homePageAnimationImages/ninebotOne1.png" />
+                            <img u="image" src="images/homePageAnimationImages/2.png" />
 						</div>
                         <div>
-                            <img u="image" src="images/homePageAnimationImages/ninebotOne2.png" />
+                            <img u="image" src="images/homePageAnimationImages/3.png" />
 						</div>
                         <div>
-                            <img u="image" src="images/homePageAnimationImages/ninebotOne3.png" />
+                            <img u="image" src="images/homePageAnimationImages/4.png" />
 						</div>
                         <div>
-                            <img u="image" src="images/homePageAnimationImages/ninebotE3.png" />
+                            <img u="image" src="images/homePageAnimationImages/5.png" />
+						</div>
+                        <div>
+                            <img u="image" src="images/homePageAnimationImages/7.png" />
 						</div>
                         <!-- Arrow Left -->
                         <span u="arrowleft" class="jssora20l" style="top: 243px; left: 8px;"></span>
@@ -126,10 +128,19 @@
                     <img src="images/homePageIcons/ninebotMoreStores.png" />
                     <div>
                         <div class="captionCentered">
-                            <h2>NINEBOT STORES</h2>
+                            <h2>RIVENDITORI</h2>
                         </div>
                     </div>
                     <a href="UI/Ninebot&more/contact.php">&nbsp;</a>
+                </div>
+                <div class="captionOnHoverContainer">
+                    <img src="images/homePageIcons/ninoRobotics.png" />
+                    <div>
+                        <div class="captionCentered">
+                            <h2>NINO ROBOTS</h2>
+                        </div>
+                    </div>
+                    <a href="UI/Ninebot&more/ninoRobotics.php">&nbsp;</a>
                 </div>
             </div>
             
@@ -175,7 +186,7 @@
         </div>
         <div class="footer">
             <div class="copyrights">
-                ©SPANTECHS | © 2014 Ninebot Italia | Tutti i diritti riservati
+                ©SPANTACHS | Tutti i diritti riservati
             </div>
         </div>
     </div>

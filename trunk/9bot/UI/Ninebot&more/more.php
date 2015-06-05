@@ -217,10 +217,10 @@
         	<div class="actionHeadingImgBlock">
 	            <div style="width:90%; margin:auto; ">
                     <h1 style="width:80%; margin:auto">
-                        <span class="blueColouredContent">Anche interessa Ninebot ? Contattarci in qualsiasi momento !</span>
+                        <span class="blueColouredContent">Se vi interessa provare Ninebot, contattateci in qualsiasi momento.</span>
                     </h1>
                     <div class="qouteSpan descriptionContainer" style="text-align:center">
-                        <p>Siamo aperti a tutti i tipi di richieste e siamo felici di entrare in contatto personale con voi .</p>
+                        <p>Per Noleggio e Vendita.</p>
                     </div>
 	                <a href="contact.php"><input type="button" class="hvr-pulse-grow actionButton" value="CONTATTO" /></a>
 	            </div>
