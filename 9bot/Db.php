@@ -12,8 +12,8 @@ function get_DbConfig(){
 	$config = array (							
 				'host'	=>	'localhost',
 				'port'	=>	'3306',
-				'username'	=>	'rootNineBot',
-				'password'	=>	'calisto9',
+				'username'	=>	'root',
+				'password'	=>	'',
 				'database'	=>	'booking_tours'
 			);
 	return $config;

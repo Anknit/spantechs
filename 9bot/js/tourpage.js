@@ -1,12 +1,27 @@
 var tourPackageData	=	{};
 
+var getVacantSlots	=	function(dateSelected, uniqueTourID){
+	requestForpackageData	=	new Object();
+	requestForpackageData.actionScriptURL	=	'../../actions/getvacantSlotsForTour.php?Date='+dateSelected+'&TourID='+uniqueTourID;
+	requestForpackageData.sendMethod		=	'POST';
+	requestForpackageData.callType		=	'SYNC';
+	var vacantSlots;
+	requestForpackageData.callBack		=	function(response){
+		if(response != 0)
+			vacantSlots	=	parseInt(response);
+	};
+	
+	send_remoteCall(requestForpackageData);
+	return vacantSlots;	
+};
+
 var confirmBooking	=	function(){
 	dateSelected	=	$('#selectedDateForTour').val().trim();
 	totalPrice	=	$('#paypal_payment_amount');
-	people	=	$('#PersonCount').val().trim();
+	people	=	parseInt($('#PersonCount').val().trim());
 	selectpackageNode	=	$('#packageSelect');
 	packageSelected	=	selectpackageNode.val();	//packageSelected is the tourID selected
-    if(people == 0 || people == '') {
+    if(people == 0 || people == '' || isNaN(people)) {
 		alert('Please enter number of people');
 		return false;
 	}
@@ -19,6 +34,12 @@ var confirmBooking	=	function(){
 		return false;
 	}
 	
+	vacantSlots	=	getVacantSlots(dateSelected, packageSelected);
+	if(people > vacantSlots){
+		alert('Only '+vacantSlots+' slots are vacant. If you wish to book '+people+' slots, please select other dates, or contact us');
+		return false;
+	}
+		
 	$('#tour_date_selected').val(dateSelected);
 	$('#planTourDetails').css('display','none');
 	$('#chekoutWithDetails').css('display','table');
@@ -136,7 +157,7 @@ var bindBookingFunctions	=	function(){
 };
 
 var calendar	=	function(){
-	$('.datepicker').datepicker({ minDate: 0 });
+	$('.datepicker').datepicker({ minDate: 0, dateFormat: 'mm/dd/yy' });
 }
 
 //get tour package information
