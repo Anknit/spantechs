@@ -16,10 +16,13 @@ if(isset($_POST['payment_Confirm']) && $_POST['payment_Confirm'] != '' && $_POST
 	//session_start();
 ?>
 <br />
-<div align ="center">
-    <button id='getPayPalDetails' onclick='window.print();'>Print</button>
-    <button id='' onclick='location.href = "./index.php";'>Go back to ninebottours.com</button>
-</div>
+<script src="../../../Common/js/jquery.min.js" type="text/javascript"></script>
+<script>
+	$(function(){
+		window.print();
+		setTimeout(function(){location.href = "./index.php"}, 2000);
+	});
+</script>
 <?php 
 }
 else{

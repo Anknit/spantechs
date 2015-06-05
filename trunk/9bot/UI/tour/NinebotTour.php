@@ -252,7 +252,6 @@
                         <select name="packageSelect" id="packageSelect" class="bookingSelectBox" form="payPalPurchaseForm">
                             <option value="0">Select Package</option>
                         </select>
-                        <input type="hidden" name="selectedPackageDescription" id="selectedPackageDescription" />
                     </td>
                 </tr>
                 <tr>
@@ -302,6 +301,7 @@
                     <td>
                         <div style="padding: 0.2em 1em;">
                                 <form id="payPalPurchaseForm" action='../../../Common/php/PaypalModule/PaypalCheckoutFile.php' METHOD='POST'>
+                                    <input type="hidden" name="selectedPackageDescription" id="selectedPackageDescription" />
                                     <input type="hidden" name="paypal_payment_amount" id="paypal_payment_amount" />
                                     <img id="paypalImage" src="https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif" align="left" style="margin-left:100px;opacity:0.1; cursor:pointer" onclick="paypalCheckOutConfirm()" />
                             </form>

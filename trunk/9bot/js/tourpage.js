@@ -127,7 +127,8 @@ var updateTotalPrice	=	function(){
 var bindBookingFunctions	=	function(){
 	$('#packageSelect').on('change',function(){
 		updateTotalPrice();
-		//$('#selectedPackageDescription').val(selectedPackageText);
+		selectedPackageText	=	$(this).find('option:selected').text();
+		$('#selectedPackageDescription').val(selectedPackageText);
 	});
 	$("#PersonCount").bind('keyup input mouseup mousedown', function(){
 		updateTotalPrice();
