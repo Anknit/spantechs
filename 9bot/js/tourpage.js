@@ -1,71 +1,4 @@
-var IdToBeShown	;
-var basePrice;
-var perUnitPrice;
-var numUnits;
-var totalPrice=0;
 var tourPackageData	=	{};
-var ajaxObject	=	{};
-tourPackageData	=	{'1':
-						{'101':
-								{'info':'Standard Tour - 3 hrs - \u20AC 85.00 ','baseP':0,'perUnit':85}
-						},
-					'2':
-						{'201':
-							{'info':'Standard Tour - 3 hrs - \u20AC 85.00 ','baseP':0,'perUnit':85}
-						},
-					'3':
-						{'301':
-							{'info':'Standard Tour - 2 hrs - \u20AC 50.00 ','baseP':0,'perUnit':50}
-						},
-					'4':
-						{'401':
-							{'info':'Standard Tour - 3 hrs - \u20AC 85.00 ','baseP':0,'perUnit':85},
-						 '402':
-							{'info':'Tour with Dinner - 3 hrs - \u20AC 100.00 ','baseP':0,'perUnit':100}
-						},
-					'5':
-						{'501':
-							{'info':'Standard Tour - 2 hrs - \u20AC 50.00 ','baseP':0,'perUnit':50},
-						 '502':
-						 	{'info':'Tour with Dinner - 3 hrs - \u20AC 60.00 ','baseP':0,'perUnit':60}
-						},
-					'6':
-						{'601':
-							{'info':'Standard Tour - 3 hrs - \u20AC 85.00 ','baseP':0,'perUnit':85},
-						 '602':
-						 	{'info':'Tour with Dinner - 3 hrs - \u20AC 100.00 ','baseP':0,'perUnit':100}
-						},
-					'7':
-						{'701':
-							{'info':'Standard Tour - 1 hrs - \u20AC 30.00 ','baseP':0,'perUnit':30}
-						},
-					'8':
-						{'801':
-							{'info':'Tour with Wine tasting - 2 hrs - \u20AC 50.00 ','baseP':0,'perUnit':50},
-						 '802':
-						 	{'info':'Tour with Dinner - 2 hrs - \u20AC 50.00 ','baseP':0,'perUnit':50}
-						},
-					'9':
-						{'901':
-							{'info':'Standard Tour - 3 hrs - \u20AC 85.00 ','baseP':0,'perUnit':85},
-						 '902':
-						 	{'info':'Tour with Lunch - 4 hrs - \u20AC 85.00 + \u20AC 20.00 ','baseP':20,'perUnit':85},
-						 '903':
-						 	{'info':'Tour with Picnic - 4 hrs - \u20AC 85.00 + \u20AC 20.00 ','baseP':20,'perUnit':85},
-						 '904':
-						 	{'info':'Tour with Dinner - 4 hrs - \u20AC 85.00 + \u20AC 30.00 ','baseP':30,'perUnit':85},
-						 '905':
-						 	{'info':'Tour with visit to Catacombs - 4 hrs - \u20AC 100.00 ','baseP':0,'perUnit':100}
-						},
-					'10':
-						{'1001':
-							{'info':'Vatican and the most beautiful squares - 3 hrs - \u20AC 85.00 ','baseP':0,'perUnit':85}
-						},
-					'11':
-						{'1101':
-							{'info':'Dolce vita tour - 2 hrs - \u20AC 50.00 ','baseP':0,'perUnit':50}
-						},
-					};	
 
 var confirmBooking	=	function(){
 	dateSelected	=	$('#selectedDateForTour').val().trim();
@@ -96,6 +29,7 @@ var replanTour	=	function(){
 	$('#chekoutWithDetails').css('display','none');
 	$('#bookingUserConfirm').prop('checked',false);
 };
+
 var cancelBooking	=	function(){
 	$('.totalPackagePrice').html('');
 	$('#packageSelect').html('<option value="0">Select Package</option>');
@@ -104,6 +38,7 @@ var cancelBooking	=	function(){
 	$('.modalWindow').css('display','none');
 	updateTotalPrice();
 };
+
 var paypalCheckOutConfirm	=	function(){
 	if($('#bookingUserConfirm').is(':checked')){
 		if($('#bookingUserName').val() == ''){
@@ -147,6 +82,8 @@ var showPackage	=	function(buttonElement){
 	var packageGroupID	=	$(buttonElement).attr('tour_id');
 	$('.modalWindow').css('display','block');
 	$('#packageInfoDiv').css('display','block');
+	$('#chekoutWithDetails').css('display','none');
+	$('#planTourDetails').css('display','table');
     setPackageInfo(packageGroupID);
 };
 
