@@ -4,6 +4,7 @@
 		position:relative;
 		margin:0% 0px;
 		font-size:16px;
+        user-select:none;
 	}
 	
     .wrapper{

@@ -58,7 +58,7 @@
         <div class="content">
             <!--Slide show in below container-->
             <div class="contentSlideShow">
-                <div id="homePageImageSlider" class="jssorSlidesDimensions" style="position: relative; top: 0px; left: 0px; margin:auto; overflow: hidden;">
+                <div id="homePageImageSlider" class="jssorSlidesDimensions">
                     <!-- Loading Screen --> 
                     <div u="loading" style="position: absolute; top: 0px; left: 0px;">
                         <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block; background-color: #000; top: 0px; left: 0px;width: 100%; height:100%;"> 
@@ -67,7 +67,7 @@
                         </div> 
                     </div> 
                     <!-- Slides Container -->
-                    <div u="slides" class="jssorSlidesDimensions" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px;">
+                    <div u="slides" class="jssorSlidesDimensions" style="cursor: move; position: absolute;">
                         <div>
                             <img u="image" src="images/homePageAnimationImages/1.png" />
 						</div>

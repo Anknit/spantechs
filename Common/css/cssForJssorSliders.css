@@ -1,7 +1,12 @@
 
 .jssorSlidesDimensions{
-        width:1920px;
-        height:600px;
+    position: relative; 
+    top: 0px; 
+    left: 0px; 
+    margin:auto; 
+    overflow: hidden;
+    width:1920px;
+    height:600px;
 }
 
 /* jssor slider arrow navigator skin 20 css */

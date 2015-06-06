@@ -8,6 +8,7 @@
 
 body{
 	color: #003ADF;
+    user-select:none;
 }
 
 .animatedNuovo{

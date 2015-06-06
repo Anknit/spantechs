@@ -1,20 +1,56 @@
 <?php 
 	require_once './header.php';
 ?>
+   <style>
+       .jssorSlidesDimensions{
+           width:1920px;
+           height:750px;
+       }
+   </style>
     <script>
         var pageIdentifier  =   'Home';
-    </script>
+        $(function ($) {
+            HomePageSlideShow(false, 'testSlider');
+        });
+    </script>        
 	<div class="content">
-		<div class="nuovotoplogo"></div>
-		<div class="slider">
-			<div class="nav" id="nav_left">
-				<img class='nav_arrow' src="../../images/icons/left.png" alt="prev" onclick="slideImg(2);"/>
-			</div>
-			<div class="nav" id="nav_right">
-				<img class='nav_arrow' src="../../images/icons/right.png" alt="next" onclick="slideImg(1);"/>
-			</div>
-			<img src="" id="contactSlider" style="box-shadow: 3px 3px 3px #666;height:100%;"/>
-		</div>
+        <div id="testSlider" class="jssorSlidesDimensions">
+            <!-- Loading Screen --> 
+            <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+                <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+    
+                    background-color: #000; top: 0px; left: 0px;width: 100%; height:100%;"> 
+                </div> 
+                <div style="position: absolute; display: block; background: url(../../../Common/images/loading.gif) no-repeat center center;
+    
+                    top: 0px; left: 0px;width: 100%;height:100%;">
+                </div> 
+            </div> 
+            <!-- Slides Container -->
+            <div u="slides" class="jssorSlidesDimensions" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px;">
+                <div>
+                    <img u="image" src="../../images/tours/1.jpg" />
+                </div>
+                <div>
+                    <img u="image" src="../../images/tours/2.jpg" />
+                </div>
+                <div>
+                    <img u="image" src="../../images/tours/3.jpg" />
+                </div>
+                <div>
+                    <img u="image" src="../../images/tours/5.jpg" />
+                </div>
+                <div>
+                    <img u="image" src="../../images/tours/6.jpg" />
+                </div>
+                <!-- Arrow Left -->
+                <span u="arrowleft" class="jssora20l" style="top: 243px; left: 8px;">
+                </span>
+                <!-- Arrow Right -->
+                <span u="arrowright" class="jssora20r" style="top: 243px; right: 8px;">
+                </span>
+            </div>
+        </div>
 		<div id="tourCatalogue">
 			<div class="floatContainerDiv">
 	           	<a href="NinebotTour.php">
