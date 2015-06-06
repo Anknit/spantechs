@@ -182,7 +182,7 @@ $(function(){
 			$('#paypalImage').css('opacity', '1');
 		}
 		else{
-			$('#paypalImage').css('opacity', '0.1');
+			$('#paypalImage').css('opacity', '0.5');
 		}
 	});
 	getTourPackagesData();
