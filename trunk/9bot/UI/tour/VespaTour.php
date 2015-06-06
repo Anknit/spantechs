@@ -112,7 +112,7 @@
                 </div> 
             </div> 
             <!-- Slides Container -->
-            <div u="slides" class="jssorSlidesDimensions" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px;">
+            <div u="slides" class="jssorSlidesDimensions" style="cursor: move; position: absolute;">
                 <div>
                     <img u="image" src="../../images/tours/vespa/1.png" />
                 </div>
