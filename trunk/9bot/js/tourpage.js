@@ -88,7 +88,7 @@ var setPackageInfo	=	function(packageGroupID){
 		packageDataObject	=	tourPackages[tourIDs[k]];
 		packagePricePerPerson	=	parseInt(packageDataObject.packagePricePerPerson) + parseInt(packageDataObject.packageAdditionalPrice);
 		pricingInfoText	=	'€ ' + packagePricePerPerson + ' per person';
-		if(!IsValueNull(packageDataObject.packageExclusiveTaxes) && !isNaN(parseInt(packageDataObject.packageExclusiveTaxes))){
+		if(!IsValueNull(packageDataObject.packageExclusiveTaxes) && !isNaN(parseInt(packageDataObject.packageExclusiveTaxes)) && packageDataObject.packageExclusiveTaxes > 0){
 			pricingInfoText	+=	' + '+packageDataObject.packageExclusiveTaxes+'% più iva al';
 		}
 		optionText	=	packageDataObject.packageName + ' - ' + packageDataObject.packageDuration + ' hrs' + ' - ' + pricingInfoText;
