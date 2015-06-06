@@ -4,7 +4,7 @@
    <style>
        .jssorSlidesDimensions{
            width:1920px;
-           height:750px;
+           height:800px;
        }
    </style>
     <script>
