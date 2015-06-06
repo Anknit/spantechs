@@ -7,22 +7,10 @@
 	padding:5px;
 }
 .tourBookContainer input[type="button"], #packageInfoDiv input[type="button"]{
-	border:none;
-	outline:none;
-	padding:5px;
-	width:40%;
-	background: #111;
-	color:#05B9BD;
-	font-size:1em;
-	margin:5px auto;
-	border-radius:5px;
-	font-size:1.2em;
-	transition:all 1s;
+	width:30%;
+	padding:5px 5px;
 	cursor:pointer;
-}
-.tourBookContainer input[type="button"]:hover, #packageInfoDiv input[type="button"]:hover{
-	box-shadow: 2px 2px 6px #aaa;
-	color:#fff;
+	background-color:linear-gradient(#eee, #aaa);
 }
 
 .tourBookContainer > div{
@@ -30,12 +18,9 @@
 }
 select.bookingSelectBox{
 	padding: 0.2em 1em;
-	color: #FFF;
-	width: 100%;
+	width: 75%;
 	font-size: 1em;
 	cursor: pointer;
-	border: none;
-	outline: none;
 	background: none;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
@@ -45,26 +30,16 @@ select.bookingSelectBox{
 	-moz-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
-	appearance: none;
-	-moz-appearance: none;
-	-webkit-appearance: none;
 	font-family: 'ambleregular';
 }
 select.bookingSelectBox option{
 	background:#666;
 }
 input.bookingSelectBox{
-	padding: 0.5em 1em;
-	color: #FFF;
+	padding: 0.2em 1em;
 	font-size: 1em;
-	background: none;
-	outline: none;
-	border: none;
 	margin: 0px auto;
-	width: 85%;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
+	width: 75%;
 	font-family: 'ambleregular';
 }
 .modalWindow{
@@ -87,36 +62,23 @@ input.bookingSelectBox{
 	width: 400px;
 	position: relative;
 	margin: 15% auto;
-	padding: 5px;
-	border-radius: 5px;
-	background: #eee;
-}
-.modalCloseButton:hover {
-	background: #00d9ff;
+	background: #fff;
 }
 .modalCloseButton {
-	background: #606061;
-	color: #FFFFFF;
-	line-height: 25px;
-	position: absolute;
-	right: -12px;
-	text-align: center;
-	top: -10px;
-	width: 24px;
-	text-decoration: none;
-	font-weight: bold;
-	-webkit-border-radius: 12px;
-	-moz-border-radius: 12px;
-	border-radius: 12px;
-	-moz-box-shadow: 1px 1px 3px #000;
-	-webkit-box-shadow: 1px 1px 3px #000;
-	box-shadow: 1px 1px 3px #000;
+  line-height: 25px;
+  position: absolute;
+  right: 0px;
+  text-align: center;
+  top: 0px;
+  width: 24px;
+  cursor:pointer;  
+  text-decoration: none;
+  font-weight: bold;
 }
 
 #packageInfoDiv{
 	display:none;
-	box-shadow:4px 4px 6px #aaa;
-	color: #05B9BD;
+
 	
 }
 #packageInfoDiv table,#packageInfoDiv tr,#packageInfoDiv td{
@@ -124,6 +86,21 @@ input.bookingSelectBox{
 }
 
 #packageInfoDiv td{
-	background:#666;
-	height:35px;
+	text-align: center;
+}
+.modalHeader {
+  background: linear-gradient(#eee, #aaa);
+  padding: 5px;
+  text-align: center;
+}
+#selectedDateForTour{
+	padding:0.2em 1em;
+  font-size: 0.8em;
+  float: right;
+}
+#planTourDetails .totalPackagePrice{
+	float:right;
+	font-size: 1em;
+	color:#333;
+	font-weight: bold;
 }

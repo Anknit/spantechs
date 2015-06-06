@@ -3,6 +3,7 @@
     <div class="modalWindow">
        <div id="packageInfoDiv">
         <a onclick="cancelBooking()" title="Close" class="modalCloseButton">X</a>
+        	<div class='modalHeader'>Booking Info</div>
             <table id='planTourDetails'>
                 <tr>
                     <td>
@@ -13,16 +14,16 @@
                 </tr>
                 <tr>
                     <td>
-                        <div style="padding: 0.2em 1em;">Select date &nbsp;&nbsp;<input type="text" name="selectedDateForTour" id="selectedDateForTour" class="datepicker" placeholder="MM/DD/YYYY" form="payPalPurchaseForm" /></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
                         <input type="number" name="PersonCount" id="PersonCount" class="bookingSelectBox" min="1" max="7" placeholder="Tour Members" form="payPalPurchaseForm" onKeyUp="checkNum(this); if(this.value > 7){this.value = 7;}"/>
                     </td>
                 </tr>
                 <tr>
-                    <td><div style="padding: 0.2em 1em;">Total price<span class="totalPackagePrice"></span></div></td>
+                    <td>
+                        <div style="padding: 0.2em ;width:75%;margin:auto;"><span style="float: left;">Select date</span><input type="text" name="selectedDateForTour" id="selectedDateForTour" class="datepicker" placeholder="MM/DD/YYYY" form="payPalPurchaseForm" /></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><div style="padding: 0.2em;width:75%;margin:auto;"><span style="float:left;">Total price</span><span class="totalPackagePrice"></span></div></td>
                 </tr>
                 <tr>
                     <td>
