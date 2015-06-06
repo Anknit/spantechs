@@ -12,6 +12,7 @@
     <link type="text/css" rel="stylesheet" href='../../css/tileNav.css' />
     <link type="text/css" rel="stylesheet" href='../../css/tourhome.css' />
     <link type="text/css" rel="stylesheet" href="../../../Common/css/hover.css" />
+    <link type="text/css" rel="stylesheet" href="../../../Common/css/buttonTab.css" />
     <link type="text/css" rel="stylesheet" href='../../../Common/Cupertino/jquery-ui.min.css' />
 </head>
 <body>

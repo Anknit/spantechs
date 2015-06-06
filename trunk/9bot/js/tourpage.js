@@ -176,11 +176,7 @@ var getTourPackagesData	=	function(){
 };
 
 $(function(){
-	$('.xxThumbImage').wrap('<a></a>');
-	$('#containerTable').find('table').addClass('innerTable');
-	$('.xxThumbImage').closest('a').addClass('hvr-bubble-float-right');
 	$('div.normalButton').bind('click', function(){showPackage(this);});
-	$('.blueFont').closest('td').not('.qouteSpan').addClass('qouteSpan');
 	$('#bookingUserConfirm').on('click', function(){
 		if($(this).is(':checked')){
 			$('#paypalImage').css('opacity', '1');
