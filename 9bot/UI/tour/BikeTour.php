@@ -225,6 +225,7 @@
 						</li>
 					</ul>
 				</div>
+				<div class="normalButton RightFloat hvr-shutter-out-horizontal" tour_id="12">Book Now</div>
 			</div>
 			<div class='VespaTourItem'>
 				<div class='vespaTourName'>
@@ -280,6 +281,7 @@
 						</li>
 					</ul>
 				</div>
+				<div class="normalButton RightFloat hvr-shutter-out-horizontal" tour_id="13">Book Now</div>
 			</div>
 			<div class='VespaTourItem'>
 				<div class='vespaTourName'>
@@ -331,6 +333,7 @@
 						</li>
 					</ul>
 				</div>
+				<div class="normalButton RightFloat hvr-shutter-out-horizontal" tour_id="14">Book Now</div>
 			</div>
 			<div class='VespaTourItem'>
 				<div class='vespaTourName'>
@@ -375,6 +378,7 @@
 						</li>
 					</ul>
 				</div>
+				<div class="normalButton RightFloat hvr-shutter-out-horizontal" tour_id="15">Book Now</div>
 			</div>
 			<div class='VespaTourItem'>
 				<div class='vespaTourName'>
@@ -416,6 +420,7 @@
 						</li>
 					</ul>
 				</div>
+				<div class="normalButton RightFloat hvr-shutter-out-horizontal" tour_id="16">Book Now</div>
 			</div>
 			<div class='VespaTourItem'>
 				<div class='vespaTourName'>
@@ -479,8 +484,10 @@
 						</li>
 					</ul>
 				</div>
+				<div class="normalButton RightFloat hvr-shutter-out-horizontal" tour_id="17">Book Now</div>
 			</div>
 		</div>
+		<?php require_once 'bookingModelUI.php'; ?>
 	</div>
 <?php 
 	require_once './footer.php';

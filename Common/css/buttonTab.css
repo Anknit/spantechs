@@ -6,3 +6,14 @@
 *
 */
 
+    
+.RightFloat{
+    float: right;
+}
+    
+.normalButton{
+    padding:7px;
+    background-color:#111 !important;
+    color:#05B9BD;
+    cursor:pointer;
+}
