@@ -169,8 +169,11 @@
 	.color_bot{
 		color:#95C125;
 	}
+    .workProgressContainer{
+        text-align: center;
+    }
    	.workProgressContainer img{
-   		width:100%;
+   		width:75%;
    	}
 	div#topcontrol	{
 		z-index:18001;

@@ -9,10 +9,10 @@
 <?php
 	require_once './header.php';
 ?>
-    <title>Consip</title>
+    <title>Nino robotics</title>
 	<div class="content">
-		<div class="homePageImageDiv">
-			<img class='homePageImage' src='../../images/icons/coming_soon.jpg' />
+		<div class="workProgressContainer" style="margin-bottom:0">
+			<img src='../../images/icons/coming_soon.jpg' alt="progress" />
 		</div>
 	</div>
 <?php
