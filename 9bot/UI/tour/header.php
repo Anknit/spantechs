@@ -28,7 +28,7 @@
                         <ul class="topMenu">
                                 <li class="headerMenuItems" identifier="Home"><a href="index.php">Home</a></li>
                                 <li class="headerMenuItems" identifier="Tour" onclick="pageIdentifier = 'Tour'; setSelectionOnHeaderMenu();">
-                                        <a href="index.php#tourCatalogue">Tour</a>
+                                        <a href="#" onclick='if($("#tourCatalogue").length>0)$("body").animate({scrollTop:$("#tourCatalogue")[0].scrollHeight},1000);else{location.href="./index.php#tourCatalogue";}'>Tour</a>
                                         <ul class="submenu">
                                                 <li class="subMenuItems"><a href="NinebotTour.php">Ninebot Tours</a></li>
                                                 <li class="subMenuItems"><a href="GolfcarTour.php">Golfcar Tours</a></li>
