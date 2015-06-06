@@ -4,171 +4,144 @@
 	<link href="../../css/style.css" rel="stylesheet" type="text/css"/>
     <script>
         var pageIdentifier  =   'Tour';
-        $(function(){
-			startGolfSlides();
+        $(function ($) {
+            HomePageSlideShow(false, 'testSlider');
         });
-        function showModalInfo (){
-        	document.getElementsByClassName('modalWindow')[0].style.display="block";
-        }
-        function startGolfSlides(){
-			setInterval(function(){
-				activeImg	=	$('.golfCarSlider').find('img.visibleImg');
-				nextImg	=	$(activeImg).next('img');
-				if(nextImg.length == 0)
-					nextImg	=	$('.golfCarSlider').find('img')[0];	
-				activeImg.removeClass('visibleImg');
-				$(nextImg).addClass('visibleImg');
-			},5000);
-        }
     </script>
     <style>
-	.visibleImg{
-		display: block !important;
-	}
-	.golfCarSlider{
-		width:100%;
-		overflow:hidden;
-	}
-.golfCarSlider > img{
-	display:none;
-	width:100%;
-	animation:scaleBack 5s infinite ease-in, changeOpacity 5s infinite linear;
-	-webkit-animation:scaleBack 5s infinite ease-in, changeOpacity 5s infinite linear;
-	-moz-animation:scaleBack 5s infinite ease-in, changeOpacity 5s infinite linear;
-}
-@keyframes changeOpacity{
-	0%{opacity:0.2;}
-	15%{opacity:1;}
-	50%{opacity:1;}
-	85%{opacity:1;}
-	100%{opacity:0.2;}
-}
-@-webkit-keyframes changeOpacity{
-	0%{opacity:0.2;}
-	15%{opacity:1;}
-	50%{opacity:1;}
-	85%{opacity:1;}
-	100%{opacity:0.2;}
-}
-@-moz-keyframes changeOpacity{
-	0%{opacity:0.2;}
-	15%{opacity:1;}
-	50%{opacity:1;}
-	85%{opacity:1;}
-	100%{opacity:0.2;}
-}
-@keyframes scaleBack{
-	0%{transform:scale3D(1,1,1);}
-	100%{transform:scale3D(1.1,1.1,1.1);opacity:0.3;}
-}
-@-webkit-keyframes scaleBack{
-	0%{transform:scale3D(1,1,1);}
-	100%{transform:scale3D(1.2,1.2,1.2);}
-}
-@-moz-keyframes scaleBack{
-	0%{transform:scale3D(1,1,1);opacity:0.5;}
-	100%{transform:scale3D(1.1,1.1,1.1);opacity:0.3;}
-}
-	.VespaTourItem {
-  padding: 20px;
-  border: 1px solid #ccc;
-  width: 80%;
-  margin: 20px auto;
-  box-shadow: 6px 4px 10px #666;
-  display: table;
-  transition:all 0.5s;
-}
-.VespaTourItem:hover {
-  border-width: 5px;
-  box-shadow: rgb(170, 170, 170) 6px 1px 20px;
-}
-.vespaTourName {
-  float: left;
-  width: 100%;
-  /* box-sizing: content-box; */
-  /* padding: 0px 15px; */
-}
-.vespaTourName h3 {
-  text-align: center;
-  color: #05B9BD;
-  text-transform: uppercase;
-  font-size: 25px;
-  margin: 5px 0px;
-}
-.tourPoints {
-  padding: 5px 10px;
-}
-.VespaTourDetail {
-  float: left;
-  width: 100%;
-}
-.VespaTourDetail ul {
-  list-style-type: none;
-  margin-left: 10px;
-}
-.VespaTourDetail li {
-  padding: 5px 10px;
-  transition:margin 1s;
-  margin-top:15px;
-  font-style:italic;
-}
-.VespaTourDetail li:hover {
-  margin-left: 15px;
-  border-left: 3px solid rgb(102, 205, 170);
-  background-color: rgb(102, 102, 102);
-  color: rgb(255, 255, 255);
-}
-.tourPoints li {
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 15px;
-  padding: 5px;
-  cursor: pointer;
-  transition: all 0.5s;
-  margin:5px 20px 0px 5px;
-  box-shadow: 2px 1px 2px #aaa;
-}
-.tourPoints li:hover {
-  box-shadow: 6px 2px 4px #aaa;
-  background:#666 !important;
-  color:#fff;
-}
-.tourPoints li::after {
-  content: '\21D2';
-  margin-left: 10px;
-  position: absolute;
-  font-size: 24px;
-  margin-top: -5px;
-  color:#000 !important;
-}
-.tourPoints li:last-child::after {
-	content: '';
-}
-.tourPoints li:first-child{
-	background:lightgreen;
-}
-.tourPoints li:last-child{
-	background:lightgreen;
-}
-.briefVespa {
-  padding: 15px;
-  margin: 15px auto;
-  width: 80%;
-  font-style: italic;
-  font-size: 18px;
-}
+        .VespaTourItem {
+          padding: 20px;
+          border: 1px solid #ccc;
+          width: 80%;
+          margin: 20px auto;
+          box-shadow: 6px 4px 10px #666;
+          display: table;
+          transition:all 0.5s;
+        }
+        .VespaTourItem:hover {
+          border-width: 5px;
+          box-shadow: rgb(170, 170, 170) 6px 1px 20px;
+        }
+        .vespaTourName {
+          float: left;
+          width: 100%;
+          /* box-sizing: content-box; */
+          /* padding: 0px 15px; */
+        }
+        .vespaTourName h3 {
+          text-align: center;
+          color: #05B9BD;
+          text-transform: uppercase;
+          font-size: 25px;
+          margin: 5px 0px;
+        }
+        .tourPoints {
+          padding: 5px 10px;
+        }
+        .VespaTourDetail {
+          float: left;
+          width: 100%;
+        }
+        .VespaTourDetail ul {
+          list-style-type: none;
+          margin-left: 10px;
+        }
+        .VespaTourDetail li {
+          padding: 5px 10px;
+          transition:margin 1s;
+          margin-top:15px;
+          font-style:italic;
+        }
+        .VespaTourDetail li:hover {
+          margin-left: 15px;
+          border-left: 3px solid rgb(102, 205, 170);
+          background-color: rgb(102, 102, 102);
+          color: rgb(255, 255, 255);
+        }
+        .tourPoints li {
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 15px;
+          padding: 5px;
+          cursor: pointer;
+          transition: all 0.5s;
+          margin:5px 20px 0px 5px;
+          box-shadow: 2px 1px 2px #aaa;
+        }
+        .tourPoints li:hover {
+          box-shadow: 6px 2px 4px #aaa;
+          background:#666 !important;
+          color:#fff;
+        }
+        .tourPoints li::after {
+          content: '\21D2';
+          margin-left: 10px;
+          position: absolute;
+          font-size: 24px;
+          margin-top: -5px;
+          color:#000 !important;
+        }
+        .tourPoints li:last-child::after {
+            content: '';
+        }
+        .tourPoints li:first-child{
+            background:lightgreen;
+        }
+        .tourPoints li:last-child{
+            background:lightgreen;
+        }
+        .briefVespa {
+          padding: 15px;
+          margin: 15px auto;
+          width: 80%;
+          font-style: italic;
+          font-size: 18px;
+        }
     </style>
 	<div class="content">
-		<div class='golfCarSlider'>
-			<img src='../../images/tours/vespa/1.jpg' class='visibleImg'/>
-			<img src='../../images/tours/vespa/2.jpg'/>
-			<img src='../../images/tours/vespa/3.jpg'/>
-			<img src='../../images/tours/vespa/4.jpg'/><!--
-			<img src='../../images/tours/vespa/5.jpg'/>
-			--><img src='../../images/tours/vespa/6.jpg'/>
-			<img src='../../images/tours/vespa/7.jpg'/><!--
-			<img src='../../images/tours/vespa/8.jpg'/>
-		--></div>
+        <div id="testSlider" class="jssorSlidesDimensions">
+            <!-- Loading Screen --> 
+            <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+                <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+    
+                    background-color: #000; top: 0px; left: 0px;width: 100%; height:100%;"> 
+                </div> 
+                <div style="position: absolute; display: block; background: url(../../../Common/images/loading.gif) no-repeat center center;
+    
+                    top: 0px; left: 0px;width: 100%;height:100%;">
+                </div> 
+            </div> 
+            <!-- Slides Container -->
+            <div u="slides" class="jssorSlidesDimensions" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px;">
+                <div>
+                    <img u="image" src="../../images/tours/vespa/1.png" />
+                </div>
+                <div>
+                    <img u="image" src="../../images/tours/vespa/2.png" />
+                </div>
+                <div>
+                    <img u="image" src="../../images/tours/vespa/3.png" />
+                </div>
+                <div>
+                    <img u="image" src="../../images/tours/vespa/4.png" />
+                </div>
+                <div>
+                    <img u="image" src="../../images/tours/vespa/5.png" />
+                </div>
+                <div>
+                    <img u="image" src="../../images/tours/vespa/6.png" />
+                </div>
+                <div>
+                    <img u="image" src="../../images/tours/vespa/7.png" />
+                </div>
+                <!-- Arrow Left -->
+                <span u="arrowleft" class="jssora20l" style="top: 243px; left: 8px;">
+                </span>
+                <!-- Arrow Right -->
+                <span u="arrowright" class="jssora20r" style="top: 243px; right: 8px;">
+                </span>
+            </div>
+        </div>
 		<div class='tourContent'>
 			<div class='VespaTourItem'>
 				<div class='vespaTourName'>
