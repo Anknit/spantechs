@@ -28,7 +28,7 @@
         </script>        
     </head>
     <body>
-        <div id="testSlider" class="jssorSlidesDimensions" style="position: relative; top: 0px; left: 0px; margin:auto; overflow: hidden;">
+        <div id="testSlider" class="jssorSlidesDimensions">
             <!-- Loading Screen --> 
             <div u="loading" style="position: absolute; top: 0px; left: 0px;">
                 <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
@@ -41,7 +41,7 @@
                 </div> 
             </div> 
             <!-- Slides Container -->
-            <div u="slides" class="jssorSlidesDimensions" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px;">
+            <div u="slides" class="jssorSlidesDimensions" style="cursor: move; position: absolute;">
                 <!-- Slide 1 Android connectivity -->
                 <div>
                     <img u="image" src="../../images/slideAnimation/androidBackGround.jpg" />
