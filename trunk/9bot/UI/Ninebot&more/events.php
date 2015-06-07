@@ -6,15 +6,14 @@
 *
 */
 ?>
-<?php
+<?php 
 	require_once './header.php';
 ?>
-    <title>Consip</title>
-	<div class="content">
-		<div class="homePageImageDiv">
-			<img class='homePageImage' src='../../images/icons/coming_soon.jpg'></img>
+	<div class="content" style="margin-bottom:0">
+		<div class='workProgressContainer'>
+			<img src='../../images/icons/coming_soon.jpg' alt='progress' />
 		</div>
 	</div>
-<?php
+<?php 
 	require_once './footer.php';
 ?>
