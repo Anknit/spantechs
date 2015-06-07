@@ -28,13 +28,13 @@
             <ul>
                 <li><a href="#Ninebot_E">Ninebot E</a></li>
                 <li><a href="#Ninebot_Police">Ninebot Police</a></li>
-                <li><a href="#Miscellaneous">Miscellaneous</a></li>
+                <li style="display:none;"><a href="#Miscellaneous">Miscellaneous</a></li>
             </ul>
             <div id="Ninebot_E" style="text-align:center;">
             </div>
             <div id="Ninebot_Police" style="text-align:center;">
             </div>
-            <div id="Miscellaneous" style="text-align:center;">
+            <div id="Miscellaneous" style="text-align:center; display:none">
             </div>
         </div>
 	</div>
