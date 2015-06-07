@@ -76,12 +76,12 @@ img.itemDisplayInGallery{
     border: 1px solid #ccf;
     border-style: dotted;
     padding: 2%;
-    font-family: fantasy, sans-serif, serif;
     margin-left: 15px;
     margin-top: 10px;
     float: left;
-    min-height: 400px;
+    height: 450px;
     max-height: 550px;
+    display: table;
 }
 
 .productItemImage img{
@@ -90,7 +90,6 @@ img.itemDisplayInGallery{
 
 .productItemThumbNailsContainer { 
     font-size: 15px;
-    font-weight: 600;
     margin-top: 15px;
 }
 .productItemThumbNailsContainer .productItemthumbNails{
