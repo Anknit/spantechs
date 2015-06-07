@@ -30,7 +30,7 @@
 	float:left;
     width:100%;
     transition: all 6s 3s;
-    background-position: -100% 0%;
+    height: 220px;
 }
 .map,.smallMap{
 	box-shadow:3px 3px 6px #666;
