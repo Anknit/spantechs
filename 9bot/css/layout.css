@@ -89,10 +89,14 @@
     	transition:all 1s;
     	opacity:1;
     }
+    
     li.subMenuItems:hover{
     	border-bottom:3px solid #05B9BD;
     	background:#666;
     	color:#fff;
+    }
+    li.subMenuItems img{
+    	width:100%;
     }
     
     .logo{

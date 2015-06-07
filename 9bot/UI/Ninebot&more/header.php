@@ -46,9 +46,24 @@
                                             <li class="subMenuItems"><a href="http://www.ninebottours.it/9bot/UI/tour/CataniaTour.php">Catania Tours</a></li>
                                     </ul>
                                 </li>
-                                <li class="headerMenuItems" identifier="Event"><a href="publicity.php">Pubblicità con Noi</a></li>
+                                <li class="headerMenuItems" identifier="Publicity"><a href="publicity.php">Pubblicità con Noi</a></li>
                                 <li class="headerMenuItems" identifier="Consip"><a href="Consip.php">CONSIP</a></li>
-                                <li class="headerMenuItems" identifier="Event"><a href="gallery.php">Galleria</a></li>
+                                <li class="headerMenuItems" identifier="Gallery"><a href="gallery.php">Galleria</a></li>
+                                <li class="headerMenuItems" identifier="NineDroid App" onclick="setSelectionOnHeaderMenu();">
+                                    <a href="NinebotE.php">Ninedroid App</a>
+                                    <ul class="submenu">
+                                        <li class="subMenuItems">
+                                        	<a href="https://itunes.apple.com/cn/app/ninedroid/id781148396?mt=8">
+                                        		<img src='./../../images/icons/ios-btn.png' alt='iOS app'>
+                                        	</a>
+                                        </li>
+                                        <li class="subMenuItems">
+                                        	<a href="http://www.ninebot.cn/appdownload/app/Ninedroid.apk">
+                                        		<img src='./../../images/icons/android-btn-current.png' alt='android app'>
+                                        	</a>
+                                        </li>
+                                    </ul>
+                                </li>
                                 <li class="headerMenuItems" identifier="Event"><a href="events.php">Eventi/Notizie</a></li>
                                 <li class="headerMenuItems" identifier="Contact"><a href="contact.php">Contatto e Negozi</a></li>
                         </ul>
