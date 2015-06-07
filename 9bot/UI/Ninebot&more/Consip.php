@@ -32,9 +32,9 @@
             </ul>
             <div id="Ninebot_E" style="float:left !important;">
             </div>
-            <div id="Ninebot_Police">
+            <div id="Ninebot_Police" style="float:left !important;">
             </div>
-            <div id="Miscellaneous">
+            <div id="Miscellaneous" style="float:left !important;">
             </div>
         </div>
 	</div>
