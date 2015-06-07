@@ -78,10 +78,10 @@ img.itemDisplayInGallery{
     padding: 2%;
     margin-left: 15px;
     margin-top: 10px;
-    float: left;
     height: 450px;
     max-height: 550px;
-    display: table;
+    display: inline-table;
+    text-align: left;
 }
 
 .productItemImage img{

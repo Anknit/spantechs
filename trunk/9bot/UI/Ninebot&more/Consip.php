@@ -30,11 +30,11 @@
                 <li><a href="#Ninebot_Police">Ninebot Police</a></li>
                 <li><a href="#Miscellaneous">Miscellaneous</a></li>
             </ul>
-            <div id="Ninebot_E" style="float:left !important;">
+            <div id="Ninebot_E" style="text-align:center;">
             </div>
-            <div id="Ninebot_Police" style="float:left !important;">
+            <div id="Ninebot_Police" style="text-align:center;">
             </div>
-            <div id="Miscellaneous" style="float:left !important;">
+            <div id="Miscellaneous" style="text-align:center;">
             </div>
         </div>
 	</div>
