@@ -8,9 +8,19 @@ function getReceiptFormat($dataArray){
 	return $html;
 }
 
+function mail9botItalia($MailBody){
+    $recipients =   'guptaaditya24@gmail.com';
+    $mailSubject=   'Tour Booking recieved at ninebottours.it';
+    $additionalEmails   =   '';
+    $attachment =   '';
+    require_once '../../../Common/php/MailMgr.php';
+    send_Email($recipients, $mailSubject, $MailBody, $additionalEmails,	$attachment);
+}
+
 if(isset($_POST['payment_Confirm']) && $_POST['payment_Confirm'] != '' && $_POST['payment_Confirm'] == 'Confirm'){
 	require_once '../../../Common/php/PaypalModule/PaypalConfirm.php';
 	$str	=	getReceiptFormat($dataArray);
+    //mail9botItalia($str);
 	echo $str;
 	unset($_SESSION);
 	//session_start();

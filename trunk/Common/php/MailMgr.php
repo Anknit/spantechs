@@ -6,8 +6,6 @@
  * Passing the Recipients and mail body as content of html body, the mail can be successfully sent if only the smtp settings exists for the system.
  */
 
-require_once 'OperateDB/DbMgrInterface.php';
-
 /*=====================================================SEND MAIL==============================================================*/
 /*
 * @access public
@@ -31,11 +29,13 @@ class init_mail {
 	//Initialize the parameters required to send mail
 	public function init_mail()	
 	{
-		$read_smtp_info = array (
-								'Fields'=> '*',
-								'Table'=> 'systemsettings'
-							);
-		$smtpDetails	=	DB_Read($read_smtp_info, 'ASSOC');
+		$smtpDetails	=	array(array(
+            'smtpHostName'  =>  'smtp.gmail.com',
+            'smtpPort'  =>  '465',
+            'smtpUsername'  =>  '9botitaly@gmail.com',
+            'smtpPassword'  =>  'moving2015',
+            'sender'  =>  '9botitaly@gmail.com',
+        ));
 		if(count($smtpDetails) > 0)
 		{
 			//	$smtpDetails[0] refers to an array on whose index 0 will exist an associative array          smtpUsername
