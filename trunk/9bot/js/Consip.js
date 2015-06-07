@@ -16,7 +16,7 @@ $(function(){
 			productDescription	: 'Ninebot può essere utilizzato come trasporto personale per percorsi di breve e media distanza. Essendo facilmente smontabile e molto leggero (23 kg) può essere comodamente caricato nel portabagagli dell’auto o essere trasportato con imbracature di servizio.',
 			productPrice		: '€3904',
 			productImage		: '1.png',
-            productThumbnails   : ['', '', '', ''],
+            productThumbnails   : ['1.png', '', '', ''],
 		}, 
 		
 		{
@@ -24,7 +24,7 @@ $(function(){
 			productDescription	: 'Il manico corto può essere facilmente sostituito al manubrio standard e consente all’operatore di avere le mani libere anche durante gli spostamenti.',
 			productPrice		: '+ €100',
 			productImage		: '2.png',
-            productThumbnails   : ['', '2.png', '', ''],
+            productThumbnails   : ['2.png', '', '', ''],
 		},
 		
 		{
