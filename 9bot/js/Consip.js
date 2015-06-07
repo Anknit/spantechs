@@ -49,8 +49,8 @@ $(function(){
 			productName			: 'NINEBOT E POLICE',
 			productDescription	: 'Ninebot attrezzato per l’utilizzo di sorveglianza. <br />La piattaforma è corredata con 2 rack di sostegno su cui sono montate 2 capaci borse in pvc per contenere documenti o strumenti . Nella barra del manubrio la presa Usb con una uscita da 5 volt consente di collegare apparati di telecomunicazione o informatici. <br />Su richiesta possono essere fornite in sostituzione di una o di entrambe le borse contenitori per il supporto e la ricarica con alimentazione per apparati elettronici e di pronto intervento.',
 			productPrice		: '€4500',
-			productImage		: '5.png',
-            productThumbnails   : ['', '', '', ''],
+			productImage		: '4.png',
+            productThumbnails   : ['4.png', '9.jpg', '', ''],
 		}
 	];
     
@@ -82,10 +82,10 @@ $(function(){
     };
     
     createAndAppendThumbNailNavigator   =   function(containerProduct, ThumbNailsArray){
-        productItemThumbNailsContainer  =   containerProduct.find('productItemThumbNailsContainer');
-        for(i = 0; i< ThumbNailsArray.length; i++){
+        productItemThumbNailsContainer  =   containerProduct.find('.productItemThumbNailsContainer');
+        for(var i = 0; i< ThumbNailsArray.length; i++){
             if(!IsValueNull(ThumbNailsArray[i])){
-                thumbNailItem   =   $('<div class="productItemthumbNails"><img src="'+ThumbNailsArray[i]+'" /></div>');
+                thumbNailItem   =   $('<div class="productItemthumbNails"><img src="'+imgDirectoryPath+ThumbNailsArray[i]+'" /></div>');
                 productItemThumbNailsContainer.append(thumbNailItem);
             }
         }
@@ -124,4 +124,9 @@ $(function(){
         }
     }
     updateCategoryProducts(['Ninebot_E', 'Ninebot_Police', 'Miscellaneous']);
+    $('.productItemContainer').on('click', '.productItemthumbNails img', function(){
+        image   =   $(this);
+        src =   image.attr('src');
+        $(this).closest('.productItemContainer').find('.productItemImage').find('img').attr('src', src);
+    });
 });

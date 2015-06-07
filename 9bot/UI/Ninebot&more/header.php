@@ -53,7 +53,7 @@
                                     <a href="NinebotE.php">Ninedroid App</a>
                                     <ul class="submenu">
                                         <li class="subMenuItems">
-                                        	<a href="https://itunes.apple.com/cn/app/ninedroid/id781148396?mt=8">
+                                        	<a target="_blank" href="https://itunes.apple.com/cn/app/ninedroid/id781148396?mt=8">
                                         		<img src='./../../images/icons/ios-btn.png' alt='iOS app'>
                                         	</a>
                                         </li>
