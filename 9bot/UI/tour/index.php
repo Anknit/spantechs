@@ -10,7 +10,10 @@
     <script>
         var pageIdentifier  =   'Home';
         $(function ($) {
-            HomePageSlideShow(false, 'testSlider');
+            captionSlider   =   false;
+            sliderID        =   'testSlider';
+            listThumbNail   =   true;
+            HomePageSlideShow(captionSlider, sliderID, listThumbNail);
         });
     </script>        
 	<div class="content">
@@ -30,18 +33,38 @@
             <div u="slides" class="jssorSlidesDimensions" style="cursor: move; position: absolute;">
                 <div>
                     <img u="image" src="../../images/tours/1.jpg" />
+                    <div u="thumb">
+                        <img class="i" src="../../images/tours/1.jpg" /><div class="t">Roam in Rome</div>
+                        <div class="c">Roam around the Rome by various means</div>
+                    </div>
                 </div>
                 <div>
                     <img u="image" src="../../images/tours/2.jpg" />
-                </div>
+                     <div u="thumb">
+                        <img class="i" src="../../images/tours/2.jpg" /><div class="t">Ninebot tours</div>
+                        <div class="c">Explore Rome while riding Ninebot</div>
+                    </div>
+               </div>
                 <div>
                     <img u="image" src="../../images/tours/3.jpg" />
+                    <div u="thumb">
+                        <img class="i" src="../../images/tours/3.jpg" /><div class="t">Vespa tours</div>
+                        <div class="c">Vespa brings comfort to your journey</div>
+                    </div>
                 </div>
                 <div>
                     <img u="image" src="../../images/tours/5.jpg" />
+                    <div u="thumb">
+                        <img class="i" src="../../images/tours/5.jpg" /><div class="t">Golfcar tours</div>
+                        <div class="c">Sit back relax, and treat your eyes</div>
+                    </div>
                 </div>
                 <div>
                     <img u="image" src="../../images/tours/6.jpg" />
+                    <div u="thumb">
+                        <img class="i" src="../../images/tours/6.jpg" /><div class="t">Bike tours</div>
+                        <div class="c">Pushing yourself in travelling brings gratification</div>
+                    </div>
                 </div>
                 <!-- Arrow Left -->
                 <span u="arrowleft" class="jssora20l" style="top: 243px; left: 8px;">
@@ -49,6 +72,15 @@
                 <!-- Arrow Right -->
                 <span u="arrowright" class="jssora20r" style="top: 243px; right: 8px;">
                 </span>
+            </div>
+            <div u="thumbnavigator" class="jssort11" style="right: 10px; margin: 15% 0% 0% 0%;">
+                <!-- Thumbnail Item Skin Begin -->
+                <div u="slides" style="cursor: default;">
+                    <div u="prototype" class="p" style="top: 0; left: 0;">
+                        <div u="thumbnailtemplate" class="tp"></div>
+                    </div>
+                </div>
+                <!-- Thumbnail Item Skin End -->
             </div>
         </div>
 		<div id="tourCatalogue">

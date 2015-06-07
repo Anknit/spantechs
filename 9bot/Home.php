@@ -11,7 +11,7 @@
     <script src="js/homePageAnimation.js" type="text/javascript"></script>
 	<script>
         $(function(){
-			HomePageSlideShow(false, 'homePageImageSlider');
+			HomePageSlideShow(false, 'homePageImageSlider', false);
 		});
     </script>        
 </head>
