@@ -17,9 +17,9 @@
                         </div>
                         <div class="socialLink">
                                 <a href='https://www.facebook.com/pages/Ninebot-Italia/435521229928810' target="_blank"><img src="../../images/icons/fb.png" alt="facebook" /></a>
-                                <a href='#'><img src="../../images/icons/yt.png" alt="youtube" /></a>
-                                <a href='#'><img src="../../images/icons/gp.png" alt="google" /></a>
-                                <a href='#'><img src="../../images/icons/lin.png" alt="linkedin" /></a>
+                                <a href='https://www.youtube.com/channel/UCeJ4sB-k6rK4jAFT0NeGbMg' target="_blank"><img src="../../images/icons/yt.png" alt="youtube" /></a>
+                                <a href='https://plus.google.com/104294156239976604399' target="_blank"><img src="../../images/icons/gp.png" alt="google" /></a>
+                                <a style="display:none" href='#' target="_blank"><img src="../../images/icons/lin.png" alt="linkedin" /></a>
                         </div>
                     </div>
                     <div class="footerRightCol">
