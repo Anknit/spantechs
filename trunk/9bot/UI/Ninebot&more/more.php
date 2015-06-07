@@ -23,7 +23,7 @@
         <script src="../../js/homePageAnimation.js" type="text/javascript"></script>
         <script>
             $(function ($) {
-				HomePageSlideShow(true, 'testSlider');
+				HomePageSlideShow(true, 'testSlider', false);
             });
         </script>        
     </head>

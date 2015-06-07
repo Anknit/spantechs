@@ -5,7 +5,7 @@
 *
 */
 // 
-function HomePageSlideShow(caption, sliderID) {
+function HomePageSlideShow(caption, sliderID, listThumbNail) {
 	if(caption != false){
 		//Define an array of transition for captions
 		var _CaptionTransitions = [
@@ -73,6 +73,23 @@ function HomePageSlideShow(caption, sliderID) {
 		}
 	}
 	
+    if(listThumbNail == true){
+		options.$ThumbnailNavigatorOptions	=	{
+            $Class: $JssorThumbnailNavigator$,              //[Required] Class to create thumbnail navigator instance
+            $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+
+            $Loop: 2,                                       //[Optional] Enable loop(circular) of carousel or not, 0: stop, 1: loop, 2 rewind, default value is 1
+            $AutoCenter: 3,                                 //[Optional] Auto center thumbnail items in the thumbnail navigator container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 3
+            $Lanes: 1,                                      //[Optional] Specify lanes to arrange thumbnails, default value is 1
+            $SpacingX: 4,                                   //[Optional] Horizontal space between each thumbnail in pixel, default value is 0
+            $SpacingY: 4,                                   //[Optional] Vertical space between each thumbnail in pixel, default value is 0
+            $DisplayPieces: 4,                              //[Optional] Number of pieces to display, default value is 1
+            $ParkingPosition: 0,                            //[Optional] The offset position to park thumbnail
+            $Orientation: 2,                                //[Optional] Orientation to arrange thumbnails, 1 horizental, 2 vertical, default value is 1
+            $DisableDrag: false                             //[Optional] Disable drag or not, default value is false
+        }
+    }
+    
 	var jssor_slider1 = new $JssorSlider$(sliderID, options);
 	//responsive code begin
 	//you can remove responsive code if you don't want the slider scales while window resizes

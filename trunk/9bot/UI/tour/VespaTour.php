@@ -5,7 +5,7 @@
     <script>
         var pageIdentifier  =   'Tour';
         $(function ($) {
-            HomePageSlideShow(false, 'testSlider');
+            HomePageSlideShow(false, 'testSlider', false);
         });
     </script>
     <style>
