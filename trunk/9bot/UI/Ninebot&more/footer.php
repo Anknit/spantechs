@@ -6,7 +6,7 @@
                     </div>
                     <div class="footerMidCol">
                         <div class="contact" id="Contact_us">
-                                <h3>CONTATTO</h3>
+                                <h4>CONTATTO</h4>
                                 <span>New Moving Società Cooperativa</span>
                                 <br />
                                 <span> Via di San Calisto 9, Roma 00153 RM</span>

@@ -6,12 +6,19 @@
     <link rel="stylesheet" type="text/css" href="css/home.css" />
     <link rel="stylesheet" type="text/css" href="css/moreHome.css" />
     <link rel="stylesheet" type="text/css" href="../Common/css/regionWithFlags.css" />
+    <link rel="stylesheet" type="text/css" href="css/news.css" />
+
     <?php require_once 'require.php';?>
 	<script src="../Common/js/jssor.slider.mini.js" type="text/javascript"></script>
     <script src="js/homePageAnimation.js" type="text/javascript"></script>
 	<script>
         $(function(){
 			HomePageSlideShow(false, 'homePageImageSlider', false);
+            $.each($('.newsItem'), function(index, value){
+                if(index > 1){
+                    $(this).remove();
+                }
+            });
 		});
     </script>        
 </head>
@@ -146,53 +153,18 @@
                     <a href="UI/Ninebot&more/ninoRobotics.php">&nbsp;</a>
                 </div>
             </div>
-            
-            <!--News Items-->
-            <div class="contentNewsItems">
-            	<h3>News</h3>
-            	<div class="newsItem">
-                    <div class="newsFig hvr-float-shadow">
-                       	<img src="images/newsAndEvents/1025.jpg" alt="Ninebot E" style="max-width:100%;max-height:300px;">
-                    </div>
-                	<div class="newsHeadline"><h3>Nuova proposta 9botitalia per noleggio stagionale, 1 Ninebot E a soli € 200,00 al mese</h3></div>
-                    <div class="newsDescription qouteSpan">
-                      <p>Visto il notevole successo del noleggio stagionale per <span id="nic" style="display:none"></span>6 mesi, New Moving Coop propone ai suoi partner la possibilità di noleggiare i Ninebot Elite anche con formule di 5, 4 e 3 mesi (da giugno ad ottobre), senza la possibilità di riscatto a fine locazione.</p>
-                      <p>Chiedi maggiori informazioni nel Ninebot Official Store a te più vicino o contatta il nostro servizio clienti: <a href="mailto:ninebot.servizioclienti@gmail.com" target="_blank">ninebot.servizioclienti@gmail.com</a> o <a href="tel:3929034924" target="_blank">3929034924</a></p>
-                    </div>
-                </div>
-            	<div class="newsItem">
-                    <div class="newsFig hvr-float-shadow">
-                       	<img src="images/newsAndEvents/1038.jpg" alt="Bizzeffe e" style="max-width:100%;max-height:300px;">
-                    </div>
-                	<div class="newsHeadline"><h3>Accordo tra Bizzeffe e 9botitalia: Per le agenzie bizzeffe sconto su Ninebot E</h3></div>
-                    <div class="newsDescription qouteSpan">
-                      <div>E' stato siglato un importante accordo tra:</div>
-                      <div><strong>New </strong><strong><span lang="EN-US">Moving</span></strong><strong> coop</strong> distributore esclusivo dei prodotti <strong>Ninebot</strong> (con il marchio<strong> 9botitalia)</strong></div>
-                      <div> e </div>
-                      <div><strong>"Bizzeffe</strong>" il nuovo Net-work che raccoglie più di 100 agenzie di viaggio e alcuni tra i più importanti Buyers internazionali</div>
-                      <div><br>
-                      </div>
-                      <div>Tutte le agenzie di viaggio che aderiscono a<strong> Bizzeffe</strong> potranno comprare o noleggiare con lo sconto del 5% i prodotti <strong>9botitalia</strong> e per il turismo accessibile </div>
-                      <div><strong>Nino R</strong><strong><span lang="EN-US">obotics</span></strong>.</div>
-                      <div><br>
-                      </div>
-                      <div>Vedi anche:</div>
-                      <div><a href="http://www.bizzeffe.it/9bot/" target="_blank">http://www.bizzeffe.it/9bot/</a></div>
-                      <div></div>
-                      <div><a href="http://ow.ly/NhXpK" target="_blank">http://ow.ly/NhXpK</a></div>
-                      <div><br>
-                      </div>
-                      <div><strong>9botitalia</strong> e<strong> Bizzeffe</strong> parteciperanno insieme ad una serie di eventi tra i più importanti nell'ambito del turismo e del turismo accessibile ad iniziare dal 4 giugno con la giornata romana di <img alt="Inline image 1" height="24" src="images/icons/expo.png" width="95"> 2015 all'ARA PACIS.</div>
-                    </div>
-                </div>
-            </div>
+            <?php
+            $images =   'images/';
+            $home   =   true;
+            require_once 'UI/news.php';
+            ?>
         </div>
         <div class="footer">
             <div class="copyrights">
-                ©SPANTACHS | Tutti i diritti riservati
+                ©9bot Italia. Tutti i diritti riservati &nbsp;&nbsp; Powered by <a href="mailto:guptaaditya24@gmail.com">Spantachs</a>
             </div>
         </div>
-    </div>
     <script src="js/commonRequire.js" type="text/javascript"></script>
+    </div>
 </body>
 </html>
