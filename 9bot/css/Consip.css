@@ -86,6 +86,7 @@ img.itemDisplayInGallery{
 
 .productItemImage img{
     height: 200px;
+    max-width: 300px;
 }
 
 .productItemThumbNailsContainer { 

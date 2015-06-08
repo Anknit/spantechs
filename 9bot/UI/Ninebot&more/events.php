@@ -10,9 +10,11 @@
 	require_once './header.php';
 ?>
 	<div class="content" style="margin-bottom:0">
-		<div class='workProgressContainer'>
-			<img src='../../images/icons/coming_soon.jpg' alt='progress' />
-		</div>
+    <link rel="stylesheet" type="text/css" href="../../css/news.css" />
+    <?php 
+        $images =   '../../images/';
+        require_once '../news.php';
+    ?>
 	</div>
 <?php 
 	require_once './footer.php';
