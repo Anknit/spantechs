@@ -101,6 +101,8 @@ class init_mail {
 			//Content of the email
 			$html	=	$this->get_Mail_Content($MailBody);
 
+			error_reporting(0);
+			
 			$text = ''; 
 			$crlf = "\r\n";
 			$mime = new Mail_mime($crlf);
