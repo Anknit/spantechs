@@ -60,8 +60,10 @@ function saveRowValues(src, rowUniqueColumn, rowIndexValue, Tablename){
 
 if(isset($_GET['showdb'])) {
 	require 'OperateDB/DbMgrInterface.php';
-	
-	$html	=	"<html><body>";
+	?>
+	<html>
+    <body>
+    <?php
 	
 	if($_GET['tableNames'] != ''){
 		$Tables	=	explode(',', $_GET['tableNames']);
@@ -78,7 +80,20 @@ if(isset($_GET['showdb'])) {
 	$Tables	=	array('accountcredit_info', 'licenseinfo', 'payment_info', 'session_info', 'systemsettings', 'usageinfo', 'userinfo', 'usersubscriptioninfo', 'voucherinfotable');
 	var_dump($Tables);
 	*/
+	function CreateHeadingRow($heading){
+		$html	=	'';
+		$html	.=	"<tr>";
+		for($j = 0; $j < count($heading); $j++)
+		{
+			$html	.=	"<td style='border: 1px solid #E1E1E1'><b>".$heading[$j]."</b></td>";
+		}
+		$html	.=	"</tr>";
+		echo $html;
+		unset($html);
+		unset($heading);
+	}
 	
+	$html	=	'';
 	for($i = 0; $i< count($Tables); $i++)
 	{
 		
@@ -88,10 +103,13 @@ if(isset($_GET['showdb'])) {
 					), 'ASSOC');	
 		if($result)
 		{
-			$html	.=	"<table id='".$Tables[$i]."' style='border: 1px solid #E1E1E1'>";
-			$html	.=	"<caption style='color: red'><b>".$Tables[$i]."</b></caption>";
-			$htmlRows	=	"";
+			?>
+            <table id='<?php echo $Tables[$i]; ?>' style='border: 1px solid #E1E1E1'>
+			<caption style='color: red'><b><?php echo $Tables[$i]; ?></b></caption>
+            <?php
 			$heading	=	"";
+			$headingFlush	=	false;
+			$htmlRows	=	"";
 			for($k = 0; $k< count($result); $k++)
 			{
 				$htmlRows	.=	"<tr>";
@@ -103,7 +121,11 @@ if(isset($_GET['showdb'])) {
 					{
 						$heading[]	=	$key;
 					}
-					
+					else if($k == 1 && !$headingFlush){
+						//print the heading row, and clear the variable heading
+						$headingFlush	=	true;
+						CreateHeadingRow($heading);
+					}
 					if($columnIndex	==	0) {
 						$RowUniqueValue	=	$value;
 						$RowUniqueColumn=	$key;
@@ -116,19 +138,18 @@ if(isset($_GET['showdb'])) {
 				
 				$htmlRows	.=	"<td style='border: 1px solid #E1E1E1'><input type='button' onclick='saveRowValues(this, \"".$RowUniqueColumn."\", \"".$RowUniqueValue."\", \"".$Tables[$i]."\");' value='save' /></td>";
 				$htmlRows	.=	"</tr>";
+				if($k > 0) {
+					echo $htmlRows;
+					$htmlRows	=	'';
+				}
 			}
-			
-			//Heading row
-			$html	.=	"<tr>";
-			for($j = 0; $j < count($heading); $j++)
-			{
-				$html	.=	"<td style='border: 1px solid #E1E1E1'><b>".$heading[$j]."</b></td>";
-			}
-			$html	.=	"</tr>".$htmlRows;
-			$html	.=	"</table>";
+			?>
+            </table>
+            <?php
 		}
 	}
-	$html	.=	"</body></html>";
-	echo $html;
-}
 ?>
+	</body></html>
+<?php 
+}
+?> 
