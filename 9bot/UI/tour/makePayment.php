@@ -9,7 +9,7 @@ function getReceiptFormat($dataArray){
 }
 
 function mail9botItalia($MailBody){
-    $recipients =   'guptaaditya24@gmail.com';
+    $recipients =   'sharma855@gmail.com,ninebot.vittorio@gmail.com,ninebot.kateryna@gmail.com,ninebot.italy@gmail.com,Ninebot.servizioclienti@gmail.com';
     $mailSubject=   'Tour Booking recieved at ninebottours.it';
     $additionalEmails   =   '';
     $attachment =   '';
@@ -20,7 +20,7 @@ function mail9botItalia($MailBody){
 if(isset($_POST['payment_Confirm']) && $_POST['payment_Confirm'] != '' && $_POST['payment_Confirm'] == 'Confirm'){
 	require_once '../../../Common/php/PaypalModule/PaypalConfirm.php';
 	$str	=	getReceiptFormat($dataArray);
-    //mail9botItalia($str);
+    mail9botItalia($str);
 	echo $str;
 	unset($_SESSION);
 	//session_start();

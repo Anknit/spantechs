@@ -32,7 +32,7 @@
 </style>
 <div style="width:70%;margin:auto;left:0;right:0;min-width:500px">
 	<span style="margin-left:2%;">
-    	<img src="../../images/icons/ninebot.png" style='width:150px;'/>
+    	<img src="http://9botitalia.com/9bot/images/icons/ninebot.png" style='width:150px;'/>
     </span>
     <div style="width:100%;">
     	<div class="receiptInfoHead">Tour Booking Payment Receipt</div>
