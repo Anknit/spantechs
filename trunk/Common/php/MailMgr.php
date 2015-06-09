@@ -31,7 +31,7 @@ class init_mail {
 	{
 		$smtpDetails	=	array(array(
             'smtpHostName'  =>  'smtp.gmail.com',
-            'smtpPort'  =>  '465',
+            'smtpPort'  =>  '587',
             'smtpUsername'  =>  '9botitaly@gmail.com',
             'smtpPassword'  =>  'moving2015',
             'sender'  =>  '9botitaly@gmail.com',
