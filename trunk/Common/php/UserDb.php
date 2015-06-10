@@ -1,16 +1,9 @@
 <?php
 if(isset($_GET['Update']) && $_GET['Update']	==	1) {
-	require 'OperateDB/DbMgrInterface.php';
+	require '../../9bot/Db.php';
 	$result	=	$perform_Database_Operation->connection->query($_GET['Query']);
 	if($result)
 		echo 1;
-	else {
-		include_once 'ErrorHandling.php';
-		$DB_OperationError	=	mysqli_error($perform_Database_Operation->connection);
-		ErrorLogging('query: --'.$_GET['Query'].' -- '.'Error: --'.$DB_OperationError);
-		echo 2;
-	}
-		
 	die();	
 }
 ?>
@@ -59,7 +52,7 @@ function saveRowValues(src, rowUniqueColumn, rowIndexValue, Tablename){
 <?php
 
 if(isset($_GET['showdb'])) {
-	require 'OperateDB/DbMgrInterface.php';
+	include_once 'ErrorHandling.php';
 	?>
 	<html>
     <body>
