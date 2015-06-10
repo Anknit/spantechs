@@ -17,6 +17,7 @@
 
 */
 
+ini_set ('include_path', '/ home / sharmatechs / php:'. ini_get ('include_path'));
 function send_Email($recipients, $mailSubject = "", $MailBody = "", $additionalEmails	=	'',	$attachment	=	'')
 {
 	$mailInit	=	new init_mail();
@@ -30,11 +31,11 @@ class init_mail {
 	public function init_mail()	
 	{
 		$smtpDetails	=	array(array(
-            'smtpHostName'  =>  'smtp.gmail.com',
-            'smtpPort'  =>  '587',
-            'smtpUsername'  =>  '9botitaly@gmail.com',
-            'smtpPassword'  =>  'moving2015',
-            'sender'  =>  '9botitaly@gmail.com',
+            'smtpHostName'  =>  'relay-hosting.secureserver.net',
+            'smtpPort'  =>  '25',
+            'smtpUsername'  =>  'ninebot@9botitalia.com',
+            'smtpPassword'  =>  'calisto9',
+            'sender'  =>  'ninebot@9botitalia.com',
         ));
 		if(count($smtpDetails) > 0)
 		{
@@ -66,8 +67,8 @@ class init_mail {
 		else
 		$output	=	'<html>
 					<head>
-						<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-						<title>Venera technologies</title></head>
+						<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+						<title>9botitalia</title></head>
 							<style type="text/css"> .internalTextNormal{
 							font-family: Arial, Helvetica, sans-serif;
 							font-size: 11px;
