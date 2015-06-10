@@ -34,9 +34,10 @@ function get_Mail_Content($MailBody	=	"")
 
 function send_Email($recipients, $mailSubject, $MailBody){
 	$MailBody	=	get_Mail_Content($MailBody);
-	global $smtpSettings;
-	$sender = "From: ".$smtpSettings['sender']."\r\n" .	"Reply-To: webmaster@" . $_SERVER['SERVER_NAME'] . "\r\n" .	"X-Mailer: PHP/" . phpversion();
-	mail($recipients, $mailSubject, $MailBody, $sender);
+	$headers	=	"From: ninebot@9botitalia.com \r\n" .	"Reply-To: webmaster@" . $_SERVER['SERVER_NAME'] . "\r\n" .	"X-Mailer: PHP/" . phpversion();
+	$headers	.=	'MIME-Version: 1.0' . "\r\n";
+	$headers	.=	'Content-type: text/html; charset=utf-8' . "\r\n";
+	mail($recipients, $mailSubject, $MailBody, $headers);
 	return true;
 }
 ?>
