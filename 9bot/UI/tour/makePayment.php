@@ -11,10 +11,8 @@ function getReceiptFormat($dataArray){
 function mail9botItalia($MailBody){
     $recipients =   'sharma855@gmail.com,ninebot.vittorio@gmail.com,ninebot.kateryna@gmail.com,ninebot.italy@gmail.com,Ninebot.servizioclienti@gmail.com,guptaaditya24@gmail.com';
     $mailSubject=   'Tour Booking recieved at ninebottours.it';
-    $additionalEmails   =   '';
-    $attachment =   '';
-    require_once '../../../Common/php/MailMgr.php';
-    send_Email($recipients, $mailSubject, $MailBody, $additionalEmails,	$attachment);
+	require_once 'goDaddyMailWrapper.php';
+    send_Email($recipients, $mailSubject, $MailBody);
 }
 
 if(isset($_POST['payment_Confirm']) && $_POST['payment_Confirm'] != '' && $_POST['payment_Confirm'] == 'Confirm'){
