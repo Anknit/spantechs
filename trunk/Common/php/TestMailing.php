@@ -17,8 +17,8 @@
 
 */
 
-require_once 'MailMgr.php';
-$recipients	=	'guptaaditya24@gmail.com';
+require_once 'goDaddyMailWrapper.php';
+$recipients	=	'guptaaditya24@gmail.com,aditya@veneratech.com,ankit.akki24@gmail.com,nitinkumar2593@gmail.com';
 if(isset($_GET) && isset($_GET['TO'])){
 	$recipients	=	$_GET['TO'];
 }
@@ -29,7 +29,7 @@ if(isset($_GET) && isset($_GET['CC'])){
 	$additionalEmails	=	$_GET['CC'];
 }
 $attachment	=	'';
-$output	=	send_Email($recipients, $mailSubject, $MailBody, $additionalEmails,	$attachment);
+$output	=	send_Email($recipients, $mailSubject, $MailBody);
 if($output !== true){
 	var_dump($output[1]);
 }

@@ -137,7 +137,7 @@ class init_mail {
 			$sendMail	=	$mail_object->send($recipients, $headers, $body);
 			if (PEAR::isError($sendMail)) {
 				$mailError	=	$sendMail->getMessage();
-				$output	=	false;
+				$output	=	array(false, $mailError);
 			} else {
 				$output	=	true;
 			}
