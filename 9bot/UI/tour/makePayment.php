@@ -11,7 +11,7 @@ function getReceiptFormat($dataArray){
 function mail9botItalia($MailBody){
     $recipients =   'sharma855@gmail.com,ninebot.vittorio@gmail.com,ninebot.kateryna@gmail.com,ninebot.italy@gmail.com,Ninebot.servizioclienti@gmail.com,guptaaditya24@gmail.com';
     $mailSubject=   'Tour Booking recieved at ninebottours.it';
-	require_once 'goDaddyMailWrapper.php';
+	require_once '../../../Common/php/goDaddyMailWrapper.php';
     send_Email($recipients, $mailSubject, $MailBody);
 }
 
