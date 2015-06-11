@@ -161,6 +161,16 @@
                     <div class="qouteSpan descriptionContainer">
                         <p>Il funzionamento dei Ninebot è intuitivo e semplice allo stesso tempo. Inoltre, il Ninebot può essere personalizzato utilizzando l'applicazione smartphone, così l'esperienza di guida è benessere ottimizzato.</p>
                     </div>
+                    <div class="descriptionContainer">
+                        <p>
+                            <a target="_blank" href="https://itunes.apple.com/cn/app/ninedroid/id781148396?mt=8">
+                                <img src='./../../images/icons/ios-btn.png' alt='iOS app'>
+                            </a>
+                            <a href="http://www.ninebot.cn/appdownload/app/Ninedroid.apk">
+                                <img src='./../../images/icons/android-btn-current.png' alt='android app'>
+                            </a>
+                        </p>
+                    </div>
 	            </div>
             </div>
         </div>
