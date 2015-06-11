@@ -144,3 +144,13 @@
 .jssort11 .pav, .jssort11 .p.pdn {
     background: #462300;
 }
+
+.anchorOnListNavigator{
+  float: right;
+  margin-top: 2%;
+  margin-right: 10%;
+  text-decoration: underline;
+  background-color: #F7F1F1;
+  color: black;
+  padding: 4px;
+}
