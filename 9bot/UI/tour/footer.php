@@ -16,17 +16,18 @@
                                         <br />
                                         <img src="../../images/icons/mail.png" alt="contactNumber" /><span>Ninebot.servizioclienti@gmail.com</span>
                                 </div>
-                                <div class="socialLink">
-                                    <a href='https://www.facebook.com/ninebot.segway.tours' target="_blank"><img src="../../images/icons/fb.png" alt="facebook" /></a>
-                                    <a href='https://www.youtube.com/channel/UCeJ4sB-k6rK4jAFT0NeGbMg' target="_blank"><img src="../../images/icons/yt.png" alt="youtube" /></a>
-                                    <a href='https://plus.google.com/104294156239976604399' target="_blank"><img src="../../images/icons/gp.png" alt="google" /></a>
-                                    <a style="display:none" href='#' target="_blank"><img src="../../images/icons/lin.png" alt="linkedin" /></a>
+                                <div class="sml">
+                                    <a href='https://www.facebook.com/ninebot.segway.tours' target="_blank"><img src="../../images/icons/s1.png" /></a>
+                                    <a href='https://www.youtube.com/channel/UCeJ4sB-k6rK4jAFT0NeGbMg' target="_blank"><img src="../../images/icons/s2.png" /></a>
+                                    <a href='https://plus.google.com/104294156239976604399' target="_blank"><img src="../../images/icons/s3.png" /></a>
+                                    <a style="display:none" href='#' target="_blank"><img src="../../images/icons/s4.png"/></a>
                                  </div>
                         </div>
                         <div class="footerRightCol">
                                 <div class="InternationalLink" style="margin-top: 15px;font-size: 1.2em;">
                                     <ul>
-                                        <li class="PageLinkFooter"><a href="http://9botitalia.com/9bot/index.html" style="text-decoration:none"><span style="text-transform:uppercase; color:#05B9BD">9 bot italia</a></li>
+                                        <li class="PageLinkFooter"><a href="http://9botitalia.com/9bot/" style="text-decoration:none"><span style="text-transform:uppercase; color:#05B9BD">9 bot italia</a></li>
+                                        <li class="PageLinkFooter"><a href="http://9botitalia.com/9bot/UI/Ninebot&more/ninoRobotics.php" style="text-decoration:none"><span style="text-transform:uppercase; color:#05B9BD">Nino robotics</a></li>
                                         <li class="PageLinkFooter"><a href="http://www.ninebot.com" style="text-decoration:none"><span style="text-transform:uppercase; color:#05B9BD">NINEBOT INTERNATIONAL</span><a>					
                                     </ul>
                                 </div>

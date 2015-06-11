@@ -11,7 +11,8 @@
 ?>
 	<div class="content" style="margin-bottom:0">
     <link rel="stylesheet" type="text/css" href="../../css/news.css" />
-    <?php 
+    <?php
+		$home = false;
         $images =   '../../images/';
         require_once '../news.php';
     ?>

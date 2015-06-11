@@ -158,6 +158,7 @@
             $home   =   true;
             require_once 'UI/news.php';
             ?>
+            <a class="moreNewsLink" href="UI/Ninebot&more/events.php">more...</a>
         </div>
         <div class="footer">
             <div class="copyrights">
