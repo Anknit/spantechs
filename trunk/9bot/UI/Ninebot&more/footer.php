@@ -3,6 +3,7 @@
             <div class="globalFooter">
                     <div class="footerLeftCol">
                     	<img src="../../images/icons/ninebot-authorized-distributor.png" width="400" height="auto" />
+                        <span style="float:left;margin:10px 2px 10px 10% ;text-align:center">Distributore Esclusivo per Italia.<br /> Per maggiori informazioni visita: <a target="_blank" href="http://ninebot.com"><b><u>ninebot.com</u></b></a></span>
                     </div>
                     <div class="footerMidCol">
                         <div class="contact" id="Contact_us">

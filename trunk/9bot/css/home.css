@@ -40,7 +40,10 @@
 	font-size:20px;
 	font-weight:bold;
 }
-
+.contentNewsItems{
+	margin-top:5% !important;
+	border: 1px dotted #ccc;
+}
 @media (max-width: 400px) {
 	.captionCentered{
 		position:absolute;
