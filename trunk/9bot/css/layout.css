@@ -144,16 +144,16 @@
 		vertical-align: sub;
 		margin-right: 0.2em;
 	}
-	.socialLink{
+	.sml{
 		margin:15px;
 		float:left;
 	}
-	.socialLink a{
+	.sml a{
 		height:20px;
 		width:20px;
 	}
 
-	.socialLink img{
+	.sml img{
 		width:20px;
 		float:left;
 		margin:0 10px;
