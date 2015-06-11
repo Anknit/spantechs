@@ -44,7 +44,7 @@
 	padding: 10px 10px 40px 10px;
 	display:inline-block;
 	transition:all 1.5s linear;
-	cursor:pointer;
+	cursor:default;
 }
 .blueContentBox:hover{
 	box-shadow: 1px 6px 6px 3px #aaa;
