@@ -13,7 +13,7 @@
     <link type="text/css" rel="stylesheet" href='../../css/ninoLayout.css' />
 	<div class="content">
 		<div class='topBanner'>
-			<img src='./../../images/nino/Animation%20image/1.png' alt='nino-robotics'>
+			<img src='./../../images/nino/Animation%20image/3.png' alt='nino-robotics'>
 		</div>
 		<div class='infoDescNino'>
 			<h3>
@@ -30,6 +30,7 @@
 			</p>
 		</div>
 		<div class='imgLister'>
+			<img src="./../../images/nino/Animation%20image/6.png" alt="nino-robotics" width="100%" />
 		<!--
 			<div class='actionContainer left'>
 				<img src='./../../images/icons/left.png' alt='nino-robotics' />
@@ -40,7 +41,7 @@
 			<div class='thumbContainer'>
 				<img src='./../../images/nino/Other%20nino%20png/NINO black 34.png' alt='nino-robotics' />
 			</div>
-		-->
+		
 			<div class='thumbContainer'>
 				<img src='./../../images/nino/Other%20nino%20png/NINO black dessus.png' alt='nino-robotics' />
 			</div>
@@ -50,7 +51,7 @@
 			<div class='thumbContainer'>
 				<img src='./../../images/nino/Other%20nino%20png/NINO white 34.png' alt='nino-robotics' />
 			</div>
-		<!--
+		
 			<div class='thumbContainer'>
 				<img src='./../../images/nino/Other%20nino%20png/NINO white dos.png' alt='nino-robotics' />
 			</div>
