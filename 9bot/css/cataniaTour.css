@@ -1,0 +1,30 @@
+.cataniaTopHeader{
+	float: left;
+	width: 100%;
+}
+.cataniaTourThumbContainer{
+  float: left;
+  width: 100%;
+  padding: 20px 0px;	
+}
+.cataniaTourThumb{
+  width: 30%;
+  float: left;
+  margin-left: 1%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  border: 1px solid #999;
+  box-shadow: 6px 5px 10px #aaa;
+  border-radius:50px;	
+}
+.cataniaTourThumb:hover {
+	box-shadow:2px 2px 6px #777;
+	cursor:pointer;
+}
+.cataniaTourThumb h2{
+	color:#888;
+}
+.cataniaTourThumb:hover h2{
+	color:#000;
+}
