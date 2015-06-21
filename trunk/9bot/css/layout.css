@@ -197,7 +197,7 @@
 		display:table-cell !important;
 	}
 	.headerMenuItems{
-		padding:18px 8px;
+		padding:18px 6px;
 		font-size:0.9em !important;
 	}
 	ul.topMenu{
@@ -209,6 +209,6 @@
 }
 @media screen and (max-device-width: 650px){
 	.headerMenuItems{
-		padding:18px 5px;
+		padding:18px 3px;
 	}
 }
