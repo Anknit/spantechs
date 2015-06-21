@@ -25,7 +25,7 @@
                         <ul class="topMenu">
                                 <li class="headerMenuItems" identifier="Home"><a href="more.php">Home</a></li>
                                 <li class="headerMenuItems" identifier="Prodotti" onclick="pageIdentifier = 'Prodotti'; setSelectionOnHeaderMenu();">
-                                    <a href="NinebotE.php">Prodotti</a>
+                                    <a href="#">Prodotti</a>
                                     <ul class="submenu">
                                         <li class="subMenuItems"><a href="NinebotE.php">Ninebot E</a></li>
                                         <li class="subMenuItems"><a href="NinebotC.php">Ninebot C</a></li>
@@ -51,7 +51,7 @@
                                 <li class="headerMenuItems" identifier="Consip"><a href="Consip.php">CONSIP</a></li>
                                 <li class="headerMenuItems" identifier="Gallery"><a href="gallery.php">Galleria</a></li>
                                 <li class="headerMenuItems" identifier="NineDroid App" onclick="setSelectionOnHeaderMenu();">
-                                    <a href="NinebotE.php">Ninedroid App</a>
+                                    <a href="#">Ninedroid App</a>
                                     <ul class="submenu">
                                         <li class="subMenuItems">
                                         	<a target="_blank" href="https://itunes.apple.com/cn/app/ninedroid/id781148396?mt=8">

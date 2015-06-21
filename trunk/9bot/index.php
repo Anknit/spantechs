@@ -33,10 +33,6 @@
 		<script src="../Common/js/jquery.lettering.js"></script>
 		<script>
             $(document).ready(function() {
-                function skipToMainContent(){
-                    postAnimationAction();
-                    window.location.href	=	'Home.php';	
-                }
                 if(IsbrowserIE()){
                     skipToMainContent();	
                 }
@@ -46,6 +42,10 @@
                 showHomePageTimer	=	setTimeout(skipToMainContent, calculatedTimeoutForTextSlideShow);
                 $('#skipToMainContent').on('click', skipToMainContent);
             });
+            function skipToMainContent(){
+                postAnimationAction();
+                window.location.href	=	'Home.php';	
+            }
             postAnimationAction =   function(){
 				requestObject	=	new Object();
 				requestObject.actionScriptURL	=	'setSessionParameters.php?IntroDone=1';
@@ -53,6 +53,10 @@
 				send_remoteCall(requestObject);
                 return true;
             };
+            clientWidth =   document.body.clientWidth;
+            if(clientWidth <640){
+                skipToMainContent();
+            }
         </script>
 	</body>
 </html>

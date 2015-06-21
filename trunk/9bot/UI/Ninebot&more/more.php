@@ -42,6 +42,18 @@
             </div> 
             <!-- Slides Container -->
             <div u="slides" class="jssorSlidesDimensions" style="cursor: move; position: absolute;">
+                <!-- Slide 0b nino -->
+                <div>
+                    <img src="../../images/nino/Animation%20image/4.png" />
+                </div>
+                <!-- Slide 0a nino -->
+                <div>
+                    <img src="../../images/nino/Animation%20image/1.png" />
+                </div>
+                <!-- Slide 0c nino -->
+                <div>
+                    <img src="../../images/nino/Animation%20image/5.png" />
+                </div>
                 <!-- Slide 1 Android connectivity -->
                 <div>
                     <img u="image" src="../../images/slideAnimation/androidBackGround.jpg" />
@@ -54,7 +66,7 @@
                     <img u="caption" t="T|IB" t2=B d=400 src="../../images/slideAnimation/iPhone6Hand.png" style="position:absolute; right:70%; bottom:10%; width:20%;" />
                     <img u="caption" t="*" d=550 src="../../images/slideAnimation/feature-android.png" style="position:absolute;left:25px;top:50px;" />
                     <img u="caption" t="*" t2="*" d=700 src="../../images/slideAnimation/feature-ios.png" style="position:absolute;left:125px;top:50px;" />
-                    <img u="caption" t="*" t2="*" d=1050 src="../../images/slideAnimation/9_white.png" height="auto" style="position:absolute;right:30%;bottom:40%; width:5%;" />
+                    <img u="caption" t="T|IB" t2="*" d=1050 src="../../images/slideAnimation/9_white.png" height="auto" style="position:absolute;right:30%;bottom:40%; width:5%;" />
                     <div u="caption" t="*" t2="*" du="900" style="position: absolute;top: 140px; left: 60px; width: 350px;height: 50px;">
                          <span style="color:#fff">
                            per IOS
@@ -162,6 +174,9 @@
                         <p>Il funzionamento dei Ninebot è intuitivo e semplice allo stesso tempo. Inoltre, il Ninebot può essere personalizzato utilizzando l'applicazione smartphone, così l'esperienza di guida è benessere ottimizzato.</p>
                     </div>
                     <div class="descriptionContainer">
+                        <p>
+                           <span class="qouteSpan" style="border:none">Scarica applicazione NINEDROID</span>
+                        </p>
                         <p>
                             <a target="_blank" href="https://itunes.apple.com/cn/app/ninedroid/id781148396?mt=8">
                                 <img src='./../../images/icons/ios-btn.png' alt='iOS app'>

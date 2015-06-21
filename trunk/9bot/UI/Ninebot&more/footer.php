@@ -2,7 +2,7 @@
     <div class="footer">
             <div class="globalFooter">
                     <div class="footerLeftCol">
-                    	<img src="../../images/icons/ninebot-authorized-distributor.png" width="400" height="auto" />
+                    	<img src="../../images/icons/ninebot-authorized-distributor.png" width="340" height="auto" />
                         <span style="float:left;margin:10px 2px 10px 10% ;text-align:center">Distributore Esclusivo per Italia.<br /> Per maggiori informazioni visita: <a target="_blank" href="http://ninebot.com"><b><u>ninebot.com</u></b></a></span>
                     </div>
                     <div class="footerMidCol">
@@ -14,7 +14,8 @@
                                 <br />
                                 <img src="../../images/icons/phone.png" alt="contactNumber" /><span> +39 39290349274</span>
                                 <br />
-                                <img src="../../images/icons/mail.png" alt="contactNumber" /><span>Ninebot.servizioclienti@gmail.com</span>
+                                <img src="../../images/icons/mail.png" alt="contactNumber" />            
+                                <span>Ninebot.servizioclienti@gmail.com</span>
                         </div>
                         <div class="sml">
                                 <a href='https://www.facebook.com/pages/Ninebot-Italia/435521229928810' target="_blank"><img src="../../images/icons/s1.png" /></a>
