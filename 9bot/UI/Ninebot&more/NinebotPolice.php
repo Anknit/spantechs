@@ -27,7 +27,7 @@
                     </p>
                 </div>
                 <div style="float:left;margin-left:10%;">
-                    <img src="../../images/productCatalogue/5.png" />
+                    <img src="../../images/productCatalogue/ninebotpolice/3.jpg" width="400" />
                 </div>
             </div>
 		</div>
