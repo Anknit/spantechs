@@ -75,7 +75,7 @@
 		<div class="full_width_back t_l" style="background: url(../../images/prodottiImages/nineBotOneliftingHandle.png)">
         	<h2>Non-visual lifting handle design</h2>
 			<div class="full_width_desc_container">
-            	<p style="width: 40%;margin-top: 50px;text-align:left;float:right;">
+            	<p style="width: 40%;margin-top:50px;margin-left: 60%;text-align:center;">
                 	Light and portable <br />
 					The magnesium alloy and elastic polyurethane lifting <br />
                     handle is hidden in the vehicle and can pop out if needed.
@@ -87,7 +87,7 @@
 		<div class="full_width_back t_l" style="background: url(../../images/prodottiImages/nineBotOneCompatibleAccessories.png)">
         	<h2>Being compatible with popular accessories</h2>
 			<div class="full_width_desc_container">
-            	<p style="width: 40%;margin-top: 50px;text-align:left;">
+            	<p style="width: 40%;margin-top: 50px;">
                 	We provide two optional accessories for Ninebot One – accessory holder and <br />
                     assistant wheel set.<br />
                     Accessory holder is compatible with most popular bike accessories,<br />
@@ -100,7 +100,7 @@
 		<div class="full_width_back t_l" style="background: url(../../images/prodottiImages/nineBotOneEasyDisassemble.png)">
         	<h2>Easy to disassemble and replace components</h2>
 			<div class="full_width_desc_container">
-            	<p style="width: 35%;margin-top: 50px;text-align:left;float:right;">
+            	<p style="width: 40%;margin-top:50px;margin-left: 60%;text-align:center">
                 	We provide two optional accessories for Ninebot One – accessory holder and <br />
                     assistant wheel set.<br />
                     Accessory holder is compatible with most popular bike accessories,<br />
@@ -113,7 +113,7 @@
 		<div class="full_width_back t_l" style="background: url(../../images/prodottiImages/nineBotOneIntelligentSafety.png)">
         	<h2>Intelligent safety alarm system</h2>
 			<div class="full_width_desc_container">
-            	<p style="width: 40%;margin-top: 50px;text-align:left;">
+            	<p style="width: 40%;margin-top: 50px;">
                 	A triple safety alarm including a sound, light and<br />
                     vibration will emit to ensure a safe driving experience.<br />
                     Alarm will be set off by speeding, over leaning, low<br />
@@ -125,7 +125,7 @@
 		<div class="full_width_back t_l" style="background: url(../../images/prodottiImages/nineBotOneAdditionalFeatures.png)">
         	<h2><span style="margin-left:200px;">Additional Features</span></h2>
 			<div class="full_width_desc_container">
-            	<p style="width: 40%;margin-top: 50px;text-align:left; float:right">
+            	<p style="width: 40%;margin-top:50px;margin-left: 60%;text-align:center">
                 	16 inch ultra-thin powerful brushless motor with<br />
                      Ninebot sine wave frequency conversion<br />
                       technology
@@ -138,7 +138,7 @@
 		<div class="full_width_back t_l" style="background: url(../../images/prodottiImages/nineBotOneNinedroidAppSmartTravel.png)">
         	<h2>Ninedroid App, smart travel</h2>
 			<div class="full_width_desc_container">
-            	<p style="width: 40%;margin-top: 50px;text-align:left;margin-left:-80px">
+            	<p style="width: 40%;margin-top: 50px;">
                 	Ninedroid™ App tracking all the time.<br />
                     Ninedroid 2.0 App will be available in Apple<br />
                     store and Android Market soon.<br />
@@ -151,18 +151,18 @@
 		</div>
 
 		<div class="full_width_back t_d" style="background: url(../../images/prodottiImages/nineBotOneHighPerformanceEfficiency.png)">
-			<div class="full_width_desc_container" style="text-align:left;">
-                <h2 style="  margin-left: -350px;">High performance and efficiency</h2>
-            	<p style="width: 80%;text-align:left;">
+			<div class="full_width_desc_container" style="">
+                <h2 style="">High performance and efficiency</h2>
+            	<p style="width: 80%;">
                 	Maximum speed of 18km/h<br />
                     The Ninebot One’s electrical system is fully sealed and safe to use in inclement weather<br />
                     To clean the unit, simply spray it down<br />
                     Ninedroid App assists with smart travel
 				</p>
             </div>
-            <div class="full_width_desc_container" style="text-align:left;margin-top:280px;">
-                <h2 style="  margin-left: -350px;">Ultrafast charging of the super lithium battery</h2>
-                <p style="width: 70%;text-align:left;">
+            <div class="full_width_desc_container" style="margin-top:280px;margin-left:10px;width:65% !important">
+                <h2 style="">Ultrafast charging of the super lithium battery</h2>
+                <p style="width: 70%;margin:auto">
                     Optional battery of 83Wh and 240Wh can be full charged with a standard charger in 60-120 minutes<br />
                     A 250W high performance fanless AC adapter is available and can fully charge the battery within 30-60 minutes.
                 </p>

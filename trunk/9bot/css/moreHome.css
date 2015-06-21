@@ -30,6 +30,8 @@
 .bottomBorderedContent{
 	border-bottom:1px solid #ccc;
 	border-bottom-style: dashed;
+	float:left;
+	width :100%;
 }
 .blueColouredContent{
 	color:#999;
@@ -134,4 +136,15 @@
 	font-weight:600;
 	margin-top:1%;
 	padding:10px;
+}
+.centeredContent.bottomBorderedContent ul{
+	display:table;
+	width:100%;
+}
+.centeredContent.bottomBorderedContent li{
+	display:table-cell;
+	width:30%;
+}
+.content{
+	margin-bottom:0px;
 }
