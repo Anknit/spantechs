@@ -191,6 +191,7 @@ hr {
 .gn-menu-main > li:last-child {
 		float: right;
 		border-right: none;
+		display:none;
 }
 
 .gn-menu-main > li > a {
