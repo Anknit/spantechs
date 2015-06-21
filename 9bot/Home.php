@@ -162,7 +162,7 @@
         </div>
         <div class="footer">
             <div class="copyrights">
-                ©9bot Italia. Tutti i diritti riservati &nbsp;&nbsp; Powered by <a href="mailto:guptaaditya24@gmail.com">Spantachs</a>
+                ©9bot Italia. Tutti i diritti riservati &nbsp;&nbsp; Powered by <a href="http://www.aapastech.com">Aapastech</a>
             </div>
         </div>
     <script src="js/commonRequire.js" type="text/javascript"></script>

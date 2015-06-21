@@ -65,6 +65,9 @@ h3:hover{
 	.contentNewsItems{
 		display:none;
 	}
+    .moreNewsLink{
+        display: none;
+    }
 }
 @media (max-width: 650px) {
 	.newsItem > .newsHeadline{
