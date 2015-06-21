@@ -204,7 +204,12 @@ table.golfTourCategory th ,table.golfTourCategory td {
   text-align: center;
   font-style: italic;
 }
-
+@media screen and (max-device-width: 750px){
+	.modalWindow > div:first-child{
+		height:650px !important;
+		overflow:auto;
+	}
+}
     </style>
 	<div class="content">
 		<div class='golfCarSlider'>
@@ -295,7 +300,7 @@ table.golfTourCategory th ,table.golfTourCategory td {
 			</div>
 		</div>
 	    <div class="modalWindow">
-	       <div style="width:80%;height:500px; margin-top:100px;font-size:12px">
+	       <div style="width:80%;height:500px; margin-top:100px;font-size:12px;">
 	        <a onclick="document.getElementsByClassName('modalWindow')[0].style.display='none';" title="Close" class="modalCloseButton">X</a>
 	            <table class='golfTourCategory' cellspacing="0">
 	            	<caption style="font-weight:bold;margin:10px;"> <u>Golf Car Tour Categories</u> </caption>

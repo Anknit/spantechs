@@ -47,7 +47,9 @@
 		cursor:auto;
 		border-radius:1px;
     }
-	
+	#containerTable td:first-child{
+		width:20% !important;
+	}
 	table, tr, td{
 		padding:5px;
 	}
