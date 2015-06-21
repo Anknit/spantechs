@@ -95,10 +95,10 @@ table.productSpecifications td{
 .content{
 	margin-bottom:0px;
 }
-@media screen and (max-device-width: 650px){
+@media screen and (max-device-width: 950px){
 	.full_width_desc_container {
 	  width: 97% !important;
-	  font-size: 0.6em;
+	  font-size: 16px !important;
 	}
 	.full_width_back >h2{
 		margin:3px;
