@@ -92,3 +92,18 @@ table.productSpecifications td{
 .t_d{
 	color:#000;
 }
+.content{
+	margin-bottom:0px;
+}
+@media screen and (max-device-width: 650px){
+	.full_width_desc_container {
+	  width: 97% !important;
+	  font-size: 0.6em;
+	}
+	.full_width_back >h2{
+		margin:3px;
+	}
+	.full_width_back{
+		min-height:800px;
+	}
+}

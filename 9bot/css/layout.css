@@ -117,14 +117,16 @@
     }
 
     .globalFooter{
-		float: left;
+		display: table;
 		width: 100%;
 		color:#05B9BD;
     }
     .footerLeftCol,.footerMidCol,.footerRightCol{
-    	float:left;
+    	display:table-cell;
     	width:33%;
     	margin:auto;
+    	vertical-align:top;
+    	text-align:center;
     }
     li.PageLinkFooter{
       display: table;
@@ -133,6 +135,10 @@
 	  text-align:center;
 	  border-bottom: 2px solid #05B9BD;
 	  	 
+    }
+    .footerLeftCol > img{
+    	width:80%;
+    	margin:auto;
     }
     li.PageLinkFooter a{
     	text-decoration:none;
@@ -146,7 +152,6 @@
 	}
 	.sml{
 		margin:15px;
-		float:left;
 	}
 	.sml a{
 		height:20px;
@@ -155,7 +160,6 @@
 
 	.sml img{
 		width:20px;
-		float:left;
 		margin:0 10px;
 	}
 	.nuovotoplogo{
@@ -183,3 +187,28 @@
 	div#topcontrol	{
 		z-index:18001;
 	}
+@media screen and (max-device-width: 1050px){
+	.header{
+		display:table !important;
+		float:none !important;
+	}
+	.logo{
+		float:none !important;
+		display:table-cell !important;
+	}
+	.headerMenuItems{
+		padding:18px 8px;
+		font-size:0.9em !important;
+	}
+	ul.topMenu{
+		margin-right:0px;
+	}
+	.menu{
+		width:100%;
+	}
+}
+@media screen and (max-device-width: 650px){
+	.headerMenuItems{
+		padding:18px 5px;
+	}
+}
