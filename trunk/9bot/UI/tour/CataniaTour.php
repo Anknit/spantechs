@@ -4,7 +4,8 @@
 <script type="text/javascript">
 	var pageIdentifier  =   'Tour';
 </script>
-<link href="./../../css/cataniaTour.css" rel="stylesheet" type="text/css">
+<link href="../../css/style.css" rel="stylesheet" type="text/css"/>
+<link href="../../css/cataniaTour.css" rel="stylesheet" type="text/css">
 <div class="content">
 	<div class='cataniaTourContent'>
 		<div class="cataniaContainer" id="basicCatania">
@@ -56,9 +57,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class='prezzo'>
-					<h3>PREZZO: 29€ pax</h3>
-				</div>
+				<div class="normalButton RightFloat hvr-shutter-out-horizontal" tour_id="20">Book Now</div>
 			</div>
 		</div>
 		<div class="cataniaContainer" id="grandCatania">
@@ -115,9 +114,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class='prezzo'>
-					<h3>PREZZO: 69€ pax</h3>
-				</div>
+				<div class="normalButton RightFloat hvr-shutter-out-horizontal" tour_id="21">Book Now</div>
 			</div>
 		</div>
 		<div class="cataniaContainer" id="suggestiveCatania">
@@ -174,12 +171,11 @@
 						</ul>
 					</div>
 				</div>
-				<div class='prezzo'>
-					<h3>PREZZO: 49€ pax</h3>
-				</div>
+				<div class="normalButton RightFloat hvr-shutter-out-horizontal" tour_id="22">Book Now</div>
 			</div>
 		</div>
 	</div>
+		<?php require_once 'bookingModelUI.php'; ?>
 </div>
 <?php 
 	require_once './footer.php';
