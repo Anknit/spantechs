@@ -34,8 +34,8 @@
                                                 <li class="subMenuItems"><a href="GolfcarTour.php">Golfcar Tours</a></li>
                                                 <li class="subMenuItems"><a href="BikeTour.php">Bike Tours</a></li>
                                                 <li class="subMenuItems"><a href="VespaTour.php">Vespa Tours</a></li>
-                                                <li class="subMenuItems"><a href="JoggingTour.php">Jogging Tours</a></li>
                                                 <li class="subMenuItems"><a href="CataniaTour.php">Catania Tours</a></li>
+                                                <li class="subMenuItems"><a href="JoggingTour.php">Jogging Tours</a></li>
                                         </ul>
                                 </li>
                                 <li class="headerMenuItems" identifier="Gallery"><a href="gallery.php">Gallery</a></li>

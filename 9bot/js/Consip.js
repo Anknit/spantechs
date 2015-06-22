@@ -103,7 +103,8 @@ $(function(){
         containerProduct.find('.productItemImage').append(imgNode);
         containerProduct.find('.productItemTitle').html(Name);
         containerProduct.find('.productItemDescription').html(Description);
-        containerProduct.find('.productItemPrice').html(Price);
+        PriceString =   'Acquista questo prodotto a '+Price;
+        containerProduct.find('.productItemPrice').html(PriceString);
         
     };
     

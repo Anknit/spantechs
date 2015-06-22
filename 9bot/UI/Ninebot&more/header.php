@@ -29,7 +29,7 @@
                                     <ul class="submenu">
                                         <li class="subMenuItems"><a href="NinebotE.php">Ninebot E</a></li>
                                         <li class="subMenuItems"><a href="NinebotC.php">Ninebot C</a></li>
-                                        <li class="subMenuItems"><a href="NinebotOne.php">Ninebot One</a></li>
+                                        <li class="subMenuItems"><a href="NinebotOne.php">Ninebot One & One+</a></li>
                                         <li class="subMenuItems"><a href="ninoRobotics.php">Nino Robotics</a></li>
                                         <li class="subMenuItems"><a href="NinebotPolice.php">Ninebot Police</a></li>
                                         <li class="subMenuItems" style="display:none"><a href="AltriEcoProdotti.php">Altri Eco Prodotti</a></li>
