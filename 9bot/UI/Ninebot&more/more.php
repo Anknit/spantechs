@@ -54,9 +54,25 @@
                 <div>
                     <img src="../../images/nino/Animation%20image/5.png" />
                 </div>
+                <!-- Slide 0a ninebotE -->
+                <div>
+                    <img src="../../images/ninebot_more/animation/2.png" />
+                </div>
+                <!-- Slide 0a ninebotone -->
+                <div>
+                    <img src="../../images/ninebot_more/animation/3.png" />
+                </div>
+                <!-- Slide 0a ninebotone -->
+                <div>
+                    <img src="../../images/ninebot_more/animation/5.png" />
+                </div>
+                <!-- Slide 0a ninebot police -->
+                <div>
+                    <img src="../../images/ninebot_more/animation/6.png" />
+                </div>
                 <!-- Slide 1 Android connectivity -->
                 <div>
-                    <img u="image" src="../../images/slideAnimation/androidBackGround.jpg" />
+                    <img u="image" src="../../images/slideAnimation/robotBackGround.jpg" />
                     <div u="caption" t="*" t2="*" style="position: absolute;top: 10%; right: 35%;">
                         <span style="color:#fff">
                             <h2>Controllo e Diagnostica</h2>
