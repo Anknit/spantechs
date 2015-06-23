@@ -9,13 +9,17 @@
 <?php 
 	require_once './header.php';
 ?>
-	<div class="content" style="margin-bottom:0">
     <link rel="stylesheet" type="text/css" href="../../css/news.css" />
-    <?php
-		$home = false;
-        $images =   '../../images/';
-        require_once '../news.php';
-    ?>
+	<script>
+		var pathToActionDir	=	'../../actions/';
+		var PageType	=	2;
+		var DivSectionSelector	=	'.contentNewsItems';
+		var pathToNewsImageDir	=	'../../images/newsAndEvents/';
+    </script>        
+    <script src="../../js/CreateNews.js" type="text/javascript"></script>
+
+	<div class="content" style="margin-bottom:0">
+        <div class="contentNewsItems"></div>
 	</div>
 <?php 
 	require_once './footer.php';

@@ -14,13 +14,13 @@
 	<script>
         $(function(){
 			HomePageSlideShow(false, 'homePageImageSlider', false);
-            $.each($('.newsItem'), function(index, value){
-                if(index > 1){
-                    $(this).remove();
-                }
-            });
 		});
+		var pathToActionDir	=	'./actions/';
+		var PageType	=	1;
+		var DivSectionSelector	=	'.contentNewsItems';
+		var pathToNewsImageDir	=	'./images/newsAndEvents/';
     </script>        
+    <script src="js/CreateNews.js" type="text/javascript"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -153,19 +153,14 @@
                     <a href="UI/Ninebot&more/ninoRobotics.php">&nbsp;</a>
                 </div>
             </div>
-            <?php
-            $images =   'images/';
-            $home   =   true;
-            require_once 'UI/news.php';
-            ?>
-            <a class="moreNewsLink" href="UI/Ninebot&more/events.php">more...</a>
-        </div>
+            <div class="contentNewsItems"></div>
+<!--            <a class="moreNewsLink" href="UI/Ninebot&more/events.php">more...</a>
+-->        </div>
         <div class="footer">
             <div class="copyrights">
                 ©9bot Italia. Tutti i diritti riservati &nbsp;&nbsp; Powered by <a href="http://www.aapastech.com">Aapastech</a>
             </div>
         </div>
-    <script src="js/commonRequire.js" type="text/javascript"></script>
     </div>
 </body>
 </html>

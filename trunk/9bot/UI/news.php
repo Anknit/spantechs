@@ -31,9 +31,6 @@ Un ulteriore passo di un'amministrazione attenta alle problematiche ecologiche c
           </p>
         </div>
     </div>
-    <?php
-    if( !$home) {
-    ?>
     <div class="newsItem">
         <div class="newsFig hvr-float-shadow">
             <img src="<?php echo $images; ?>newsAndEvents/1025.jpg" alt="Ninebot E" style="max-width:100%;max-height:300px;">
@@ -69,7 +66,4 @@ Un ulteriore passo di un'amministrazione attenta alle problematiche ecologiche c
           <div><strong>9botitalia</strong> e<strong> Bizzeffe</strong> parteciperanno insieme ad una serie di eventi tra i più importanti nell'ambito del turismo e del turismo accessibile ad iniziare dal 4 giugno con la giornata romana di <img alt="Inline image 1" height="24" src="<?php echo $images; ?>icons/expo.png" width="95"> 2015 all'ARA PACIS.</div>
         </div>
     </div>
-    <?php 
-    }
-    ?>
 </div>

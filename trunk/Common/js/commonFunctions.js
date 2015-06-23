@@ -1221,6 +1221,44 @@ function send_remoteCall(object)
 	xmlHttp.send(additionalData); 
 }
 
+
+var callRemoteLink	=	function(url, Method, OnSuccess, async, data){
+	ajaxMethodOptions	=	{};
+	url	=	url.trim();
+	if(url == '' || url == null || url == undefined){
+		return false;
+	}
+	ajaxMethodOptions.url	=	url;
+
+	Method	=	Method.trim();
+	if(Method == '' || Method == null || Method == undefined){
+		Method	=	'POST';
+	}
+	ajaxMethodOptions.type	=	Method;
+
+	if(async === false)
+		ajaxMethodOptions.async	=	async;
+
+	if(OnSuccess != '' && OnSuccess != null && OnSuccess != undefined){
+		ajaxMethodOptions.success	=	function(data){OnSuccess(data);};
+	}
+		
+	ajaxMethodOptions.statusCode	=	{
+		404: function() {
+		  return false;
+		}
+	};
+	
+	if(data != '' && data != undefined && data != null)
+		ajaxMethodOptions.data	=	data;
+		
+	ajaxMethodOptions.enctype		=	'multipart/form-data';
+	ajaxMethodOptions.processData	=	false;
+	ajaxMethodOptions.contentType	=	false;
+	$.ajax(ajaxMethodOptions);
+	return true;
+};
+
 	/********************************************************************************/
 			//FUNCTION CORRESPONDING TO THAT OF PHP IN JAVASCRIPT//
 	/********************************************************************************/
