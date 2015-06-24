@@ -1,228 +1,211 @@
 <?php 
 	require_once './header.php';
 ?>
-	<link href="../../css/style.css" rel="stylesheet" type="text/css"/>
-    <script>
-        var pageIdentifier  =   'Tour';
-        $(function(){
-			startGolfSlides();
-			$('.wrapper').append("<div id='pricingGolfCarTour'><span>For tour booking details and pricing information</span><button onclick='showModalInfo()'>Click Here</button></div>");
-			
-        });
-        function showModalInfo (){
-        	document.getElementsByClassName('modalWindow')[0].style.display="block";
+<link href="../../css/style.css" rel="stylesheet" type="text/css"/>
+<script>
+    var pageIdentifier  =   'Tour';
+    $(function(){
+        $('.wrapper').append("<div id='pricingGolfCarTour'><span>For tour booking details and pricing information</span><button onclick='showModalInfo()'>Click Here</button></div>");
+        HomePageSlideShow(false, 'testSlider', false);
+    });
+    function showModalInfo (){
+        document.getElementsByClassName('modalWindow')[0].style.display="block";
+    }
+</script>
+<style>
+    .tileGolf {
+      width: 20%;
+      background-color: mediumturquoise;
+      float:left;
+      text-align: center;
+      float:left;	
+      padding: 25px;
+      margin: 20px;
+      box-shadow: 10px 5px 10px #999;
+      cursor:pointer;
+      min-height:80px;
+      transition:all 0.5s;
+      -webkit-transition:all 0.5s;
+      -moz-transition:all 0.5s;
+      color:#fff;
+      font-size:20px;
+
+    }
+    .tourContainer:hover .tileGolf{
+      box-shadow: 5px 2px 5px #bbb;
+    }
+    .golfCarSlider img{
+    }
+    .tourContainer:hover .golfTourDescription{
+      box-shadow: 10px 5px 10px #999;
+      border-left: 5px solid mediumturquoise;
+      background:#666;
+      color:#fff;
+    }
+    #pricingGolfCarTour{
+        display:block;
+        width:100%;
+        position:fixed;
+        bottom:0px;
+        background:#fff;
+        box-shadow:6px 2px 2px #ccc;
+        text-align:center;
+        font-size:20px;
+        font-weight:bold;
+        color:#666;
+        float:left;
+        padding:25px 0px;
+        margin-top:80px;
+        z-index:1;
+    }
+    #pricingGolfCarTour > button{
+      color: #fff;
+      background: none repeat scroll 0 0 mediumturquoise;
+      border: 0 none;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 20px;
+      margin-left: 15px;
+      padding: 5px;
+    }
+    .header:hover ~#pricingGolfCarTour{
+        display:none;
+    }
+    .golfTourDescription {
+      float: right;
+      width: 60%;
+      min-height: 80px;
+      padding: 25px;
+      margin: 20px;
+      background-color: #eee;
+    }
+    #golfCarTourTiles{
+      margin: 40px auto;
+      width: 100%;
+      float:left;
+    }
+    .tourContainer{
+        width:98%;
+        padding:1%;
+        float:left;
+    }
+    .visibleImg{
+        display: block !important;
+    }
+
+    /*
+    Page specific css only applies to golfcar tour page do not include in common css
+    */
+
+    .footer{
+        bottom:82px;
+    }
+    /*
+    *
+    */
+
+
+    .textButtonBig{
+      color: #fff;
+      background:none repeat scroll 0 0 mediumturquoise;
+      border: 0 none;
+      cursor: pointer;
+      display: block;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 20px;
+      padding: 20px;
+      text-transform: none;
+      transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      -webkit-transition: all 0.3s ease 0s;
+      width: 100%;
+      text-align: center;
+      position:absolute;
+      z-index:8;
+      opacity:0.75;
+    }
+    .textButtonBig:hover{
+        opacity:1;
+      box-shadow: 10px 5px 10px #999;
+
+    }
+    .golfCarSlider{
+        width:100%;
+        overflow:hidden;
+    }
+    table.golfTourCategory th ,table.golfTourCategory td {
+      text-align: center;
+      border: 1px solid;
+    }
+    .golfTourCategory{
+        width:95%;
+        margin:auto;
+        font-size:13px;
+    }
+    .golfbookadd{
+      width: 50%;
+      margin: 25px auto;
+      font-size: 16px;
+      text-align: center;
+      font-style: italic;
+    }
+    @media screen and (max-device-width: 750px){
+        .modalWindow > div:first-child{
+            height:650px !important;
+            overflow:auto;
         }
-        function startGolfSlides(){
-			setInterval(function(){
-				activeImg	=	$('.golfCarSlider').find('img.visibleImg');
-				nextImg	=	$(activeImg).next('img');
-				if(nextImg.length == 0)
-					nextImg	=	$('.golfCarSlider').find('img')[0];	
-				activeImg.removeClass('visibleImg');
-				$(nextImg).addClass('visibleImg');
-			},5000);
-        }
-    </script>
-    <style>
-.tileGolf {
-  width: 20%;
-  background-color: mediumturquoise;
-  float:left;
-  text-align: center;
-  float:left;	
-  padding: 25px;
-  margin: 20px;
-  box-shadow: 10px 5px 10px #999;
-  cursor:pointer;
-  min-height:80px;
-  transition:all 0.5s;
-  -webkit-transition:all 0.5s;
-  -moz-transition:all 0.5s;
-  color:#fff;
-  font-size:20px;
-  
-}
-.tourContainer:hover .tileGolf{
-  box-shadow: 5px 2px 5px #bbb;
-}
-.golfCarSlider img{
-}
-.tourContainer:hover .golfTourDescription{
-  box-shadow: 10px 5px 10px #999;
-  border-left: 5px solid mediumturquoise;
-  background:#666;
-  color:#fff;
-}
-#pricingGolfCarTour{
-	display:block;
-	width:100%;
-	position:fixed;
-	bottom:0px;
-	background:#fff;
-	box-shadow:6px 2px 2px #ccc;
-	text-align:center;
-	font-size:20px;
-	font-weight:bold;
-	color:#666;
-	float:left;
-	padding:25px 0px;
-	margin-top:80px;
-	z-index:1;
-}
-#pricingGolfCarTour > button{
-  color: #fff;
-  background: none repeat scroll 0 0 mediumturquoise;
-  border: 0 none;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 20px;
-  margin-left: 15px;
-  padding: 5px;
-}
-.header:hover ~#pricingGolfCarTour{
-	display:none;
-}
-.golfTourDescription {
-  float: right;
-  width: 60%;
-  min-height: 80px;
-  padding: 25px;
-  margin: 20px;
-  background-color: #eee;
-}
-#golfCarTourTiles{
-  margin: 0px auto;
-  width: 100%;
-  float:left;
-  margin-bottom: 150px;
-}
-.tourContainer{
-	width:98%;
-	padding:1%;
-	float:left;
-}
-.visibleImg{
-	display: block !important;
-}
-
-/*
-Page specific css only applies to golfcar tour page do not include in common css
-*/
-
-.footer{
-	bottom:82px;
-}
-/*
-*
-*/
-
-
-.textButtonBig{
-  color: #fff;
-  background:none repeat scroll 0 0 mediumturquoise;
-  border: 0 none;
-  cursor: pointer;
-  display: block;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 20px;
-  padding: 20px;
-  text-transform: none;
-  transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -webkit-transition: all 0.3s ease 0s;
-  width: 100%;
-  text-align: center;
-  position:absolute;
-  z-index:8;
-  opacity:0.75;
-}
-.textButtonBig:hover{
-	opacity:1;
-  box-shadow: 10px 5px 10px #999;
-	
-}
-.golfCarSlider{
-	width:100%;
-	overflow:hidden;
-}
-.golfCarSlider > img{
-	display:none;
-	width:100%;
-	animation:scaleBack 5s infinite ease-in, changeOpacity 5s infinite linear;
-	-webkit-animation:scaleBack 5s infinite ease-in, changeOpacity 5s infinite linear;
-	-moz-animation:scaleBack 5s infinite ease-in, changeOpacity 5s infinite linear;
-}
-@keyframes changeOpacity{
-	0%{opacity:0.2;}
-	15%{opacity:1;}
-	50%{opacity:1;}
-	85%{opacity:1;}
-	100%{opacity:0.2;}
-}
-@-webkit-keyframes changeOpacity{
-	0%{opacity:0.2;}
-	15%{opacity:1;}
-	50%{opacity:1;}
-	85%{opacity:1;}
-	100%{opacity:0.2;}
-}
-@-moz-keyframes changeOpacity{
-	0%{opacity:0.2;}
-	15%{opacity:1;}
-	50%{opacity:1;}
-	85%{opacity:1;}
-	100%{opacity:0.2;}
-}
-@keyframes scaleBack{
-	0%{transform:scale3D(1,1,1);}
-	100%{transform:scale3D(1.1,1.1,1.1);opacity:0.3;}
-}
-@-webkit-keyframes scaleBack{
-	0%{transform:scale3D(1,1,1);}
-	100%{transform:scale3D(1.2,1.2,1.2);}
-}
-@-moz-keyframes scaleBack{
-	0%{transform:scale3D(1,1,1);opacity:0.5;}
-	100%{transform:scale3D(1.1,1.1,1.1);opacity:0.3;}
-}
-table.golfTourCategory th ,table.golfTourCategory td {
-  text-align: center;
-  border: 1px solid;
-}
-.golfTourCategory{
-	width:95%;
-	margin:auto;
-	font-size:13px;
-}
-.golfbookadd{
-  width: 50%;
-  margin: 25px auto;
-  font-size: 16px;
-  text-align: center;
-  font-style: italic;
-}
-@media screen and (max-device-width: 750px){
-	.modalWindow > div:first-child{
-		height:650px !important;
-		overflow:auto;
-	}
-}
-    </style>
+    }
+</style>
 	<div class="content">
-		<div class='golfCarSlider'>
-			<button class='textButtonBig' onclick="location.href='#golfCarTourTiles'">Choose your favorite GOLFCAR TOUR</button>
-			<img src='../../images/tours/golfcar/1.jpg' class='visibleImg'/>
-			<img src='../../images/tours/golfcar/2.jpg'/>
-			<img src='../../images/tours/golfcar/3.jpg'/>
-			<img src='../../images/tours/golfcar/4.jpg'/>
-			<img src='../../images/tours/golfcar/5.jpg'/>
-			<img src='../../images/tours/golfcar/6.jpg'/>
-			<img src='../../images/tours/golfcar/7.jpg'/>
-		</div>
-		<div id='golfCarTourTiles'>
+        <div id="testSlider" class="jssorSlidesDimensions">
+            <!-- Loading Screen --> 
+            <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+                <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+    
+                    background-color: #000; top: 0px; left: 0px;width: 100%; height:100%;"> 
+                </div> 
+                <div style="position: absolute; display: block; background: url(../../../Common/images/loading.gif) no-repeat center center;
+    
+                    top: 0px; left: 0px;width: 100%;height:100%;">
+                </div> 
+            </div> 
+            <!-- Slides Container -->
+            <div u="slides" class="jssorSlidesDimensions" style="cursor: move; position: absolute;">
+                <div>
+                    <img u="image" src="../../images/tours/golfcar/1.png" />
+                </div>
+                <div>
+                    <img u="image" src="../../images/tours/golfcar/2.png" />
+                </div>
+                <div>
+                    <img u="image" src="../../images/tours/golfcar/3.png" />
+                </div>
+                <div>
+                    <img u="image" src="../../images/tours/golfcar/4.png" />
+                </div>
+                <div>
+                    <img u="image" src="../../images/tours/golfcar/5.png" />
+                </div>
+                <div>
+                    <img u="image" src="../../images/tours/golfcar/6.png" />
+                </div>
+                <div>
+                    <img u="image" src="../../images/tours/golfcar/7.png" />
+                </div>
+                <!-- Arrow Left -->
+                <span u="arrowleft" class="jssora20l" style="top: 243px; left: 8px;">
+                </span>
+                <!-- Arrow Right -->
+                <span u="arrowright" class="jssora20r" style="top: 243px; right: 8px;">
+                </span>
+            </div>
+        </div>
+        <a href="#golfCarTourTiles" class='textButtonBig scrollSlow'>Choose your favorite GOLFCAR TOUR</a>
+        </span>
+		<div id='golfCarTourTiles' name="golfCarTourTiles">
 			<div class='tourContainer'>
 				<div class='tileGolf'>
 					Basic Rome tour the highlights of the city

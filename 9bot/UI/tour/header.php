@@ -3,6 +3,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="Aditya Gupta @ http://www.aapastech.com">
     <title>Tours</title>
     <link rel="icon" href="../../images/favicon.ico" type="image/ico" >
     <script src="../../../Common/js/jquery.min.js" type="text/javascript"></script>
