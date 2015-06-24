@@ -282,6 +282,7 @@ class DBMgr{
 		return $output;
 	}
 };
+global $perform_Database_Operation;
 $perform_Database_Operation	=	new DBMgr();
 $DB_OperationError	=	"";
 ?>

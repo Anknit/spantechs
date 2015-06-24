@@ -6,9 +6,16 @@
 *
 */
 ?>
+<?php
+	require_once 'verifyUser.php';
+	if(!checkIfUserIsLoggedIn())
+		redirectTo('Home');
+?>
 <html>
 <head>
     <link rel="stylesheet" href="../../../Common/css/jquery-te-1.4.0.css" />
+    <link rel="stylesheet" href="../../../Common/css/hover.css" />
+    <link rel="stylesheet" href="../../../Common/css/buttonTab.css" />
     <style>
         .jqte_editor{
             min-height: 150px;
@@ -62,6 +69,7 @@
     </script>
 </head>
 <body>
+	<a class="greyTabButton hvr-float-shadow RightFloat normalButton" href="logout.php">Logout</a>
 	<label for="newsFig">Select an image: &nbsp;&nbsp;</label><input name="newsFig" id="newsFig" type="file" accept="image/gif, image/jpg, image/jpeg, image/bmp, image/png" max="1" />
     <br />
     <br />
