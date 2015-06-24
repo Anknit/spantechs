@@ -10,6 +10,15 @@
 	require_once 'verifyUser.php';
 	if(!checkIfUserIsLoggedIn())
 		redirectTo('Home');
+
+
+	require_once '../../Db.php';
+	$inputGetNewsData	=		array(
+		'Table'		=>	'newslogging',
+		'Fields'	=>	'*',
+		'order'		=>	'ID DESC'
+	);
+	$NewsData	=	DB_Query($inputGetNewsData, 'ASSOC');
 ?>
 <html>
 <head>
@@ -75,6 +84,48 @@
 </head>
 <body>
 	<a class="greyTabButton hvr-float-shadow RightFloat normalButton" href="logout.php">Logout</a>
+	<?php
+        if($NewsData != false && $NewsData != 0 && count($NewsData) > 0 && !empty($NewsData)){
+	?>		
+    <table>
+    	<thead>
+        	<tr>
+                <th width="5%">&nbsp;</th>
+                <th width="20%">Headline</th>
+                <th width="10%">Image</th>
+                <th>Description</th>
+                <th width="10%">Date</th>
+                <th width="10%">&nbsp;</th>
+            </tr>
+        </thead>
+        <tbody id="ExistingNewsData">
+        	<?php
+					for($i= 0 ; $i< count($NewsData); $i++){
+						$rowData	=	$NewsData[$i];
+						?>
+                        	<tr>
+                            	<td><input type="checkbox" name="selectNews" value="<?php echo $rowData['ID']; ?>" /></td>
+                            	<td><textarea rows="2" cols="30"><?php echo $rowData['NewsTitle']; ?></textarea></td>
+                            	<td>
+								<?php if($rowData['NewsImagePath'] == 1){?>
+                                	<img src='../images/newsAndEvents/<?php echo $rowData['ID'];?>' />
+                                <?php }?>
+                                     &nbsp;&nbsp; Select Image: &nbsp;&nbsp;
+                                     <input name="newsFig" id="newsFig" type="file" accept="image/gif, image/jpg, image/jpeg, image/bmp, image/png" max="1" />                                   
+									 &nbsp;&nbsp; Remove Image: &nbsp;&nbsp;<img src="../../../Common/images/delete.png" />
+                                </td>
+                            	<td><textarea><?php echo $rowData['NewsDetails']; ?></textarea></td>
+                            	<td><?php echo $rowData['DateOfAddition']; ?></td>
+                            	<td><input type="button" name="saveNewsChanges" value="Save" />&nbsp;&nbsp;<img src="../../../Common/images/delete.png" /></td>
+                            </tr>
+                        <?php
+					}
+					?>
+        </tbody>
+    </table>
+    <?php
+		}
+	?>
 	<label for="newsFig">Select an image: &nbsp;&nbsp;</label><input name="newsFig" id="newsFig" type="file" accept="image/gif, image/jpg, image/jpeg, image/bmp, image/png" max="1" />
     <br />
     <br />
