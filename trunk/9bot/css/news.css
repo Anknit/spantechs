@@ -61,6 +61,7 @@ h3:hover{
 	margin-right:40px;
 	width:25%;
 	text-align: center;
+	min-height: 100px;
 }
 @media (max-width: 380px) {
 	.contentNewsItems{

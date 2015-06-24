@@ -34,10 +34,16 @@
 		$NewsDataArray	=	array();
 		for($i = 0; $i < count($NewsInfo); $i++){
 			$rowData		=	$NewsInfo[$i];
-			$HeadLine		=	utf8_encode(file_get_contents('../NewsHeadLine/'.$rowData['ID'].'.txt'));
-			$Details		=	utf8_encode(file_get_contents('../NewsDescriptions/'.$rowData['ID'].'.txt'));
+			if($rowData['NewsImagePath'] == 1){
+				$imgPath	=	$rowData['ID'].'.png';
+			}
+			else
+				$imgPath	=	'';
+				
+			$HeadLine		=	$rowData['NewsTitle'];
+			$Details		=	$rowData['NewsDetails'];
 			//From every rowdata get the imagePath, NewsHeadline, and NewsDetails
-			$NewsDataArray[]	=	array($rowData['ID'].'.png', $HeadLine, $Details);
+			$NewsDataArray[]	=	array($imgPath, $HeadLine, $Details);
 		}
 		$output	=	json_encode($NewsDataArray);
 	}
