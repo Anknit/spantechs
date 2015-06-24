@@ -15,12 +15,12 @@
 		'Table'		=>	'newslogging',
 		'Fields'	=>	array(
 			'PriorityOrder'	=>	'0',
-			'NewsTitle'		=>	'DumpedIntoFile',
-			'NewsDetails'	=>	'DumpedIntoFile',
+			'NewsTitle'		=>	utf8_encode($newsHeadline),
+			'NewsDetails'	=>	utf8_encode($newsDetails),
 			'NewsType'		=>	$newsType,
 			'showOnHomePage'=>	$newsHome,
 			'DateOfAddition'=>	'now()',
-			'NewsImagePath'	=>	'UseIDInstead'
+			'NewsImagePath'	=>	$storeImage
 		),
 	);
 	$NewsInfo		=	DB_Insert($AddNewsInfoInput);
@@ -28,11 +28,7 @@
 		$imageFileName	=	$NewsInfo.'.png';
 		//move image to directory path with $imageFileName
 		if(  isset($_FILES['file']['tmp_name'])   &&   $_FILES['file']['tmp_name']!=""  ){
-			
 			move_uploaded_file($_FILES['file']['tmp_name'][0] , "../images/newsAndEvents/".$imageFileName);
-			file_put_contents('../NewsHeadLine/'.$NewsInfo.'.txt', $newsHeadline);
-			file_put_contents('../NewsDescriptions/'.$NewsInfo.'.txt', $newsDetails);
-			
 		}
 		
 		$output	=	1;

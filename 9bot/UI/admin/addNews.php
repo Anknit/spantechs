@@ -47,12 +47,17 @@
 				newsDetails	=	$('#newsDetails').closest('.jqte').find('.jqte_editor').html();
 				newsHome	=	$('#showOnHomePage').is(':checked') ? 1: 0;
 				var formData = new FormData();
-				formData.append('file[]', $('input[type=file]')[0].files[0]);
-				submitNews(newsType, newsHeadline, newsDetails, newsHome, formData);
+				var fileElement	=	$('input[type=file]')[0].files[0];
+				var storeImage	=	0;
+				if(fileElement != undefined && fileElement != null && fileElement != '')
+					storeImage	=	1;
+				
+				formData.append('file[]', fileElement);
+				submitNews(newsType, newsHeadline, newsDetails, newsHome, formData, storeImage);
 			});
 		});
-		function submitNews(newsType, newsHeadline, newsDetails, newsHome, data){
-			var url		=	'../../actions/addNewsDataByAdmin.php?newsType='+newsType+'&newsHeadline='+newsHeadline+'&newsDetails='+newsDetails+'&newsHome='+newsHome;
+		function submitNews(newsType, newsHeadline, newsDetails, newsHome, data, storeImage){
+			var url		=	'../../actions/addNewsDataByAdmin.php?newsType='+newsType+'&newsHeadline='+newsHeadline+'&newsDetails='+newsDetails+'&newsHome='+newsHome+'&storeImage='+storeImage;
 			var	Method	=	'POST';
 			var	OnSuccess	=	function(response){
 				if(response	==	1){
