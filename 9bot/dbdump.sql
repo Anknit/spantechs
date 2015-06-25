@@ -57,6 +57,29 @@ CREATE TABLE `newslogging` (
 
 /*Data for the table `newslogging` */
 
+/*Table structure for table `resellersinfo` */
+
+DROP TABLE IF EXISTS `resellersinfo`;
+
+CREATE TABLE `resellersinfo` (
+  `ID` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `Name` text NOT NULL,
+  `Address` text,
+  `Email` text,
+  `Website` varchar(255) DEFAULT NULL,
+  `Phone` varchar(255) DEFAULT NULL,
+  `Mobile` varchar(255) DEFAULT NULL,
+  `Latitudes` varchar(255) DEFAULT NULL,
+  `Longitudes` varchar(255) DEFAULT NULL,
+  `Comments` text,
+  `ContactType` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+/*Data for the table `resellersinfo` */
+
+insert  into `resellersinfo`(`ID`,`Name`,`Address`,`Email`,`Website`,`Phone`,`Mobile`,`Latitudes`,`Longitudes`,`Comments`,`ContactType`) values (1,'New%20Moving%20Societ%C3%A0%20Cooperativa','Via%20di%20San%20Calisto%209%20Roma%2000153%20RM','Ninebot.servizioclienti@gmail.com',NULL,'39 29 034 927 ',NULL,NULL,NULL,NULL,NULL);
+
 /*Table structure for table `tourspackageinfo` */
 
 DROP TABLE IF EXISTS `tourspackageinfo`;
