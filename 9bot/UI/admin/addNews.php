@@ -10,18 +10,10 @@
 	require_once 'verifyUser.php';
 	if(!checkIfUserIsLoggedIn())
 		redirectTo('Home');
-
-
-	require_once '../../Db.php';
-	$inputGetNewsData	=		array(
-		'Table'		=>	'newslogging',
-		'Fields'	=>	'*',
-		'order'		=>	'ID DESC'
-	);
-	$NewsData	=	DB_Query($inputGetNewsData, 'ASSOC');
 ?>
 <html>
 <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="../../../Common/css/jquery-te-1.4.0.css" />
     <link rel="stylesheet" href="../../../Common/css/hover.css" />
     <link rel="stylesheet" href="../../../Common/css/buttonTab.css" />
@@ -52,8 +44,8 @@
 		$(function(){
 			$('input#addNews').on('click', '', function(){
 				newsType	=	$('input[name="newsType"]:checked').val();
-				newsHeadline=	$('#newsHeadline').closest('.jqte').find('.jqte_editor').html();
-				newsDetails	=	$('#newsDetails').closest('.jqte').find('.jqte_editor').html();
+				newsHeadline=	encodeURI($('#newsHeadline').closest('.jqte').find('.jqte_editor').html());
+				newsDetails	=	encodeURI($('#newsDetails').closest('.jqte').find('.jqte_editor').html());
 				newsHome	=	$('#showOnHomePage').is(':checked') ? 1: 0;
 				var formData = new FormData();
 				var fileElement	=	$('input[type=file]')[0].files[0];
@@ -82,63 +74,34 @@
 		}
     </script>
 </head>
-<body>
-	<a class="greyTabButton hvr-float-shadow RightFloat normalButton" href="logout.php">Logout</a>
-	<?php
-        if($NewsData != false && $NewsData != 0 && count($NewsData) > 0 && !empty($NewsData)){
-	?>		
-    <table>
-    	<thead>
-        	<tr>
-                <th width="5%">&nbsp;</th>
-                <th width="20%">Headline</th>
-                <th width="10%">Image</th>
-                <th>Description</th>
-                <th width="10%">Date</th>
-                <th width="10%">&nbsp;</th>
-            </tr>
-        </thead>
-        <tbody id="ExistingNewsData">
-        	<?php
-					for($i= 0 ; $i< count($NewsData); $i++){
-						$rowData	=	$NewsData[$i];
-						?>
-                        	<tr>
-                            	<td><input type="checkbox" name="selectNews" value="<?php echo $rowData['ID']; ?>" /></td>
-                            	<td><textarea rows="2" cols="30"><?php echo $rowData['NewsTitle']; ?></textarea></td>
-                            	<td>
-								<?php if($rowData['NewsImagePath'] == 1){?>
-                                	<img src='../images/newsAndEvents/<?php echo $rowData['ID'];?>' />
-                                <?php }?>
-                                     &nbsp;&nbsp; Select Image: &nbsp;&nbsp;
-                                     <input name="newsFig" id="newsFig" type="file" accept="image/gif, image/jpg, image/jpeg, image/bmp, image/png" max="1" />                                   
-									 &nbsp;&nbsp; Remove Image: &nbsp;&nbsp;<img src="../../../Common/images/delete.png" />
-                                </td>
-                            	<td><textarea><?php echo $rowData['NewsDetails']; ?></textarea></td>
-                            	<td><?php echo $rowData['DateOfAddition']; ?></td>
-                            	<td><input type="button" name="saveNewsChanges" value="Save" />&nbsp;&nbsp;<img src="../../../Common/images/delete.png" /></td>
-                            </tr>
-                        <?php
-					}
-					?>
-        </tbody>
-    </table>
-    <?php
-		}
-	?>
-	<label for="newsFig">Select an image: &nbsp;&nbsp;</label><input name="newsFig" id="newsFig" type="file" accept="image/gif, image/jpg, image/jpeg, image/bmp, image/png" max="1" />
-    <br />
-    <br />
-    <b>News Type: </b>&nbsp;&nbsp;&nbsp;
-	Ninebot& more&nbsp;<input type="radio" name="newsType" value="1" checked />&nbsp;&nbsp;
-	Tours&nbsp;<input type="radio" name="newsType" value="2" />     
-     <br />
-     <br />
-    Check, if this news is to be shown on home page&nbsp;&nbsp;&nbsp;<input type="checkbox" id="showOnHomePage" />
-     <br />
-     <br />
-	<label for="newsHeadline">Headline</label><textarea id="newsHeadline" name="newsHeadline"></textarea>
-    <label for="newsDetails">Details</label><textarea id="newsDetails" name="newsDetails"></textarea>
-    <input type="button" id="addNews" value="Save" />
+<body style="text-align:center;">
+    <span style="">
+        <a class="greyTabButton hvr-float-shadow RightFloat normalButton" href="logout.php">Logout</a>
+    </span>
+	<div style="float:left;text-align:center; width:100%; height:100px;">
+        <span style="margin:auto;">
+            <a class="greyTabButton hvr-float-shadow normalButton" href="editNews.php">Edit existing news</a>
+        </span>
+    </div>
+    <div style="float:left;text-align:center; width:100%; height:100px;">
+        <span class="greyTabButton normalButton" style="margin:auto;float:left;color:white; width:95%; margin:10px">Add news</span>
+        <br />
+        <br />
+        <br />
+        <label for="newsFig">Select an image: &nbsp;&nbsp;</label><input name="newsFig" id="newsFig" type="file" accept="image/gif, image/jpg, image/jpeg, image/bmp, image/png" max="1" />
+        <br />
+        <br />
+        <b>News Type: </b>&nbsp;&nbsp;&nbsp;
+        Ninebot& more&nbsp;<input type="radio" name="newsType" value="1" checked />&nbsp;&nbsp;
+        Tours&nbsp;<input type="radio" name="newsType" value="2" />     
+         <br />
+         <br />
+        Check, if this news is to be shown on home page&nbsp;&nbsp;&nbsp;<input type="checkbox" id="showOnHomePage" />
+         <br />
+         <br />
+        <label for="newsHeadline">Headline</label><textarea id="newsHeadline" name="newsHeadline"></textarea>
+        <label for="newsDetails">Details</label><textarea id="newsDetails" name="newsDetails"></textarea>
+        <input type="button" id="addNews" value="Save" />
+    </div>
 </body>
 </html>

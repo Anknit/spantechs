@@ -46,14 +46,14 @@ CREATE TABLE `newslogging` (
   `PriorityOrder` int(50) NOT NULL,
   `NewsTitle` text NOT NULL,
   `NewsDetails` text NOT NULL,
-  `NewsImagePath` varchar(150) DEFAULT NULL,
+  `NewsImagePath` varchar(150) DEFAULT '0',
   `DesignProperties` text,
   `DateOfAddition` varchar(100) NOT NULL,
   `EndDate` varchar(100) DEFAULT NULL,
   `showOnHomePage` int(2) NOT NULL DEFAULT '0' COMMENT '0 means , not for home page',
   `NewsType` int(2) DEFAULT '1' COMMENT '1 means ninebot&more, 2 means Tour',
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*Data for the table `newslogging` */
 
@@ -113,7 +113,7 @@ CREATE TABLE `userinfo` (
 
 /*Data for the table `userinfo` */
 
-insert  into `userinfo`(`userId`,`accountId`,`userName`,`userType`,`userStatus`,`mailId`,`regAuthorityId`,`regAuthorityName`,`name`,`address`,`city`,`country`,`pincode`,`organization`,`website`,`phoneOffice`,`phonePersonal`,`registeredOn`,`password`) values (1,1,'sharma855@gmail.com','1','1','sharma855@gmail.com',1,'sharma855@gmail.com','9bot italia','Italiy','Rome','Italy',NULL,'ninebot italia','9botitalia.com',NULL,NULL,NULL,'0192023a7bbd73250516f069df18b500');
+insert  into `userinfo`(`userId`,`accountId`,`userName`,`userType`,`userStatus`,`mailId`,`regAuthorityId`,`regAuthorityName`,`name`,`address`,`city`,`country`,`pincode`,`organization`,`website`,`phoneOffice`,`phonePersonal`,`registeredOn`,`password`) values (1,1,'admin','1','1','admin',1,'sharma855@gmail.com','9bot italia','Italiy','Rome','Italy',NULL,'ninebot italia','9botitalia.com',NULL,NULL,NULL,'0192023a7bbd73250516f069df18b500');
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
