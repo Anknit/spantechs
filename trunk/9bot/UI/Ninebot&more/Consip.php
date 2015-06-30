@@ -17,6 +17,22 @@
             $('.tabs').tabs({
               event: "mouseover"
             });
+            $( "#dialog_popup" ).dialog({
+                autoOpen: false,
+                show: {
+                    effect: "blind",
+                    duration: 1000
+                },
+                hide: {
+                    effect: "explode",
+                    duration: 1000
+                },
+                height: 350,
+                width: 420,
+                maxHeight: 600,
+                maxWidth: 600,
+                modal: true
+            });
         });
     </script>
     <script src="../../js/Consip.js" type="text/javascript"></script>
@@ -36,6 +52,9 @@
             </div>
             <div id="Miscellaneous" style="text-align:center; display:none">
             </div>
+        </div>
+        <div id="dialog_popup">
+            <img id="enlargedImage" src="" width="80%" />
         </div>
 	</div>
 <?php

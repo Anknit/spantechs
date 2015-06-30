@@ -27,9 +27,31 @@
                     <div class="footerRightCol">
                             <div class="InternationalLink" style="margin-top: 15px;font-size: 1.2em;">
                                 <ul>
-                                    <li class="PageLinkFooter"><a href="http://9botitalia.com/9bot/" style="text-decoration:none"><span style="text-transform:uppercase; color:#05B9BD">9 bot italia</a></li>
-                                    <li class="PageLinkFooter"><a href="http://9botitalia.com/9bot/UI/Ninebot&more/ninoRobotics.php" style="text-decoration:none"><span style="text-transform:uppercase; color:#05B9BD">Nino robotics</a></li>
-                                    <li class="PageLinkFooter"><a href="http://www.ninebot.com" style="text-decoration:none"><span style="text-transform:uppercase; color:#05B9BD">NINEBOT INTERNATIONAL</span><a>					
+                                    <li class="PageLinkFooter">
+                                        <a href="http://9botitalia.com/9bot/">
+                                            <span>9 bot italia</span>
+                                        </a>
+                                    </li>
+                                    <li class="PageLinkFooter">
+                                        <a href="http://9botitalia.com/9bot/UI/Ninebot&more/ninoRobotics.php">
+                                            <span>Nino robotics</span>
+                                        </a>
+                                    </li>
+                                    <li class="PageLinkFooter">
+                                        <a href="http://www.ninebot.com" target="_blank">
+                                            <span>NINEBOT INTERNATIONAL</span>
+                                        </a>
+                                    </li>					
+                                    <li class="PageLinkFooter">
+                                        <a href="http://www.dmluxurysuites.it/" target="_blank">
+                                            <span>Domus Monamì</span>
+                                        </a>
+                                    </li>
+                                    <li class="PageLinkFooter">
+                                        <a href="http://gbplace.co/" target="_blank">
+                                            <span>GB PLACE</span>
+                                        </a>
+                                    </li>					
                                 </ul>
                             </div>
                     </div>

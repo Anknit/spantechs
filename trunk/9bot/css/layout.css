@@ -131,21 +131,25 @@
     	text-align:center;
     }
     li.PageLinkFooter{
-      display: table;
-	  padding: 10px 15px;
-	  width:90%;
-	  text-align:center;
-	  border-bottom: 2px solid #05B9BD;
-	  	 
+        display: table;
+        padding: 2% 1% 0.5% 1%;
+        width: 90%;
+        text-align: right;
     }
     .footerLeftCol > img{
     	width:80%;
     	margin:auto;
     }
     li.PageLinkFooter a{
+        border-bottom: 2px solid #05B9BD;
     	text-decoration:none;
     	cursor:pointer;
     	color: #05B9BD;
+    }
+    li.PageLinkFooter span{
+        font-size: 0.9em;
+        text-transform:uppercase;
+        color:#05B9BD;
     }
    	.contact img{
 		width: 1em;

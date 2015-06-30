@@ -146,11 +146,10 @@
 }
 
 .anchorOnListNavigator{
-  float: right;
-  margin-top: 2%;
-  margin-right: 10%;
+  float: left;
+  margin-left: 20%;
   text-decoration: underline;
   background-color: #F7F1F1;
   color: black;
-  padding: 4px;
+  padding: 0 4px;
 }
