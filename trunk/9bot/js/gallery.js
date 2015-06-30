@@ -5,6 +5,17 @@ $(function(){
 		$('.activeContainer').removeClass('activeContainer');
 		$('#'+$(this).attr('data-show')).addClass('activeContainer');
 	});
+	$('body').on('keydown',function(event){
+		if(event.keyCode	==	39){
+			showNextImage();
+		}
+		else if(event.keyCode == 37){
+			showPrevImage();
+		}
+		else{
+			return false;
+		}
+	});
 	$('#imagesContainer img').on('click',function(){
 		$('.modalWindow').css('display','block');
 		$('.imgConBody').html('');
