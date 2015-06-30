@@ -122,3 +122,8 @@ img.itemDisplayInGallery{
     font-weight: 600;
     margin-top: 15px;
 }
+.ui-widget-header {
+    border: 0;
+    background: none;
+}
+}

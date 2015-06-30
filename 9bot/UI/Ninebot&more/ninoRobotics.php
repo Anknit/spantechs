@@ -17,16 +17,16 @@
 		</div>
 		<div class='infoDescNino'>
 			<h3>
-				Nino ha una collaborazione esclusiva con Ninebot Inc. per i motori. Tutto il resto è stato progettato, costruito e assemblato in Francia nel Lit et Mixe. 
+				Nino ha una collaborazione esclusiva con Ninebot Inc. per i motori. Tutto il resto è stato progettato, costruito e assemblato in Francia nel Lit et Mixe.
 			</h3>
 			<p>
-				Nino ha volontariamente un design minimalista. Compatto, leggero, colorato e confortevole. Nino evidenzia il suo utente.
+				Nino ha volontariamente un design minimalista. Compatto, leggero, colorato e confortevole. Nino esalta il piacere degli utilizzatori.
 				<br/>		
-				Progetto innovativo
+				Un progetto innovativo
+				<br/>
+                In anticipo sui tempi: il telaio in alluminio leggero, la seduta regolabile e traspirante, il manubrio rimovibile per un miglior comfort. 
 				<br/>		
-				In anticipo sui tempi: telaio in alluminio leggero, seduta regolabile e traspirante, manubrio rimovibile per un miglior comfort.
-				<br/>		
-				Una tecnologia di stabilizzazione brevettata.
+				La tecnologia auto bilanciante   brevettata Ninebot- Segway
 			</p>
 		</div>
 		<div class='imgLister'>

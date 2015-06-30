@@ -129,5 +129,7 @@ $(function(){
         image   =   $(this);
         src =   image.attr('src');
         $(this).closest('.productItemContainer').find('.productItemImage').find('img').attr('src', src);
+        $('#enlargedImage').attr('src', src);
+        $( "#dialog_popup" ).dialog( "open" );
     });
 });

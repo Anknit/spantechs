@@ -21,9 +21,9 @@
                 <div style="float:left; width:40%; color:#4A3C3C;text-align:left;margin-left:10%;">
                     <p>
                         Ninebot attrezzato per l’utilizzo di sorveglianza.<br />
-                        La piattaforma è corredata con 2 rack di sostegno su cui sono montate 2 capaci borse in pvc per contenere documenti o strumenti . <br/>
-                        Nella barra del manubrio la presa Usb con una uscita da 5 volt consente di collegare apparati di telecomunicazione o informatici.<br />
-                        Su richiesta possono essere fornite in sostituzione di una o di entrambe le borse contenitori per il supporto e la ricarica con alimentazione per apparati elettronici e di pronto intervento.<br />
+                        La piattaforma è corredata con 2 rack di sostegno, su cui sono montate 2 capienti borse in pvc per contenere documenti o strumenti. <br/>
+                        Nella barra del manubrio la presa Usb, con un'uscita da 5 volt, consente di collegare apparati informatici o di telecomunicazione.<br />
+                        Su richiesta possono essere forniti, in sostituzione di una o di entrambe le borse, contenitori per il supporto e la ricarica con alimentazione degli apparati elettronici e di pronto intervento.<br />
                     </p>
                 </div>
                 <div style="float:left;margin-left:10%;">

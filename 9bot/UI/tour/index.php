@@ -41,40 +41,52 @@
                 <div>
                     <img u="image" src="../../images/tours/2.jpg" />
                      <div u="thumb">
-                        <img class="i" src="../../images/tours/2.jpg" /><div class="t">Ninebot tours</div>
+                        <img class="i" src="../../images/tours/2.jpg" />
+                        <div class="t">
+                            Ninebot tours
+                            <a href="NinebotTour.php" class="anchorOnListNavigator">Tour details...</a>
+                        </div>
                         <div class="c">
                             Explore Rome while riding Ninebot
-                            <a href="NinebotTour.php" class="anchorOnListNavigator">Tour details...</a>
                         </div>
                     </div>
                </div>
                 <div>
                     <img u="image" src="../../images/tours/3.jpg" />
                     <div u="thumb">
-                        <img class="i" src="../../images/tours/3.jpg" /><div class="t">Vespa tours</div>
+                        <img class="i" src="../../images/tours/3.jpg" />
+                        <div class="t">
+                            Vespa tours
+                            <a href="VespaTour.php" class="anchorOnListNavigator">Tour details...</a>
+                        </div>
                         <div class="c">
                             Vespa brings comfort to your journey
-                            <a href="VespaTour.php" class="anchorOnListNavigator">Tour details...</a>
                         </div>
                     </div>
                 </div>
                 <div>
                     <img u="image" src="../../images/tours/5.jpg" />
                     <div u="thumb">
-                        <img class="i" src="../../images/tours/5.jpg" /><div class="t">Golfcar tours</div>
+                        <img class="i" src="../../images/tours/5.jpg" />
+                        <div class="t">
+                            Golfcar tours
+                            <a href="GolfcarTour.php" class="anchorOnListNavigator">Tour details...</a>
+                        </div>
                         <div class="c">
                             Sit back relax, and treat your eyes
-                            <a href="GolfcarTour.php" class="anchorOnListNavigator">Tour details...</a>
                         </div>
                     </div>
                 </div>
                 <div>
                     <img u="image" src="../../images/tours/6.jpg" />
                     <div u="thumb">
-                        <img class="i" src="../../images/tours/6.jpg" /><div class="t">Bike tours</div>
+                        <img class="i" src="../../images/tours/6.jpg" />
+                        <div class="t">
+                            Bike tours
+                            <a href="BikeTour.php" class="anchorOnListNavigator">Tour details...</a>
+                        </div>
                         <div class="c">
                             Pushing yourself in travelling brings gratification
-                            <a href="BikeTour.php" class="anchorOnListNavigator">Tour details...</a>
                         </div>
                     </div>
                 </div>
