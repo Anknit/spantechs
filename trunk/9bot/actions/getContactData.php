@@ -10,7 +10,7 @@
 	require_once __DIR__.'./../Db.php';
 	require_once __DIR__.'./../definitions.php';
 	require_once __DIR__.'./../../Common/php/commonfunctions.php';
-	require_once __DIR__.'./DbDataOperations.php';
+	require_once __DIR__.'/DbDataOperations.php';
 	extract($_GET);
 	$output	=	getInfoFrom('contactData', 'getResellersInfo', '', '', true);
 	if(!$output)
