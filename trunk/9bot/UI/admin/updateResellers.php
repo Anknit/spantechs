@@ -28,13 +28,9 @@
     </style>
 </head>
 <body>
-	<div style="float:left;text-align:center; width:100%; height:100px;">
-        <span style="margin:auto;">
-            <?php 
-				require_once 'menu.php';
-			?>
-        </span>
-    </div>
+    <?php 
+        require_once 'menu.php';
+    ?>
     <div style="float:left;width:100%; height:100px;">
         <table id="resellersInfo"></table>
         <div id="gridpager_resellersInfoTable"></div>
@@ -70,7 +66,7 @@
 			},
 			colNames: ['ID','Name', 'Address', 'Email','Website','Phone'],
 	        colModel: [
-				{name:'ID',							index:'ID',  hidden: true}, //editable and hidden both are true. editable true is set just to get the value in backend
+				{name:'ID',							index:'ID',  hidden: true, editable: true}, //editable and hidden both are true. editable true is set just to get the value in backend
 				{name:'Name',	label:'Name',		index:'Name',		width:'100%',	align: 'left',	title: false, formatter: decodeURIValue, editable: true},
 				{name:'Address',label:'Address',	index:'Address',	width:'100%',	align: 'left',	title: false, formatter: decodeURIValue, editable: true},
 				{name:'Email',	label:'Email',		index:'Email',		width:'100%',	align: 'left',	title: false, formatter: decodeURIValue, editable: true},
@@ -90,7 +86,7 @@
 			viewrecords: true,
 			recordpos: 'right',
 			loadonce: true,
-			multiselect: true,
+			multiselect: false,
 			height: 500,
 			emptyrecords: "No records found",
 			rowNum:10,
@@ -100,13 +96,20 @@
 			sortname: 'ID',
 			sortorder: "asc",
 	        caption: "Resellers information",
+            editurl: "../../actions/dataInterface.php?action=edit&data=contactData"
 	    });
 		/*
 			Default sopt (search options) are 
 			['eq',		'ne',		'lt',	'le',			'gt',		'ge',				'bw',		'bn',				'in',		'ni',		'ew',		'en',				'cn',		'nc',			'nu',		'nn'] 
 			['equal','not equal', 'less', 'less or equal','greater','greater or equal', 'begins with','does not begin with','is in','is not in','ends with','does not end with','contains','does not contain','is null','is not null']
 		*/
-		$("#resellersInfo").jqGrid('navGrid','#gridpager_resellersInfoTable',{edit:true,add:true,del:true, search: true, refresh:true} /*options*/, {height:280,reloadAfterSubmit:true} /* edit options */, {height:280,reloadAfterSubmit:true} /* add options*/, {reloadAfterSubmit:true} /* del options */, {sopt:['eq','ne','lt','le','gt','ge','bw','bn','ew','en','cn','nc','nu','nn']} /* search options*/);
+        var callBackBeforeSubmit  =  function(params, postdata) {   //used only for delete, because ID is to be set
+            dataObject  =   $('#resellersInfo').jqGrid ('getRowData', postdata);
+            postdata.ID = dataObject.ID;
+            return {ID: dataObject.ID};
+        };
+        var addEditModalObject  =   {height:280,width: 500, reloadAfterSubmit:true, left:300, top:200,closeAfterAdd:true,closeAfterEdit:true/*, onclickSubmit: callBackBeforeSubmit*/};
+		$("#resellersInfo").jqGrid('navGrid','#gridpager_resellersInfoTable',{edit:true,add:true,del:true, search: true, refresh:true} /*options*/, addEditModalObject /* edit options */, addEditModalObject /* add options*/, {reloadAfterSubmit:true,onclickSubmit: callBackBeforeSubmit} /* del options */, {height:150,width: 500, left:300, top:200, sopt:['eq','ne','lt','le','gt','ge','bw','bn','ew','en','cn','nc','nu','nn']} /* search options*/);
 	});
 </script>
 </html>

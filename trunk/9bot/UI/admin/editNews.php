@@ -99,14 +99,8 @@
     </script>
 </head>
 <body>
-	<div style="float:left;text-align:center; width:100%; height:100px;">
-        <span style="margin:auto;">
-            <?php 
-				require_once 'menu.php';
-			?>
-        </span>
-    </div>
-	<?php
+    <?php 
+        require_once 'menu.php';
         if($NewsData != false && $NewsData != 0 && count($NewsData) > 0 && !empty($NewsData)){
 	?>		
     <div style="float:left;width:100%; height:100px;">

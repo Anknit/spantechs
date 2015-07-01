@@ -174,7 +174,7 @@
 					$clause	.=	$this->searchFilterClause;
 				}
 				$order = $this->orderClause;
-				$resellersInfo	=	getInfoFrom('contactData', 'getResellersInfo', $clause, $order);
+				$resellersInfo	=	getInfoFrom('contactData', 'getResellersInfo', array('clause'=>$clause, 'order'=>$order, 'json'=>false));
 				if($resellersInfo) {
 					$output	=	$this->prepareOutput_GridData($resellersInfo);
 				}
