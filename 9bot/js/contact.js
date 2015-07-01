@@ -17,7 +17,7 @@ var locMap;
 var allLocationString = '';
 
 function getContactsData(){
-	var url		=	'../../actions/getContactData.php';
+	var url		=	'../../actions/dataInterface.php?action=get&data=contactData';
 	var	Method	=	'POST';
 	var	OnSuccess	=	function(response){
 		if(response	!=	0){

@@ -76,13 +76,9 @@
     </script>
 </head>
 <body style="text-align:center;">
-	<div style="float:left;text-align:center; width:100%; height:100px;">
-        <span style="margin:auto;">
-            <?php 
-				require_once 'menu.php';
-			?>
-        </span>
-    </div>
+    <?php 
+        require_once 'menu.php';
+    ?>
     <div style="float:left;text-align:center; width:100%; height:100px;">
         <span class="greyTabButton normalButton" style="margin:auto;float:left;color:white; width:95%; margin:10px">Add news</span>
         <br />
