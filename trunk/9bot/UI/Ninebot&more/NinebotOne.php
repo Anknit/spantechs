@@ -9,162 +9,139 @@
 <?php
 	require_once './header.php';
 ?>
-    <title>Ninebot E</title>
+    <title>Ninebot One and One plus</title>
     <link type="text/css" rel="stylesheet" href='../../css/ProdottiLayouts.css' />
 	<div class="content">
 
 		<div class="full_width_back t_l" style="background: url(../../images/prodottiImages/nineBotOneOneisAll.png)">
-        	<h2>one is all</h2>
+        	<h2>One è tutto</h2>
 			<div class="full_width_desc_container">
             	<p>
-                	Ninebot One is an intelligent and fashionable personal transportation tool with interactive function.
-                	<br/>
-                	With your exclusive transporter Ninebot
-                	<br/>
-					one, you can say goodbye to the crowds and enjoy the freedom and pleasure, being the master of the world.
+                	Ninebot One è un mezzo di trasporto personale, intelligente e alla moda, con funzioni interattive. Con il robot personale Ninebot One potete dire addio alla folla, al traffico e ritrovare il piacere di muovervi in libertà.
 				</p>
             </div>
 		</div>
 
 		<div class="full_width_back t_l" style="background: url(../../images/prodottiImages/nineBotOneFuture.png)">
-        	<h2>Fashionable and futuristic design</h2>
+        	<h2>Design futuristico e alla moda</h2>
 			<div class="full_width_desc_container">
             	<p>
-                	Concise, fashionable, decent and elegant
-					<br/>
-                    Delicate porcelain texture appearance and original frame style in the industry
+                	Conciso, discreto ed elegante.
 				</p>
             </div>
 		</div>
 
 		<div class="full_width_back t_l" style="background: url(../../images/prodottiImages/nineBotOneAmazing.png)">
-        	<h2>Amazing shells with optional colors</h2>
+        	<h2>Coprimozzi decorativi in vari colori</h2>
 			<div class="full_width_desc_container">
             	<p>
-                	Multi colors option, match whatever you want.
+                	Opzione multicolor: ogni immaginabile soluzione.
 					<br/>
-                    Various of color kits available, users can replace by themselves to keep a gorgeous appearance.
+                    Sono disponibili vari Kit colore, che l’utente può sostituire da solo, per mantenere un aspetto sempre magnifico.
 				</p>
             </div>
 		</div>
 
 		<div class="full_width_back t_l" style="background: url(../../images/prodottiImages/nineBotOneLamp.png)">
-        	<h2>Iridescent atmosphere lamp is full of personality</h2>
+        	<h2>Lampada Iridescente d’atmosfera è piena di personalità</h2>
 			<div class="full_width_desc_container">
             	<p>
-                	Tens of thousands of colors choice, cool and shiny.
+                	Decine di migliaia di colori a scelta, eccezionale e brillante.
 					<br/>
-                    Color can be set via Ninedroid App, with the light effect of breathing, blinking, flowing and customization, making every Ninebot One out of ordinary.
+                    Il colore può essere impostato dalla Ninedroid App con gli effetti: respirazione, lampeggiante, scorrevole o personalizzato, rendendo ogni Ninebot Uno unico.
 				</p>
             </div>
 		</div>
 
 		<div class="full_width_back t_l" style="background: url(../../images/prodottiImages/nineBotOneMagnesium.png)">
-        	<h2>Magnesium alloy frame and pedal</h2>
+        	<h2>Telaio e pedale in lega di magnesio</h2>
 			<div class="full_width_desc_container">
             	<p style="width: 40%;margin-top: 50px;">
-                	Antiskid, stable and secure.
+                	Antisdrucciolevole, stabile e sicuro.
 					<br/>
-                    The top high-pressure casting craft of magnesium alloy, spacious and elegant AIO pedal are with perfect performance in skid resistance.
+                    Un rivestimento in lega di magnesio forgiato ad alta pressione, AIO pedale spazioso ed elegante con eccellente proprietà antiscivolo.
 					<br/>
-                    Elegant appearance, smooth design without edges is not only for beauty but also a security for freshmen.
+                    Aspetto elegante, design morbido senza spigoli non solo per bellezza, ma come ulteriore garanzia di sicurezza per i più giovani.
 				</p>
             </div>
 		</div>
 
 		<div class="full_width_back t_l" style="background: url(../../images/prodottiImages/nineBotOneliftingHandle.png)">
-        	<h2>Non-visual lifting handle design</h2>
+        	<h2>Maniglia di sollevamento a scomparsa</h2>
 			<div class="full_width_desc_container">
             	<p style="width: 40%;margin-top:50px;margin-left: 60%;text-align:center;">
-                	Light and portable <br />
-					The magnesium alloy and elastic polyurethane lifting <br />
-                    handle is hidden in the vehicle and can pop out if needed.
+                	Leggero e portatile<br />
+					La maniglia di sollevamento in poliuretano elastico è nascosta nel veicolo e può essere estratta all’occorrenza.
 				</p>
             </div>
 		</div>
 
 
 		<div class="full_width_back t_l" style="background: url(../../images/prodottiImages/nineBotOneCompatibleAccessories.png)">
-        	<h2>Being compatible with popular accessories</h2>
+        	<h2>Compatibile con gli accessori in voga</h2>
 			<div class="full_width_desc_container">
             	<p style="width: 40%;margin-top: 50px;">
-                	We provide two optional accessories for Ninebot One – accessory holder and <br />
-                    assistant wheel set.<br />
-                    Accessory holder is compatible with most popular bike accessories,<br />
-                     like headlight, width laser lamp, car voice box and so on.<br />
-                    In a word, Ninebot one can be installed with those accessories you image.
+                	Offriamo due accessori opzionali per Ninebot One - vano accessori e set di rotelle d’ausilio.<br />
+                    Vano accessori è compatibile con i più diffusi accessori per bici (es. faro, faretto a laser, car voice box ecc.)<br />
+                     In poche parole, Ninebot One può essere utilizzato con tantissimi accessori. image.
 				</p>
             </div>
 		</div>
 
 		<div class="full_width_back t_l" style="background: url(../../images/prodottiImages/nineBotOneEasyDisassemble.png)">
-        	<h2>Easy to disassemble and replace components</h2>
+        	<h2>Facile da smontare e sostituire i componenti</h2>
 			<div class="full_width_desc_container">
             	<p style="width: 40%;margin-top:50px;margin-left: 60%;text-align:center">
-                	We provide two optional accessories for Ninebot One – accessory holder and <br />
-                    assistant wheel set.<br />
-                    Accessory holder is compatible with most popular bike accessories,<br />
-                     like headlight, width laser lamp, car voice box and so on.<br />
-                    In a word, Ninebot one can be installed with those accessories you image.
+                	Il design modulare permette all’utente di smontare e sostituire le componenti in totale autonomia.
 				</p>
             </div>
 		</div>
 
 		<div class="full_width_back t_l" style="background: url(../../images/prodottiImages/nineBotOneIntelligentSafety.png)">
-        	<h2>Intelligent safety alarm system</h2>
+        	<h2>Allarme intelligente</h2>
 			<div class="full_width_desc_container">
             	<p style="width: 40%;margin-top: 50px;">
-                	A triple safety alarm including a sound, light and<br />
-                    vibration will emit to ensure a safe driving experience.<br />
-                    Alarm will be set off by speeding, over leaning, low<br />
-                     power, internal malfunction and overheating.
+                	Un allarme ridondante (suono, luce e vibrazione).<br />
+                    L’allarme scatterà per superato limite di velocità, eccessivo angolo di inclinazione, batteria scarica, malfunzionamento interno e surriscaldamento.
 				</p>
             </div>
 		</div>
 
 		<div class="full_width_back t_l" style="background: url(../../images/prodottiImages/nineBotOneAdditionalFeatures.png)">
-        	<h2><span style="margin-left:200px;">Additional Features</span></h2>
+        	<h2><span style="margin-left:200px;">Caratteristiche Aggiuntive</span></h2>
 			<div class="full_width_desc_container">
             	<p style="width: 40%;margin-top:50px;margin-left: 60%;text-align:center">
-                	16 inch ultra-thin powerful brushless motor with<br />
-                     Ninebot sine wave frequency conversion<br />
-                      technology
-                    Instrument dashboard, customizable light settings<br />
-                     and remote firmware updating
+                	Potente motore da 16 pollici, brushless e ultra-sottile con tecnologia Ninebot di conversione di frequenza d'onda sinusoidale. Cruscotto, impostazioni di luce personalizzabili e aggiornamento firmware da remoto.
 				</p>
             </div>
 		</div>
 
 		<div class="full_width_back t_l" style="background: url(../../images/prodottiImages/nineBotOneNinedroidAppSmartTravel.png)">
-        	<h2>Ninedroid App, smart travel</h2>
+        	<h2>Ninedroid App, viaggia smart!</h2>
 			<div class="full_width_desc_container">
             	<p style="width: 40%;margin-top: 50px;">
-                	Ninedroid™ App tracking all the time.<br />
-                    Ninedroid 2.0 App will be available in Apple<br />
-                    store and Android Market soon.<br />
-                    You just can’t help loving it with the function<br />
-                     of instrument dashboard, customization light<br />
-                      effect setting, remote firmware updating,<br />
-                       ranking list and community.
+                	Monitoraggio Ninedroid ™ App continuo.<br />
+                    Ninedroid 2.0 App presto sarà disponibile in Apple Store e Android Market.<br />
+                    Non si potrà fare a meno di amarla con la funzione cruscotto remoto, personalizzazione effetti luce, update da remoto del firmware, ranking list e community.
 				</p>
             </div>
 		</div>
 
 		<div class="full_width_back t_d" style="background: url(../../images/prodottiImages/nineBotOneHighPerformanceEfficiency.png)">
 			<div class="full_width_desc_container" style="">
-                <h2 style="">High performance and efficiency</h2>
+                <h2 style="">Alte prestazioni ed efficienza</h2>
             	<p style="width: 80%;">
-                	Maximum speed of 18km/h<br />
-                    The Ninebot One’s electrical system is fully sealed and safe to use in inclement weather<br />
-                    To clean the unit, simply spray it down<br />
-                    Ninedroid App assists with smart travel
+                	Velocità massima: 18 km/h<br />
+                    Impianto elettrico del Ninebot One è completamente sigillato e a prova di maltempo<br />
+                    Per pulire l'unità, è sufficiente spruzzare giù<br />
+                    Ninedroid App ti assiste durante il viaggio
 				</p>
             </div>
             <div class="full_width_desc_container" style="margin-top:280px;margin-left:10px;width:65% !important">
-                <h2 style="">Ultrafast charging of the super lithium battery</h2>
+                <h2 style="">Ultraveloce ricarica della super-batteria al litio</h2>
                 <p style="width: 70%;margin:auto">
-                    Optional battery of 83Wh and 240Wh can be full charged with a standard charger in 60-120 minutes<br />
-                    A 250W high performance fanless AC adapter is available and can fully charge the battery within 30-60 minutes.
+                    Batteria opzionale 83Wh e 240Wh, con un caricabatteria standard, consente una ricarica completa in 60-120 minuti<br />
+È disponibile un fanless adattatore AC 250W ad elevate prestazioni, in grado di ricaricare la batteria in 30-60 minuti.
                 </p>
             </div>
 		</div>
