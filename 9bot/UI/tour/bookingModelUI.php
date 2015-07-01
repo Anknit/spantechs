@@ -1,4 +1,4 @@
-<script src="../../../Common/Cupertino/jquery-ui.min.js" type="text/javascript"></script>
+<script src="../../../Common/js/jquery-ui.min.js" type="text/javascript"></script>
 <script src="../../js/tourpage.js" type="text/javascript"></script>    
     <div class="modalWindow">
        <div id="packageInfoDiv">

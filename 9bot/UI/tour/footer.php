@@ -62,7 +62,7 @@
 <script type="text/javascript" src='../../../Common/js/commonFunctions.js'></script>
 <script type="text/javascript" src='../../js/headerMenuSelectors.js'></script>
 <script type="text/javascript" src='../../js/commonanimate.js'></script>
-<script type="text/javascript" src='../../../Common/Cupertino/jquery-ui.min.js'></script>
+<script type="text/javascript" src='../../../Common/js/jquery-ui.min.js'></script>
 <script type="text/javascript" src='../../js/slider.js'></script>
 <script>
 	scrollToTopButtonImage	=	'<img src="../../../Common/images/arrowUpScrollToTop.png" width="35px" />';

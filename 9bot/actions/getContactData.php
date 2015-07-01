@@ -9,16 +9,12 @@
 <?php
 	require_once __DIR__.'./../Db.php';
 	require_once __DIR__.'./../definitions.php';
+	require_once __DIR__.'./../../Common/php/commonfunctions.php';
+	require_once __DIR__.'./DbDataOperations.php';
 	extract($_GET);
-	$output	=	0;
-	$GetContactInfoInput	=	array(
-		'Table'		=>	'resellersinfo',
-		'Fields'	=>	'*'
-	);
-	$ContactInfo		=	DB_Read($GetContactInfoInput, 'ASSOC', 'JSON');
-	if($ContactInfo != '0' && $ContactInfo !== false){
-		$output	=	$ContactInfo;
-	}
+	$output	=	getInfoFrom('contactData', 'getResellersInfo', '', '', true);
+	if(!$output)
+		$output = 0;
 	
 	echo $output;
 ?>

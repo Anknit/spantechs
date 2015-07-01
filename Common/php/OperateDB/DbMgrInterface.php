@@ -31,7 +31,7 @@ require_once	__DIR__.'/DbMgr.php';
 * @return false, else 0(zero- for no corresponding entry), else output in described format. If mysql error is to be accessed, it is available with a aglobal variable $DB_OperationError
 
 */
-function DB_Read($readInput, $outputFormat	=	"ASSOC", $DataType	=	"")
+function DB_Read($readInput, $outputFormat	=	"ASSOC", $DataType	=	false)
 {
 	global	$perform_Database_Operation;
 	return	$perform_Database_Operation->Read($readInput, $outputFormat, $DataType);
