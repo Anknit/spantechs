@@ -14,7 +14,7 @@
     <link type="text/css" rel="stylesheet" href='../../css/tourhome.css' />
     <link type="text/css" rel="stylesheet" href="../../../Common/css/hover.css" />
     <link type="text/css" rel="stylesheet" href="../../../Common/css/buttonTab.css" />
-    <link type="text/css" rel="stylesheet" href='../../../Common/Cupertino/jquery-ui.min.css' />
+    <link type="text/css" rel="stylesheet" href='../../../Common/css/jqueryUI/themes/jquery-ui.min.css' />
     <link type="text/css" rel="stylesheet" href="../../../Common/css/cssForJssorSliders.css" />
     <script src="../../../Common/js/jssor.slider.mini.js" type="text/javascript"></script>
     <script src="../../js/homePageAnimation.js" type="text/javascript"></script>

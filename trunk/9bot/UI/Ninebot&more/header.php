@@ -14,7 +14,7 @@
     <link type="text/css" rel="stylesheet" href='../../css/floatingdiv.css' />
     <link type="text/css" rel="stylesheet" href='../../css/tileNav.css' />
     <link type="text/css" rel="stylesheet" href='../../css/tourhome.css' />
-    <link type="text/css" rel="stylesheet" href='../../../Common/Cupertino/jquery-ui.min.css' />
+    <link type="text/css" rel="stylesheet" href='../../../Common/css/jqueryUI/themes/jquery-ui.min.css' />
 </head>
 <body>
     <div class="wrapper">

@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="../../../Common/css/hover.css" />
     <link rel="stylesheet" href="../../../Common/css/buttonTab.css" />
     <link rel="stylesheet" href="../../../Common/css/jquery-te-1.4.0.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
     <style>
         .jqte_editor{
             min-height: 50px;
@@ -98,12 +99,11 @@
     </script>
 </head>
 <body>
-    <span style="">
-        <a class="greyTabButton hvr-float-shadow RightFloat normalButton" href="logout.php">Logout</a>
-    </span>
 	<div style="float:left;text-align:center; width:100%; height:100px;">
         <span style="margin:auto;">
-            <a class="greyTabButton hvr-float-shadow normalButton" href="addNews.php">Add more news</a>
+            <?php 
+				require_once 'menu.php';
+			?>
         </span>
     </div>
 	<?php

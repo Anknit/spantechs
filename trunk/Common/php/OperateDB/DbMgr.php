@@ -173,7 +173,7 @@ class DBMgr{
 		return $Query;
 	}
 	
-	public function Read($input_array, $outputFormat, $DataType = "")
+	public function Read($input_array, $outputFormat, $DataType = false)
 	{
 		$Query	=	$this->Prepare_Query($input_array, 'READ');
 		$output	=	"";
@@ -190,7 +190,7 @@ class DBMgr{
 			else
 			{
 				$output	=	$this->Prepare_Output($result, $outputFormat);	
-				if($DataType != "")
+				if($DataType)
 					$output	=	json_encode($output);	
 			}
 		}
