@@ -41,11 +41,11 @@ class contactData{
         $fields =   array();
         if($_REQUEST['oper'] != 'del'){
             $fields =   array(
-                'Name'   =>  $_REQUEST['Name'],
-                'Address'=>  $_REQUEST['Address'],
-                'Email'  =>  $_REQUEST['Email'],
-                'Website'=>  $_REQUEST['Website'],
-                'Phone'  =>  $_REQUEST['Phone']
+                'Name'   =>  utf8_encode($_REQUEST['Name']),
+                'Address'=>  utf8_encode($_REQUEST['Address']),
+                'Email'  =>  utf8_encode($_REQUEST['Email']),
+                'Website'=>  utf8_encode($_REQUEST['Website']),
+                'Phone'  =>  utf8_encode($_REQUEST['Phone'])
             );
         }
  		$UpdateContactInfoInput	=	array(

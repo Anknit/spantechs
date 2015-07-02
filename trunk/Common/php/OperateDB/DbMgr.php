@@ -24,7 +24,7 @@ class DBMgr{
 		$this->passWord		=	$config['password'];
 		$this->DatabaseName	=	$config['database'];
 		
-		$this->connect_DB();		
+		$this->connect_DB();
 	}
 	
 	public function connect_SpecificDatabase($mysql_Host, $userName, $passWord, $DatabaseName, $Port){
@@ -43,7 +43,9 @@ class DBMgr{
 			$db	=	$this->connection;
 
 		if (!$db)
-			return "Error: Connection failed '".$this->set_mysqlError()."'";	
+			return "Error: Connection failed '".$this->set_mysqlError()."'";
+		else
+			$db->set_charset("utf8");	
 	}
 	
 	private function set_mysqlError($Query, &$DB_OperationError = '')
