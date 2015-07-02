@@ -130,6 +130,29 @@ $(function(){
         src =   image.attr('src');
         $(this).closest('.productItemContainer').find('.productItemImage').find('img').attr('src', src);
         $('#enlargedImage').attr('src', src);
-        $( "#dialog_popup" ).dialog( "open" );
+        //$( "#dialog_popup" ).dialog( "open" );
     });
-});
+
+    $( '.productItemthumbNails img' ).tooltip({
+      items: ".productItemthumbNails img",
+      track: true,
+      show: {
+        effect: "slideDown",
+        delay: 100
+      },
+      hide: {
+        effect: "scale",
+        delay: 100
+      },
+      position: {
+        my: "left top+40px",
+        at: "left bottom +20px"
+      },
+      content: function() {
+        var element = $( this );
+        if ( element.is( "img" ) ) {
+          return "<img src=\""+element.attr( "src" )+"\" width=\"350\" />";
+        }
+      }
+    });
+  });
