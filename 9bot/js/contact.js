@@ -44,15 +44,23 @@ function renderShopsInfo(data){
 			
 			if(address != '' && address != undefined && address != null && address != 'null')
 				allLocationString += '<div class="DesciptionTripInfo">'+address+'</div>';
-			if(Email != '' && Email != undefined && Email != null && Email != 'null')
-				allLocationString += '<div class="DurationTripInfo">'+Email+'<br />';
-			if(Phone != '' && Phone != undefined && Phone != null && Phone != 'null')
-				allLocationString += Phone+'</div>';
+            
+            if(IsValueNull(Email))
+                Email   =   '';
+            if(IsValueNull(Phone))
+                Phone   =   '';
+            EPH =   '';
+            if(Email != '' || Phone != '')
+                EPH =   Email+'<br />'+Phone;
+            
+			if(EPH != '')
+				allLocationString += '<div class="DurationTripInfo">'+EPH+'</div>';
+            
 			if(website != '' && website != undefined && website != null && website != 'null')
 				allLocationString += '<div class="DurationTripInfo"><a href="http://'+website+'" target="_blank">'+website+'</a></div>';
 		}
 		
-		allLocationString += '</div>'
+		allLocationString += '</div>';
 	}
   	var allLocContainer	=	document.getElementById('containerAllLocations');
   	allLocContainer.innerHTML	=	allLocationString;	

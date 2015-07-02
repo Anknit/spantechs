@@ -149,8 +149,8 @@
 				$query	.=	" WHERE ".$clause;
 				
 			$TotalRecordsResult	=	DB_Query($query,'ASSOC', '');
-			$recordCount = $TotalRecordsResult[0]['TotalRecordsAvailable'];
-			$this->totalPages	=	ceil($recordCount/$this->limit);
+			$recordCount = intval($TotalRecordsResult[0]['TotalRecordsAvailable']);
+			$this->totalPages	=	ceil($recordCount/intval($this->limit));
 			$this->recordCount	=	$recordCount;
 			return $recordCount;
 		}

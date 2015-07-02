@@ -85,7 +85,6 @@
 	        autowidth: true,
 			viewrecords: true,
 			recordpos: 'right',
-			loadonce: true,
 			multiselect: false,
 			height: 500,
 			emptyrecords: "No records found",
@@ -108,7 +107,12 @@
             postdata.ID = dataObject.ID;
             return {ID: dataObject.ID};
         };
-        var addEditModalObject  =   {height:280,width: 500, reloadAfterSubmit:true, left:300, top:200,closeAfterAdd:true,closeAfterEdit:true/*, onclickSubmit: callBackBeforeSubmit*/};
+        var callBackBeforeAddEditSubmit  =  function(params, postdata) {   //used for add/edit
+            $.each( postdata, function( key, value ) {
+                postdata[key]    =   encodeURI(value);
+            });
+        };
+        var addEditModalObject  =   {height:280,width: 500, reloadAfterSubmit:true, left:300, top:200,closeAfterAdd:true,closeAfterEdit:true, onclickSubmit: callBackBeforeAddEditSubmit};
 		$("#resellersInfo").jqGrid('navGrid','#gridpager_resellersInfoTable',{edit:true,add:true,del:true, search: true, refresh:true} /*options*/, addEditModalObject /* edit options */, addEditModalObject /* add options*/, {reloadAfterSubmit:true,onclickSubmit: callBackBeforeSubmit} /* del options */, {height:150,width: 500, left:300, top:200, sopt:['eq','ne','lt','le','gt','ge','bw','bn','ew','en','cn','nc','nu','nn']} /* search options*/);
 	});
 </script>
