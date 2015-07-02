@@ -90,6 +90,19 @@
                         </div>
                     </div>
                 </div>
+                <div>
+                    <img u="image" src="../../images/tours/catania/suggestive.png" />
+                    <div u="thumb">
+                        <img class="i" src="../../images/tours/catania/suggestive.png" />
+                        <div class="t">
+                            Catania tours
+                            <a href="CataniaTour.php" class="anchorOnListNavigator">Tour details...</a>
+                        </div>
+                        <div class="c">
+                            Lets segway to catania
+                        </div>
+                    </div>
+                </div>
                 <!-- Arrow Left -->
                 <span u="arrowleft" class="jssora20l" style="top: 243px; left: 8px;">
                 </span>
