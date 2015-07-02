@@ -126,4 +126,7 @@ img.itemDisplayInGallery{
     border: 0;
     background: none;
 }
+.ui-tooltip {
+    max-width: 350px;
+    max-height: 500px;
 }

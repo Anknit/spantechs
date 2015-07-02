@@ -11,6 +11,32 @@
 ?>
     <title>Accessori</title>
     <link type="text/css" rel="stylesheet" href='../../css/ProdottiLayouts.css' />
+    <script>
+        $(function(){
+            $( '.imgContainer > img' ).tooltip({
+              items: ".imgContainer > img",
+              track: true,
+              show: {
+                effect: "slideDown",
+                delay: 100
+              },
+              hide: {
+                effect: "scale",
+                delay: 100
+              },
+              position: {
+                my: "left top+40px",
+                at: "left bottom +20px"
+              },
+              content: function() {
+                var element = $( this );
+                if ( element.is( "img" ) ) {
+                  return "<img src=\""+element.attr( "src" )+"\" width=\"300\" />";
+                }
+              }
+            });
+        });
+    </script>
 	<div class="content">
 
 		<div class="HITcontentSection">
