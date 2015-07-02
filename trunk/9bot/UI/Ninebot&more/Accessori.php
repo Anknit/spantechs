@@ -23,7 +23,7 @@
                 	Costo: € 600 + IVA
 				</p>
             </div>
-            <div class="imgContainer left" style="background: url(../../images/prodottiImages/Accessori/1.png)"></div>
+            <div class="imgContainer left" ><img src="../../images/prodottiImages/Accessori/Accessori/01/1.png" /></div>
 		</div>
 
 		<div class="HITcontentSection">
@@ -36,7 +36,7 @@
                 	Costo: € 800 + IVA
 				</p>
             </div>
-            <div class="imgContainer left" style="background: url(../../images/prodottiImages/Accessori/2.png)"></div>
+            <div class="imgContainer left" ><img src="../../images/prodottiImages/Accessori/Accessori/02/1.png" /></div>
 		</div>
 
 		<div class="HITcontentSection">
@@ -50,7 +50,11 @@
                 	Costo: € 106 + IVA
 				</p>
             </div>
-            <div class="imgContainer left" style="background: url(../../images/prodottiImages/Accessori/3.png)"></div>
+            <div class="imgContainer left" >
+            	<img src="../../images/prodottiImages/Accessori/Accessori/03/1.png" />
+            	<img src="../../images/prodottiImages/Accessori/Accessori/03/2.png" />
+            	<img src="../../images/prodottiImages/Accessori/Accessori/03/3.png" />
+            </div>
 		</div>
 
 		<div class="HITcontentSection">
@@ -63,7 +67,7 @@
                 	Costo: € 70 + IVA
 				</p>
             </div>
-            <div class="imgContainer left" style="background: url(../../images/prodottiImages/Accessori/4.png)"></div>
+            <div class="imgContainer left" ><img src="../../images/prodottiImages/Accessori/Accessori/04/1.png" /></div>
 		</div>
 
 		<div class="HITcontentSection">
@@ -76,7 +80,10 @@
                 	Costo: € 70 + IVA
 				</p>
             </div>
-            <div class="imgContainer left" style="background: url(../../images/prodottiImages/Accessori/5.png)"></div>
+            <div class="imgContainer left" >
+	            <img src="../../images/prodottiImages/Accessori/Accessori/05/1.png" />
+	            <img src="../../images/prodottiImages/Accessori/Accessori/05/2.png" />
+            </div>
 		</div>
 
 		<div class="HITcontentSection">
@@ -89,7 +96,10 @@
                 	Costo: € 70 + IVA
 				</p>
             </div>
-            <div class="imgContainer left" style="background: url(../../images/prodottiImages/Accessori/6.png)"></div>
+            <div class="imgContainer left" >
+            	<img src="../../images/prodottiImages/Accessori/Accessori/06/1.png" />
+            	<img src="../../images/prodottiImages/Accessori/Accessori/06/2.png" />
+            </div>
 		</div>
 
 		<div class="HITcontentSection">
@@ -102,7 +112,7 @@
                 	Costo: € 100 + IVA
 				</p>
             </div>
-            <div class="imgContainer left" style="background: url(../../images/prodottiImages/Accessori/7.png)"></div>
+            <div class="imgContainer left" ><img src="../../images/prodottiImages/Accessori/Accessori/07/1.png" /></div>
 		</div>
 
 		<div class="HITcontentSection">
@@ -115,7 +125,12 @@
                 	Costo: € 60 + IVA
 				</p>
             </div>
-            <div class="imgContainer left" style="background: url(../../images/prodottiImages/Accessori/8.png)"></div>
+            <div class="imgContainer left" >
+            	<img src="../../images/prodottiImages/Accessori/Accessori/08/1.png" />
+            	<img src="../../images/prodottiImages/Accessori/Accessori/08/2.png" />
+            	<img src="../../images/prodottiImages/Accessori/Accessori/08/3.png" />
+            	<img src="../../images/prodottiImages/Accessori/Accessori/08/4.png" />
+            </div>
 		</div>
 
 		<div class="HITcontentSection">
@@ -128,7 +143,12 @@
                 	Costo: € 110 + IVA
 				</p>
             </div>
-            <div class="imgContainer left" style="background: url(../../images/prodottiImages/Accessori/9.png)"></div>
+            <div class="imgContainer left" >
+            	<img src="../../images/prodottiImages/Accessori/Accessori/09/1.png" />
+            	<img src="../../images/prodottiImages/Accessori/Accessori/09/2.png" />
+            	<img src="../../images/prodottiImages/Accessori/Accessori/09/3.png" />
+            	<img src="../../images/prodottiImages/Accessori/Accessori/09/4.png" />
+            </div>
 		</div>
 
 		<div class="HITcontentSection">
@@ -141,7 +161,12 @@
                 	Costo: € 140 + IVA
 				</p>
             </div>
-            <div class="imgContainer left" style="background: url(../../images/prodottiImages/Accessori/10.png)"></div>
+            <div class="imgContainer left" >
+            	<img src="../../images/prodottiImages/Accessori/Accessori/10/1.png" />
+            	<img src="../../images/prodottiImages/Accessori/Accessori/10/2.png" />
+            	<img src="../../images/prodottiImages/Accessori/Accessori/10/3.png" />
+            	<img src="../../images/prodottiImages/Accessori/Accessori/10/4.png" />
+            </div>
 		</div>
 
 		<div class="HITcontentSection">
@@ -160,7 +185,12 @@
                 	Costo: € 150 + IVA
 				</p>
             </div>
-            <div class="imgContainer left" style="background: url(../../images/prodottiImages/Accessori/11.png)"></div>
+            <div class="imgContainer left" >
+            	<img src="../../images/prodottiImages/Accessori/Accessori/11/1.png" />
+            	<img src="../../images/prodottiImages/Accessori/Accessori/11/2.png" />
+            	<img src="../../images/prodottiImages/Accessori/Accessori/11/3.png" />
+            	<img src="../../images/prodottiImages/Accessori/Accessori/11/4.png" />
+            </div>
 		</div>
 
 		<div class="HITcontentSection">
@@ -173,7 +203,10 @@
                 	Costo: € 70 + IVA
 				</p>
             </div>
-            <div class="imgContainer left" style="background: url(../../images/prodottiImages/Accessori/12.png)"></div>
+            <div class="imgContainer left" >
+            	<img src="../../images/prodottiImages/Accessori/Accessori/12/1.png" />
+            	<img src="../../images/prodottiImages/Accessori/Accessori/12/2.png" />
+            </div>
 		</div>
 
 		<div class="HITcontentSection">
@@ -186,7 +219,7 @@
                 	Costo: € 70 + IVA
 				</p>
             </div>
-            <div class="imgContainer left" style="background: url(../../images/prodottiImages/Accessori/13.png)"></div>
+            <div class="imgContainer left" ><img src="../../images/prodottiImages/Accessori/Accessori/13/1.png" /></div>
 		</div>
 
 		<div class="HITcontentSection">
@@ -199,7 +232,7 @@
                 	Costo: € 80 + IVA
 				</p>
             </div>
-            <div class="imgContainer left" style="background: url(../../images/prodottiImages/Accessori/14.png)"></div>
+            <div class="imgContainer left" ><img src="../../images/prodottiImages/Accessori/Accessori/14/1.png" /></div>
 		</div>
 
 		<div class="HITcontentSection">
@@ -212,7 +245,10 @@
                 	Costo: € 80 + IVA
 				</p>
             </div>
-            <div class="imgContainer left" style="background: url(../../images/prodottiImages/Accessori/15.png)"></div>
+            <div class="imgContainer left" >
+            	<img src="../../images/prodottiImages/Accessori/Accessori/15/1.png" />
+            	<img src="../../images/prodottiImages/Accessori/Accessori/15/2.png" />
+            </div>
 		</div>
 
 		<div class="HITcontentSection">
@@ -225,7 +261,7 @@
                 	Costo: € 100 + IVA
 				</p>
             </div>
-            <div class="imgContainer left" style="background: url(../../images/prodottiImages/Accessori/16.png)"></div>
+            <div class="imgContainer left" ><img src="../../images/prodottiImages/Accessori/Accessori/16/1.png" /></div>
 		</div>
 
 		<div class="HITcontentSection">
@@ -238,7 +274,7 @@
                 	Costo: € 100 + IVA
 				</p>
             </div>
-            <div class="imgContainer left" style="background: url(../../images/prodottiImages/Accessori/17.png)"></div>
+            <div class="imgContainer left" ><img src="../../images/prodottiImages/Accessori/Accessori/17/1.png" /></div>
 		</div>
 
 		<div class="HITcontentSection">
@@ -251,7 +287,7 @@
                 	Costo: € 10 + IVA
 				</p>
             </div>
-            <div class="imgContainer left" style="background: url(../../images/prodottiImages/Accessori/18.png)"></div>
+            <div class="imgContainer left" ><img src="../../images/prodottiImages/Accessori/Accessori/18/1.png" /></div>
 		</div>
 
 		<div class="HITcontentSection">
@@ -264,7 +300,7 @@
                 	Costo: € 14 + IVA
 				</p>
             </div>
-            <div class="imgContainer left" style="background: url(../../images/prodottiImages/Accessori/19.png)"></div>
+            <div class="imgContainer left" ><img src="../../images/prodottiImages/Accessori/Accessori/19/1.png" /></div>
 		</div>
 
 		<div class="HITcontentSection">
@@ -277,7 +313,7 @@
                 	Costo: € 30 + IVA
 				</p>
             </div>
-            <div class="imgContainer left" style="background: url(../../images/prodottiImages/Accessori/20.png)"></div>
+            <div class="imgContainer left" ><img src="../../images/prodottiImages/Accessori/Accessori/20/1.png" /></div>
 		</div>
 
 		<div class="HITcontentSection">
@@ -290,7 +326,11 @@
                 	Costo: € 44 + IVA
 				</p>
             </div>
-            <div class="imgContainer left" style="background: url(../../images/prodottiImages/Accessori/21.png)"></div>
+            <div class="imgContainer left" >
+            	<img src="../../images/prodottiImages/Accessori/Accessori/21/1.png" />
+            	<img src="../../images/prodottiImages/Accessori/Accessori/21/2.png" />
+            	<img src="../../images/prodottiImages/Accessori/Accessori/21/3.png" />
+            </div>
 		</div>
 
 		<div class="HITcontentSection">
@@ -303,7 +343,7 @@
                 	Costo: € 100 + IVA
 				</p>
             </div>
-            <div class="imgContainer left" style="background: url(../../images/prodottiImages/Accessori/22.png)"></div>
+            <div class="imgContainer left" ><img src="../../images/prodottiImages/Accessori/Accessori/22/1.png" /></div>
 		</div>
 
 		<div class="HITcontentSection">
@@ -316,7 +356,10 @@
                 	Costo: € 10 + IVA
 				</p>
             </div>
-            <div class="imgContainer left" style="background: url(../../images/prodottiImages/Accessori/23.png)"></div>
+            <div class="imgContainer left" >
+            	<img src="../../images/prodottiImages/Accessori/Accessori/23/1.png" />
+            	<img src="../../images/prodottiImages/Accessori/Accessori/23/2.png" />
+            </div>
 		</div>
 
 		<div class="HITcontentSection">
@@ -329,7 +372,7 @@
                 	Costo: € 50 + IVA
 				</p>
             </div>
-            <div class="imgContainer left" style="background: url(../../images/prodottiImages/Accessori/24.png)"></div>
+            <div class="imgContainer left" ><img src="../../images/prodottiImages/Accessori/Accessori/24/1.png" /></div>
 		</div>
 
 		<div class="HITcontentSection">
@@ -347,7 +390,7 @@
                 	Costo: € 15 + IVA
 				</p>
             </div>
-            <div class="imgContainer left" style="background: url(../../images/prodottiImages/Accessori/25.png)"></div>
+            <div class="imgContainer left" ><img src="../../images/prodottiImages/Accessori/Accessori/25/1.png" /></div>
 		</div>
 
 		<div class="HITcontentSection">
@@ -363,7 +406,11 @@
                 	Costo: € 40 + IVA
 				</p>
             </div>
-            <div class="imgContainer left" style="background: url(../../images/prodottiImages/Accessori/26.png)"></div>
+            <div class="imgContainer left" >
+            	<img src="../../images/prodottiImages/Accessori/Accessori/26/1.png" />
+            	<img src="../../images/prodottiImages/Accessori/Accessori/26/2.png" />
+            	<img src="../../images/prodottiImages/Accessori/Accessori/26/3.png" />
+            </div>
 		</div>
 
 		<div class="HITcontentSection">
@@ -376,7 +423,10 @@
                 	Costo: € 15 + IVA
 				</p>
             </div>
-            <div class="imgContainer left" style="background: url(../../images/prodottiImages/Accessori/27.png)"></div>
+            <div class="imgContainer left" >
+            	<img src="../../images/prodottiImages/Accessori/Accessori/27/1.png" />
+            	<img src="../../images/prodottiImages/Accessori/Accessori/27/2.png" />
+            </div>
 		</div>
 
 		<div class="HITcontentSection">
@@ -389,7 +439,7 @@
                 	Costo: € 20 + IVA
 				</p>
             </div>
-            <div class="imgContainer left" style="background: url(../../images/prodottiImages/Accessori/28.png)"></div>
+            <div class="imgContainer left" ><img src="../../images/prodottiImages/Accessori/Accessori/28/1.png" /></div>
 		</div>
 
 		<div class="HITcontentSection">
@@ -402,7 +452,7 @@
                 	Costo: € 100 + IVA
 				</p>
             </div>
-            <div class="imgContainer left" style="background: url(../../images/prodottiImages/Accessori/29.png)"></div>
+            <div class="imgContainer left" ><img src="../../images/prodottiImages/Accessori/Accessori/29/1.png" /></div>
 		</div>
 
 		<div class="HITcontentSection">
@@ -415,7 +465,7 @@
                 	Costo: € 170 + IVA
 				</p>
             </div>
-            <div class="imgContainer left" style="background: url(../../images/prodottiImages/Accessori/30.png)"></div>
+            <div class="imgContainer left" ><img src="../../images/prodottiImages/Accessori/Accessori/30/1.png" /></div>
 		</div>
 
 

@@ -9,11 +9,13 @@
 	HIT refers to heading image and text
 */
 .HITcontentSection{
-	width:80%;
-	float:left;
-	margin:2% 0% 0% 10%;;
-	border-top: 1px solid #ccc;
-	border-top-style:dashed;
+	width: 100%;
+	/* float:left; */
+	display: table;
+	/* margin:2% 0% 0% 10%; */;
+	border-bottom: 1px dashed #ccc;
+	/* padding: 10px; */
+	box-sizing: border-box;
 }
 .full_width_back{
 	width:100% !important;
@@ -58,27 +60,44 @@
 }
 .HITcontentSection > h2{
 	font-style: italic;
+	width: 100%;
+	text-align: center;
+	display: table-caption;
+	color: #05B9BD;
 }
 .HITcontentSection > div.imgContainer{
 	background-size: contain !important;
 	background-repeat: no-repeat !important;
 	background-position: center !important;
-	width:350px;
-	height:300px;
+	display: table-row;
+	/* height:300px; */
+	vertical-align: middle;
+	text-align: center;
+}
+
+.HITcontentSection > div.imgContainer img {
+    width: 250px;
+    padding: 10px;
+    margin: auto;
+    vertical-align: middle;
 }
 .HITcontentSection > div.left{
-	float:left;
+	/* float:left; */
 }
 .HITcontentSection > div.right{
 	float:right;
 }
 .HITcontentProductDescription{
   width: 60%;
-  float: left;
-  padding-top: 3%;
-  margin-left: 8px;
+  /* float: left; */
+  /* padding-top: 3%; */
+  /* margin-left: 8px; */
   font-family: cursive;
   color: black;
+  vertical-align: middle;
+  display: table-row;
+  padding: 0px 20px;
+  text-align: center;
 }
 table.productSpecifications{
 	background-color:#EEEEEE;
