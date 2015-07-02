@@ -49,8 +49,8 @@ $(function(){
 				ImageForNews=	$('<img />').attr('src', this.pathToNewsImageDir+dataElement[0]).css('max-width','100%').css('max-height', '300px');
 				NewsFig.append(ImageForNews);
 			}
-			NewsTitle	=	$('<div class="newsHeadline"><h3>'+dataElement[1]+'</h3></div>');
-			NewsDetails	=	$('<div class="newsDescription qouteSpan"><p>'+dataElement[2]+'</p></div>');
+			NewsTitle	=	$('<div class="newsHeadline"><h3>'+decodeURI(dataElement[1])+'</h3></div>');
+			NewsDetails	=	$('<div class="newsDescription qouteSpan"><p>'+decodeURI(dataElement[2])+'</p></div>');
 			NewsItem.append(NewsFig);
 			NewsItem.append(NewsTitle);
 			NewsItem.append(NewsDetails);

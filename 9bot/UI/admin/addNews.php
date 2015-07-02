@@ -45,8 +45,8 @@
 		$(function(){
 			$('input#addNews').on('click', '', function(){
 				newsType	=	$('input[name="newsType"]:checked').val();
-				newsHeadline=	encodeURI($('#newsHeadline').closest('.jqte').find('.jqte_editor').html());
-				newsDetails	=	encodeURI($('#newsDetails').closest('.jqte').find('.jqte_editor').html());
+				newsHeadline=	$('#newsHeadline').closest('.jqte').find('.jqte_editor').text();
+				newsDetails	=	$('#newsDetails').closest('.jqte').find('.jqte_editor').text();
 				newsHome	=	$('#showOnHomePage').is(':checked') ? 1: 0;
 				var formData = new FormData();
 				var fileElement	=	$('input[type=file]')[0].files[0];
@@ -55,11 +55,16 @@
 					storeImage	=	1;
 				
 				formData.append('file[]', fileElement);
-				submitNews(newsType, newsHeadline, newsDetails, newsHome, formData, storeImage);
+				formData.append('newsType', newsType);
+				formData.append('newsHeadline', newsHeadline);
+				formData.append('newsDetails', newsDetails);
+				formData.append('newsHome', newsHome);
+				formData.append('storeImage', storeImage);
+				submitNews(formData);
 			});
 		});
-		function submitNews(newsType, newsHeadline, newsDetails, newsHome, data, storeImage){
-			var url		=	'../../actions/addNewsDataByAdmin.php?newsType='+newsType+'&newsHeadline='+newsHeadline+'&newsDetails='+newsDetails+'&newsHome='+newsHome+'&storeImage='+storeImage;
+		function submitNews(data){
+			var url		=	'../../actions/addNewsDataByAdmin.php';
 			var	Method	=	'POST';
 			var	OnSuccess	=	function(response){
 				if(response	==	1){
@@ -80,21 +85,23 @@
         require_once 'menu.php';
     ?>
     <div style="float:left;text-align:center; width:100%; height:100px;">
-        <span class="greyTabButton normalButton" style="margin:auto;float:left;color:white; width:95%; margin:10px">Add news</span>
-        <br />
-        <br />
-        <br />
-        <label for="newsFig">Select an image: &nbsp;&nbsp;</label><input name="newsFig" id="newsFig" type="file" accept="image/gif, image/jpg, image/jpeg, image/bmp, image/png" max="1" />
-        <br />
-        <br />
-        <b>News Type: </b>&nbsp;&nbsp;&nbsp;
-        Ninebot& more&nbsp;<input type="radio" name="newsType" value="1" checked />&nbsp;&nbsp;
-        Tours&nbsp;<input type="radio" name="newsType" value="2" />     
-         <br />
-         <br />
-        Check, if this news is to be shown on home page&nbsp;&nbsp;&nbsp;<input type="checkbox" id="showOnHomePage" />
-         <br />
-         <br />
+        <span class="greyTabButton normalButton" style="margin:auto;float:left;color:white; width:95%; margin:10px; cursor:default">Add news</span>
+        <div class="container-fluid">
+        	<div class="row">
+            	<div class="col-md-4">
+                	<label for="newsFig">Select an image: &nbsp;&nbsp;</label>
+                    <input name="newsFig" id="newsFig" type="file" accept="image/gif, image/jpg, image/jpeg, image/bmp, image/png" max="1" />
+                </div>
+            	<div class="col-md-4">
+                	<b>News Type: </b>&nbsp;&nbsp;&nbsp;
+                    Ninebot& more&nbsp;<input type="radio" name="newsType" value="1" checked />&nbsp;&nbsp;
+                    Tours&nbsp;<input type="radio" name="newsType" value="2" />     
+                </div>
+            	<div class="col-md-4">
+                    Check, if this news is to be shown on home page&nbsp;&nbsp;&nbsp;<input type="checkbox" id="showOnHomePage" />
+                </div>
+            </div>
+        </div>
         <label for="newsHeadline">Headline</label><textarea id="newsHeadline" name="newsHeadline"></textarea>
         <label for="newsDetails">Details</label><textarea id="newsDetails" name="newsDetails"></textarea>
         <input type="button" id="addNews" value="Save" />

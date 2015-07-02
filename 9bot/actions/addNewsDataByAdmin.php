@@ -9,7 +9,7 @@
 <?php
 	require_once __DIR__.'./../Db.php';
 	require_once __DIR__.'./../definitions.php';
-	extract($_GET);
+	extract($_REQUEST);
 	$output	=	0;
 	$AddNewsInfoInput	=	array(
 		'Table'		=>	'newslogging',
@@ -20,8 +20,8 @@
 			'showOnHomePage'=>	$newsHome,
 		),
 	);
-	if(isset($newsId) && $newsId != ''){
-		$AddNewsInfoInput['clause']	=	'ID = '.$newsId;
+	if(isset($newsID) && $newsID != ''){
+		$AddNewsInfoInput['clause']	=	'ID = '.$newsID;
 		if($storeImage != 0){
 			$AddNewsInfoInput['Fields']['NewsImagePath']	=	$storeImage;
 		}
@@ -37,8 +37,8 @@
 	}
 
 	if($NewsInfo != 0 && $NewsInfo !== false){
-		if(isset($newsId) && $newsId != ''){
-			$NewsInfo	=	$newsId;
+		if(isset($newsID) && $newsID != ''){
+			$NewsInfo	=	$newsID;
 		}
 		$imageFileName	=	$NewsInfo.'.png';
 		if($storeImage != '' && $storeImage != 0){
