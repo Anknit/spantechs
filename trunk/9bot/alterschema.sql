@@ -1,0 +1,1 @@
+alter table `booking_tours`.`newslogging` change `NewsTitle` `NewsTitle` text  CHARACTER SET utf8   NOT NULL , change `NewsDetails` `NewsDetails` text  CHARACTER SET utf8   NOT NULL 

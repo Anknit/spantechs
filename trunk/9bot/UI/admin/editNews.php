@@ -57,10 +57,16 @@
 				storeImage	=	2;
 			
 			formData.append('file[]', fileElement);
-			submitNews(newsType, newsHeadline, newsDetails, newsHome, formData, storeImage, newsID);
+			formData.append('newsType', newsType);
+			formData.append('newsHeadline', newsHeadline);
+			formData.append('newsDetails', newsDetails);
+			formData.append('newsHome', newsHome);
+			formData.append('storeImage', storeImage);
+			formData.append('newsID', newsID);
+			submitNews(formData);
 		}
-		function submitNews(newsType, newsHeadline, newsDetails, newsHome, data, storeImage, newsId){
-			var url		=	'../../actions/addNewsDataByAdmin.php?newsType='+newsType+'&newsHeadline='+newsHeadline+'&newsDetails='+newsDetails+'&newsHome='+newsHome+'&storeImage='+storeImage+'&newsId='+newsId;
+		function submitNews(data){
+			var url		=	'../../actions/addNewsDataByAdmin.php';
 			var	Method	=	'POST';
 			var	OnSuccess	=	function(response){
 				if(response	==	1){
