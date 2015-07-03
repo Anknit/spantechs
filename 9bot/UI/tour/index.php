@@ -4,7 +4,7 @@
    <style>
        .jssorSlidesDimensions{
            width:1920px;
-           height:800px;
+           height:600px;
        }
    </style>
     <script>
@@ -32,16 +32,16 @@
             <!-- Slides Container -->
             <div u="slides" class="jssorSlidesDimensions" style="cursor: move; position: absolute;">
                 <div>
-                    <img u="image" src="../../images/tours/1.jpg" />
+                    <img u="image" src="../../images/tours/1.png" />
                     <div u="thumb">
-                        <img class="i" src="../../images/tours/1.jpg" /><div class="t">Roam in Rome</div>
+                        <img class="i" src="../../images/tours/1.png" /><div class="t">Roam in Rome</div>
                         <div class="c">Roam around the Rome by various means</div>
                     </div>
                 </div>
                 <div>
-                    <img u="image" src="../../images/tours/2.jpg" />
+                    <img u="image" src="../../images/tours/2.png" />
                      <div u="thumb">
-                        <img class="i" src="../../images/tours/2.jpg" />
+                        <img class="i" src="../../images/tours/2.png" />
                         <div class="t">
                             Ninebot tours
                             <a href="NinebotTour.php" class="anchorOnListNavigator">Tour details...</a>
@@ -52,9 +52,9 @@
                     </div>
                </div>
                 <div>
-                    <img u="image" src="../../images/tours/3.jpg" />
+                    <img u="image" src="../../images/tours/5.png" />
                     <div u="thumb">
-                        <img class="i" src="../../images/tours/3.jpg" />
+                        <img class="i" src="../../images/tours/5.png" />
                         <div class="t">
                             Vespa tours
                             <a href="VespaTour.php" class="anchorOnListNavigator">Tour details...</a>
@@ -65,9 +65,9 @@
                     </div>
                 </div>
                 <div>
-                    <img u="image" src="../../images/tours/5.jpg" />
+                    <img u="image" src="../../images/tours/3.png" />
                     <div u="thumb">
-                        <img class="i" src="../../images/tours/5.jpg" />
+                        <img class="i" src="../../images/tours/3.png" />
                         <div class="t">
                             Golfcar tours
                             <a href="GolfcarTour.php" class="anchorOnListNavigator">Tour details...</a>
@@ -78,9 +78,9 @@
                     </div>
                 </div>
                 <div>
-                    <img u="image" src="../../images/tours/6.jpg" />
+                    <img u="image" src="../../images/tours/4.png" />
                     <div u="thumb">
-                        <img class="i" src="../../images/tours/6.jpg" />
+                        <img class="i" src="../../images/tours/4.png" />
                         <div class="t">
                             Bike tours
                             <a href="BikeTour.php" class="anchorOnListNavigator">Tour details...</a>
@@ -91,9 +91,9 @@
                     </div>
                 </div>
                 <div>
-                    <img u="image" src="../../images/tours/catania/suggestive.png" />
+                    <img u="image" src="../../images/tours/7.png" />
                     <div u="thumb">
-                        <img class="i" src="../../images/tours/catania/suggestive.png" />
+                        <img class="i" src="../../images/tours/7.png" />
                         <div class="t">
                             Catania tours
                             <a href="CataniaTour.php" class="anchorOnListNavigator">Tour details...</a>
