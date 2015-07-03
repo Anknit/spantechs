@@ -86,12 +86,14 @@ function initialize() {
     zoom:6,
     scrollwheel:false,
     zoomControl: false,
+    disableDoubleClickZoom: true
     //mapTypeId:google.maps.MapTypeId.TERRAIN
   };
   var map2Prop = {
     center:new google.maps.LatLng(41.89141031584846,12.470773561901852),
     zoom:15,
     zoomControl: false,
+    disableDoubleClickZoom: true
    // mapTypeId:google.maps.MapTypeId.TERRAIN
   };
 
