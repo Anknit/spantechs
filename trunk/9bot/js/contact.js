@@ -85,11 +85,13 @@ function initialize() {
     center:new google.maps.LatLng(42.677697307288774,12.568136862499854),
     zoom:6,
     scrollwheel:false,
+    zoomControl: false,
     //mapTypeId:google.maps.MapTypeId.TERRAIN
   };
   var map2Prop = {
     center:new google.maps.LatLng(41.89141031584846,12.470773561901852),
     zoom:15,
+    zoomControl: false,
    // mapTypeId:google.maps.MapTypeId.TERRAIN
   };
 
