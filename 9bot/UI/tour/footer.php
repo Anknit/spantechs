@@ -32,8 +32,8 @@
                                             </a>
                                         </li>
                                         <li class="PageLinkFooter">
-                                            <a href="http://9botitalia.com/9bot/UI/Ninebot&more/ninoRobotics.php" target="_blank">
-                                                <span>Nino robotics</span>
+                                            <a href="http://9botitalia.com/9bot/UI/" target="_blank">
+                                                <span>Ninebot products</span>
                                             </a>
                                         </li>
                                         <li class="PageLinkFooter">
