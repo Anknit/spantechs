@@ -23,7 +23,7 @@
                 	The Ninebot-C is as technically advanced as the Ninebot-E. It offers the same high performance and safety guarantee at a more competitive price. It’s another option for consumers interested in leveraging the advantages of a personal transportation robot.
 				</p>
             </div>
-            <div class="imgContainer left" style="background: url(../../images/prodottiImages/nineBotCComfort.png)"></div>
+            <div class="imgContainer left"><img src="../../images/prodottiImages/nineBotCComfort.png" /></div>
 		</div>
 
 		<div class="HITcontentSection">
@@ -37,7 +37,7 @@
                     </ul>
 				</p>
             </div>
-            <div class="imgContainer left" style="background: url(../../images/prodottiImages/nineBotCMagnesiumAlloy.png)"></div>
+            <div class="imgContainer left"><img src="../../images/prodottiImages/nineBotCMagnesiumAlloy.png" /></div>
 		</div>
 
 		<div class="HITcontentSection">
@@ -51,7 +51,7 @@
                     </ul>
 				</p>
             </div>
-            <div class="imgContainer left" style="background: url(../../images/prodottiImages/nineBotCCompositeMaterial.png)"></div>
+            <div class="imgContainer left"><img src="../../images/prodottiImages/nineBotCCompositeMaterial.png" /></div>
 		</div>
 
 		<div class="HITcontentSection">
@@ -65,13 +65,13 @@
                     </ul>
 				</p>
             </div>
-            <div class="imgContainer left" style="background: url(../../images/prodottiImages/nineBotCSpeedMotorPlusSpeedDrive.png)"></div>
+            <div class="imgContainer left"><img src="../../images/prodottiImages/nineBotCSpeedMotorPlusSpeedDrive.png" /></div>
 		</div>
 
-		<div class="HITcontentSection imgContainer" style="background: url(../../images/prodottiImages/nineBotCHandsFreeBackground.png); height:500px;background-size: contain;background-repeat: no-repeat;">
-        	<h2 style="margin-left: 225px;">Hands free, comfortable riding</h2>
-			<div class="HITcontentProductDescription" style="margin-top: 117px;">
-            	<p>
+		<div class="HITcontentSection imgContainer" style="background: url(../../images/prodottiImages/nineBotCHandsFreeBackground.png); height:450px;background-size: contain;background-repeat: no-repeat;background-position:center;">
+        	<h2>Hands free, comfortable riding</h2>
+			<div class="HITcontentProductDescription" style="display:table-cell;width:40%;vertical-align:bottom;">
+            	<p style='display:table-cell;vertical-align:bottom;padding:0px 15px 75px;'>
                 	The Ninebot-C also features a handless lever as a standard operation bar. Riders can drive with their knees. This hands free option, offers riders more flexibility to enjoy their riding experience. In addition, its more compact footprint makes it even more convenient to store and transport.
 				</p>
             </div>
@@ -85,7 +85,7 @@
                 	Quality and safety is always the pursuit of Ninebot team. With the material of LEXAN™ VisualFX panlite from SABIC Innovative Plastics, Ninebot is with a perfect appearance and texture. Well, the max speed of Ninebot-C is 16km/h, which ensures the safety when driving with the handless lever.
 				</p>
             </div>
-            <div class="imgContainer left" style="background: url(../../images/prodottiImages/nineBotCQualityCareFree.png)"></div>
+            <div class="imgContainer left"><img src="../../images/prodottiImages/nineBotCQualityCareFree.png" /></div>
 		</div>
 
 		<div class="HITcontentSection">
@@ -95,7 +95,7 @@
                 	Based on the original military unmanned aerial vehicle (UAV) technology, Ninebot Inc. released the Ninesys 2nd self-balancing control system, which is with up to 10 times power reserve coefficient and better control performance, the quick reaction makes Ninebot-C more stable. Furthermore, Ninebot-C has the Flight Data Recorder (Black Box) function, which can restore the progress of malfunction and accident according to the data. In that case, it will help you manage the safe driving skills and improve the safety performance of Ninebot-C.
 				</p>
             </div>
-            <div class="imgContainer" style="background: url(../../images/prodottiImages/nineBotCSelfbalancingControlSystem.png); width:80%;"></div>
+            <div class="imgContainer"><img src="../../images/prodottiImages/nineBotCSelfbalancingControlSystem.png" /></div>
 		</div>
 
 		<div class="HITcontentSection" style="border:none">

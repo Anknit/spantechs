@@ -99,6 +99,10 @@
   padding: 0px 20px;
   text-align: center;
 }
+
+.HITcontentProductDescription ul {
+    list-style: none;
+}
 table.productSpecifications{
 	background-color:#EEEEEE;
 }
@@ -112,7 +116,7 @@ table.productSpecifications td{
 	color:#000;
 }
 .content{
-	margin-bottom:0px;
+	margin-bottom: 50px;
 }
 @media screen and (max-device-width: 950px){
 	.full_width_desc_container {

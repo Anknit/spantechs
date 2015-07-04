@@ -33,7 +33,7 @@ dotato di una batteria ad alta capacità 670Wh, che estende la sua autonomia sin
                 	<img src="../../images/prodottiImages/ninebotEAmazingTransportation.png" />
 				</p>
             </div>
-            <div class="imgContainer left" style="background: url(../../images/prodottiImages/nineBotEAmazing.png)"></div>
+            <div class="imgContainer left"><img src="../../images/prodottiImages/nineBotEAmazing.png" /></div>
 		</div>
 
 		<div class="HITcontentSection">
@@ -47,7 +47,7 @@ della barra, il Ninebot può essere facilmente messo nel bagagliaio della maggio
 portato ovunque.
 				</p>
             </div>
-            <div class="imgContainer left" style="background: url(../../images/prodottiImages/nineBotECompanion.png)"></div>
+            <div class="imgContainer left"><img src="../../images/prodottiImages/nineBotECompanion.png" /></div>
 		</div>
 
 		<div class="HITcontentSection">
@@ -65,7 +65,7 @@ vantaggio più importante è che con il vostro Ninebot raggiungerete la vostra d
 vostri amici automobilisti passeranno il loro tempo in un ingorgo o alla ricerca di un parcheggio.
 				</p>
             </div>
-            <div class="imgContainer left" style="background: url(../../images/prodottiImages/nineBotENoTraffic.png)"></div>
+            <div class="imgContainer left"><img src="../../images/prodottiImages/nineBotENoTraffic.png" /></div>
 		</div>
 
 		<div class="HITcontentSection">
@@ -79,7 +79,7 @@ nel proprio contenitore. I suoi quattro pulsanti vi permettono di gestire tutte 
 Ninebot è equipaggiato con 2 chiavi, una di riserva.
 				</p>
             </div>
-            <div class="imgContainer left" style="background: url(../../images/prodottiImages/nineBotEEleganceAndQuality.png)"></div>
+            <div class="imgContainer left"><img src="../../images/prodottiImages/nineBotEEleganceAndQuality.png" /></div>
 		</div>
 
 		<div class="HITcontentSection">
@@ -99,7 +99,7 @@ Dimensioni dell’imballaggio del manubrio:
 L1140 × W140 × H95
 				</p>
             </div>
-            <div class="imgContainer left" style="background: url(../../images/prodottiImages/nineBotEReinforce.png)"></div>
+            <div class="imgContainer left"><img src="../../images/prodottiImages/nineBotEReinforce.png" /></div>
 		</div>
 
 
