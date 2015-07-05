@@ -18,15 +18,15 @@
 	switch($Page){
 		case 1:	//Home
 			$GetNewsInfoInput['clause']	=	'showOnHomePage = 1';
-			$GetNewsInfoInput['order']	=	'ID DESC';
+			$GetNewsInfoInput['order']	=	'PriorityOrder ASC';
 		break;
 		case 2:	//Ninebot&more
 			$GetNewsInfoInput['clause']	=	'NewsType = '.NineBotNews;
-			$GetNewsInfoInput['order']	=	'ID DESC';
+			$GetNewsInfoInput['order']	=	'PriorityOrder ASC';
 		break;
 		case 3:	//Tour
 			$GetNewsInfoInput['clause']	=	'NewsType = '.TourNews;
-			$GetNewsInfoInput['order']	=	'ID DESC';
+			$GetNewsInfoInput['order']	=	'PriorityOrder ASC';
 		break;
 	}
 	$NewsInfo		=	DB_Read($GetNewsInfoInput, 'ASSOC');

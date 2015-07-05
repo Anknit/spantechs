@@ -150,16 +150,16 @@
 				</a>
 			</div>
 			<div class="floatContainerDiv">
-	           	<a href="JoggingTour.php">
-		           	<div class="headingFloatDiv"><span class="color_nine">Jogging</span><span class="color_bot">Tours</span></div>
-		           	<div class="imageFloatDiv"><img src="../../images/tours/type/Jogging_Tour.jpg"></img></div>
+	           	<a href="CataniaTour.php">
+		           	<div class="headingFloatDiv"><span class="color_nine">Catania</span><span class="color_bot">Tours</span></div>
+		           	<div class="imageFloatDiv"><img src="../../images/tours/type/Catania_Tour.jpg"></img></div>
 		           	<div class="footerFloatDiv"><span class="color_9"><b>Book Now !!</b></span></div>
 				</a>
 			</div>
 			<div class="floatContainerDiv">
-	           	<a href="CataniaTour.php">
-		           	<div class="headingFloatDiv"><span class="color_nine">Catania</span><span class="color_bot">Tours</span></div>
-		           	<div class="imageFloatDiv"><img src="../../images/tours/type/Catania_Tour.jpg"></img></div>
+	           	<a href="JoggingTour.php">
+		           	<div class="headingFloatDiv"><span class="color_nine">Jogging</span><span class="color_bot">Tours</span></div>
+		           	<div class="imageFloatDiv"><img src="../../images/tours/type/Jogging_Tour.jpg"></img></div>
 		           	<div class="footerFloatDiv"><span class="color_9"><b>Book Now !!</b></span></div>
 				</a>
 			</div>

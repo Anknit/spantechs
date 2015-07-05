@@ -106,5 +106,22 @@
         <label for="newsDetails">Details</label><textarea id="newsDetails" name="newsDetails"></textarea>
         <input type="button" id="addNews" value="Save" />
     </div>
+    <?php
+	$errMsg	=	0;
+    $succMsg=   0;
+	if(isset($_REQUEST) && (isset($_REQUEST['errMsg']) || isset($_REQUEST['succMsg']))){
+		extract($_REQUEST);
+	}
+	?>
+    <input type="hidden" name="errMsg" id="errMsg" value="<?php echo $errMsg;?>" />
+    <input type="hidden" name="succMsg" id="succMsg" value="<?php echo $succMsg;?>" />
+    <script>
+		$(function(){
+			if($('#succMsg').val() == 1){
+				alert('You password has been changed successfully');
+                location.href = 'addNews.php';
+			}
+		});
+	</script>
 </body>
 </html>

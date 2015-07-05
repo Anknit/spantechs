@@ -44,8 +44,8 @@
                                             <li class="subMenuItems"><a href="http://www.ninebottours.it/9bot/UI/tour/GolfcarTour.php">Golfcar Tours</a></li>
                                             <li class="subMenuItems"><a href="http://www.ninebottours.it/9bot/UI/tour/BikeTour.php">Bike Tours</a></li>
                                             <li class="subMenuItems"><a href="http://www.ninebottours.it/9bot/UI/tour/VespaTour.php">Vespa Tours</a></li>
-                                            <li class="subMenuItems"><a href="http://www.ninebottours.it/9bot/UI/tour/JoggingTour.php">Jogging Tours</a></li>
                                             <li class="subMenuItems"><a href="http://www.ninebottours.it/9bot/UI/tour/CataniaTour.php">Catania Tours</a></li>
+                                            <li class="subMenuItems"><a href="http://www.ninebottours.it/9bot/UI/tour/JoggingTour.php">Jogging Tours</a></li>
                                     </ul>
                                 </li>
                                 <li class="headerMenuItems" identifier="Publicity"><a href="publicity.php">Pubblicità con Noi</a></li>
