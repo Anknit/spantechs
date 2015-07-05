@@ -1,6 +1,6 @@
 <div id="demoContent" style="display:none">
     <div class="group">
-        <h3></h3>
+        <h4 style="font-size:15px;"></h4>
         <div class="productContent">
             <div class="ImageSlider">
                 <div id="testSlider" class="jssorSlidesDimensions renderingSliderSelector">
