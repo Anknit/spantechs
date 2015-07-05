@@ -2,12 +2,12 @@
 }
 .ImageSlider{
     float:left;
-    width:40%;
+    width:45%;
 }
 .textContent{
     float:left;
     width:50%;
-    margin-left:5%;
+    margin-left:2%;
 }
 
 .loadingChild1{

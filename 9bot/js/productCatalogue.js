@@ -5,7 +5,7 @@ $(function(){
 function renderAccordions(){
     $( "#accordion" )
     .accordion({
-        header: "> div > h3",
+        header: "> div > h4",
         heightStyle: "content",
         collapsible: false,
         event: "click hoverintent",
@@ -13,11 +13,11 @@ function renderAccordions(){
     })
     .sortable({
         axis: "y",
-        handle: "h3",
+        handle: "h4",
         stop: function( event, ui ) {
           // IE doesn't register the blur when sorting
           // so trigger focusout handlers to remove .ui-state-focus
-          ui.item.children( "h3" ).triggerHandler( "focusout" );
+          ui.item.children( "h4" ).triggerHandler( "focusout" );
 
           // Refresh accordion to handle new order
           $( this ).accordion( "refresh" );
@@ -39,7 +39,7 @@ function createAccordion(){
 }
 
 function fillDataToProductNode(NodeObject, DataObject, itemNumber){
-    NodeObject.find('h3').text(DataObject.name);
+    NodeObject.find('h4').text(DataObject.name);
     NodeObject.find('.textContent > p').html(DataObject.description);
     if(DataObject.imagesUrl.length > 0){
         NodeObject.find('#testSlider').attr('id', 'testSlider'+itemNumber); //change the id to new one with index
