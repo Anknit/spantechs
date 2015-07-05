@@ -25,14 +25,19 @@
 		.ui-jqgrid-caption{
 			text-align:center !important;
 		}
+        table{
+            text-align:left;
+        }
     </style>
 </head>
 <body>
     <?php 
         require_once 'menu.php';
     ?>
-    <div style="float:left;width:100%; height:100px;">
+    <div style="float:left;width:100%; height:100px;text-align:center">
+       <div style="width:98%; margin:1%">
         <table id="resellersInfo"></table>
+       </div>
         <div id="gridpager_resellersInfoTable"></div>
     </div>
 </body>
@@ -92,7 +97,7 @@
 			rowList:[10,20,30],
 			pager: '#gridpager_resellersInfoTable',
 			pginput : true,
-			sortname: 'ID',
+			sortname: 'PriorityOrder',
 			sortorder: "asc",
 	        caption: "Resellers information",
             editurl: "../../actions/dataInterface.php?action=edit&data=contactData"

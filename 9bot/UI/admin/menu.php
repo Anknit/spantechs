@@ -19,10 +19,12 @@ $scriptName	=	trim(basename($_SERVER['PHP_SELF']));
       <ul class="nav navbar-nav">
         <li <?php if($scriptName == 'addNews.php'){echo $activeLink;}?>><a href="addNews.php">Add news</a></li>
         <li <?php if($scriptName == 'editNews.php'){echo $activeLink;}?>><a href="editNews.php">Edit news</a></li>
+        <li <?php if($scriptName == 'reOrderNews.php'){echo $activeLink;}?>><a href="reOrderNews.php">Reorder news</a></li>
         <li <?php if($scriptName == 'updateResellers.php'){echo $activeLink;}?>><a href="updateResellers.php">Resellers</a></li>
+        <li <?php if($scriptName == 'reOrderResellers.php'){echo $activeLink;}?>><a href="reOrderResellers.php">Reorder resellers</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="logout.php" class="greyTabButton RightFloat normalButton">Logout</a></li>
+        <li><a href="logout.php">Logout</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

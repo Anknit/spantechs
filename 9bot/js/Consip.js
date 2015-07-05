@@ -145,13 +145,13 @@ $(function(){
         delay: 100
       },
       position: {
-        my: "left top+40px",
-        at: "left bottom +20px"
+        my: "left+40px top-100px",
+        collision: "flip fit"
       },
       content: function() {
         var element = $( this );
         if ( element.is( "img" ) ) {
-          return "<img src=\""+element.attr( "src" )+"\" width=\"350\" />";
+          return "<img src=\""+element.attr( "src" )+"\" width=\"350\" style='max-height:500px' />";
         }
       }
     });

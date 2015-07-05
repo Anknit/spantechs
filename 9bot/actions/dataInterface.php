@@ -23,7 +23,7 @@
     function getArgumentsList($method){
         switch($method){
             case 'getResellersInfo':
-                return array('clause'=>'', 'order'=>'', 'json'=> true);
+                return array('clause'=>'', 'order'=>'PriorityOrder ASC', 'json'=> true);
             break;
             case 'addEditResellersInfo':
                 return array();

@@ -33,7 +33,8 @@ function RedirectTo($pageName, $QueryString = "")
 {
 	$pageList	=	array(
 		'Home'	=>	'login.php',
-		'adminInterface'	=>	'addNews.php'
+		'adminInterface'	=>	'addNews.php',
+        'changePassword'    =>  'changePassword.php'
 	);
 	$page	=	$pageList[$pageName];
 	if($QueryString != ""){$page .= '?'.$QueryString;}
@@ -67,6 +68,17 @@ function loggOutUser(){
 	return true; 
 }
 
+function changePassword($uname, $upass){
+	$output	=	false;
+	require_once '../../Db.php';	
+	global	$perform_Database_Operation;
+	$uMatch	=	DB_Query("UPDATE userinfo SET password='$upass' WHERE userName='$uname'");
+	if($uMatch && !empty($uMatch) && $uMatch != 0){
+		$output	=	true;
+	}
+	return $output;
+}
+
 if(isset($_REQUEST) && isset($_REQUEST['loginSubmit'])){
 	$uname	=	'';
 	$upass	=	'';
@@ -84,6 +96,26 @@ if(isset($_REQUEST) && isset($_REQUEST['loginSubmit'])){
 	}
 	else{
 		redirectTo('Home','errMsg=1');
+	}
+}
+elseif(isset($_REQUEST) && isset($_REQUEST['changePassword'])){
+	$uname	=	'';
+	$upass	=	'';
+	if(isset($_REQUEST['Username'])){
+		$uname	=	$_REQUEST['Username'];
+	}
+	if(isset($_REQUEST['Password'])){
+		$upass	=	md5($_REQUEST['Password']);
+	}
+	$uid	=	changePassword($uname, $upass);
+	$uid	=	MatchUnamePassInDb($uname, $upass);
+    if($uid && $uid != 0 && !empty($uid)){
+		setSessionVarsForUser(	array( 'User_Id'=> $uid, 'setFromPage' =>	__FILE__)	);
+		
+		redirectTo('adminInterface','succMsg=1');
+	}
+	else{
+		redirectTo('changePassword','errMsg=1');
 	}
 }
 ?>

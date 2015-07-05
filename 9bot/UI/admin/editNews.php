@@ -15,7 +15,7 @@
 	$inputGetNewsData	=		array(
 		'Table'		=>	'newslogging',
 		'Fields'	=>	'*',
-		'order'		=>	'ID DESC'
+		'order'		=>	'PriorityOrder ASC'
 	);
 	$NewsData	=	DB_Read($inputGetNewsData, 'ASSOC');
 ?>
@@ -32,6 +32,12 @@
         }
         .jqte{
             margin: 10 2px ;
+        }
+        th, td{
+            text-align:center;
+        }
+        *{
+            box-sizing:content-box;
         }
     </style>
 	<script type="text/javascript" src="../../../Common/js/jquery.min.js"></script>
@@ -102,23 +108,42 @@
 			parentRow.find('.newsImage').attr('src', '');
 			parentRow.find('input[type=file]').val('');
 		}
+        
+        function renderImageFromLocalFile(src){
+            fileElement	=	src.files[0];
+            if(fileElement != undefined && fileElement != null && fileElement != '') {
+                var reader = new FileReader();
+                var imageElement    =   $(src).parent().find('.newsImage');
+ 
+                // Read in the image file as a data URL.
+                reader.readAsDataURL(fileElement);
+                
+                reader.onload = function(e) {
+                      // Render thumbnail.
+                      imageElement.attr('src', e.target.result);
+                 };
+                
+            }
+        }
     </script>
 </head>
 <body>
     <?php 
         require_once 'menu.php';
         if($NewsData != false && $NewsData != 0 && count($NewsData) > 0 && !empty($NewsData)){
-	?>		
+	?>
     <div style="float:left;width:100%; height:100px;">
         <table border="1px solid" bordercolor="#ccc" cellpadding="0" cellspacing="0" style="margin:2%">
             <thead>
                 <tr>
-                    <th width="5%">Show on Home page</th>
-                    <th width="20%">Headline</th>
-                    <th width="10%">Image</th>
+                    <th width="5%">For Home page</th>
+                    <th width="25%">Headline</th>
+                    <th width="15%">Image</th>
                     <th>Description</th>
-                    <th width="10%">Date</th>
-                    <th width="10%">&nbsp;</th>
+<!--
+                    <th width="5%">Date</th>
+-->
+                    <th width="5%">&nbsp;</th>
                 </tr>
             </thead>
             <tbody id="ExistingNewsData">
@@ -127,19 +152,23 @@
                             $rowData	=	$NewsData[$i];
                             ?>
                                 <tr>
-                                    <td><input type="checkbox" name="selectNews" <?php if($rowData['showOnHomePage']){echo 'checked';} ?> /></td>
+                                    <td title="check to show the news on home page"><input type="checkbox" name="selectNews" <?php if($rowData['showOnHomePage']){echo 'checked';} ?> /></td>
                                     <td style="padding:0"><textarea style="width:100%; height:100%" class="convertToMsEditor newsTitle"><?php echo urldecode($rowData['NewsTitle']); ?></textarea></td>
                                     <td>
                                     <?php if($rowData['NewsImagePath'] == 1){?>
                                         <img class="newsImage" width="100" height="50" src='../../images/newsAndEvents/<?php echo $rowData['ID'].'.png';?>' />
-                                    <?php }?>
-                                         <br />
-                                         <input name="newsFig" id="newsFig" type="file" accept="image/gif, image/jpg, image/jpeg, image/bmp, image/png" max="1" style="width:80px" />                                   
-                                         <br />&nbsp;&nbsp; Remove Image: &nbsp;&nbsp;<img onClick="removeImage(this);" src="../../../Common/images/delete.png" />
+                                    <?php }
+                                        else{?>
+                                        <img class="newsImage" width="100" height="50" src="" />
+                                        <?php }?>
+                                        &nbsp;<img onClick="removeImage(this);" src="../../../Common/images/delete.png"  title="Remove image"/>
+                                        &nbsp;<img src="../../../Common/images/templateinfo.png" title="browse file" onclick="$(this).parent().find('[type=\'file\']').click();" />
+                                         <input name="newsFig" id="newsFig" type="file" accept="image/gif, image/jpg, image/jpeg, image/bmp, image/png" max="1" style="width:100px;display:none" onchange="renderImageFromLocalFile(this);" />                                   
+                                         
                                     </td>
                                     <td style="padding:0"><textarea style="width:100%; height:100%" class="convertToMsEditor newsDetails"><?php echo urldecode($rowData['NewsDetails']); ?></textarea></td>
-                                    <td><?php echo $rowData['DateOfAddition']; ?></td>
-                                    <td><input type="button" name="saveNewsChanges" value="Save" onClick="editNews(this, '<?php echo $rowData['ID']; ?>');" />&nbsp;&nbsp;<img src="../../../Common/images/delete.png" onClick="deleteNews(<?php echo $rowData['ID']; ?>);" /></td>
+ <!--                                   <td><?php //echo $rowData['DateOfAddition']; ?></td>
+ -->                                   <td><img src="../../../Common/images/save_floppy.png" width="15" name="saveNewsChanges" value="Save" onClick="editNews(this, '<?php echo $rowData['ID']; ?>');" />&nbsp;&nbsp;<img src="../../../Common/images/delete.png" onClick="deleteNews(<?php echo $rowData['ID']; ?>);" /></td>
                                 </tr>
                             <?php
                         }
