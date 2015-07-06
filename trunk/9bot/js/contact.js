@@ -71,7 +71,7 @@ function renderShopsInfo(data){
 }
 
 
-var shopNameArr	=	["New Moving Società Cooperativa","Energeco s.r.l.","Only Multimedia","E-Wheels","Super Ground","Alpi Graie srl","Maxi Sport snc","Style by Stefano Valloncini","Berica Motors","Faber Soft","Travel for fun","Magic Video","Emobility","Mc Motors Srl","Eye, Eye, Sir! Snc","ON LINE","Cicli Salieri","Sicily Rent Segway","Zanichelli Paolo","DOMUSROBOTICA","è-Motion","Garda Yachting Charter"];
+/*var shopNameArr	=	["New Moving Società Cooperativa","Energeco s.r.l.","Only Multimedia","E-Wheels","Super Ground","Alpi Graie srl","Maxi Sport snc","Style by Stefano Valloncini","Berica Motors","Faber Soft","Travel for fun","Magic Video","Emobility","Mc Motors Srl","Eye, Eye, Sir! Snc","ON LINE","Cicli Salieri","Sicily Rent Segway","Zanichelli Paolo","DOMUSROBOTICA","è-Motion","Garda Yachting Charter"];
 var addArray	=	["Via di San Calisto 9 Roma 00153 RM","Vicolo di Dragone,1, Roma, 00126 RM","Via Carducci,14, Merano, 39012 BZ","Via Chambery,139, Aosta, 11100 AO","Via Dionigi Bussola,4, Milano, 20143 MI","Via Vajont,69, Rivoli, 10098 TO","Via Vittorio Veneto,9, 24060 Rogno,BG","Via Sole delle Alpi,48, 25030 TORBIATO DI ADRO, BS","Via Tagliamento,6, Schio, 36016 VI","Piazzale Giacomo Matteotti,21, Fabriano, 60044 AN","Via Montenuovo Licola Patria,90, 80078 Pozzuoli, NA","Via Edoardo Alagna,62, Marsala, 91025 TP","Matera, Basilicata","Viale della Repubblica,37, 73100 Lecce, LE","Via Salvo D'Acquisto,15, Colombare Di Sirmione, 25019 BS","Corso Garibaldi 248, Napoli, 8041 NA","Via Reggio Emilia,6/C/D/E, Bologna, 40139 BO","Via Vittorio Emanuele,203,95124 Catania CT","Via Val d'Enza, 35, 42049 - Sant'Ilario d'Enza (RE)","di Vannini Giuseppe Via Liguria 5, 42028 Poviglio RE","Via Camozzi 11/c 25125 Brescia","Lungolago Zanardelli 33 25087 Toscolano Maderno"];
 var emailArr	=	["Ninebot.servizioclienti@gmail.com","info@energeko.it","info@onlymultimedia.it","info@ewheelsaosta.it","produzione@superground.it","info@alpigraie.com","poletti.paolo1@gmail.com","info@styleliving.it","ame2712@alice.it","amministrazione@fabersoft.it","info@puteoliforfun.it","magicvideomarsala@yahoo.it","bellisariocarlucci@libero.it","servizioclienti@kialecce.it","info@eyeeyesir.com","vincenzosorrentinoonline@gmail.com","ciclisalieri@gmail.com","sicilyrentsegway@hotmail.it","zanichelli_paolo@virgilio.it","info@vanninigiuseppe.it","info@emotion-rentalcar.com","info@gyc.it"];
 var websiteArr	=	["","www.energeko.it/","www.onlymultimedia.it/","www.ewheelsaosta.it/","","","","www.styleliving.it/","","www.fabersoft.it/","","www.magicvideomarsala.it","","www.kialecce.it/index.aspx","","www.onlinesorrentino.it/","","www.sicilyrentsegway.it/","","www.domusrobotica.it/", "", ""];
@@ -80,6 +80,26 @@ var phoneArr	=	["39 29 034 927 ","06 89169378; 346 3896433","04 732 10 553","01 
 
 var latArr		=	[41.889302,41.7780143,46.6702013,45.7328327,45.4459066,45.0778304,45.8632463,45.60668,45.712513,43.3376895,40.8568027,37.7968517,40.6462752,40.35624,45.4714394,40.8329601,43.4578503,44.4764117,44.837420,37.5465892,44.753951];
 var longArr		=	[12.471160,12.337268799999947,11.15830649999998,7.3055193000000145,9.158476500000006,7.55692010000007,10.145670800000062,9.99842000000001,11.478812999999946,12.908371299999999,14.072057800000039,12.43606120000004,16.617398800000046,18.153099999999995,10.6048859,14.242393300000003,11.90603150000004,11.391147400000023,10.534818,15.098916300000042,10.447152];	
+*/
+
+var shopNameArr	=	[];
+var addArray	=	[];
+var emailArr	=	[];
+var websiteArr	=	[];
+var phoneArr	=	[];
+var latArr		=	[];
+var longArr		=	[];
+
+for(var t=0; t<obj_Reseller.length;t++){
+	shopNameArr.push(obj_Reseller[t]['name']);
+	addArray.push(obj_Reseller[t]['address']);
+	emailArr.push(obj_Reseller[t]['email']);
+	websiteArr.push(obj_Reseller[t]['website']);
+	phoneArr.push(obj_Reseller[t]['phone']);
+	latArr.push(obj_Reseller[t]['latitude']);
+	longArr.push(obj_Reseller[t]['longitude']);
+}
+
 function initialize() {
   var mapProp = {
     center:new google.maps.LatLng(42.677697307288774,12.568136862499854),

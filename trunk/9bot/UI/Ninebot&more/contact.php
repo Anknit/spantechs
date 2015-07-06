@@ -14,6 +14,7 @@
     <link href="../../css/layout.css" type="text/css" rel="stylesheet" />
     <link href="../../css/style.css" type="text/css" rel="stylesheet" >
     <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script src="../../js/resellerData.js"></script>
     <script src="../../js/contact.js"></script>
 		<div class="content">
 			<div class="headOfficeContact">
