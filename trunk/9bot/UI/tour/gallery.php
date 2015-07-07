@@ -73,61 +73,74 @@
 			<div class="typeContainer" id="videosContainer">
 				<div>
 					<div>
-						<object data='http://www.youtube.com/embed/I_y2LOy-JLE'></object>
+						<iframe src='http://www.youtube.com/embed/I_y2LOy-JLE' allowfullscreen>
+						</iframe>
 					</div>
 					<div>
-						<object data='http://www.youtube.com/embed/b5LvxOA_fY4'></object>
+						<iframe src='http://www.youtube.com/embed/b5LvxOA_fY4' allowfullscreen>
+						</iframe>
 					</div>
 					<div>
-						<object data='http://www.youtube.com/embed/zAXRrCiphrA'></object>
+						<iframe src='http://www.youtube.com/embed/zAXRrCiphrA' allowfullscreen>
+						</iframe>
 					</div>
 					<div>
-						<object data='http://www.youtube.com/embed/8izbWCUvg9g'></object>
+						<iframe src='http://www.youtube.com/embed/8izbWCUvg9g' allowfullscreen>
+						</iframe>
 					</div>
 					<div>
-						<object data='http://www.youtube.com/embed/YTCc9mJyvpM'></object>
+						<iframe src='http://www.youtube.com/embed/YTCc9mJyvpM' allowfullscreen>
+						</iframe>
 					</div>
 					<div>
-						<object data='http://www.youtube.com/embed/ztgebRfeYwQ'></object>
+						<iframe src='http://www.youtube.com/embed/ztgebRfeYwQ' allowfullscreen>
+						</iframe>
 					</div>
 					<div>
-						<object data='http://www.youtube.com/embed/GTiYMPjqXzg'></object>
+						<iframe src='http://www.youtube.com/embed/GTiYMPjqXzg' allowfullscreen>
+						</iframe>
 					</div>
 					<div>
-						<object data='http://www.youtube.com/embed/uzAqaccO47s'></object>
+						<iframe src='http://www.youtube.com/embed/uzAqaccO47s' allowfullscreen>
+						</iframe>
 					</div>
 					<div>
-						<object data='http://www.youtube.com/embed/FtgZMB9SN1o'></object>
+						<iframe src='http://www.youtube.com/embed/FtgZMB9SN1o' allowfullscreen>
+						</iframe>
 					</div>
 					<div>
-						<object data='http://www.youtube.com/embed/1hgD7Urkvp0'></object>
+						<iframe src='http://www.youtube.com/embed/1hgD7Urkvp0' allowfullscreen>
+						</iframe>
 					</div>
 					<div>
-						<object data='http://www.youtube.com/embed/eIodswrTq0g'></object>
+						<iframe src='http://www.youtube.com/embed/eIodswrTq0g' allowfullscreen>
+						</iframe>
 					</div>
 					<div>
-						<object data='http://www.youtube.com/embed/kDUJ9OX9Y5g'></object>
+						<iframe src='http://www.youtube.com/embed/kDUJ9OX9Y5g' allowfullscreen>
+						</iframe>
 					</div>
 					<div>
-						<object data='http://www.youtube.com/embed/7_5tR8YdiLE'></object>
+						<iframe src='http://www.youtube.com/embed/7_5tR8YdiLE' allowfullscreen>
+						</iframe>
 					</div>
 					<div>
-						<object data='http://www.youtube.com/embed/dKvdnTo_qIY'></object>
+						<iframe src='http://www.youtube.com/embed/dKvdnTo_qIY' allowfullscreen></iframe>
 					</div>
 					<div>
-						<object data='http://www.youtube.com/embed/6cGsR4aoGNE'></object>
+						<iframe src='http://www.youtube.com/embed/6cGsR4aoGNE' allowfullscreen></iframe>
 					</div>
 					<div>
-						<object data='http://www.youtube.com/embed/3g8wEPq0s2s'></object>
+						<iframe src='http://www.youtube.com/embed/3g8wEPq0s2s' allowfullscreen></iframe>
 					</div>
 					<div>
-						<object data='http://www.youtube.com/embed/aAZAzHMzClc'></object>
+						<iframe src='http://www.youtube.com/embed/aAZAzHMzClc' allowfullscreen></iframe>
 					</div>
 					<div>
-						<object data='http://www.youtube.com/embed/Vv7QMfiIwWs'></object>
+						<iframe src='http://www.youtube.com/embed/Vv7QMfiIwWs' allowfullscreen></iframe>
 					</div>
 					<div>
-						<object data='http://www.youtube.com/embed/_zn8SmrOMZ8'></object>
+						<iframe src='http://www.youtube.com/embed/_zn8SmrOMZ8' allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>

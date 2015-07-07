@@ -55,13 +55,13 @@ img.galleryItem.imgItem {
   border-spacing: 0px;
 }
 
-.typeContainer img ,.typeContainer object {
+.typeContainer img ,.typeContainer iframe {
     width: 100%;
     /* height: 300px; */
     vertical-align: middle;
 }
 
-.typeContainer object {
+.typeContainer iframe {
     height: 250px;
 }
 
