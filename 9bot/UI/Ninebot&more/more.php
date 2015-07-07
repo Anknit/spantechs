@@ -82,7 +82,7 @@
                     <img u="caption" t="T|IB" t2=B d=400 src="../../images/slideAnimation/iPhone6Hand.png" style="position:absolute; right:70%; bottom:10%; width:20%;" />
                     <img u="caption" t="*" d=550 src="../../images/slideAnimation/feature-android.png" style="position:absolute;left:25px;top:50px;" />
                     <img u="caption" t="*" t2="*" d=700 src="../../images/slideAnimation/feature-ios.png" style="position:absolute;left:125px;top:50px;" />
-                    <img u="caption" t="T|IB" t2="*" d=1050 src="../../images/slideAnimation/9_white.png" height="auto" style="position:absolute;right:30%;bottom:40%; width:5%;" />
+                    <img u="caption" t="T|IB" t2="*" d=100 src="../../images/slideAnimation/9_white.png" height="auto" style="position:absolute;right:30%;bottom:40%; width:5%;" />
                     <div u="caption" t="*" t2="*" du="900" style="position: absolute;top: 140px; left: 60px; width: 350px;height: 50px;">
                          <span style="color:#fff">
                            per IOS
