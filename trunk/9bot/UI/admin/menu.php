@@ -24,6 +24,7 @@ $scriptName	=	trim(basename($_SERVER['PHP_SELF']));
         <li <?php if($scriptName == 'reOrderResellers.php'){echo $activeLink;}?>><a href="reOrderResellers.php">Reorder resellers</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
+        <li><a href="changePassword.php">Change password</a></li>
         <li><a href="logout.php">Logout</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->

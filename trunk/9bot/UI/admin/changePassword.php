@@ -8,7 +8,7 @@
 ?>
 <?php
 	require_once 'verifyUser.php';
-	if(checkIfUserIsLoggedIn())    // if user is logged in then redirect to home page
+	if(!checkIfUserIsLoggedIn())    // if user is logged in then redirect to home page
 		redirectTo('Home');
 
 
@@ -19,8 +19,12 @@
     <meta charset="UTF-8">
     <title>change password</title>
     <link rel="stylesheet" href="../../css/login.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
 </head>
 <body>
+    <?php 
+        require_once 'menu.php';
+    ?>
     <div class="wrapper">
         <div class="container">
             <h1>Ssssshhhhh... change your secret password</h1>
