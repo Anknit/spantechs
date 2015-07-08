@@ -25,7 +25,7 @@
 .loadingChild2{
     position: absolute;
     display: block;
-    background: url(../../../Common/images/loading.gif) no-repeat center center;
+    background: url(../images/loading.gif) no-repeat center center;
     top: 0px;
     left: 0px;
     width: 100%;
