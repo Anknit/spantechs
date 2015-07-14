@@ -88,6 +88,9 @@
 		}
 		
 		function deleteNews(newsID){
+            var confirmInput = confirm("Do you really want to delete this news");
+            if(confirmInput != true)
+                return false;
 			var url		=	'../../actions/deleteNewsDataByAdmin.php?newsID='+newsID;
 			var	Method	=	'POST';
 			var	OnSuccess	=	function(response){
