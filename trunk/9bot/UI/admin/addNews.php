@@ -45,8 +45,8 @@
 		$(function(){
 			$('input#addNews').on('click', '', function(){
 				newsType	=	$('input[name="newsType"]:checked').val();
-				newsHeadline=	$('#newsHeadline').closest('.jqte').find('.jqte_editor').text();
-				newsDetails	=	$('#newsDetails').closest('.jqte').find('.jqte_editor').text();
+				newsHeadline=	encodeURI($('#newsHeadline').closest('.jqte').find('.jqte_editor').html());
+				newsDetails	=	encodeURI($('#newsDetails').closest('.jqte').find('.jqte_editor').html());
 				newsHome	=	$('#showOnHomePage').is(':checked') ? 1: 0;
 				var formData = new FormData();
 				var fileElement	=	$('input[type=file]')[0].files[0];
