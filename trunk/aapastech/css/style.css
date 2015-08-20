@@ -456,24 +456,26 @@ input.gn-search:focus {
 }
 
 #intro{	
-	background-image: url(../img/img-bg.jpg);
-	background-size: cover;
+	background-image: url(../img/aapastech.png);
+	background-size: initial;
+	background-repeat:no-repeat;
+	background-position:center 100px;
 }
 
 .intro .slogan {
-	padding:250px 0 60px;
+	padding:450px 0 60px;
 	text-align: center;
 	
 }
 .intro .slogan h1 {
-	color: #fff;
-	line-height: 1.1em;
+/*	color: #fff;
+*/	line-height: 1.1em;
 	margin-bottom: 20px;
 	 font-size: 40px;
 }
 .intro .slogan p {
-	color: #eee;
-	margin-bottom: 50px;
+/*	color: #eee;
+*/	margin-bottom: 50px;
 	font-size: 20px;
 }
 
